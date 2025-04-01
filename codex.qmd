@@ -1,0 +1,470 @@
+---
+format:
+  revealjs:
+    embed-resources: true
+    slide-number: false
+    progress: false
+    code-overflow: wrap
+    theme: [default, custom.scss]
+---
+
+::: {style="text-align: center"}
+##  Balancing Precision and Retention<br>in Experimental Design {.center .smaller}
+
+&nbsp;    
+
+:::: columns
+
+::: {.column width="50%"}
+**Gustavo Diaz**  
+Department of Political Science  
+Northwestern University  
+<gustavo.diaz@northwestern.edu>  
+[gustavodiaz.org](https://gustavodiaz.org)
+:::
+
+::: {.column width="50%"}
+**Erin Rossiter**  
+Department of Political Science  
+University of Notre Dame  
+<erossite@nd.edu>  
+[erossiter.com](https://erossiter.com/)
+
+:::
+
+::::
+
+&nbsp;
+
+Paper and slides: [gustavodiaz.org/talk](https://gustavodiaz.org/talk.html)
+
+:::
+
+
+
+```{r include=FALSE}
+library(knitr)
+
+opts_chunk$set(fig.pos = "center", echo = FALSE, 
+               message = FALSE, warning = FALSE)
+```
+
+```{r setup}
+# Packages
+library(tidyverse)
+library(haven)
+library(DeclareDesign)
+library(tinytable)
+library(kableExtra)
+
+
+# ggplot global options
+theme_set(theme_gray(base_size = 25))
+ggdodge = position_dodge(width = 0.5)
+```
+
+## Bias-variance tradeoff as darts
+
+![](precision_retention/bias_variance.jpg){fig-align="center"}
+
+## But the game of darts is more complicated
+
+:::: columns
+::: {.column width="50%"}
+![](list/darts_board.png)
+:::
+
+::: {.column width="50%"}
+![](list/darts_scoring.png){fig-align="center" width="72%" height="72%"}
+:::
+::::
+
+## Application: Social science experiments
+
+```{r}
+lit = tribble(
+  ~Randomization, ~`Post-only`, ~`Pre-post`,
+  "Simple/Complete", "Standard", "Repeated measures",
+  "Blocking", "Block randomized", "Block randomized + repeated measures"
+)
+
+lit %>% 
+  tt() %>% 
+  group_tt(
+    j = list(
+      "Outcome measurement" = 2:3
+    )
+  ) %>% 
+  style_tt(
+    i = 1:2,
+    color = "#00000000"
+  ) %>% 
+  style_tt(
+    i = 0,
+    j = 2:3,
+    color = "#00000000"
+  )
+```
+
+
+## Application: Social science experiments
+
+```{r}
+lit %>% 
+  tt() %>% 
+  group_tt(
+    j = list(
+      "Outcome measurement" = 2:3
+    )
+  ) %>% 
+  style_tt(
+    i = 1:2,
+    color = "#00000000"
+  )
+```
+
+
+## Application: Social science experiments
+
+```{r}
+lit %>% 
+  tt() %>% 
+  group_tt(
+    j = list(
+      "Outcome measurement" = 2:3
+    )
+  ) %>% 
+  style_tt(
+    i = 1:2,
+    j = 2:3,
+    color = "#00000000"
+  )
+```
+
+## Application: Social science experiments
+
+```{r}
+lit %>% 
+  tt() %>% 
+  group_tt(
+    j = list(
+      "Outcome measurement" = 2:3
+    )
+  )
+```
+
+
+. . . 
+
+Alternative designs improve statistical precision but need access to pre-treatment covariates
+
+. . .
+
+Cost may outweigh benefit
+
+## Concern: Sample loss
+
+<!-- Explicit and implicit with examples -->
+
+. . .
+
+**Explicit**
+
+::: incremental
+
+- More pre-treatment questions $\rightarrow$ more attrition/inattention
+
+- Block-randomization $\rightarrow$ discard units
+
+:::
+
+
+
+**Implicit**
+
+::: incremental
+- Adding a baseline survey $\rightarrow$ half sample size
+
+- Four more survey questions (2 min.) $\rightarrow$ 72% sample size
+:::
+
+
+
+## Use of alternative designs to increase precision
+
+```{r}
+journals = tribble(
+  ~` `, ~N, ~`%`,
+  "Pre-post", 10, "5%",
+  "Blocking", 16, "7%",
+  "Both", 6, "3%",
+  "Neither", 184, "85%"
+)
+
+journals %>% tt() %>% style_tt(fontsize = 0.9)
+```
+
+
+::: aside
+Based on articles published by leading polisci journals in 2022-23 (APSR, AJPS, JOP, PB, CPS, JEPS)
+:::
+
+## Use of alternative designs to increase precision
+
+```{r}
+journals2 = tribble(
+  ~` `, ~N, ~`%`,
+  "Pre-post", 10, "5%",
+  "Blocking", 16, "7%",
+  "Both", 6, "3%",
+  "Mention covariates", 169, "78%",
+  "Nothing", 15, "7%" 
+)
+
+journals2 %>% 
+  tt() %>% 
+  group_tt(i = list(
+    "Neither" = 4
+  )) %>% 
+  style_tt(
+    i = 5:6,
+    color = "#00000000"
+  ) %>% 
+  style_tt(fontsize = 0.9)
+
+```
+
+
+::: aside
+Based on articles published by leading polisci journals in 2022-23 (APSR, AJPS, JOP, PB, CPS, JEPS)
+:::
+
+## Use of alternative designs to increase precision
+
+```{r}
+journals2 = tribble(
+  ~` `, ~N, ~`%`,
+  "Pre-post", 10, "5%",
+  "Blocking", 16, "7%",
+  "Both", 6, "3%",
+  "Mention covariates", 169, "78%",
+  "Nothing", 15, "7%" 
+)
+
+journals2 %>% 
+  tt() %>% 
+  group_tt(i = list(
+    "Neither" = 4
+  )) %>% 
+  style_tt(fontsize = 0.9)
+
+```
+
+
+::: aside
+Based on articles published by leading polisci journals in 2022-23 (APSR, AJPS, JOP, PB, CPS, JEPS)
+:::
+
+## Goal
+
+Show that precision gains *offset* sample loss
+
+. . .
+
+**Paper:**
+
+1. Replication of selected studies
+
+2. Simulation on randomly sampled studies
+
+3. Simulations/code/advice for pre-analysis stage
+
+## Goal
+
+Show that precision gains *offset* sample loss
+
+
+**Paper:**
+
+1. [Replication of selected studies]{style="color: gray;"}
+
+2. [**Simulation on randomly sampled studies**]{style="color: #4E2A84;"}
+
+3. [Simulations/code/advice for pre-analysis stage]{style="color: gray;"}
+
+
+## Procedure
+
+::: incremental
+- Sample one study per journal at random (+3 alternates)
+
+- Select promising pre-treatment covariates for blocking
+
+- Simulate pre-treatment outcomes with varying correlation (0.25, 0.5, 0.75)
+
+- Simulate proportion of sample loss (0-0.5)
+
+- Estimate 6 different designs
+
+- Repeat 1,000 times for every design-parameter combination
+
+- Compare each alternative design with standard
+
+:::
+
+## Simulated designs
+
+1. Complete randomization + post-only outcome measurement (Standard design)
+
+2. Complete + pre-post
+
+3. Block on one covariate + post-only
+
+4. Block on one covariate + pre-post
+
+5. Block on all covariates + post-only
+
+6. Block on all covariates + pre-post
+
+## Sample
+
+```{r}
+sample_tab = tribble(
+  ~Study, ~Type, ~Arms, ~N, ~Country, ~n, ~`Blocking Covariates`, ~`Predictiveness`, 
+  1, "Survey", 6, 2971, "Italy", 946, 7, "Low", 
+  2, "Survey", 12, 3013, "US", 2784, 3, "High",
+  3, "Survey", 3, 1029, "Uganda", 561, 4, "Low",
+  4, "Field", 2, 2942, "US", 2712, 5, "Moderate",
+  5,"Field", 2, 275, "Colombia", 275, 7, "Low",
+  6,"Survey", 2, 1176, "US", 1175, 2, "Moderate"
+)
+
+sample_tab %>% 
+  kbl(linesep = "") %>% 
+  kable_styling(font_size = 30) %>% 
+  add_header_above(c(" " = 1, "Original experiment" = 4, "Simulation" = 3))
+```
+
+## Results: Study 1
+
+```{r}
+load("precision_retention/f_test_df.RData")
+
+study_2 = tests %>% 
+  mutate(
+    estimator = factor(estimator, levels = c("Complete + Pre-post",
+                                "Block one + Post-only",
+                                "Block one + Pre-post",
+                                "Block all + Post-only",
+                                "Block all + Pre-post")),
+         corr = as.factor(corr)) %>% 
+  filter(study == "Study 2") %>% 
+  filter(!str_detect(estimator, "Block one"))
+
+ggplot(study_2) +
+  aes(x = drop, y = f, group = 1, color = corr, shape = p_f < 0.05) +
+  facet_grid(~ estimator) +
+  geom_hline(yintercept = 1, linetype = "dashed") +
+  geom_line(aes(group = corr), alpha = 0) +
+  geom_point(size = 2, alpha = 0) +
+  scale_shape_manual(values = c(4, 19)) +
+  scale_color_viridis_d() +
+  labs(x = "Sample loss",
+       y = "Variance ratio\n(alternative/standard)",
+       color = "Correlation between pre-treatment variable and Y",
+       shape = "p < 0.05") +
+  theme(legend.position = "bottom",
+        panel.border = element_rect(color = "black", fill = NA),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        text = element_text(size = 15),
+        legend.text = element_text(size = 12),
+        legend.title = element_text(size = 15),
+        legend.direction = "vertical") +
+  guides(color = guide_legend(order = 1, ncol = 5),
+         shape = guide_legend(order = 2, ncol = 2))
+```
+
+## Results: Study 1
+
+```{r}
+ggplot(study_2) +
+  aes(x = drop, y = f, group = 1, color = corr, shape = p_f < 0.05) +
+  facet_grid(~ estimator) +
+  geom_hline(yintercept = 1, linetype = "dashed") +
+  geom_line(aes(group = corr)) +
+  geom_point(size = 2) +
+  scale_shape_manual(values = c(4, 19)) +
+  scale_color_viridis_d() +
+  labs(x = "Sample loss",
+       y = "Variance ratio\n(alternative/standard)",
+       color = "Correlation between pre-treatment variable and Y",
+       shape = "p < 0.05") +
+  theme(legend.position = "bottom",
+        panel.border = element_rect(color = "black", fill = NA),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        text = element_text(size = 15),
+        legend.text = element_text(size = 12),
+        legend.title = element_text(size = 15),
+        legend.direction = "vertical") +
+  guides(color = guide_legend(order = 1, ncol = 5),
+         shape = guide_legend(order = 2, ncol = 2))
+```
+
+## Results: Study 6
+
+```{r}
+study_6 = tests %>% 
+  mutate(
+    estimator = factor(estimator, levels = c("Complete + Pre-post",
+                                "Block one + Post-only",
+                                "Block one + Pre-post",
+                                "Block all + Post-only",
+                                "Block all + Pre-post")),
+         corr = as.factor(corr)) %>% 
+  filter(study == "Study 6") %>% 
+  filter(!str_detect(estimator, "Block one"))
+
+ggplot(study_6) +
+  aes(x = drop, y = f, group = 1, color = corr, shape = p_f < 0.05) +
+  facet_grid(~ estimator) +
+  geom_hline(yintercept = 1, linetype = "dashed") +
+  geom_line(aes(group = corr)) +
+  geom_point(size = 2) +
+  scale_shape_manual(values = c(4, 19)) +
+  scale_color_viridis_d() +
+  labs(x = "Sample loss",
+       y = "Variance ratio\n(alternative/standard)",
+       color = "Correlation between pre-treatment variable and Y",
+       shape = "p < 0.05") +
+  theme(legend.position = "bottom",
+        panel.border = element_rect(color = "black", fill = NA),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        text = element_text(size = 15),
+        legend.text = element_text(size = 12),
+        legend.title = element_text(size = 15),
+        legend.direction = "vertical") +
+  guides(color = guide_legend(order = 1, ncol = 5),
+         shape = guide_legend(order = 2, ncol = 2))
+```
+
+
+## Summary
+
+- **Puzzle:** Alternative designs rare
+
+- **Argument:** Concerns about explicit/implicit sample loss offsetting precision gains
+
+- **Findings:** Alternative designs withstand sample loss
+
+- **Wrinkle:** Alternative designs require more attention!
+
+- **Takeaway:** Try alternative designs!
+
+
+::: aside
+**Paper and slides:** [gustavodiaz.org/talk](https://gustavodiaz.org/talk.html)
+:::
+

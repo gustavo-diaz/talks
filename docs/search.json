@@ -3400,5 +3400,327 @@
     "title": "Gustavo Diaz",
     "section": "Atsusaka and Landsman",
     "text": "Atsusaka and Landsman\nWhy you should care:\n\nUnified modeling of voting behavior across electoral systems\nVery concrete ideas about implementing RCV\n\nThings I like:\n\n\nModeling candidates and voters together\nThinking of computational modeling as Bayesian inference"
+  },
+  {
+    "objectID": "codex.html#balancing-precision-and-retention-in-experimental-design",
+    "href": "codex.html#balancing-precision-and-retention-in-experimental-design",
+    "title": "Gustavo Diaz",
+    "section": "Balancing Precision and Retentionin Experimental Design",
+    "text": "Balancing Precision and Retentionin Experimental Design\n \n\n\nGustavo Diaz\nDepartment of Political Science\nNorthwestern University\ngustavo.diaz@northwestern.edu\ngustavodiaz.org\n\nErin Rossiter\nDepartment of Political Science\nUniversity of Notre Dame\nerossite@nd.edu\nerossiter.com\n\n \nPaper and slides: gustavodiaz.org/talk"
+  },
+  {
+    "objectID": "codex.html#bias-variance-tradeoff-as-darts",
+    "href": "codex.html#bias-variance-tradeoff-as-darts",
+    "title": "Gustavo Diaz",
+    "section": "Bias-variance tradeoff as darts",
+    "text": "Bias-variance tradeoff as darts"
+  },
+  {
+    "objectID": "codex.html#but-the-game-of-darts-is-more-complicated",
+    "href": "codex.html#but-the-game-of-darts-is-more-complicated",
+    "title": "Gustavo Diaz",
+    "section": "But the game of darts is more complicated",
+    "text": "But the game of darts is more complicated"
+  },
+  {
+    "objectID": "codex.html#two-types-of-tradeoffs",
+    "href": "codex.html#two-types-of-tradeoffs",
+    "title": "Gustavo Diaz",
+    "section": "Two types of tradeoffs",
+    "text": "Two types of tradeoffs\n\n\nImprove precision at the expense of unbiasedness\nImproving precision without sacrificing unbiasedness?"
+  },
+  {
+    "objectID": "codex.html#two-types-of-tradeoffs-1",
+    "href": "codex.html#two-types-of-tradeoffs-1",
+    "title": "Gustavo Diaz",
+    "section": "Two types of tradeoffs",
+    "text": "Two types of tradeoffs\n\nImprove precision at the expense of unbiasedness\nImproving precision without sacrificing unbiasedness?\n\n\n \nCost has to come from somewhere else!"
+  },
+  {
+    "objectID": "codex.html#improving-precision-in-experiments",
+    "href": "codex.html#improving-precision-in-experiments",
+    "title": "Gustavo Diaz",
+    "section": "Improving precision in experiments",
+    "text": "Improving precision in experiments\n\nStandard error of estimated ATE in conventional experimental design (Gerber and Green 2012, p. 57)\n\n\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}{N-1}}\n\\]\n\n\n\n\\(N\\): Sample size\n\\(Y_i(*)\\): Potential outcomes under treatment/control (1/0)"
+  },
+  {
+    "objectID": "codex.html#improving-precision-in-experiments-1",
+    "href": "codex.html#improving-precision-in-experiments-1",
+    "title": "Gustavo Diaz",
+    "section": "Improving precision in experiments",
+    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}{N-1}}\n\\]"
+  },
+  {
+    "objectID": "codex.html#improving-precision-in-experiments-2",
+    "href": "codex.html#improving-precision-in-experiments-2",
+    "title": "Gustavo Diaz",
+    "section": "Improving precision in experiments",
+    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{N-1}}\n\\]\n\n\nVariance component\nDecrease \\(SE(\\widehat{ATE})\\) with alternative research designs"
+  },
+  {
+    "objectID": "codex.html#improving-precision-in-experiments-3",
+    "href": "codex.html#improving-precision-in-experiments-3",
+    "title": "Gustavo Diaz",
+    "section": "Improving precision in experiments",
+    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{N-1}}\n\\]\n\nVariance component\nDecrease \\(SE(\\widehat{ATE})\\) with alternative research designs\n\n\n\nBlock-randomization\nRepeated measures\nPre-treatment covariates\nPair-matched design\nOnline balancing\nSequential blocking\nRerandomization\nMatching"
+  },
+  {
+    "objectID": "codex.html#improving-precision-in-experiments-4",
+    "href": "codex.html#improving-precision-in-experiments-4",
+    "title": "Gustavo Diaz",
+    "section": "Improving precision in experiments",
+    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{N-1}}\n\\]\n\nVariance component\nDecrease \\(SE(\\widehat{ATE})\\) with alternative research designs\n\n\n\nBlock-randomization\nRepeated measures\nPre-treatment covariates\nPair-matched design\nOnline balancing\nSequential blocking\nRerandomization\nMatching"
+  },
+  {
+    "objectID": "codex.html#improving-precision-in-experiments-5",
+    "href": "codex.html#improving-precision-in-experiments-5",
+    "title": "Gustavo Diaz",
+    "section": "Improving precision in experiments",
+    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{N-1}}\n\\]\n\nVariance component\nDecrease \\(SE(\\widehat{ATE})\\) with alternative research designs\n\n\n\nBlock-randomization\nRepeated measures\nPre-treatment covariates\nPair-matched design\nOnline balancing\nSequential blocking\nRerandomization\nMatching\n\n\nAll require pre-treatment information"
+  },
+  {
+    "objectID": "codex.html#improving-precision-in-experiments-6",
+    "href": "codex.html#improving-precision-in-experiments-6",
+    "title": "Gustavo Diaz",
+    "section": "Improving precision in experiments",
+    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{N-1}}\n\\]\n\nVariance component\nDecrease \\(SE(\\widehat{ATE})\\) with alternative research designs\n\n\n\nBlock-randomization\nRepeated measures\nPre-treatment covariates\nPair-matched design\nOnline balancing\nSequential blocking\nRerandomization\nMatching\n\n\nAll require pre-treatment information\nTwo categories:\n\n\nReduce variance in observed outcomes\nReduce variance in potential outcomes"
+  },
+  {
+    "objectID": "codex.html#improving-precision-in-experiments-7",
+    "href": "codex.html#improving-precision-in-experiments-7",
+    "title": "Gustavo Diaz",
+    "section": "Improving precision in experiments",
+    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#00843D}{N-1}}}\n\\]\n\n\nSample size component"
+  },
+  {
+    "objectID": "codex.html#improving-precision-in-experiments-8",
+    "href": "codex.html#improving-precision-in-experiments-8",
+    "title": "Gustavo Diaz",
+    "section": "Improving precision in experiments",
+    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#00843D}{N-1}}}\n\\]\n\nSample size component\nQuadruple to halve \\(SE(\\widehat{ATE})\\)\n\n\nFocus: Increasing numerator may come at the cost of decreasing denominator\n\n\nPrecision gains from alternative designs may be offset by sample loss"
+  },
+  {
+    "objectID": "codex.html#sample-loss",
+    "href": "codex.html#sample-loss",
+    "title": "Gustavo Diaz",
+    "section": "Sample loss",
+    "text": "Sample loss\n\n\nExplicit\n\n\nMore pre-treatment questions \\(\\rightarrow\\) more attrition/inattention\nBlock-randomization \\(\\rightarrow\\) discard units\n\n\nImplicit\n\n\nAdding a baseline survey \\(\\rightarrow\\) half sample size\nFour more survey questions (2 min.) \\(\\rightarrow\\) 72% sample size\n\n\n\n\nConcerns about prevent widespread implementation"
+  },
+  {
+    "objectID": "codex.html#use-of-alternative-designs-to-increase-precision",
+    "href": "codex.html#use-of-alternative-designs-to-increase-precision",
+    "title": "Gustavo Diaz",
+    "section": "Use of alternative designs to increase precision",
+    "text": "Use of alternative designs to increase precision\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                 \n                N\n                %\n              \n        \n        \n        \n                \n                  Pre-post\n                   10\n                  5% \n                \n                \n                  Blocking\n                   16\n                  7% \n                \n                \n                  Both    \n                    6\n                  3% \n                \n                \n                  Neither \n                  184\n                  85%\n                \n        \n      \n    \n\n\n\n\n\nBased on articles published by leading polisci journals in 2022-23 (APSR, AJPS, JOP, PB, CPS, JEPS)"
+  },
+  {
+    "objectID": "codex.html#use-of-alternative-designs-to-increase-precision-1",
+    "href": "codex.html#use-of-alternative-designs-to-increase-precision-1",
+    "title": "Gustavo Diaz",
+    "section": "Use of alternative designs to increase precision",
+    "text": "Use of alternative designs to increase precision\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                 \n                N\n                %\n              \n        \n        \n        \n                \n                  Pre-post          \n                   10\n                  5% \n                \n                \n                  Blocking          \n                   16\n                  7% \n                \n                \n                  Both              \n                    6\n                  3% \n                \n                \n                  Mention covariates\n                  169\n                  78%\n                \n                \n                  Nothing           \n                   15\n                  7% \n                \n        \n      \n    \n\n\n\n\n\nBased on articles published by leading polisci journals in 2022-23 (APSR, AJPS, JOP, PB, CPS, JEPS)"
+  },
+  {
+    "objectID": "codex.html#use-of-alternative-designs-to-increase-precision-2",
+    "href": "codex.html#use-of-alternative-designs-to-increase-precision-2",
+    "title": "Gustavo Diaz",
+    "section": "Use of alternative designs to increase precision",
+    "text": "Use of alternative designs to increase precision\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                 \n                N\n                %\n              \n        \n        \n        \n                \n                  Pre-post          \n                   10\n                  5% \n                \n                \n                  Blocking          \n                   16\n                  7% \n                \n                \n                  Both              \n                    6\n                  3% \n                \n                \n                  Mention covariates\n                  169\n                  78%\n                \n                \n                  Nothing           \n                   15\n                  7% \n                \n        \n      \n    \n\n\n\n\n\nBased on articles published by leading polisci journals in 2022-23 (APSR, AJPS, JOP, PB, CPS, JEPS)"
+  },
+  {
+    "objectID": "codex.html#goal",
+    "href": "codex.html#goal",
+    "title": "Gustavo Diaz",
+    "section": "Goal",
+    "text": "Goal\nShow that precision gains offset sample loss\n\nPaper:\n\nReplication of selected studies\nSimulation on randomly sampled studies\nSimulations/code/advice for pre-analysis stage"
+  },
+  {
+    "objectID": "codex.html#goal-1",
+    "href": "codex.html#goal-1",
+    "title": "Gustavo Diaz",
+    "section": "Goal",
+    "text": "Goal\nShow that precision gains offset sample loss\nPaper:\n\nReplication of selected studies\nSimulation on randomly sampled studies\nSimulations/code/advice for pre-analysis stage"
+  },
+  {
+    "objectID": "codex.html#replication-studies",
+    "href": "codex.html#replication-studies",
+    "title": "Gustavo Diaz",
+    "section": "Replication studies",
+    "text": "Replication studies\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                \n                Dietrich and Hayes (2023)\n                Bayram and Graham (2022)\n                Tappin and Hewitt (2023)\n              \n        \n        \n        \n                \n                  Study\n                  1 (DH)\n                  2 (BG)\n                  3 (TH)\n                \n                \n                  Subfield\n                  AP\n                  IR\n                  AP\n                \n                \n                  Topic\n                  Race and issue-based symbolism\n                  Support for IO foreign aid\n                  Party cues and policy opinions\n                \n                \n                  Arms\n                  8\n                  5\n                  2\n                \n                \n                  Obs.\n                  515\n                  1000\n                  775\n                \n                \n                  Waves\n                  1\n                  1\n                  2\n                \n                \n                  Concern\n                  Hard to reach population\n                  More precision\n                  Effect persistence"
+  },
+  {
+    "objectID": "codex.html#replication-studies-1",
+    "href": "codex.html#replication-studies-1",
+    "title": "Gustavo Diaz",
+    "section": "Replication studies",
+    "text": "Replication studies\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                \n                Dietrich and Hayes (2023)\n                Bayram and Graham (2022)\n                Tappin and Hewitt (2023)\n              \n        \n        \n        \n                \n                  Study\n                  1 (DH)\n                  2 (BG)\n                  3 (TH)\n                \n                \n                  Subfield\n                  AP\n                  IR\n                  AP\n                \n                \n                  Topic\n                  Race and issue-based symbolism\n                  Support for IO foreign aid\n                  Party cues and policy opinions\n                \n                \n                  Arms\n                  8\n                  5\n                  2\n                \n                \n                  Obs.\n                  515\n                  1000\n                  775\n                \n                \n                  Waves\n                  1\n                  1\n                  2\n                \n                \n                  Concern\n                  Hard to reach population\n                  More precision\n                  Effect persistence"
+  },
+  {
+    "objectID": "codex.html#replication-studies-2",
+    "href": "codex.html#replication-studies-2",
+    "title": "Gustavo Diaz",
+    "section": "Replication studies",
+    "text": "Replication studies\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                \n                Dietrich and Hayes (2023)\n                Bayram and Graham (2022)\n                Tappin and Hewitt (2023)\n              \n        \n        \n        \n                \n                  Study\n                  1 (DH)\n                  2 (BG)\n                  3 (TH)\n                \n                \n                  Subfield\n                  AP\n                  IR\n                  AP\n                \n                \n                  Topic\n                  Race and issue-based symbolism\n                  Support for IO foreign aid\n                  Party cues and policy opinions\n                \n                \n                  Arms\n                  8\n                  5\n                  2\n                \n                \n                  Obs.\n                  515\n                  1000\n                  775\n                \n                \n                  Waves\n                  1\n                  1\n                  2\n                \n                \n                  Concern\n                  Hard to reach population\n                  More precision\n                  Effect persistence"
+  },
+  {
+    "objectID": "codex.html#replication-studies-3",
+    "href": "codex.html#replication-studies-3",
+    "title": "Gustavo Diaz",
+    "section": "Replication studies",
+    "text": "Replication studies\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                \n                Dietrich and Hayes (2023)\n                Bayram and Graham (2022)\n                Tappin and Hewitt (2023)\n              \n        \n        \n        \n                \n                  Study\n                  1 (DH)\n                  2 (BG)\n                  3 (TH)\n                \n                \n                  Subfield\n                  AP\n                  IR\n                  AP\n                \n                \n                  Topic\n                  Race and issue-based symbolism\n                  Support for IO foreign aid\n                  Party cues and policy opinions\n                \n                \n                  Arms\n                  8\n                  5\n                  2\n                \n                \n                  Obs.\n                  515\n                  1000\n                  775\n                \n                \n                  Waves\n                  1\n                  1\n                  2\n                \n                \n                  Concern\n                  Hard to reach population\n                  More precision\n                  Effect persistence"
+  },
+  {
+    "objectID": "codex.html#cond",
+    "href": "codex.html#cond",
+    "title": "Gustavo Diaz",
+    "section": "Experimental conditions",
+    "text": "Experimental conditions\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Condition\n                Outcomes\n                Randomization\n              \n        \n        \n        \n                \n                  Design 1\n                  Post only\n                  Complete\n                \n                \n                  Design 2\n                  Pre-post \n                  Complete\n                \n                \n                  Design 3\n                  Pre-post \n                  Blocking\n                \n        \n      \n    \n\n\n\n\n\nSample size same as original\nIncreased length (DH: 43%, BG: 50%, TH: 110%)\n\n\n\nEvaluate extent of explicit/implicit sample loss\n\n\n\nSee more here"
+  },
+  {
+    "objectID": "codex.html#explicit-sample-loss",
+    "href": "codex.html#explicit-sample-loss",
+    "title": "Gustavo Diaz",
+    "section": "Explicit sample loss",
+    "text": "Explicit sample loss"
+  },
+  {
+    "objectID": "codex.html#explicit-sample-loss-1",
+    "href": "codex.html#explicit-sample-loss-1",
+    "title": "Gustavo Diaz",
+    "section": "Explicit sample loss",
+    "text": "Explicit sample loss"
+  },
+  {
+    "objectID": "codex.html#implicit-sample-loss",
+    "href": "codex.html#implicit-sample-loss",
+    "title": "Gustavo Diaz",
+    "section": "Implicit sample loss",
+    "text": "Implicit sample loss"
+  },
+  {
+    "objectID": "codex.html#implicit-sample-loss-1",
+    "href": "codex.html#implicit-sample-loss-1",
+    "title": "Gustavo Diaz",
+    "section": "Implicit sample loss",
+    "text": "Implicit sample loss"
+  },
+  {
+    "objectID": "codex.html#implicit-sample-loss-2",
+    "href": "codex.html#implicit-sample-loss-2",
+    "title": "Gustavo Diaz",
+    "section": "Implicit sample loss",
+    "text": "Implicit sample loss"
+  },
+  {
+    "objectID": "codex.html#also-in-the-paper",
+    "href": "codex.html#also-in-the-paper",
+    "title": "Gustavo Diaz",
+    "section": "Also in the paper",
+    "text": "Also in the paper\n\n\nNo evidence of sample loss altering treatment effects\nNo evidence of alternative designs changing sample composition\nSimulated replications point in the same direction\nIdeas to navigate choice at pre-analysis stage"
+  },
+  {
+    "objectID": "codex.html#summary",
+    "href": "codex.html#summary",
+    "title": "Gustavo Diaz",
+    "section": "Summary",
+    "text": "Summary\n\nPuzzle: Alternative designs rare\nArgument: Concerns about explicit/implicit sample loss offsetting precision gains\nFindings: Alternative designs withstand sample loss\nWrinkle: Alternative designs require more attention!\nTakeaway: Try alternative designs!\n\n\n\n\n\n\n\n\n\nPaper and slides: gustavodiaz.org/talk"
+  },
+  {
+    "objectID": "codex.html#imp",
+    "href": "codex.html#imp",
+    "title": "Gustavo Diaz",
+    "section": "Implementation details",
+    "text": "Implementation details\n\n\n\n\n\n\n\n\n\nBack"
+  },
+  {
+    "objectID": "codex.html#application-social-science-experiments",
+    "href": "codex.html#application-social-science-experiments",
+    "title": "Gustavo Diaz",
+    "section": "Application: Social science experiments",
+    "text": "Application: Social science experiments\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures                   \n                \n                \n                  Blocking       \n                  Block randomized\n                  Block randomized + repeated measures"
+  },
+  {
+    "objectID": "codex.html#application-social-science-experiments-1",
+    "href": "codex.html#application-social-science-experiments-1",
+    "title": "Gustavo Diaz",
+    "section": "Application: Social science experiments",
+    "text": "Application: Social science experiments\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures                   \n                \n                \n                  Blocking       \n                  Block randomized\n                  Block randomized + repeated measures"
+  },
+  {
+    "objectID": "codex.html#application-social-science-experiments-2",
+    "href": "codex.html#application-social-science-experiments-2",
+    "title": "Gustavo Diaz",
+    "section": "Application: Social science experiments",
+    "text": "Application: Social science experiments\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures                   \n                \n                \n                  Blocking       \n                  Block randomized\n                  Block randomized + repeated measures"
+  },
+  {
+    "objectID": "codex.html#application-social-science-experiments-3",
+    "href": "codex.html#application-social-science-experiments-3",
+    "title": "Gustavo Diaz",
+    "section": "Application: Social science experiments",
+    "text": "Application: Social science experiments\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures                   \n                \n                \n                  Blocking       \n                  Block randomized\n                  Block randomized + repeated measures\n                \n        \n      \n    \n\n\n\n\nAlternative designs improve statistical precision but need access to pre-treatment covariates\n\n\nCost may outweigh benefit"
+  },
+  {
+    "objectID": "codex.html#concern-sample-loss",
+    "href": "codex.html#concern-sample-loss",
+    "title": "Gustavo Diaz",
+    "section": "Concern: Sample loss",
+    "text": "Concern: Sample loss\n\n\nExplicit\n\n\nMore pre-treatment questions \\(\\rightarrow\\) more attrition/inattention\nBlock-randomization \\(\\rightarrow\\) discard units\n\n\nImplicit\n\n\nAdding a baseline survey \\(\\rightarrow\\) half sample size\nFour more survey questions (2 min.) \\(\\rightarrow\\) 72% sample size"
+  },
+  {
+    "objectID": "codex.html#procedure",
+    "href": "codex.html#procedure",
+    "title": "Gustavo Diaz",
+    "section": "Procedure",
+    "text": "Procedure\n\n\nSample one study per journal at random (+3 alternates)\nSelect promising pre-treatment covariates for blocking\nSimulate pre-treatment outcomes with varying correlation (0.25, 0.5, 0.75)\nSimulate proportion of sample loss (0-0.5)\nEstimate 6 different designs\nRepeat 1,000 times for every design-parameter combination\nCompare each alternative design with standard"
+  },
+  {
+    "objectID": "codex.html#simulated-designs",
+    "href": "codex.html#simulated-designs",
+    "title": "Gustavo Diaz",
+    "section": "Simulated designs",
+    "text": "Simulated designs\n\nComplete randomization + post-only outcome measurement (Standard design)\nComplete + pre-post\nBlock on one covariate + post-only\nBlock on one covariate + pre-post\nBlock on all covariates + post-only\nBlock on all covariates + pre-post"
+  },
+  {
+    "objectID": "codex.html#sample",
+    "href": "codex.html#sample",
+    "title": "Gustavo Diaz",
+    "section": "Sample",
+    "text": "Sample\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOriginal experiment\n\n\nSimulation\n\n\n\nStudy\nType\nArms\nN\nCountry\nn\nBlocking Covariates\nPredictiveness\n\n\n\n\n1\nSurvey\n6\n2971\nItaly\n946\n7\nLow\n\n\n2\nSurvey\n12\n3013\nUS\n2784\n3\nHigh\n\n\n3\nSurvey\n3\n1029\nUganda\n561\n4\nLow\n\n\n4\nField\n2\n2942\nUS\n2712\n5\nModerate\n\n\n5\nField\n2\n275\nColombia\n275\n7\nLow\n\n\n6\nSurvey\n2\n1176\nUS\n1175\n2\nModerate"
+  },
+  {
+    "objectID": "codex.html#findings",
+    "href": "codex.html#findings",
+    "title": "Gustavo Diaz",
+    "section": "Findings",
+    "text": "Findings"
+  },
+  {
+    "objectID": "codex.html#results",
+    "href": "codex.html#results",
+    "title": "Gustavo Diaz",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "codex.html#results-study-1",
+    "href": "codex.html#results-study-1",
+    "title": "Gustavo Diaz",
+    "section": "Results: Study 1",
+    "text": "Results: Study 1"
+  },
+  {
+    "objectID": "codex.html#results-study-1-1",
+    "href": "codex.html#results-study-1-1",
+    "title": "Gustavo Diaz",
+    "section": "Results: Study 1",
+    "text": "Results: Study 1"
+  },
+  {
+    "objectID": "codex.html#results-study-6",
+    "href": "codex.html#results-study-6",
+    "title": "Gustavo Diaz",
+    "section": "Results: Study 6",
+    "text": "Results: Study 6"
   }
 ]
