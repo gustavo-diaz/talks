@@ -1,0 +1,99 @@
+---
+format:
+  revealjs:
+    embed-resources: true
+    slide-number: false
+    progress: false
+    code-overflow: wrap
+    theme: [default, custom.scss]
+---
+
+## Discussion: Proposals for and Applications of New Experimental Designs
+
+- Jenke and Green. "Excludability is a Matter of Research Design: How to Conduct Credible Indirect Manipulations"
+
+- Jordan, Ollerenshaw, Trexler. "New Evidence and Design Considerations for Repeated Measure Experiments"
+
+::: aside
+Slides: [talks.gustavodiaz.org/mpsa25_experimental](https://talks.gustavodiaz.org/mpsa25_experimental)
+:::
+
+## Common theme
+
+![](precision_retention/bias_variance.jpg){fig-align="center"}
+
+## But the game of darts is more complicated
+
+:::: columns
+::: {.column width="50%"}
+![](list/darts_board.png)
+:::
+
+::: {.column width="50%"}
+![](list/darts_scoring.png){fig-align="center" width="72%" height="72%"}
+:::
+::::
+
+## Jenke and Green
+
+**Why should you care?**
+
+::: incremental
+
+- EVERYTHING IS AN ENCOURAGEMENT DESIGN
+
+- EVERYTHING VIOLATES THE EXCLUSION RESTRICTION
+
+- EVERYTHING IS SUSCEPTIBLE TO PTOVB
+
+:::
+
+---
+
+![](discussant/mellon_rainfall.png){fig-align="center" width="85%"}
+
+::: aside
+**Source:** [Mellon (2024, AJPS, Figure 2)](https://doi.org/10.1111/ajps.12894)
+:::
+
+## Jenke and Green
+
+**Why should you care?**
+
+- EVERYTHING IS AN ENCOURAGEMENT DESIGN
+
+- EVERYTHING VIOLATES THE EXCLUSION RESTRICTION
+
+- EVERYTHING IS SUSCEPTIBLE TO PTOVB
+
+. . .
+
+**Things I like**
+
+::: incremental
+- Big picture framing
+
+- Notation and math easy to follow
+
+- Simulations nail the idea perfectly (cf. fig 2)
+:::
+
+---
+
+[Fig 2 here just in case]
+
+## Jenke and Green
+
+**Questions and comments**
+
+::: incremental
+- (PT)OVB is always a problem no matter what you do
+
+- Why not (a special kind of) sensitivity analysis?
+
+- Bias-variance trade-off on the number of $Z^{\prime}$, $F^{\prime}$?
+
+- Placebo outcomes? (If $Z$ does not affect $Y^{\prime}$, then $Z^{\prime}$ is unlikely)
+
+- **Clarify:** Requirement is (at least) as many $Z^{\prime}$ as $F^{\prime}$, not necessarily one per each (mismatch theory/application)
+:::

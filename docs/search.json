@@ -3722,5 +3722,54 @@
     "title": "Gustavo Diaz",
     "section": "Results: Study 6",
     "text": "Results: Study 6"
+  },
+  {
+    "objectID": "mpsa25_experimental.html#common-theme",
+    "href": "mpsa25_experimental.html#common-theme",
+    "title": "Gustavo Diaz",
+    "section": "Common theme",
+    "text": "Common theme"
+  },
+  {
+    "objectID": "mpsa25_experimental.html#but-the-game-of-darts-is-more-complicated",
+    "href": "mpsa25_experimental.html#but-the-game-of-darts-is-more-complicated",
+    "title": "Gustavo Diaz",
+    "section": "But the game of darts is more complicated",
+    "text": "But the game of darts is more complicated"
+  },
+  {
+    "objectID": "mpsa25_experimental.html#discussion-proposals-for-and-applications-of-new-experimental-designs",
+    "href": "mpsa25_experimental.html#discussion-proposals-for-and-applications-of-new-experimental-designs",
+    "title": "Gustavo Diaz",
+    "section": "Discussion: Proposals for and Applications of New Experimental Designs",
+    "text": "Discussion: Proposals for and Applications of New Experimental Designs\n\nJenke and Green. “Excludability is a Matter of Research Design: How to Conduct Credible Indirect Manipulations”\nJordan, Ollerenshaw, Trexler. “New Evidence and Design Considerations for Repeated Measure Experiments”\n\n\n\nSlides: talks.gustavodiaz.org/mpsa25_experimental"
+  },
+  {
+    "objectID": "mpsa25_experimental.html#jenke-and-green-indirect-manipulations",
+    "href": "mpsa25_experimental.html#jenke-and-green-indirect-manipulations",
+    "title": "Gustavo Diaz",
+    "section": "Jenke and Green (indirect manipulations)",
+    "text": "Jenke and Green (indirect manipulations)\nWhy should you care?\n\n\nEVERYTHING IS AN ENCOURAGEMENT DESIGN\nEVERYTHING VIOLATES THE EXCLUSION RESTRICTION\nEVERYTHING IS SUSCEPTIBLE TO PTOVB"
+  },
+  {
+    "objectID": "mpsa25_experimental.html#jenke-and-green",
+    "href": "mpsa25_experimental.html#jenke-and-green",
+    "title": "Gustavo Diaz",
+    "section": "Jenke and Green",
+    "text": "Jenke and Green\nWhy should you care?\n\n\nEVERYTHING IS AN ENCOURAGEMENT DESIGN\nEVERYTHING VIOLATES THE EXCLUSION RESTRICTION\nEVERYTHING IS SUSCEPTIBLE TO PTOVB"
+  },
+  {
+    "objectID": "mpsa25_experimental.html#jenke-and-green-1",
+    "href": "mpsa25_experimental.html#jenke-and-green-1",
+    "title": "Gustavo Diaz",
+    "section": "Jenke and Green",
+    "text": "Jenke and Green\nWhy should you care?\n\nEVERYTHING IS AN ENCOURAGEMENT DESIGN\nEVERYTHING VIOLATES THE EXCLUSION RESTRICTION\nEVERYTHING IS SUSCEPTIBLE TO PTOVB\n\n\nThings I like\n\n\nBig picture framing\nNotation and math easy to follow\nSimulations nail the idea perfectly (cf. fig 2)"
+  },
+  {
+    "objectID": "mpsa25_experimental.html#jenke-and-green-2",
+    "href": "mpsa25_experimental.html#jenke-and-green-2",
+    "title": "Gustavo Diaz",
+    "section": "Jenke and Green",
+    "text": "Jenke and Green\nQuestions and comments\n\n\n(PT)OVB is always a problem no matter what you do\nWhy not (a special kind of) sensitivity analysis?\nBias-variance trade-off on the number of \\(Z^{\\prime}\\), \\(F^{\\prime}\\)?\nPlacebo outcomes? (If \\(Z\\) does not affect \\(Y^{\\prime}\\), then \\(Z^{\\prime}\\) is unlikely)\nClarify: Requirement is (at least) as many \\(Z^{\\prime}\\) as \\(F^{\\prime}\\), not necessarily one per each (mismatch theory/application)"
   }
 ]
