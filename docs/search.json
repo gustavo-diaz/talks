@@ -3771,5 +3771,33 @@
     "title": "Gustavo Diaz",
     "section": "Jenke and Green",
     "text": "Jenke and Green\nQuestions and comments\n\n\n(PT)OVB is always a problem no matter what you do\nWhy not (a special kind of) sensitivity analysis?\nBias-variance trade-off on the number of \\(Z^{\\prime}\\), \\(F^{\\prime}\\)?\nPlacebo outcomes? (If \\(Z\\) does not affect \\(Y^{\\prime}\\), then \\(Z^{\\prime}\\) is unlikely)\nClarify: Requirement is (at least) as many \\(Z^{\\prime}\\) as \\(F^{\\prime}\\), not necessarily one per each (mismatch theory/application)"
+  },
+  {
+    "objectID": "mpsa25_experimental.html#jordan-ollerenshaw-trexler",
+    "href": "mpsa25_experimental.html#jordan-ollerenshaw-trexler",
+    "title": "Gustavo Diaz",
+    "section": "Jordan, Ollerenshaw, Trexler",
+    "text": "Jordan, Ollerenshaw, Trexler\nWhy should you care?\n\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#00843D}{N-1}}}\n\\]\n\n\nEasiest way to increase statistical precision with a larger sample size\nBut usually cost prohibitive!\nIn many applications, the only way is to reduce variance in outcomes through research design"
+  },
+  {
+    "objectID": "mpsa25_experimental.html#jordan-ollerenshaw-trexler-1",
+    "href": "mpsa25_experimental.html#jordan-ollerenshaw-trexler-1",
+    "title": "Gustavo Diaz",
+    "section": "Jordan, Ollerenshaw, Trexler",
+    "text": "Jordan, Ollerenshaw, Trexler\nWhy should you care?\nStandard experiment:\n\n\\[\n\\widehat{ATE} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i(0)]\n\\]\n\nlm(Y ~ Z, data = data) # or just difference in means\n\n\n\nRepeated measures design (between groups):\n\\[\n\\widehat{ATE} = E[(Y_{i,t=2}(1) \\color{#4E2A84}{- Y_{i,t=1}}) | Z_i = 1] - E[(Y_{i,t=2}(0) \\color{#4E2A84}{- Y_{i,t=1}}) | Z_i = 0]\n\\]\n\nlm(Y_t2 ~ Z + Y_t1, data = data)"
+  },
+  {
+    "objectID": "mpsa25_experimental.html#jordan-ollerenshaw-trexler-2",
+    "href": "mpsa25_experimental.html#jordan-ollerenshaw-trexler-2",
+    "title": "Gustavo Diaz",
+    "section": "Jordan, Ollerenshaw, Trexler",
+    "text": "Jordan, Ollerenshaw, Trexler\nThings I like\n\n\nPartial replication! (replication + extension?)\nDifferent samples\nThinking carefully about implementation decisions (e.g. proximity of repeated measures)\nHonesty about limitations (e.g. sensitive questions)"
+  },
+  {
+    "objectID": "mpsa25_experimental.html#jordan-ollerenshaw-trexler-3",
+    "href": "mpsa25_experimental.html#jordan-ollerenshaw-trexler-3",
+    "title": "Gustavo Diaz",
+    "section": "Jordan, Ollerenshaw, Trexler",
+    "text": "Jordan, Ollerenshaw, Trexler\nQuestions and comments\n\n\nHelp the reader visualize your randomizations\nRepeating repeated measures creates attenuation bias. Why exactly? Inattention? Priming?\nReplicate/simulate more diverse studies? (Harden et al 2019)\nIf repeated measures are just covariate adjustment, why not using Lin’s (2013) adjustment for more precision? (s/o Ransi Clark)\n\n\n\n\n\n\n\n\n\n\nAlso, citation to Diaz (2025) should be Diaz and Rossiter (2025)"
   }
 ]

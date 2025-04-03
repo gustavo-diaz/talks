@@ -80,7 +80,7 @@ Slides: [talks.gustavodiaz.org/mpsa25_experimental](https://talks.gustavodiaz.or
 
 ---
 
-[Fig 2 here just in case]
+![](discussant/jenke_green_sims.png){fig-align="center"}
 
 ## Jenke and Green
 
@@ -96,4 +96,85 @@ Slides: [talks.gustavodiaz.org/mpsa25_experimental](https://talks.gustavodiaz.or
 - Placebo outcomes? (If $Z$ does not affect $Y^{\prime}$, then $Z^{\prime}$ is unlikely)
 
 - **Clarify:** Requirement is (at least) as many $Z^{\prime}$ as $F^{\prime}$, not necessarily one per each (mismatch theory/application)
+:::
+
+## Jordan, Ollerenshaw, Trexler
+
+**Why should you care?**
+
+. . .
+
+$$
+SE(\widehat{ATE}) = \sqrt{\frac{\color{#4E2A84}{\text{Var}(Y_i(0)) + \text{Var}(Y_i(1)) + 2\text{Cov}(Y_i(0), Y_i(1))}}{\color{#00843D}{N-1}}}
+$$
+
+
+::: incremental
+- Easiest way to increase statistical precision with a [larger sample size]{style="color: #00843D;"}
+
+- But usually cost prohibitive!
+
+- In many applications, the only way is to reduce [variance in outcomes]{style="color:#4E2A84;"} through research design
+:::
+
+## Jordan, Ollerenshaw, Trexler
+
+**Why should you care?**
+
+Standard experiment:
+
+. . .
+
+$$
+\widehat{ATE} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i(0)]
+$$
+
+```{r, echo = TRUE, eval = FALSE}
+lm(Y ~ Z, data = data) # or just difference in means
+```
+
+. . .
+
+Repeated measures design (between groups):
+
+$$
+\widehat{ATE} = E[(Y_{i,t=2}(1) \color{#4E2A84}{- Y_{i,t=1}}) | Z_i = 1] - E[(Y_{i,t=2}(0) \color{#4E2A84}{- Y_{i,t=1}}) | Z_i = 0]
+$$
+
+```{r, echo = TRUE, eval = FALSE}
+lm(Y_t2 ~ Z + Y_t1, data = data)
+```
+
+
+## Jordan, Ollerenshaw, Trexler
+
+**Things I like**
+
+::: incremental
+- Partial replication! (replication + extension?)
+
+- Different samples
+
+- Thinking carefully about implementation decisions (e.g. proximity of repeated measures)
+
+- Honesty about limitations (e.g. sensitive questions)
+:::
+
+## Jordan, Ollerenshaw, Trexler
+
+**Questions and comments**
+
+::: incremental
+
+- Help the reader visualize your randomizations
+
+- Repeating repeated measures creates attenuation bias. Why exactly? Inattention? Priming?
+
+- Replicate/simulate more diverse studies? [(Harden et al 2019)](https://doi.org/10.1017/pan.2018.54)
+
+- If repeated measures are just covariate adjustment, why not using [Lin's (2013)](https://doi.org/10.1214/12-AOAS583) adjustment for more precision? (s/o Ransi Clark)
+:::
+
+::: aside
+Also, citation to Diaz (2025) should be [Diaz and Rossiter (2025)](https://gustavodiaz.org/files/research/precision_retention.pdf)
 :::
