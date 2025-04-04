@@ -38,6 +38,8 @@ University of Notre Dame
 
 Paper and slides: [gustavodiaz.org/talk](https://gustavodiaz.org/talk.html)
 
+![](talk_qr.png){.absolute bottom=-100 right=-100 width="200" height="200"}
+
 :::
 
 
@@ -468,3 +470,4 @@ ggplot(study_6) +
 **Paper and slides:** [gustavodiaz.org/talk](https://gustavodiaz.org/talk.html)
 :::
 
+![](talk_qr.png){.absolute bottom=-40 right=-100 width="200" height="200"}
