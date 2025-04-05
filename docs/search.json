@@ -4037,5 +4037,89 @@
     "title": "Gustavo Diaz",
     "section": "NSUM groups",
     "text": "NSUM groups\n\n\nFrom Las Piedras\nMale 25-29\nPolice officers\nUniversity students\nHad a kid last year\nPassed away last year\nMarried last year\nFemale 45-49\n\nPublic employees\nWelfare card holders\nRegistered with party\nWith kids in public school\nDid not vote in last election\nCurrently in jail\nRecently unemployed [Sensitive item]"
+  },
+  {
+    "objectID": "mpsa25_missing.html#discussion-missing-data-imputation",
+    "href": "mpsa25_missing.html#discussion-missing-data-imputation",
+    "title": "Gustavo Diaz",
+    "section": "Discussion: Missing Data / Imputation",
+    "text": "Discussion: Missing Data / Imputation\n\nDanek et al. “Proxy Selection in Divergent Data Sets.”\nLi, Sheng, Yu. “Randomization Inference with Sample Selection.”\nAmini. “Transforming Social Science Research with Survey Transfer Learning.”\n\n\n\nSlides: talks.gustavodiaz.org/mpsa25_missing"
+  },
+  {
+    "objectID": "mpsa25_missing.html#why-care-about-missing-data",
+    "href": "mpsa25_missing.html#why-care-about-missing-data",
+    "title": "Gustavo Diaz",
+    "section": "Why care about missing data?",
+    "text": "Why care about missing data?\n\n\nTextbook: Missing data is a big problem because it violates statistical inference assumptions, biases estimates\nUser: We make those assumptions not because they are true, but because they are useful\nAlso: In most cases, trying to solve missing data problems doesn’t alter findings, and may create even more problems\nPanel: Seeing missing/unobserved data as opportunity"
+  },
+  {
+    "objectID": "mpsa25_missing.html#danek-et-al",
+    "href": "mpsa25_missing.html#danek-et-al",
+    "title": "Gustavo Diaz",
+    "section": "Danek et al",
+    "text": "Danek et al\nWhy should you care?\n\n\nProxy variables are very common\nExample: Number of TVs at home as proxy for household income\nSelected mostly out of face validity\nUnsustainable in large data sets\nNeed a principled approach to choose"
+  },
+  {
+    "objectID": "mpsa25_missing.html#danek-et-al-1",
+    "href": "mpsa25_missing.html#danek-et-al-1",
+    "title": "Gustavo Diaz",
+    "section": "Danek et al",
+    "text": "Danek et al\nThings I like\n\n\nBroad train/testing framework\nFocus on convergent, discriminant validity"
+  },
+  {
+    "objectID": "mpsa25_missing.html#danek-et-al-2",
+    "href": "mpsa25_missing.html#danek-et-al-2",
+    "title": "Gustavo Diaz",
+    "section": "Danek et al",
+    "text": "Danek et al\nComments and questions\n\n\nCase studies? Alternative approaches?\nReverse engineer procedure to extract the proxy score of a preferred variable?\nMake a “dictionary” of proxy scores (in common US surveys)?\nDoes it change downstream statistical inference?"
+  },
+  {
+    "objectID": "mpsa25_missing.html#li-sheng-yu",
+    "href": "mpsa25_missing.html#li-sheng-yu",
+    "title": "Gustavo Diaz",
+    "section": "Li, Sheng, Yu",
+    "text": "Li, Sheng, Yu\nWhy should you care?\n\n\nRandomization inference is all about making minimal assumptions\nStandard approaches to missing data are all about making heroic assumptions (e.g. MCAR, MAR)\nBoth causal inference and missing data are nonparametric identification problems\nSolution should remain in the design-based world\nTL;DR: You are getting missing-data-robust randomization inference p-val"
+  },
+  {
+    "objectID": "mpsa25_missing.html#li-sheng-yu-1",
+    "href": "mpsa25_missing.html#li-sheng-yu-1",
+    "title": "Gustavo Diaz",
+    "section": "Li, Sheng, Yu",
+    "text": "Li, Sheng, Yu\nThings I like\n\n\nRank-sum statistics\nDistribution-free tests\nElement-wise multiplication operator \\(\\circ\\)\nWe should be paying more attention to these things!"
+  },
+  {
+    "objectID": "mpsa25_missing.html#li-sheng-yu-2",
+    "href": "mpsa25_missing.html#li-sheng-yu-2",
+    "title": "Gustavo Diaz",
+    "section": "Li, Sheng, Yu",
+    "text": "Li, Sheng, Yu\nThings I like\n\nRank-sum statistics\nDistribution-free tests\nElement-wise multiplication operator \\(\\circ\\)\nWe should be paying more attention to these things!\n\n\n\nCredible missingness mechanisms (General, monotone, sharp vs. MAR, MCAR)"
+  },
+  {
+    "objectID": "mpsa25_missing.html#li-sheng-yu-3",
+    "href": "mpsa25_missing.html#li-sheng-yu-3",
+    "title": "Gustavo Diaz",
+    "section": "Li, Sheng, Yu",
+    "text": "Li, Sheng, Yu\nComments and questions\n\n\nConnection with partial identification?\nExplain missingness  selection bias a bit more\nUnder what circumstances are different missingness mechanisms plausible/defensible?\nPreferred rank sum statistic? Guidelines to choose?\nDownstream statistical inference?\nSection 5 (about quantiles of individual treatment effects) sounds like a separate battle to me"
+  },
+  {
+    "objectID": "mpsa25_missing.html#amini",
+    "href": "mpsa25_missing.html#amini",
+    "title": "Gustavo Diaz",
+    "section": "Amini",
+    "text": "Amini\nWhy should you care?\n\n\nWe can do a lot more about survey data besides just analyzing it\nBroad applicability\n\n\n\n\nThis approach can be extended to challenges such as incorporating new control variables, conducting power calculations, imputing missing data, cross-survey harmonization, and adaptive questionnaire design (p. 4)"
+  },
+  {
+    "objectID": "mpsa25_missing.html#amini-1",
+    "href": "mpsa25_missing.html#amini-1",
+    "title": "Gustavo Diaz",
+    "section": "Amini",
+    "text": "Amini\nThings I like\n\n\nConcept of recycling survey data\nWe don’t need the entirety of human speech to make new columns in data frames"
+  },
+  {
+    "objectID": "mpsa25_missing.html#amini-2",
+    "href": "mpsa25_missing.html#amini-2",
+    "title": "Gustavo Diaz",
+    "section": "Amini",
+    "text": "Amini\nComments and questions\n\n\nPunching LLMs too hard?\nFine-tuned [something] &gt; vanilla [something else] (e.g. Brandt et al 2025)\nMore comparisons with alternative approaches?\nFurther improve with more years of survey data? Human in the loop?\nSimulation studies to illustrate what surveys are good candidates?\nDownstream statistical inference? Should we adjust for STL?"
   }
 ]

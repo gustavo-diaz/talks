@@ -1,0 +1,186 @@
+---
+format:
+  revealjs:
+    embed-resources: true
+    slide-number: false
+    progress: false
+    code-overflow: wrap
+    theme: [default, custom.scss]
+---
+
+## Discussion: Missing Data / Imputation
+
+- Danek et al. "Proxy Selection in Divergent Data Sets."
+
+- Li, Sheng, Yu. "Randomization Inference with Sample Selection."
+
+- Amini. "Transforming Social Science Research with Survey Transfer Learning."
+
+::: aside
+Slides: [talks.gustavodiaz.org/mpsa25_missing](https://talks.gustavodiaz.org/mpsa25_missing)
+:::
+
+## Why care about missing data?
+
+::: incremental
+
+- **Textbook:** Missing data is a big problem because it violates statistical inference assumptions, biases estimates
+
+- **User:** We make those assumptions not because they are true, but because they are useful
+
+- **Also:** In most cases, trying to solve missing data problems doesn't alter findings, and may create even more problems
+
+- **Panel:** Seeing missing/unobserved data as opportunity
+:::
+
+## Danek et al
+
+**Why should you care?**
+
+::: incremental
+- Proxy variables are very common 
+
+- **Example:** Number of TVs at home as proxy for household income
+
+- Selected mostly out of face validity
+
+- Unsustainable in large data sets
+
+- Need a principled approach to choose
+:::
+
+## Danek et al
+
+**Things I like**
+
+::: incremental
+
+- Broad train/testing framework
+
+- Focus on convergent, discriminant validity
+
+:::
+
+## Danek et al
+
+**Comments and questions**
+
+::: incremental
+
+- Case studies? Alternative approaches?
+
+- Reverse engineer procedure to extract the proxy score of a preferred variable?
+
+- Make a "dictionary" of proxy scores (in common US surveys)?
+
+- Does it change downstream statistical inference?
+
+:::
+
+## Li, Sheng, Yu
+
+**Why should you care?**
+
+::: incremental
+- Randomization inference is all about making minimal assumptions
+
+- Standard approaches to missing data are all about making heroic assumptions (e.g. MCAR, MAR)
+
+- Both causal inference and missing data are nonparametric identification problems
+
+- Solution should remain in the design-based world
+
+- **TL;DR:** You are getting *missing-data-robust* randomization inference p-val
+:::
+
+## Li, Sheng, Yu
+
+**Things I like**
+
+::: incremental
+- Rank-sum statistics
+
+- Distribution-free tests
+
+- Element-wise multiplication operator $\circ$
+
+- We should be paying more attention to these things!
+:::
+
+## Li, Sheng, Yu
+
+**Things I like**
+
+- Rank-sum statistics
+
+- Distribution-free tests
+
+- ~~Element-wise multiplication operator $\circ$~~
+
+- We should be paying more attention to these things!
+
+::: incremental
+- Credible missingness mechanisms (General, monotone, sharp vs. MAR, MCAR)
+:::
+
+## Li, Sheng, Yu
+
+**Comments and questions**
+
+::: incremental
+- Connection with partial identification?
+
+- Explain missingness {{< fa arrow-right >}} selection bias a bit more
+
+- Under what circumstances are different missingness mechanisms plausible/defensible?
+
+- Preferred rank sum statistic? Guidelines to choose?
+
+- Downstream statistical inference?
+
+- Section 5 (about quantiles of individual treatment effects) sounds like a separate battle to me
+:::
+
+## Amini
+
+**Why should you care?**
+
+::: incremental
+1. We can do a lot more about survey data besides just analyzing it
+
+2. Broad applicability
+:::
+
+. . .
+
+> This approach can be extended to challenges such as incorporating new
+control variables, conducting power calculations, imputing missing data, cross-survey harmonization, and adaptive questionnaire design (p. 4)
+
+## Amini
+
+**Things I like**
+
+::: incremental
+- Concept of recycling survey data
+
+- We don't need the entirety of human speech to make new columns in data frames
+
+:::
+
+## Amini
+
+**Comments and questions**
+
+::: incremental
+- Punching LLMs too hard?
+
+- Fine-tuned [something] > vanilla [something else] (e.g. [Brandt et al 2025](https://arxiv.org/abs/2412.15060))
+
+- More comparisons with alternative approaches?
+
+- Further improve with more years of survey data? Human in the loop?
+
+- Simulation studies to illustrate what surveys are good candidates?
+
+- Downstream statistical inference? Should we adjust for STL?
+:::
