@@ -50,6 +50,10 @@ theme_set(theme_gray(base_size = 25))
 ggdodge = position_dodge(width = 0.5)
 ```
 
+# Pic of PA publication
+
+Acknowledge coauthor
+
 ## Bias-variance tradeoff as darts
 
 ![](precision_retention/bias_variance.jpg){fig-align="center"}
