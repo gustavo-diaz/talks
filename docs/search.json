@@ -4121,5 +4121,124 @@
     "title": "Gustavo Diaz",
     "section": "Amini",
     "text": "Amini\nComments and questions\n\n\nPunching LLMs too hard?\nFine-tuned [something] &gt; vanilla [something else] (e.g. Brandt et al 2025)\nMore comparisons with alternative approaches?\nFurther improve with more years of survey data? Human in the loop?\nSimulation studies to illustrate what surveys are good candidates?\nDownstream statistical inference? Should we adjust for STL?"
+  },
+  {
+    "objectID": "tulane.html#balancing-precision-and-retention-in-experimental-design",
+    "href": "tulane.html#balancing-precision-and-retention-in-experimental-design",
+    "title": "Gustavo Diaz",
+    "section": "Balancing Precision and Retentionin Experimental Design",
+    "text": "Balancing Precision and Retentionin Experimental Design\n \nGustavo Diaz\nDepartment of Political Science\nNorthwestern University\ngustavo.diaz@northwestern.edu\ngustavodiaz.org\n \nPaper and slides: gustavodiaz.org/talk"
+  },
+  {
+    "objectID": "tulane.html#bias-variance-tradeoff-as-darts",
+    "href": "tulane.html#bias-variance-tradeoff-as-darts",
+    "title": "Gustavo Diaz",
+    "section": "Bias-variance tradeoff as darts",
+    "text": "Bias-variance tradeoff as darts"
+  },
+  {
+    "objectID": "tulane.html#but-the-game-of-darts-is-more-complicated",
+    "href": "tulane.html#but-the-game-of-darts-is-more-complicated",
+    "title": "Gustavo Diaz",
+    "section": "But the game of darts is more complicated",
+    "text": "But the game of darts is more complicated"
+  },
+  {
+    "objectID": "tulane.html#application-social-science-experiments",
+    "href": "tulane.html#application-social-science-experiments",
+    "title": "Gustavo Diaz",
+    "section": "Application: Social science experiments",
+    "text": "Application: Social science experiments\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures                   \n                \n                \n                  Blocking       \n                  Block randomized\n                  Block randomized + repeated measures"
+  },
+  {
+    "objectID": "tulane.html#application-social-science-experiments-1",
+    "href": "tulane.html#application-social-science-experiments-1",
+    "title": "Gustavo Diaz",
+    "section": "Application: Social science experiments",
+    "text": "Application: Social science experiments\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures                   \n                \n                \n                  Blocking       \n                  Block randomized\n                  Block randomized + repeated measures"
+  },
+  {
+    "objectID": "tulane.html#application-social-science-experiments-2",
+    "href": "tulane.html#application-social-science-experiments-2",
+    "title": "Gustavo Diaz",
+    "section": "Application: Social science experiments",
+    "text": "Application: Social science experiments\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures                   \n                \n                \n                  Blocking       \n                  Block randomized\n                  Block randomized + repeated measures"
+  },
+  {
+    "objectID": "tulane.html#application-social-science-experiments-3",
+    "href": "tulane.html#application-social-science-experiments-3",
+    "title": "Gustavo Diaz",
+    "section": "Application: Social science experiments",
+    "text": "Application: Social science experiments\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures                   \n                \n                \n                  Blocking       \n                  Block randomized\n                  Block randomized + repeated measures\n                \n        \n      \n    \n\n\n\n\nAlternative designs improve statistical precision but need access to pre-treatment covariates\n\n\nCost may outweigh benefit"
+  },
+  {
+    "objectID": "tulane.html#concern-sample-loss",
+    "href": "tulane.html#concern-sample-loss",
+    "title": "Gustavo Diaz",
+    "section": "Concern: Sample loss",
+    "text": "Concern: Sample loss\n\n\nExplicit\n\n\nMore pre-treatment questions \\(\\rightarrow\\) more attrition/inattention\nBlock-randomization \\(\\rightarrow\\) discard units\n\n\nImplicit\n\n\nAdding a baseline survey \\(\\rightarrow\\) half sample size\nFour more survey questions (2 min.) \\(\\rightarrow\\) 72% sample size"
+  },
+  {
+    "objectID": "tulane.html#goal",
+    "href": "tulane.html#goal",
+    "title": "Gustavo Diaz",
+    "section": "Goal",
+    "text": "Goal\nShow that precision gains offset sample loss\n\nPaper:\n\nReplication of selected studies\nSimulation on randomly sampled studies\nSimulations/code/advice for pre-analysis stage"
+  },
+  {
+    "objectID": "tulane.html#goal-1",
+    "href": "tulane.html#goal-1",
+    "title": "Gustavo Diaz",
+    "section": "Goal",
+    "text": "Goal\nShow that precision gains offset sample loss\nPaper:\n\nReplication of selected studies\nSimulation on randomly sampled studies\nSimulations/code/advice for pre-analysis stage"
+  },
+  {
+    "objectID": "tulane.html#procedure",
+    "href": "tulane.html#procedure",
+    "title": "Gustavo Diaz",
+    "section": "Procedure",
+    "text": "Procedure\n\n\nSample one study per journal at random (+3 alternates)\nSelect promising pre-treatment covariates for blocking\nSimulate pre-treatment outcomes with varying correlation (0.25, 0.5, 0.75)\nSimulate proportion of sample loss (0-0.5)\nEstimate 6 different designs\nRepeat 1,000 times for every design-parameter combination\nCompare each alternative design with standard"
+  },
+  {
+    "objectID": "tulane.html#simulated-designs",
+    "href": "tulane.html#simulated-designs",
+    "title": "Gustavo Diaz",
+    "section": "Simulated designs",
+    "text": "Simulated designs\n\nComplete randomization + post-only outcome measurement (Standard design)\nComplete + pre-post\nBlock on one covariate + post-only\nBlock on one covariate + pre-post\nBlock on all covariates + post-only\nBlock on all covariates + pre-post"
+  },
+  {
+    "objectID": "tulane.html#sample",
+    "href": "tulane.html#sample",
+    "title": "Gustavo Diaz",
+    "section": "Sample",
+    "text": "Sample\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOriginal experiment\n\n\nSimulation\n\n\n\nStudy\nType\nArms\nN\nCountry\nn\nBlocking Covariates\nPredictiveness\n\n\n\n\n1\nSurvey\n6\n2971\nItaly\n946\n7\nLow\n\n\n2\nSurvey\n12\n3013\nUS\n2784\n3\nHigh\n\n\n3\nSurvey\n3\n1029\nUganda\n561\n4\nLow\n\n\n4\nField\n2\n2942\nUS\n2712\n5\nModerate\n\n\n5\nField\n2\n275\nColombia\n275\n7\nLow\n\n\n6\nSurvey\n2\n1176\nUS\n1175\n2\nModerate"
+  },
+  {
+    "objectID": "tulane.html#results-study-1",
+    "href": "tulane.html#results-study-1",
+    "title": "Gustavo Diaz",
+    "section": "Results: Study 1",
+    "text": "Results: Study 1"
+  },
+  {
+    "objectID": "tulane.html#results-study-1-1",
+    "href": "tulane.html#results-study-1-1",
+    "title": "Gustavo Diaz",
+    "section": "Results: Study 1",
+    "text": "Results: Study 1"
+  },
+  {
+    "objectID": "tulane.html#results-study-6",
+    "href": "tulane.html#results-study-6",
+    "title": "Gustavo Diaz",
+    "section": "Results: Study 6",
+    "text": "Results: Study 6"
+  },
+  {
+    "objectID": "tulane.html#summary",
+    "href": "tulane.html#summary",
+    "title": "Gustavo Diaz",
+    "section": "Summary",
+    "text": "Summary\n\nPuzzle: Alternative designs rare\nArgument: Concerns about explicit/implicit sample loss offsetting precision gains\nFindings: Alternative designs withstand sample loss\nWrinkle: Alternative designs require more attention!\nTakeaway: Try alternative designs!\n\n\n\n\n\n\nPaper and slides: gustavodiaz.org/talk"
   }
 ]
