@@ -4240,5 +4240,54 @@
     "title": "Gustavo Diaz",
     "section": "Summary",
     "text": "Summary\n\nPuzzle: Alternative designs rare\nArgument: Concerns about explicit/implicit sample loss offsetting precision gains\nFindings: Alternative designs withstand sample loss\nWrinkle: Alternative designs require more attention!\nTakeaway: Try alternative designs!\n\n\n\n\n\n\nPaper and slides: gustavodiaz.org/talk"
+  },
+  {
+    "objectID": "tulane.html#repeated-measurement-as-a-distribution",
+    "href": "tulane.html#repeated-measurement-as-a-distribution",
+    "title": "Gustavo Diaz",
+    "section": "Repeated measurement as a distribution",
+    "text": "Repeated measurement as a distribution"
+  },
+  {
+    "objectID": "tulane.html#repeated-measurements-as-a-distribution",
+    "href": "tulane.html#repeated-measurements-as-a-distribution",
+    "title": "Gustavo Diaz",
+    "section": "Repeated measurements as a distribution",
+    "text": "Repeated measurements as a distribution\n\nCredibility revolution: Focus on unbiased estimators"
+  },
+  {
+    "objectID": "tulane.html#repeated-measurements-as-a-distribution-1",
+    "href": "tulane.html#repeated-measurements-as-a-distribution-1",
+    "title": "Gustavo Diaz",
+    "section": "Repeated measurements as a distribution",
+    "text": "Repeated measurements as a distribution\n\nCredibility revolution: Focus on unbiased estimators"
+  },
+  {
+    "objectID": "tulane.html#measurement-as-throwing-darts",
+    "href": "tulane.html#measurement-as-throwing-darts",
+    "title": "Gustavo Diaz",
+    "section": "Measurement as throwing darts",
+    "text": "Measurement as throwing darts"
+  },
+  {
+    "objectID": "tulane.html#measurement-as-distributions",
+    "href": "tulane.html#measurement-as-distributions",
+    "title": "Gustavo Diaz",
+    "section": "Measurement as distributions",
+    "text": "Measurement as distributions"
+  },
+  {
+    "objectID": "tulane.html#measurement-as-distributions-1",
+    "href": "tulane.html#measurement-as-distributions-1",
+    "title": "Gustavo Diaz",
+    "section": "Measurement as distributions",
+    "text": "Measurement as distributions\n\nCredibility revolution: Focus on unbiased estimators"
+  },
+  {
+    "objectID": "tulane.html#bias-variance-tradeoff",
+    "href": "tulane.html#bias-variance-tradeoff",
+    "title": "Gustavo Diaz",
+    "section": "Bias-variance tradeoff",
+    "text": "Bias-variance tradeoff"
   }
 ]
