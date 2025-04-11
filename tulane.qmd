@@ -5,6 +5,7 @@ format:
     slide-number: false
     progress: false
     code-overflow: wrap
+    code-line-numbers: false
     theme: [default, temp.scss]
 ---
 
@@ -13,11 +14,28 @@ format:
 
 &nbsp;    
 
+Forthcoming in *Political Analysis*
+
+&nbsp;
+
+:::: columns
+
+::: {.column width="50%"}
 **Gustavo Diaz**  
-Department of Political Science  
 Northwestern University  
 <gustavo.diaz@northwestern.edu>  
 [gustavodiaz.org](https://gustavodiaz.org)
+:::
+
+::: {.column width="50%"}
+**Erin Rossiter**  
+University of Notre Dame  
+<erossite@nd.edu>  
+[erossiter.com](https://erossiter.com/)
+
+:::
+
+::::
 
 &nbsp;
 
@@ -52,9 +70,6 @@ theme_set(theme_gray(base_size = 25))
 ggdodge = position_dodge(width = 0.5)
 ```
 
-# Pic of PA publication
-
-Acknowledge coauthor
 
 ## Measurement as throwing darts
 
@@ -114,6 +129,7 @@ rep_dist
 ```
 
 
+
 ## Measurement as distributions
 
 ```{r}
@@ -136,6 +152,390 @@ rep_dist +
 ## Bias-variance tradeoff
 
 ![](precision_retention/bias_variance.webp){fig-align="center"}
+
+---
+
+![](precision_retention/ps_underpowered.png){fig-align="center" width="70%"}
+
+::: aside
+[doi.org/10.1086/734279](https://doi.org/10.1086/734279)
+:::
+
+---
+
+[SHOW THIS IS ALSO A PROBLEM IN OTHER SOCIAL SCIENCES]
+
+
+## Solution: Research design
+
+. . .
+
+Many ways to improve statistical precision in experiments before data collection
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Increasing sample size
+
+- Larger control group
+
+- Aggregate index outcome
+
+- Adjust for covariates
+
+- Pair-matching
+
+- Online balancing
+:::
+
+::: {.column width="50%"}
+
+- [MORE THINGS]
+
+- Repeated measures
+
+- Block randomization
+
+:::
+
+::::
+
+## Solution: Research design
+
+
+
+Many ways to improve statistical precision in experiments before data collection
+
+**Puzzle:** Political science rarely deviates from standard experimental design
+
+. . .
+
+**Argument:** Scholars wary of hidden costs in alternative designs
+
+. . .
+
+**Goal:** Show that benefits outweigh costs
+
+. . .
+
+**Takeaway:** Statistical precision gains from alternative designs withstand considerable sample loss [wording]
+
+## Standard experiment
+
+. . .
+
+**Notation**
+
+::: incremental
+- $Z_i = \{0,1\}$ condition (0: control, 1: treatment)
+
+- $Y_i(Z_i)$ is the individual **potential outcome**
+:::
+
+. . .
+
+Observed outcome
+
+$$
+Y_i = \begin{cases}
+Y_i(0) & : & Z_i = 0 \\
+Y_i(1) & : & Z_i = 1
+\end{cases}
+$$
+
+
+## Standard experiment
+
+**Estimator**
+
+. . .
+
+Difference-in-means
+
+$$
+\widehat{ATE} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]
+$$
+
+. . .
+
+
+```{r, echo = TRUE, eval = FALSE}
+# Difference-in-means
+t.test(Y ~ Z, data = data)
+
+# Regression equivalent
+lm(Y ~ Z, data = data)
+```
+
+
+## Standard experiment
+
+**Estimator**
+
+Standard error of $\widehat{ATE}$ [(Gerber and Green 2012, p. 57)](https://wwnorton.com/books/9780393979954){style="font-size: 50%"}
+
+. . .
+
+$$
+SE(\widehat{ATE}) = \sqrt{\frac{\text{Var}(Y_i(0)) + \text{Var}(Y_i(1)) + 2\text{Cov}(Y_i(0), Y_i(1))}{N-1}}
+$$
+
+
+## Standard experiment
+
+**Estimator**
+
+Standard error of $\widehat{ATE}$ [(Gerber and Green 2012, p. 57)](https://wwnorton.com/books/9780393979954){style="font-size: 50%"}
+
+$$
+SE(\widehat{ATE}) = \sqrt{\frac{\color{#006747}{\text{Var}(Y_i(0)) + \text{Var}(Y_i(1)) + 2\text{Cov}(Y_i(0), Y_i(1))}}{\color{#4E2A84}{N-1}}}
+$$
+
+::: {style="color: #006747;"}
+**Variance component**
+
+::: incremental
+- Make smaller with alternative designs
+
+- Needs access to pre-treatment variables that correlate with (potential) outcomes
+:::
+
+:::
+
+## Standard experiment
+
+**Estimator**
+
+Standard error of $\widehat{ATE}$ [(Gerber and Green 2012, p. 57)](https://wwnorton.com/books/9780393979954){style="font-size: 50%"}
+
+$$
+SE(\widehat{ATE}) = \sqrt{\frac{\color{#006747}{\text{Var}(Y_i(0)) + \text{Var}(Y_i(1)) + 2\text{Cov}(Y_i(0), Y_i(1))}}{\color{#4E2A84}{N-1}}}
+$$
+
+::: {style="color: #4E2A84;"}
+**Sample size component**
+
+::: incremental
+- Quadruple $N$ to halve $SE(\widehat{ATE})$
+
+- Cost-prohibitive in many applications
+
+<!-- Especially if you study hard-to-reach populations or non-WEIRD countries -->
+:::
+:::
+
+## Standard experiment
+
+**Estimator**
+
+Standard error of $\widehat{ATE}$ [(Gerber and Green 2012, p. 57)](https://wwnorton.com/books/9780393979954){style="font-size: 50%"}
+
+$$
+SE(\widehat{ATE}) = \sqrt{\frac{\color{#006747}{\text{Var}(Y_i(0)) + \text{Var}(Y_i(1)) + 2\text{Cov}(Y_i(0), Y_i(1))}}{\color{#4E2A84}{N-1}}}
+$$
+
+**Hidden cost**
+
+. . .
+
+Measuring pre-treatment variables to decrease [**variance component**]{style="color: #006747;"} may lead to [**sample loss**]{style="color: #4E2A84;"}
+
+. . .
+
+**Concern:** Can offset statistical precision gains
+
+## Sample loss
+
+. . .
+
+**Explicit:** Introduced by implementation of alternative designs
+
+. . .
+
+&nbsp;
+
+![](precision_retention/survey_fatigue.jpeg){fig-align="center"}
+
+## Sample loss
+
+**Implicit:** Costs internalized by researcher
+
+
+## Sample loss
+
+**Implicit:** Costs internalized by researcher
+
+
+![](precision_retention/prolific_0.png)
+
+
+::: aside
+[prolific.com/calculator](https://www.prolific.com/calculator)
+:::
+
+## Sample loss
+
+**Implicit:** Costs internalized by researcher
+
+![](precision_retention/prolific_0.png)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](precision_retention/prolific_1.png)
+:::
+
+::::
+
+::: aside
+[prolific.com/calculator](https://www.prolific.com/calculator)
+:::
+
+## Sample loss
+
+**Implicit:** Costs internalized by researcher
+
+![](precision_retention/prolific_0.png)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](precision_retention/prolific_1.png)
+:::
+
+::: {.column width="50%"}
+![](precision_retention/prolific_2.png)
+:::
+
+::::
+
+::: aside
+[prolific.com/calculator](https://www.prolific.com/calculator)
+:::
+
+## Alternative designs
+
+. . .
+
+```{r}
+lit = tribble(
+  ~Randomization, ~`Post-only`, ~`Pre-post`,
+  "Simple/Complete", "Standard", "Repeated measures",
+  "Blocking", "Block randomized", "Both"
+)
+
+lit %>% 
+  tt() %>% 
+  group_tt(
+    j = list(
+      "Outcome measurement" = 2:3
+    )
+  ) %>% 
+  style_tt(
+    i = 1:2,
+    color = "#00000000"
+  ) %>% 
+  style_tt(
+    i = 0,
+    j = 2:3,
+    color = "#00000000"
+  )
+```
+
+
+## Alternative designs
+
+```{r}
+lit %>% 
+  tt() %>% 
+  group_tt(
+    j = list(
+      "Outcome measurement" = 2:3
+    )
+  ) %>% 
+  style_tt(
+    i = 1:2,
+    color = "#00000000"
+  )
+```
+
+
+## Alternative designs
+
+```{r}
+lit %>% 
+  tt() %>% 
+  group_tt(
+    j = list(
+      "Outcome measurement" = 2:3
+    )
+  ) %>% 
+  style_tt(
+    i = 1:2,
+    j = 2:3,
+    color = "#00000000"
+  ) %>% 
+  style_tt(
+    i = 2,
+    j = 1,
+    color = "#00000000"
+  )
+```
+
+## Alternative designs
+
+```{r}
+lit %>% 
+  tt() %>% 
+  group_tt(
+    j = list(
+      "Outcome measurement" = 2:3
+    )
+  ) %>% 
+  style_tt(
+    i = 2,
+    j = 2:3,
+    color = "#00000000"
+  ) %>% 
+    style_tt(
+    i = 1,
+    j = 3,
+    color = "#00000000"
+  ) %>% 
+  style_tt(
+    i = 2,
+    j = 1,
+    color = "#00000000"
+  )
+```
+
+## Alternative designs
+
+```{r}
+lit %>% 
+  tt() %>% 
+  group_tt(
+    j = list(
+      "Outcome measurement" = 2:3
+    )
+  ) %>% 
+  style_tt(
+    i = 2,
+    j = 2:3,
+    color = "#00000000"
+  ) %>% 
+  style_tt(
+    i = 2,
+    j = 1,
+    color = "#00000000"
+  )
+```
+
+## Repeated measures [(Clifford et al 2021)](https://doi.org/10.1017/S0003055421000241){style="font-size: 50%"}
+
+[CONTINUE HERE]
 
 ## Summary
 

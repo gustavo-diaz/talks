@@ -4127,7 +4127,7 @@
     "href": "tulane.html#balancing-precision-and-retention-in-experimental-design",
     "title": "Gustavo Diaz",
     "section": "Balancing Precision and Retentionin Experimental Design",
-    "text": "Balancing Precision and Retentionin Experimental Design\n \nGustavo Diaz\nDepartment of Political Science\nNorthwestern University\ngustavo.diaz@northwestern.edu\ngustavodiaz.org\n \nPaper and slides: gustavodiaz.org/talk"
+    "text": "Balancing Precision and Retentionin Experimental Design\n \nForthcoming in Political Analysis\n \n\n\nGustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\ngustavodiaz.org\n\nErin Rossiter\nUniversity of Notre Dame\nerossite@nd.edu\nerossiter.com\n\n \nPaper and slides: gustavodiaz.org/talk"
   },
   {
     "objectID": "tulane.html#bias-variance-tradeoff-as-darts",
@@ -4239,7 +4239,7 @@
     "href": "tulane.html#summary",
     "title": "Gustavo Diaz",
     "section": "Summary",
-    "text": "Summary\n\nPuzzle: Alternative designs rare\nArgument: Concerns about explicit/implicit sample loss offsetting precision gains\nFindings: Alternative designs withstand sample loss\nWrinkle: Alternative designs require more attention!\nTakeaway: Try alternative designs!\n\n\n\n\n\n\nPaper and slides: gustavodiaz.org/talk"
+    "text": "Summary\n\nPuzzle: Alternative designs rare\nArgument: Concerns about explicit/implicit sample loss offsetting precision gains\nFindings: Alternative designs withstand sample loss\nWrinkle: Alternative designs require more attention!\nTakeaway: Try alternative designs!\n\n\n\n\n\n\n\n\n\n\nPaper and slides: gustavodiaz.org/talk"
   },
   {
     "objectID": "tulane.html#repeated-measurement-as-a-distribution",
@@ -4289,5 +4289,159 @@
     "title": "Gustavo Diaz",
     "section": "Bias-variance tradeoff",
     "text": "Bias-variance tradeoff"
+  },
+  {
+    "objectID": "tulane.html#solution-research-design",
+    "href": "tulane.html#solution-research-design",
+    "title": "Gustavo Diaz",
+    "section": "Solution: Research design",
+    "text": "Solution: Research design\n\nMany ways to improve statistical precision in experiments before data collection\n\n\n\n\n\nIncreasing sample size\nLarger control group\nAggregate index outcome\nAdjust for covariates\nPair-matching\nOnline balancing\n\n\n\n[MORE THINGS]\nRepeated measures\nBlock randomization"
+  },
+  {
+    "objectID": "tulane.html#solution-research-design-1",
+    "href": "tulane.html#solution-research-design-1",
+    "title": "Gustavo Diaz",
+    "section": "Solution: Research design",
+    "text": "Solution: Research design\nMany ways to improve statistical precision in experiments before data collection\nPuzzle: Political science rarely deviates from standard experimental design\n\nArgument: Scholars wary of hidden costs in alternative designs\n\n\nGoal: Show that benefits outweigh costs\n\n\nTakeaway: Statistical precision gains from alternative designs withstand considerable sample loss [wording]"
+  },
+  {
+    "objectID": "tulane.html#standard-experiment",
+    "href": "tulane.html#standard-experiment",
+    "title": "Gustavo Diaz",
+    "section": "Standard experiment",
+    "text": "Standard experiment\n\nNotation\n\n\n\\(Z_i = \\{0,1\\}\\) condition (0: control, 1: treatment)\n\\(Y_i(Z_i)\\) is the individual potential outcome\n\n\n\n\nObserved outcome\n\\[\nY_i = \\begin{cases}\nY_i(0) & : & Z_i = 0 \\\\\nY_i(1) & : & Z_i = 1\n\\end{cases}\n\\]"
+  },
+  {
+    "objectID": "tulane.html#estimator",
+    "href": "tulane.html#estimator",
+    "title": "Gustavo Diaz",
+    "section": "Estimator",
+    "text": "Estimator\n\nDifference-in-means\n\\[\n\\widehat{ATE} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]\n\\]\n\n\n\n# Difference-in-means\nt.test(Y ~ Z, data = data)\n\n# Regression equivalent\nlm(Y ~ Z, data = data)"
+  },
+  {
+    "objectID": "tulane.html#standard-experiment-1",
+    "href": "tulane.html#standard-experiment-1",
+    "title": "Gustavo Diaz",
+    "section": "Standard experiment",
+    "text": "Standard experiment\nEstimator\n\nDifference-in-means\n\\[\n\\widehat{ATE} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]\n\\]\n\n\n\n# Difference-in-means\nt.test(Y ~ Z, data = data)\n\n# Regression equivalent\nlm(Y ~ Z, data = data)"
+  },
+  {
+    "objectID": "tulane.html#standard-experiment-2",
+    "href": "tulane.html#standard-experiment-2",
+    "title": "Gustavo Diaz",
+    "section": "Standard experiment",
+    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\) (Gerber and Green 2012, p. 57)\n\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}{N-1}}\n\\]"
+  },
+  {
+    "objectID": "tulane.html#standard-experiment-3",
+    "href": "tulane.html#standard-experiment-3",
+    "title": "Gustavo Diaz",
+    "section": "Standard experiment",
+    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\) (Gerber and Green 2012, p. 57)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\n\nVariance component\n\n\nMake smaller with alternative designs\nNeeds access to pre-treatment variables that correlate with (potential) outcomes"
+  },
+  {
+    "objectID": "tulane.html#standard-experiment-4",
+    "href": "tulane.html#standard-experiment-4",
+    "title": "Gustavo Diaz",
+    "section": "Standard experiment",
+    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\) (Gerber and Green 2012, p. 57)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\n\nSample size component\n\n\nQuadruple \\(N\\) to halve \\(SE(\\widehat{ATE})\\)\nCost-prohibitive in many applications"
+  },
+  {
+    "objectID": "tulane.html#standard-experiment-5",
+    "href": "tulane.html#standard-experiment-5",
+    "title": "Gustavo Diaz",
+    "section": "Standard experiment",
+    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\) (Gerber and Green 2012, p. 57)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\nHidden cost\n\nMeasuring pre-treatment variables to decrease variance component may lead to sample loss\n\n\nConcern: Can offset statistical precision gains"
+  },
+  {
+    "objectID": "tulane.html#sample-loss-explicit",
+    "href": "tulane.html#sample-loss-explicit",
+    "title": "Gustavo Diaz",
+    "section": "Sample loss: Explicit",
+    "text": "Sample loss: Explicit"
+  },
+  {
+    "objectID": "tulane.html#sample-loss-implicit",
+    "href": "tulane.html#sample-loss-implicit",
+    "title": "Gustavo Diaz",
+    "section": "Sample loss: Implicit",
+    "text": "Sample loss: Implicit"
+  },
+  {
+    "objectID": "tulane.html#sample-loss",
+    "href": "tulane.html#sample-loss",
+    "title": "Gustavo Diaz",
+    "section": "Sample loss",
+    "text": "Sample loss\n\nExplicit: Introduced by implementation of alternative designs"
+  },
+  {
+    "objectID": "tulane.html#sample-loss-1",
+    "href": "tulane.html#sample-loss-1",
+    "title": "Gustavo Diaz",
+    "section": "Sample loss",
+    "text": "Sample loss\nImplicit: Costs internalized by researcher"
+  },
+  {
+    "objectID": "tulane.html#sample-loss-2",
+    "href": "tulane.html#sample-loss-2",
+    "title": "Gustavo Diaz",
+    "section": "Sample loss",
+    "text": "Sample loss\nImplicit: Costs internalized by researcher\n\n\n\nprolific.com/calculator"
+  },
+  {
+    "objectID": "tulane.html#sample-loss-3",
+    "href": "tulane.html#sample-loss-3",
+    "title": "Gustavo Diaz",
+    "section": "Sample loss",
+    "text": "Sample loss\nImplicit: Costs internalized by researcher\n\n\n\n\n\n\n\nprolific.com/calculator"
+  },
+  {
+    "objectID": "tulane.html#sample-loss-4",
+    "href": "tulane.html#sample-loss-4",
+    "title": "Gustavo Diaz",
+    "section": "Sample loss",
+    "text": "Sample loss\nImplicit: Costs internalized by researcher\n\n\n\n\n\n\n\n\n\nprolific.com/calculator"
+  },
+  {
+    "objectID": "tulane.html#alternative-designs",
+    "href": "tulane.html#alternative-designs",
+    "title": "Gustavo Diaz",
+    "section": "Alternative designs",
+    "text": "Alternative designs\n\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both"
+  },
+  {
+    "objectID": "tulane.html#alternative-designs-1",
+    "href": "tulane.html#alternative-designs-1",
+    "title": "Gustavo Diaz",
+    "section": "Alternative designs",
+    "text": "Alternative designs\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both"
+  },
+  {
+    "objectID": "tulane.html#alternative-designs-2",
+    "href": "tulane.html#alternative-designs-2",
+    "title": "Gustavo Diaz",
+    "section": "Alternative designs",
+    "text": "Alternative designs\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both"
+  },
+  {
+    "objectID": "tulane.html#alternative-designs-3",
+    "href": "tulane.html#alternative-designs-3",
+    "title": "Gustavo Diaz",
+    "section": "Alternative designs",
+    "text": "Alternative designs\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both"
+  },
+  {
+    "objectID": "tulane.html#alternative-designs-4",
+    "href": "tulane.html#alternative-designs-4",
+    "title": "Gustavo Diaz",
+    "section": "Alternative designs",
+    "text": "Alternative designs\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both"
+  },
+  {
+    "objectID": "tulane.html#repeated-measures-clifford-et-al-2021",
+    "href": "tulane.html#repeated-measures-clifford-et-al-2021",
+    "title": "Gustavo Diaz",
+    "section": "Repeated measures (Clifford et al 2021)",
+    "text": "Repeated measures (Clifford et al 2021)\n[CONTINUE HERE]"
   }
 ]
