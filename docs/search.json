@@ -4239,7 +4239,7 @@
     "href": "tulane.html#summary",
     "title": "Gustavo Diaz",
     "section": "Summary",
-    "text": "Summary\n\nPuzzle: Alternative designs rare\nArgument: Concerns about explicit/implicit sample loss offsetting precision gains\nFindings: Alternative designs withstand sample loss\nWrinkle: Alternative designs require more attention!\nTakeaway: Try alternative designs!\n\n\n\n\n\n\n\n\n\n\nPaper and slides: gustavodiaz.org/talk"
+    "text": "Summary\n\nPuzzle: Alternative designs rare\nArgument: Concerns about explicit/implicit sample loss offsetting precision gains\nFindings: Alternative designs withstand sample loss\nWrinkle: Alternative designs require more attention!\nTakeaway: Try alternative designs!\n\n\n\n\n\n\nPaper and slides: gustavodiaz.org/talk"
   },
   {
     "objectID": "tulane.html#repeated-measurement-as-a-distribution",
@@ -4330,28 +4330,28 @@
     "href": "tulane.html#standard-experiment-2",
     "title": "Gustavo Diaz",
     "section": "Standard experiment",
-    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\) (Gerber and Green 2012, p. 57)\n\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}{N-1}}\n\\]"
+    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\)\n\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}{N-1}}\n\\]"
   },
   {
     "objectID": "tulane.html#standard-experiment-3",
     "href": "tulane.html#standard-experiment-3",
     "title": "Gustavo Diaz",
     "section": "Standard experiment",
-    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\) (Gerber and Green 2012, p. 57)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\n\nVariance component\n\n\nMake smaller with alternative designs\nNeeds access to pre-treatment variables that correlate with (potential) outcomes"
+    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\n\nVariance component\n\n\nMake smaller with alternative designs\nNeeds access to pre-treatment variables that correlate with (potential) outcomes"
   },
   {
     "objectID": "tulane.html#standard-experiment-4",
     "href": "tulane.html#standard-experiment-4",
     "title": "Gustavo Diaz",
     "section": "Standard experiment",
-    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\) (Gerber and Green 2012, p. 57)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\n\nSample size component\n\n\nQuadruple \\(N\\) to halve \\(SE(\\widehat{ATE})\\)\nCost-prohibitive in many applications"
+    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\n\nSample size component\n\n\nQuadruple \\(N\\) to halve \\(SE(\\widehat{ATE})\\)\nCost-prohibitive in many applications"
   },
   {
     "objectID": "tulane.html#standard-experiment-5",
     "href": "tulane.html#standard-experiment-5",
     "title": "Gustavo Diaz",
     "section": "Standard experiment",
-    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\) (Gerber and Green 2012, p. 57)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\nHidden cost\n\nMeasuring pre-treatment variables to decrease variance component may lead to sample loss\n\n\nConcern: Can offset statistical precision gains"
+    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\nHidden cost\n\nMeasuring pre-treatment variables to decrease variance component may lead to sample loss\n\n\nConcern: Can offset statistical precision gains"
   },
   {
     "objectID": "tulane.html#sample-loss-explicit",
@@ -4443,5 +4443,61 @@
     "title": "Gustavo Diaz",
     "section": "Repeated measures (Clifford et al 2021)",
     "text": "Repeated measures (Clifford et al 2021)\n[CONTINUE HERE]"
+  },
+  {
+    "objectID": "tulane.html#repeated-measures",
+    "href": "tulane.html#repeated-measures",
+    "title": "Gustavo Diaz",
+    "section": "Repeated measures",
+    "text": "Repeated measures\n\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)"
+  },
+  {
+    "objectID": "tulane.html#repeated-measures-1",
+    "href": "tulane.html#repeated-measures-1",
+    "title": "Gustavo Diaz",
+    "section": "Repeated measures",
+    "text": "Repeated measures\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)"
+  },
+  {
+    "objectID": "tulane.html#repeated-measures-2",
+    "href": "tulane.html#repeated-measures-2",
+    "title": "Gustavo Diaz",
+    "section": "Repeated measures",
+    "text": "Repeated measures\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)\n\n\n\n\n\n\n\\[\n\\widehat{ATE}_{\\text{Standard}} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]\n\\]\n\n\n\\[\n\\begin{align}\n\\widehat{ATE}_{\\text{Pre-post}} = & E[(Y_{i,t=2}(1) - Y_{i,t=1}) | Z_i = 1] - \\\\\n& E[(Y_{i,t=2}(0) - Y_{i,t=1}) | Z_i = 0]\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "tulane.html#repeated-measures-3",
+    "href": "tulane.html#repeated-measures-3",
+    "title": "Gustavo Diaz",
+    "section": "Repeated measures",
+    "text": "Repeated measures\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)\n\n\n\n\n\n\\[\n\\widehat{ATE}_{\\text{Standard}} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]\n\\]\n\\[\n\\begin{align}\n\\widehat{ATE}_{\\text{Pre-post}} = & E[(Y_{i,t=2}(1) \\color{#006747}{- Y_{i,t=1}}) | Z_i = 1] - \\\\\n& E[(Y_{i,t=2}(0) \\color{#006747}{- Y_{i,t=1}}) | Z_i = 0]\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "tulane.html#repeated-measures-4",
+    "href": "tulane.html#repeated-measures-4",
+    "title": "Gustavo Diaz",
+    "section": "Repeated measures",
+    "text": "Repeated measures\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)\n\n\n\n\n\n \n\n# Standard design\nlm(Y ~ Z, data = data)\n\n# Pre-post\nlm(Y_t2 ~ Z + Y_t1, data = data)"
+  },
+  {
+    "objectID": "tulane.html#block-randomization",
+    "href": "tulane.html#block-randomization",
+    "title": "Gustavo Diaz",
+    "section": "Block randomization",
+    "text": "Block randomization"
+  },
+  {
+    "objectID": "tulane.html#block-randomization-1",
+    "href": "tulane.html#block-randomization-1",
+    "title": "Gustavo Diaz",
+    "section": "Block randomization",
+    "text": "Block randomization\n\n\n\n\n\n\n\n\nWeighted average across blocks:\n\\[\\widehat{ATE}_{\\text{Block}} = \\sum_{b=1}^B \\frac{n_b}{N} \\widehat{ATE}_b\\]"
+  },
+  {
+    "objectID": "tulane.html#block-randomization-2",
+    "href": "tulane.html#block-randomization-2",
+    "title": "Gustavo Diaz",
+    "section": "Block randomization",
+    "text": "Block randomization\n\n\n\n\n\n\n\n\nWeighted average across blocks:\n\\[\\widehat{ATE}_{\\text{Block}} = \\sum_{b=1}^B \\frac{n_b}{N} \\widehat{ATE}_b\\]\n\n# Standard design\nlm(Y ~ Z, \n   data = data)\n\n# Block randomized\nlm(Y ~ Z + block, \n   data = data)"
   }
 ]

@@ -161,11 +161,6 @@ rep_dist +
 [doi.org/10.1086/734279](https://doi.org/10.1086/734279)
 :::
 
----
-
-[SHOW THIS IS ALSO A PROBLEM IN OTHER SOCIAL SCIENCES]
-
-
 ## Solution: Research design
 
 . . .
@@ -274,7 +269,7 @@ lm(Y ~ Z, data = data)
 
 **Estimator**
 
-Standard error of $\widehat{ATE}$ [(Gerber and Green 2012, p. 57)](https://wwnorton.com/books/9780393979954){style="font-size: 50%"}
+Standard error of $\widehat{ATE}$
 
 . . .
 
@@ -287,7 +282,7 @@ $$
 
 **Estimator**
 
-Standard error of $\widehat{ATE}$ [(Gerber and Green 2012, p. 57)](https://wwnorton.com/books/9780393979954){style="font-size: 50%"}
+Standard error of $\widehat{ATE}$ 
 
 $$
 SE(\widehat{ATE}) = \sqrt{\frac{\color{#006747}{\text{Var}(Y_i(0)) + \text{Var}(Y_i(1)) + 2\text{Cov}(Y_i(0), Y_i(1))}}{\color{#4E2A84}{N-1}}}
@@ -308,7 +303,7 @@ $$
 
 **Estimator**
 
-Standard error of $\widehat{ATE}$ [(Gerber and Green 2012, p. 57)](https://wwnorton.com/books/9780393979954){style="font-size: 50%"}
+Standard error of $\widehat{ATE}$ 
 
 $$
 SE(\widehat{ATE}) = \sqrt{\frac{\color{#006747}{\text{Var}(Y_i(0)) + \text{Var}(Y_i(1)) + 2\text{Cov}(Y_i(0), Y_i(1))}}{\color{#4E2A84}{N-1}}}
@@ -330,7 +325,7 @@ $$
 
 **Estimator**
 
-Standard error of $\widehat{ATE}$ [(Gerber and Green 2012, p. 57)](https://wwnorton.com/books/9780393979954){style="font-size: 50%"}
+Standard error of $\widehat{ATE}$ 
 
 $$
 SE(\widehat{ATE}) = \sqrt{\frac{\color{#006747}{\text{Var}(Y_i(0)) + \text{Var}(Y_i(1)) + 2\text{Cov}(Y_i(0), Y_i(1))}}{\color{#4E2A84}{N-1}}}
@@ -533,9 +528,151 @@ lit %>%
   )
 ```
 
-## Repeated measures [(Clifford et al 2021)](https://doi.org/10.1017/S0003055421000241){style="font-size: 50%"}
+## Repeated measures
 
-[CONTINUE HERE]
+. . .
+
+```{r, results = "asis"}
+prepost = tribble(
+  ~Design, ~`Pre-treatment`, ~Treatment, ~`Post-treatment`,
+  "Standard", " ", "$Z_i$", "$Y_i$",
+  "Pre-post", "$Y_{i, t=1}$", "$Z_i$", "$Y_{i, t=2}$"
+)
+
+prepost %>% 
+  kbl(escape = FALSE) %>% 
+  row_spec(1:2, color = "#00000000") %>% 
+  cat()
+```
+
+## Repeated measures
+
+```{r, results='asis'}
+prepost %>% 
+  kbl(escape = FALSE) %>% 
+  row_spec(2, color = "#00000000") %>% 
+  cat()
+```
+
+## Repeated measures
+
+```{r, results='asis'}
+prepost %>% 
+  kbl(escape = FALSE) %>%  
+  cat()
+```
+
+. . .
+
+$$
+\widehat{ATE}_{\text{Standard}} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]
+$$
+
+. . .
+
+$$
+\begin{align}
+\widehat{ATE}_{\text{Pre-post}} = & E[(Y_{i,t=2}(1) - Y_{i,t=1}) | Z_i = 1] - \\
+& E[(Y_{i,t=2}(0) - Y_{i,t=1}) | Z_i = 0]
+\end{align}
+$$
+
+## Repeated measures
+
+```{r, results='asis'}
+prepost %>% 
+  kbl(escape = FALSE) %>%  
+  cat()
+```
+
+
+$$
+\widehat{ATE}_{\text{Standard}} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]
+$$
+
+
+$$
+\begin{align}
+\widehat{ATE}_{\text{Pre-post}} = & E[(Y_{i,t=2}(1) \color{#006747}{- Y_{i,t=1}}) | Z_i = 1] - \\
+& E[(Y_{i,t=2}(0) \color{#006747}{- Y_{i,t=1}}) | Z_i = 0]
+\end{align}
+$$
+
+## Repeated measures
+
+```{r, results='asis'}
+prepost %>% 
+  kbl(escape = FALSE) %>%  
+  cat()
+```
+
+&nbsp;
+
+```{r, echo = TRUE, eval = FALSE}
+# Standard design
+lm(Y ~ Z, data = data)
+
+# Pre-post
+lm(Y_t2 ~ Z + Y_t1, data = data)
+```
+
+## Block randomization
+
+<!-- https://discovery.cs.illinois.edu/learn/Basics-of-Data-Science-with-Python/Experimental-Design-and-Blocking/-->
+. . .
+
+:::: {.columns}
+
+::: {.column width="70%"}
+![](precision_retention/blocking.png){fig-align="center"}
+
+:::
+
+::::
+
+## Block randomization
+
+:::: {.columns}
+
+::: {.column width="70%"}
+![](precision_retention/blocking.png){fig-align="center"}
+
+:::
+
+::: {.column width="30%"}
+Weighted average across blocks:
+
+$$\widehat{ATE}_{\text{Block}} = \sum_{b=1}^B \frac{n_b}{N} \widehat{ATE}_b$$
+:::
+::::
+
+## Block randomization
+
+:::: {.columns}
+
+::: {.column width="70%"}
+![](precision_retention/blocking.png){fig-align="center"}
+
+:::
+
+::: {.column width="30%"}
+Weighted average across blocks:
+
+$$\widehat{ATE}_{\text{Block}} = \sum_{b=1}^B \frac{n_b}{N} \widehat{ATE}_b$$
+
+
+```{r, echo = TRUE, eval = FALSE}
+# Standard design
+lm(Y ~ Z, 
+   data = data)
+
+# Block randomized
+lm(Y ~ Z + block, 
+   data = data)
+```
+
+:::
+::::
 
 ## Summary
 
