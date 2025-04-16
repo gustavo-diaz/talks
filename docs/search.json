@@ -4239,7 +4239,7 @@
     "href": "tulane.html#summary",
     "title": "Gustavo Diaz",
     "section": "Summary",
-    "text": "Summary\n\nPuzzle: Alternative designs rare\nArgument: Concerns about explicit/implicit sample loss offsetting precision gains\nFindings: Alternative designs withstand sample loss\nWrinkle: Alternative designs require more attention!\nTakeaway: Try alternative designs!\n\n\n\n\n\n\nPaper and slides: gustavodiaz.org/talk"
+    "text": "Summary\n\nPuzzle: Alternative designs rare\nArgument: Concerns about explicit/implicit sample loss offsetting precision gains\nFindings: Alternative designs withstand sample loss\nWrinkle: Alternative designs require more attention!\nTakeaway: Try alternative designs!"
   },
   {
     "objectID": "tulane.html#repeated-measurement-as-a-distribution",
@@ -4337,21 +4337,21 @@
     "href": "tulane.html#standard-experiment-3",
     "title": "Gustavo Diaz",
     "section": "Standard experiment",
-    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\n\nVariance component\n\n\nMake smaller with alternative designs\nNeeds access to pre-treatment variables that correlate with (potential) outcomes"
+    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}{N-1}}\n\\]"
   },
   {
     "objectID": "tulane.html#standard-experiment-4",
     "href": "tulane.html#standard-experiment-4",
     "title": "Gustavo Diaz",
     "section": "Standard experiment",
-    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\n\nSample size component\n\n\nQuadruple \\(N\\) to halve \\(SE(\\widehat{ATE})\\)\nCost-prohibitive in many applications"
+    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\n\nVariance component\n\n\nMake smaller with alternative designs\nNeeds access to pre-treatment variables that correlate with (potential) outcomes"
   },
   {
     "objectID": "tulane.html#standard-experiment-5",
     "href": "tulane.html#standard-experiment-5",
     "title": "Gustavo Diaz",
     "section": "Standard experiment",
-    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\nHidden cost\n\nMeasuring pre-treatment variables to decrease variance component may lead to sample loss\n\n\nConcern: Can offset statistical precision gains"
+    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\n\nSample size component\n\n\nQuadruple \\(N\\) to halve \\(SE(\\widehat{ATE})\\)\nCost-prohibitive in many applications"
   },
   {
     "objectID": "tulane.html#sample-loss-explicit",
@@ -4491,13 +4491,209 @@
     "href": "tulane.html#block-randomization-1",
     "title": "Gustavo Diaz",
     "section": "Block randomization",
-    "text": "Block randomization\n\n\n\n\n\n\n\n\nWeighted average across blocks:\n\\[\\widehat{ATE}_{\\text{Block}} = \\sum_{b=1}^B \\frac{n_b}{N} \\widehat{ATE}_b\\]"
+    "text": "Block randomization"
   },
   {
     "objectID": "tulane.html#block-randomization-2",
     "href": "tulane.html#block-randomization-2",
     "title": "Gustavo Diaz",
     "section": "Block randomization",
+    "text": "Block randomization\n\n\n\n\n\n\n\n\nWeighted average across blocks:\n\\[\\widehat{ATE}_{\\text{Block}} = \\sum_{b=1}^B \\frac{n_b}{N} \\widehat{ATE}_b\\]"
+  },
+  {
+    "objectID": "tulane.html#standard-experiment-6",
+    "href": "tulane.html#standard-experiment-6",
+    "title": "Gustavo Diaz",
+    "section": "Standard experiment",
+    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\nHidden cost\n\nMeasuring pre-treatment variables to decrease variance component may lead to sample loss\n\n\nConcern: Can offset statistical precision gains"
+  },
+  {
+    "objectID": "tulane.html#alternative-designs-5",
+    "href": "tulane.html#alternative-designs-5",
+    "title": "Gustavo Diaz",
+    "section": "Alternative designs",
+    "text": "Alternative designs\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both"
+  },
+  {
+    "objectID": "tulane.html#alternative-designs-6",
+    "href": "tulane.html#alternative-designs-6",
+    "title": "Gustavo Diaz",
+    "section": "Alternative designs",
+    "text": "Alternative designs\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both"
+  },
+  {
+    "objectID": "tulane.html#alternative-designs-7",
+    "href": "tulane.html#alternative-designs-7",
+    "title": "Gustavo Diaz",
+    "section": "Alternative designs",
+    "text": "Alternative designs\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both"
+  },
+  {
+    "objectID": "tulane.html#alternative-designs-8",
+    "href": "tulane.html#alternative-designs-8",
+    "title": "Gustavo Diaz",
+    "section": "Alternative designs",
+    "text": "Alternative designs\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both             \n                \n        \n      \n    \n\n\n\n\nWhy these?"
+  },
+  {
+    "objectID": "tulane.html#block-randomization-3",
+    "href": "tulane.html#block-randomization-3",
+    "title": "Gustavo Diaz",
+    "section": "Block randomization",
     "text": "Block randomization\n\n\n\n\n\n\n\n\nWeighted average across blocks:\n\\[\\widehat{ATE}_{\\text{Block}} = \\sum_{b=1}^B \\frac{n_b}{N} \\widehat{ATE}_b\\]\n\n# Standard design\nlm(Y ~ Z, \n   data = data)\n\n# Block randomized\nlm(Y ~ Z + block, \n   data = data)"
+  },
+  {
+    "objectID": "tulane.html#often-recommended-but-rarely-implemented",
+    "href": "tulane.html#often-recommended-but-rarely-implemented",
+    "title": "Gustavo Diaz",
+    "section": "Often recommended but rarely implemented",
+    "text": "Often recommended but rarely implemented"
+  },
+  {
+    "objectID": "tulane.html#often-recommended-but-rarely-implemented-1",
+    "href": "tulane.html#often-recommended-but-rarely-implemented-1",
+    "title": "Gustavo Diaz",
+    "section": "Often recommended but rarely implemented",
+    "text": "Often recommended but rarely implemented\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                 \n                N\n                %\n              \n        \n        \n        \n                \n                  Pre-post\n                   10\n                  5% \n                \n                \n                  Blocking\n                   16\n                  7% \n                \n                \n                  Both    \n                    6\n                  3% \n                \n                \n                  Neither \n                  184\n                  85%\n                \n        \n      \n    \n\n\n\n\n\nBased on 2022-23 articles published in APSR, AJPS, JOP, PB, CPS, JEPS"
+  },
+  {
+    "objectID": "tulane.html#often-recommended-but-rarely-implemented-2",
+    "href": "tulane.html#often-recommended-but-rarely-implemented-2",
+    "title": "Gustavo Diaz",
+    "section": "Often recommended but rarely implemented",
+    "text": "Often recommended but rarely implemented\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                 \n                N\n                %\n              \n        \n        \n        \n                \n                  Pre-post          \n                   10\n                  5% \n                \n                \n                  Blocking          \n                   16\n                  7% \n                \n                \n                  Both              \n                    6\n                  3% \n                \n                \n                  Mention covariates\n                  169\n                  78%\n                \n                \n                  Nothing           \n                   15\n                  7% \n                \n        \n      \n    \n\n\n\n\n\nBased on 2022-23 articles published in APSR, AJPS, JOP, PB, CPS, JEPS"
+  },
+  {
+    "objectID": "tulane.html#often-recommended-but-rarely-implemented-3",
+    "href": "tulane.html#often-recommended-but-rarely-implemented-3",
+    "title": "Gustavo Diaz",
+    "section": "Often recommended but rarely implemented",
+    "text": "Often recommended but rarely implemented\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                 \n                N\n                %\n              \n        \n        \n        \n                \n                  Pre-post          \n                   10\n                  5% \n                \n                \n                  Blocking          \n                   16\n                  7% \n                \n                \n                  Both              \n                    6\n                  3% \n                \n                \n                  Mention covariates\n                  169\n                  78%\n                \n                \n                  Nothing           \n                   15\n                  7% \n                \n        \n      \n    \n\n\n\n\n\nBased on 2022-23 articles published in APSR, AJPS, JOP, PB, CPS, JEPS"
+  },
+  {
+    "objectID": "tulane.html#replication-studies",
+    "href": "tulane.html#replication-studies",
+    "title": "Gustavo Diaz",
+    "section": "Replication studies",
+    "text": "Replication studies\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                \n                Dietrich and Hayes (2023 JOP)\n                Bayram and Graham (2022 JOP)\n                Tappin and Hewitt (2023 JEPS)\n              \n        \n        \n        \n                \n                  Study\n                  1 (DH)\n                  2 (BG)\n                  3 (TH)\n                \n                \n                  Subfield\n                  AP\n                  IR\n                  AP\n                \n                \n                  Topic\n                  Race and issue-based symbolism\n                  Support for IO foreign aid\n                  Party cues and policy opinions\n                \n                \n                  Arms\n                  8\n                  5\n                  2\n                \n                \n                  Obs.\n                  515\n                  1000\n                  775\n                \n                \n                  Waves\n                  1\n                  1\n                  2\n                \n                \n                  Concern\n                  Hard to reach population\n                  More precision\n                  Effect persistence"
+  },
+  {
+    "objectID": "tulane.html#replication-studies-1",
+    "href": "tulane.html#replication-studies-1",
+    "title": "Gustavo Diaz",
+    "section": "Replication studies",
+    "text": "Replication studies\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                \n                Dietrich and Hayes (2023 JOP)\n                Bayram and Graham (2022 JOP)\n                Tappin and Hewitt (2023 JEPS)\n              \n        \n        \n        \n                \n                  Study\n                  1 (DH)\n                  2 (BG)\n                  3 (TH)\n                \n                \n                  Subfield\n                  AP\n                  IR\n                  AP\n                \n                \n                  Topic\n                  Race and issue-based symbolism\n                  Support for IO foreign aid\n                  Party cues and policy opinions\n                \n                \n                  Arms\n                  8\n                  5\n                  2\n                \n                \n                  Obs.\n                  515\n                  1000\n                  775\n                \n                \n                  Waves\n                  1\n                  1\n                  2\n                \n                \n                  Concern\n                  Hard to reach population\n                  More precision\n                  Effect persistence"
+  },
+  {
+    "objectID": "tulane.html#replication-studies-2",
+    "href": "tulane.html#replication-studies-2",
+    "title": "Gustavo Diaz",
+    "section": "Replication studies",
+    "text": "Replication studies\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                \n                Dietrich and Hayes (2023 JOP)\n                Bayram and Graham (2022 JOP)\n                Tappin and Hewitt (2023 JEPS)\n              \n        \n        \n        \n                \n                  Study\n                  1 (DH)\n                  2 (BG)\n                  3 (TH)\n                \n                \n                  Subfield\n                  AP\n                  IR\n                  AP\n                \n                \n                  Topic\n                  Race and issue-based symbolism\n                  Support for IO foreign aid\n                  Party cues and policy opinions\n                \n                \n                  Arms\n                  8\n                  5\n                  2\n                \n                \n                  Obs.\n                  515\n                  1000\n                  775\n                \n                \n                  Waves\n                  1\n                  1\n                  2\n                \n                \n                  Concern\n                  Hard to reach population\n                  More precision\n                  Effect persistence"
+  },
+  {
+    "objectID": "tulane.html#replication-studies-3",
+    "href": "tulane.html#replication-studies-3",
+    "title": "Gustavo Diaz",
+    "section": "Replication studies",
+    "text": "Replication studies\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                \n                Dietrich and Hayes (2023 JOP)\n                Bayram and Graham (2022 JOP)\n                Tappin and Hewitt (2023 JEPS)\n              \n        \n        \n        \n                \n                  Study\n                  1 (DH)\n                  2 (BG)\n                  3 (TH)\n                \n                \n                  Subfield\n                  AP\n                  IR\n                  AP\n                \n                \n                  Topic\n                  Race and issue-based symbolism\n                  Support for IO foreign aid\n                  Party cues and policy opinions\n                \n                \n                  Arms\n                  8\n                  5\n                  2\n                \n                \n                  Obs.\n                  515\n                  1000\n                  775\n                \n                \n                  Waves\n                  1\n                  1\n                  2\n                \n                \n                  Concern\n                  Hard to reach population\n                  More precision\n                  Effect persistence"
+  },
+  {
+    "objectID": "tulane.html#cond",
+    "href": "tulane.html#cond",
+    "title": "Gustavo Diaz",
+    "section": "Experimental conditions",
+    "text": "Experimental conditions\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Condition\n                Outcomes\n                Randomization\n              \n        \n        \n        \n                \n                  Design 1\n                  Post only\n                  Complete\n                \n                \n                  Design 2\n                  Pre-post \n                  Complete\n                \n                \n                  Design 3\n                  Pre-post \n                  Blocking\n                \n        \n      \n    \n\n\n\n\n\nSample size same as original\nIncreased length (DH: 43%, BG: 50%, TH: 110%)\n\n\n\nEvaluate extent of explicit/implicit sample loss\n\n\n\nSee more here"
+  },
+  {
+    "objectID": "tulane.html#explicit-sample-loss",
+    "href": "tulane.html#explicit-sample-loss",
+    "title": "Gustavo Diaz",
+    "section": "Explicit sample loss",
+    "text": "Explicit sample loss"
+  },
+  {
+    "objectID": "tulane.html#explicit-sample-loss-1",
+    "href": "tulane.html#explicit-sample-loss-1",
+    "title": "Gustavo Diaz",
+    "section": "Explicit sample loss",
+    "text": "Explicit sample loss"
+  },
+  {
+    "objectID": "tulane.html#implicit-sample-loss",
+    "href": "tulane.html#implicit-sample-loss",
+    "title": "Gustavo Diaz",
+    "section": "Implicit sample loss",
+    "text": "Implicit sample loss"
+  },
+  {
+    "objectID": "tulane.html#implicit-sample-loss-1",
+    "href": "tulane.html#implicit-sample-loss-1",
+    "title": "Gustavo Diaz",
+    "section": "Implicit sample loss",
+    "text": "Implicit sample loss"
+  },
+  {
+    "objectID": "tulane.html#implicit-sample-loss-2",
+    "href": "tulane.html#implicit-sample-loss-2",
+    "title": "Gustavo Diaz",
+    "section": "Implicit sample loss",
+    "text": "Implicit sample loss"
+  },
+  {
+    "objectID": "tulane.html#replication-design",
+    "href": "tulane.html#replication-design",
+    "title": "Gustavo Diaz",
+    "section": "Replication design",
+    "text": "Replication design\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTotal N: 6,605\nLonger surveys: 43%, 50%, 110%\nPrinciple: Stack against alternative designs\nGoal: Evaluate explicit/implicit sample loss"
+  },
+  {
+    "objectID": "tulane.html#replication-design-1",
+    "href": "tulane.html#replication-design-1",
+    "title": "Gustavo Diaz",
+    "section": "Replication design",
+    "text": "Replication design\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTotal N: 6,605\nLonger surveys: 43%, 50%, 110%\nPrinciple: Stack against alternative designs\nGoal: Evaluate explicit/implicit sample loss"
+  },
+  {
+    "objectID": "tulane.html#replication-design-2",
+    "href": "tulane.html#replication-design-2",
+    "title": "Gustavo Diaz",
+    "section": "Replication design",
+    "text": "Replication design"
+  },
+  {
+    "objectID": "tulane.html#also",
+    "href": "tulane.html#also",
+    "title": "Gustavo Diaz",
+    "section": "Also",
+    "text": "Also\nNo evidence of…\n\n\nDifferent treatment effects\nDifferential sample composition\nDifferential post-treatment attrition"
+  },
+  {
+    "objectID": "tulane.html#implicit-sample-loss-3",
+    "href": "tulane.html#implicit-sample-loss-3",
+    "title": "Gustavo Diaz",
+    "section": "Implicit sample loss",
+    "text": "Implicit sample loss"
+  },
+  {
+    "objectID": "tulane.html#also-in-the-paper",
+    "href": "tulane.html#also-in-the-paper",
+    "title": "Gustavo Diaz",
+    "section": "Also in the paper",
+    "text": "Also in the paper\n\n\nMore (simulated) replications\nBalancing precision, retention, and bias\nGuidelines for pre-analysis stage"
+  },
+  {
+    "objectID": "tulane.html#research-program",
+    "href": "tulane.html#research-program",
+    "title": "Gustavo Diaz",
+    "section": "Research program",
+    "text": "Research program\n\n\nDevelop standards to navigate research design tradeoffs (today)\n\n\n\n\nCreate tools to inform research design choices"
+  },
+  {
+    "objectID": "tulane.html#research-program-1",
+    "href": "tulane.html#research-program-1",
+    "title": "Gustavo Diaz",
+    "section": "Research program",
+    "text": "Research program\n\nDevelop standards to navigate research design tradeoffs (today)\nCreate tools to inform research design choices\n\n\n\nInform applications in CP and political behavior"
   }
 ]
