@@ -4505,7 +4505,7 @@
     "href": "tulane.html#standard-experiment-6",
     "title": "Gustavo Diaz",
     "section": "Standard experiment",
-    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\nHidden cost\n\nMeasuring pre-treatment variables to decrease variance component may lead to sample loss\n\n\nConcern: Can offset statistical precision gains"
+    "text": "Standard experiment\nEstimator\nStandard error of \\(\\widehat{ATE}\\)\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#006747}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#4E2A84}{N-1}}}\n\\]\nHidden cost\n\nTrying to decrease variance component may lead to sample loss\n\n\nConcern: Offset statistical precision gains"
   },
   {
     "objectID": "tulane.html#alternative-designs-5",
@@ -4687,13 +4687,20 @@
     "href": "tulane.html#research-program",
     "title": "Gustavo Diaz",
     "section": "Research program",
-    "text": "Research program\n\n\nDevelop standards to navigate research design tradeoffs (today)\n\n\n\n\nCreate tools to inform research design choices"
+    "text": "Research program\n\n\nDevelop standards to navigate research design tradeoffs (this project)\n\n\n\n\nCreate tools to inform research design choices"
   },
   {
     "objectID": "tulane.html#research-program-1",
     "href": "tulane.html#research-program-1",
     "title": "Gustavo Diaz",
     "section": "Research program",
-    "text": "Research program\n\nDevelop standards to navigate research design tradeoffs (today)\nCreate tools to inform research design choices\n\n\n\nInform applications in CP and political behavior"
+    "text": "Research program\n\nDevelop standards to navigate research design tradeoffs (this project)\nCreate tools to inform research design choices\n\n\n\nInform applications in CP and political behavior"
+  },
+  {
+    "objectID": "tulane.html#sample-loss-5",
+    "href": "tulane.html#sample-loss-5",
+    "title": "Gustavo Diaz",
+    "section": "Sample loss",
+    "text": "Sample loss\nImplicit: Costs internalized by researcher\n \n\nFixed budget\n\n\n5 minutes  6 minutes\n\n\nN = 1,000  N = 833\n\n\n\nprolific.com/calculator"
   }
 ]

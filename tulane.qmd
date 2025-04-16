@@ -222,7 +222,7 @@ Many ways to improve statistical precision in experiments before data collection
 
 # Outline {background-color="#006747"}
 
-1. Theory: Statistical precision and sample loss
+1. Theory: Statistical precision, sample loss, alternative designs
 
 2. Replication studies: Precision gains withstand sample loss
 
@@ -232,7 +232,7 @@ Many ways to improve statistical precision in experiments before data collection
 
 # Outline {background-color="#006747"}
 
-1. **Theory: Statistical precision and sample loss**
+1. **Theory: Statistical precision, sample loss, alternative designs**
 
 2. Replication studies: Precision gains withstand sample loss
 
@@ -402,11 +402,11 @@ $$
 
 . . .
 
-Measuring pre-treatment variables to decrease [**variance component**]{style="color: #006747;"} may lead to [**sample loss**]{style="color: #4E2A84;"}
+Trying to decrease [**variance component**]{style="color: #006747;"} may lead to [**sample loss**]{style="color: #4E2A84;"}
 
 . . .
 
-**Concern:** Can offset statistical precision gains
+**Concern:** Offset statistical precision gains
 
 ## Sample loss
 
@@ -472,6 +472,35 @@ Measuring pre-treatment variables to decrease [**variance component**]{style="co
 :::
 
 ::::
+
+
+
+
+::: aside
+[prolific.com/calculator](https://www.prolific.com/calculator)
+:::
+
+## Sample loss
+
+**Implicit:** Costs internalized by researcher
+
+&nbsp;
+
+::: {.r-stack}
+
+**Fixed budget**
+
+:::
+
+::: {.r-stack}
+5 minutes {{< fa arrow-right >}} 6 minutes
+
+:::
+
+::: {.r-stack}
+N = 1,000 {{< fa arrow-right >}} N = 833
+
+:::
 
 ::: aside
 [prolific.com/calculator](https://www.prolific.com/calculator)
@@ -897,7 +926,7 @@ Based on 2022-23 articles published in APSR, AJPS, JOP, PB, CPS, JEPS
 
 # Outline {background-color="#006747"}
 
-1. **Theory: Statistical precision and sample loss**
+1. **Theory: Statistical precision, sample loss, alternative designs**
 
 2. Replication studies: Precision gains withstand sample loss
 
@@ -907,7 +936,7 @@ Based on 2022-23 articles published in APSR, AJPS, JOP, PB, CPS, JEPS
 
 # Outline {background-color="#006747"}
 
-1. Theory: Statistical precision and sample loss
+1. Theory: Statistical precision, sample loss, alternative designs
 
 2. **Replication studies: Precision gains withstand sample loss**
 
@@ -1191,7 +1220,7 @@ p0 +
 
 # Outline {background-color="#006747"}
 
-1. Theory: Statistical precision and sample loss
+1. Theory: Statistical precision, sample loss, alternative designs
 
 2. **Replication studies: Precision gains withstand sample loss**
 
@@ -1201,7 +1230,7 @@ p0 +
 
 # Outline {background-color="#006747"}
 
-1. Theory: Statistical precision and sample loss
+1. Theory: Statistical precision, sample loss, alternative designs
 
 2. Replication studies: Precision gains withstand sample loss
 
@@ -1235,7 +1264,7 @@ p0 +
 
 . . .
 
-1. Develop standards to navigate research design tradeoffs *(today)*
+1. Develop standards to navigate research design tradeoffs *(this project)*
 
 . . .
 
@@ -1251,7 +1280,7 @@ p0 +
 
 ## Research program
 
-1. Develop standards to navigate research design tradeoffs *(today)*
+1. Develop standards to navigate research design tradeoffs *(this project)*
 
 2. Create *tools* to inform research design choices
 
