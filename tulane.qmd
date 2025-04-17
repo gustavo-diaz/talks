@@ -1053,7 +1053,10 @@ exp_loss = data.frame(
   Design = rep(c("Standard", "Pre-post", "Pre-post + blocking"), 3),
   Kept = c(99.05, 99.03, 99.03, 
            99.05, 99.05, 99.03,
-           87, 85.8, 79.3)
+           87, 85.8, 79.3),
+  p = c(" ", "p=0.49", "p=1", 
+        " ", "p=1", "p=0.12",
+        " ", "p=0.37", "p=0.70")
 )
 
 exp_loss$Study = fct_relevel(exp_loss$Study,
@@ -1062,22 +1065,61 @@ exp_loss$Study = fct_relevel(exp_loss$Study,
 exp_loss$Design = fct_relevel(exp_loss$Design,
                               "Standard", "Pre-post",
                               "Pre-post + blocking")
+
 ggplot(exp_loss) +
   aes(x = Study, y = Kept, fill = Design) +
   geom_col(width = 0.5, position = "dodge", alpha = 0) + 
   scale_fill_viridis_d() +
-  labs(y = "% Sample kept")
+  labs(y = "% Sample kept") +
+  theme(legend.position = "bottom") +
+  geom_text(
+    data = exp_loss,
+    mapping = aes(x = Study, y = Kept + 4,
+                  label = p),             
+    position = position_dodge(
+                    width = 0.5
+                  ),
+    size = 4, alpha = 0
+  )
 ```
 
 ## Explicit sample loss
 
 ```{r}
-ggplot(exp_loss) +
+exp_plot = ggplot(exp_loss) +
   aes(x = Study, y = Kept, fill = Design) +
   geom_col(width = 0.5, position = "dodge") + 
   scale_fill_viridis_d() +
-  labs(y = "% Sample kept")
+  labs(y = "% Sample kept") +
+  theme(legend.position = "bottom")
+
+exp_plot +
+  geom_text(
+    data = exp_loss,
+    mapping = aes(x = Study, y = Kept + 4,
+                  label = p),             
+    position = position_dodge(
+                    width = 0.5
+                  ),
+    size = 4, alpha = 0
+  )
 ```
+
+## Explicit sample loss
+
+```{r}
+exp_plot +
+  geom_text(
+    data = exp_loss,
+    mapping = aes(x = Study, y = Kept + 4,
+                  label = p),             
+    position = position_dodge(
+                    width = 0.5
+                  ),
+    size = 4
+  )
+```
+
 
 ## Also
 
