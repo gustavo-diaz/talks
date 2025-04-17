@@ -170,35 +170,15 @@ rep_dist +
 
 Many ways to improve statistical precision in experiments before data collection
 
-. . .
+::: {.r-stack}
 
-:::: {.columns}
+![](precision_retention/imai_blocking.png){.fragment fig-align="center" width="50%"}
 
-::: {.column width="50%"}
-- Increasing sample size
+![](precision_retention/broockman_field.png){.fragment fig-align="left" width="70%"}
 
-- Larger control group
-
-- Aggregate index outcome
-
-- Adjust for covariates
-
-- Pair-matching
-
-- Online balancing
-:::
-
-::: {.column width="50%"}
-
-- [MORE THINGS]
-
-- Repeated measures
-
-- Block randomization
+![](precision_retention/clifford_rep.png){.fragment fig-align="right" width="80%"}
 
 :::
-
-::::
 
 ## Solution: Research design
 
