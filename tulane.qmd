@@ -63,6 +63,10 @@ library(haven)
 library(DeclareDesign)
 library(tinytable)
 library(kableExtra)
+library(modelsummary)
+library(broom)
+library(dagitty) # make DAGs
+library(ggdag) # Plot DAGs
 
 
 # ggplot global options
@@ -74,105 +78,154 @@ tulane = "#006747"
 ```
 
 
-## Measurement as throwing darts
-
-![](precision_retention/bias_variance.jpg){fig-align="center"}
-
-## Measurement as distributions
+## A survey experiment
 
 ```{r}
-set.seed(20250409)
-reliable_valid = rnorm(1000, 0, 1)
-reliable_invalid = rnorm(1000, 5, 1)
-unreliable_valid = rnorm(1000, 0, 4)
-unreliable_invalid = rnorm(1000, 5, 4)
-
-a = data.frame(
-  obs = reliable_valid,
-  rel = "Low Variance",
-  val = "Low Bias"
-)
-
-b = data.frame(
-  obs = reliable_invalid,
-  rel = "Low Variance",
-  val = "High Bias"
-)
-
-c = data.frame(
-  obs = unreliable_valid,
-  rel = "High Variance",
-  val = "Low Bias"
-)
-
-d = data.frame(
-  obs = unreliable_invalid,
-  rel = "High Variance",
-  val = "High Bias"
-)
-
-dat = rbind(a, b, c, d)
-
-dat$val = fct_rev(dat$val)
-dat$rel = fct_rev(dat$rel)
-
-rep_dist = ggplot(dat) +
-  aes(x = obs) +
-  geom_vline(xintercept = 0, linetype = "dashed") +
-  geom_density(linewidth = 2, color = "#006747") +
-  facet_grid(val ~ rel, switch = "y") +
-  labs(
-    x = "Average treatment effect (ATE)",
-    y = ""
+declaration = 
+  declare_model(
+    N = 1000, 
+    potential_outcomes(Y ~ rbinom(N, size = 1, prob = -0.08 * Z + 0.5))
   ) +
-  theme(axis.ticks.y = element_blank(),
-        axis.text.y = element_blank())
+  declare_inquiry(ATE = mean(Y_Z_1 - Y_Z_0)) +
+  declare_assignment(Z = complete_ra(N, prob = 0.5)) +
+  declare_measurement(Y = reveal_outcomes(Y ~ Z)) +
+  declare_estimator(Y ~ Z, model = difference_in_means, 
+                    inquiry = "ATE")
 
-rep_dist
+set.seed(5)
+experiment = draw_data(declaration) %>% 
+  select(ID, Y, Z) 
 ```
 
 
+::: incremental
+- N = 1,000
 
-## Measurement as distributions
+- **Vignette:** Incumbent politician seeking reelection
+
+- **Manipulation:** Clean (control); corrupt (treatment)
+
+- **Outcome:** Would you vote to reelect? (0: no, 1: yes)
+:::
+
+. . .
+
+::: {.callout-tip}
+## Standard design
+
+- Treatments assigned by simple/complete randomization
+
+- Outcome measured once after tretment
+:::
+
+## A survey experiment
+
+- N = 1,000
+
+- **Vignette:** Incumbent politician seeking reelection
+
+- **Manipulation:** Clean (control); corrupt (treatment)
+
+- **Outcome:** Would you vote to reelect? (0: no, 1: yes)
 
 ```{r}
-rep_dist +
-  geom_rect(aes(fill = val), data = dat,
-            inherit.aes = FALSE,
-            xmin = -Inf, xmax = Inf,
-            ymin = -Inf, ymax = Inf,
-            alpha = 0.005) +
-  scale_fill_manual(values = c(
-    "#43B02A", "transparent"
-  )) +
-  theme(axis.ticks.y = element_blank(),
-        axis.text.y = element_blank(),
-        legend.position = "none")
+exp_prop = experiment %>% 
+  group_by(Z) %>% 
+  summarize(vote = mean(Y)) %>% 
+  mutate(Z = ifelse(Z == 0, "Clean", "Corrupt")) %>% 
+  rename(Vignette = Z, Vote = vote)
+
+example = lm_robust(Y ~ Z, data = experiment) %>%  
+  tidy() %>% 
+  filter(term == "Z") %>% 
+  mutate(Vignette = "Difference",
+         p.value = round(p.value, 5)) %>% 
+  select(Vignette, Vote = estimate, p.value)
+
+exp_tab = bind_rows(exp_prop, example)
+
+exp_tab %>% 
+  tt() %>% 
+  format_tt(
+    j = 3,
+    replace = TRUE
+  )
 ```
 
-**Credibility revolution:** Focus on *unbiased* estimators
 
-## Bias-variance tradeoff
 
-![](precision_retention/bias_variance.webp){fig-align="center"}
+
+## A survey experiment
+
+```{r}
+exp_tab %>% 
+  tt() %>% 
+  format_tt(
+    j = 3,
+    replace = TRUE
+  )
+```
+
+. . .
+
+&nbsp;
+
+::: {.r-stack}
+What is the problem?
+:::
 
 ---
 
 ![](precision_retention/ps_underpowered.png){fig-align="center" width="70%"}
 
-::: aside
-[doi.org/10.1086/734279](https://doi.org/10.1086/734279)
+
+## A survey experiment
+
+```{r}
+exp_tab %>% 
+  tt() %>% 
+  format_tt(
+    j = 3,
+    replace = TRUE
+  )
+```
+
+&nbsp;
+
+::: {.r-stack}
+What is the problem?
 :::
 
-## Solution: Research design
+## A survey experiment
+
+```{r}
+exp_tab %>% 
+  tt() %>% 
+  format_tt(
+    j = 3,
+    replace = TRUE
+  )
+```
+
+&nbsp;
+
+::: {.r-stack}
+What is the problem?  
+*Low statistical precision*
+:::
 
 . . .
 
-Many ways to improve statistical precision in experiments before data collection
+&nbsp;
 
 ::: {.r-stack}
+What could we have done differently?
+:::
 
-![](precision_retention/imai_blocking.png){.fragment fig-align="center" width="50%"}
+
+## Research design
+
+::: {.r-stack}
 
 ![](precision_retention/broockman_field.png){.fragment fig-align="left" width="70%"}
 
@@ -180,17 +233,22 @@ Many ways to improve statistical precision in experiments before data collection
 
 :::
 
-## Solution: Research design
+## Research design
 
 
+::: {.callout-tip}
+## Alternative designs
 
-Many ways to improve statistical precision in experiments before data collection
-
-**Puzzle:** Political science rarely deviates from standard experimental design
+A deviation from the **standard** design aimed at **improving statistical precision**
+:::
 
 . . .
 
-**Argument:** Scholars wary of hidden costs in alternative designs
+**Puzzle:** Often recommended, rarely implemented
+
+. . .
+
+**Argument:** Scholars wary of hidden costs (*sample loss*)
 
 . . .
 
@@ -198,13 +256,15 @@ Many ways to improve statistical precision in experiments before data collection
 
 . . .
 
-**Takeaway:** Statistical precision gains from alternative designs withstand considerable sample loss [wording]
+**Takeaway:** Alternative designs increase precision even when incurring sample loss
+
+
 
 # Outline {background-color="#006747"}
 
 1. Theory: Statistical precision, sample loss, alternative designs
 
-2. Replication studies: Precision gains withstand sample loss
+2. Replication study: Precision gains withstand sample loss
 
 3. Conclusion: More diversity in research design
 
@@ -214,7 +274,7 @@ Many ways to improve statistical precision in experiments before data collection
 
 1. **Theory: Statistical precision, sample loss, alternative designs**
 
-2. Replication studies: Precision gains withstand sample loss
+2. Replication study: Precision gains withstand sample loss
 
 3. Conclusion: More diversity in research design
 
@@ -261,10 +321,10 @@ $$
 
 ```{r, echo = TRUE, eval = FALSE}
 # Difference-in-means
-t.test(Y ~ Z, data = data)
+t.test(vote ~ vignette, data = experiment)
 
 # Regression equivalent
-lm(Y ~ Z, data = data)
+lm(vote ~ vignette, data = experiment)
 ```
 
 
@@ -284,7 +344,16 @@ $$
 &nbsp;
 
 ```{r}
-ggplot(dat %>% 
+set.seed(20250409)
+reliable_valid = rnorm(1000, 0, 1)
+
+a = data.frame(
+  obs = reliable_valid,
+  rel = "Low Variance",
+  val = "Low Bias"
+)
+
+ggplot(a %>% 
          filter(rel == "Low Variance",
                 val == "Low Bias")
        )+
@@ -392,7 +461,11 @@ Trying to decrease [**variance component**]{style="color: #006747;"} may lead to
 
 . . .
 
-**Explicit:** Introduced by implementation of alternative designs
+::: {.callout-tip}
+## Explicit
+
+Sample loss introduced as a *consequence* of implementing an alternative design
+:::
 
 . . .
 
@@ -402,24 +475,34 @@ Trying to decrease [**variance component**]{style="color: #006747;"} may lead to
 
 ## Sample loss
 
-**Implicit:** Costs internalized by researcher
+::: {.callout-tip}
+## Implicit
+
+Sample loss *internalized by the researcher* before implementing an alternative design
+:::
 
 
 ## Sample loss
 
-**Implicit:** Costs internalized by researcher
+::: {.callout-tip}
+## Implicit
+
+Sample loss *internalized by the researcher* before implementing an alternative design
+:::
 
 
 ![](precision_retention/prolific_0.png)
 
 
-::: aside
-[prolific.com/calculator](https://www.prolific.com/calculator)
-:::
+
 
 ## Sample loss
 
-**Implicit:** Costs internalized by researcher
+::: {.callout-tip}
+## Implicit
+
+Sample loss *internalized by the researcher* before implementing an alternative design
+:::
 
 ![](precision_retention/prolific_0.png)
 
@@ -431,13 +514,14 @@ Trying to decrease [**variance component**]{style="color: #006747;"} may lead to
 
 ::::
 
-::: aside
-[prolific.com/calculator](https://www.prolific.com/calculator)
-:::
 
 ## Sample loss
 
-**Implicit:** Costs internalized by researcher
+::: {.callout-tip}
+## Implicit
+
+Sample loss *internalized by the researcher* before implementing an alternative design
+:::
 
 ![](precision_retention/prolific_0.png)
 
@@ -455,14 +539,13 @@ Trying to decrease [**variance component**]{style="color: #006747;"} may lead to
 
 
 
-
-::: aside
-[prolific.com/calculator](https://www.prolific.com/calculator)
-:::
-
 ## Sample loss
 
-**Implicit:** Costs internalized by researcher
+::: {.callout-tip}
+## Implicit
+
+Sample loss *internalized by the researcher* before implementing an alternative design
+:::
 
 &nbsp;
 
@@ -486,125 +569,8 @@ N = 1,000 {{< fa arrow-right >}} N = 833
 [prolific.com/calculator](https://www.prolific.com/calculator)
 :::
 
-## Alternative designs
 
-. . .
-
-```{r}
-lit = tribble(
-  ~Randomization, ~`Post-only`, ~`Pre-post`,
-  "Simple/Complete", "Standard", "Repeated measures",
-  "Blocking", "Block randomized", "Both"
-)
-
-lit %>% 
-  tt() %>% 
-  group_tt(
-    j = list(
-      "Outcome measurement" = 2:3
-    )
-  ) %>% 
-  style_tt(
-    i = 1:2,
-    color = "#00000000"
-  ) %>% 
-  style_tt(
-    i = 0,
-    j = 2:3,
-    color = "#00000000"
-  )
-```
-
-
-## Alternative designs
-
-```{r}
-lit %>% 
-  tt() %>% 
-  group_tt(
-    j = list(
-      "Outcome measurement" = 2:3
-    )
-  ) %>% 
-  style_tt(
-    i = 1:2,
-    color = "#00000000"
-  )
-```
-
-
-## Alternative designs
-
-```{r}
-lit %>% 
-  tt() %>% 
-  group_tt(
-    j = list(
-      "Outcome measurement" = 2:3
-    )
-  ) %>% 
-  style_tt(
-    i = 1:2,
-    j = 2:3,
-    color = "#00000000"
-  ) %>% 
-  style_tt(
-    i = 2,
-    j = 1,
-    color = "#00000000"
-  )
-```
-
-## Alternative designs
-
-```{r}
-lit %>% 
-  tt() %>% 
-  group_tt(
-    j = list(
-      "Outcome measurement" = 2:3
-    )
-  ) %>% 
-  style_tt(
-    i = 2,
-    j = 2:3,
-    color = "#00000000"
-  ) %>% 
-    style_tt(
-    i = 1,
-    j = 3,
-    color = "#00000000"
-  ) %>% 
-  style_tt(
-    i = 2,
-    j = 1,
-    color = "#00000000"
-  )
-```
-
-## Alternative designs
-
-```{r}
-lit %>% 
-  tt() %>% 
-  group_tt(
-    j = list(
-      "Outcome measurement" = 2:3
-    )
-  ) %>% 
-  style_tt(
-    i = 2,
-    j = 2:3,
-    color = "#00000000"
-  ) %>% 
-  style_tt(
-    i = 2,
-    j = 1,
-    color = "#00000000"
-  )
-```
-
-## Repeated measures
+## Example: Pre-post design
 
 . . .
 
@@ -621,7 +587,7 @@ prepost %>%
   cat()
 ```
 
-## Repeated measures
+## Example: Pre-post design
 
 ```{r, results='asis'}
 prepost %>% 
@@ -630,7 +596,7 @@ prepost %>%
   cat()
 ```
 
-## Repeated measures
+## Example: Pre-post design
 
 ```{r, results='asis'}
 prepost %>% 
@@ -653,7 +619,7 @@ $$
 \end{align}
 $$
 
-## Repeated measures
+## Example: Pre-post design
 
 ```{r, results='asis'}
 prepost %>% 
@@ -674,7 +640,7 @@ $$
 \end{align}
 $$
 
-## Repeated measures
+## Example: Pre-post design
 
 ```{r, results='asis'}
 prepost %>% 
@@ -686,229 +652,111 @@ prepost %>%
 
 ```{r, echo = TRUE, eval = FALSE}
 # Standard design
-lm(Y ~ Z, data = data)
+lm(vote ~ vignette, data = experiment)
 
 # Pre-post
-lm(Y_t2 ~ Z + Y_t1, data = data)
+lm(vote_post ~ vignette + vote_pre, data = experiment)
 ```
 
-## Alternative designs
+
+## What does this do?
 
 ```{r}
-lit %>% 
-  tt() %>% 
-  group_tt(
-    j = list(
-      "Outcome measurement" = 2:3
-    )
-  ) %>% 
-  style_tt(
-    i = 2,
-    j = 2:3,
-    color = "#00000000"
-  ) %>% 
-  style_tt(
-    i = 2,
-    j = 1,
-    color = "#00000000"
-  )
+experiment = experiment %>% 
+  mutate(vote = Y,
+         vote_post = Y,
+         vignette = ifelse(Z == 0, "Clean", "Corrupt"))
+
+experiment$vote_pre = correlate(
+  given = experiment$vote_post,
+  rho = 0.5,
+  rbinom, size = 1, prob = 0.5
+)
 ```
 
-## Alternative designs
-
-```{r}
-lit %>% 
-  tt() %>% 
-  group_tt(
-    j = list(
-      "Outcome measurement" = 2:3
-    )
-  ) %>% 
-  style_tt(
-    i = 2,
-    j = 2:3,
-    color = "#00000000"
-  )
-```
-
-
-## Alternative designs
-
-```{r}
-lit %>% 
-  tt() %>% 
-  group_tt(
-    j = list(
-      "Outcome measurement" = 2:3
-    )
-  )
-```
-
-## Block randomization
-
-<!-- https://discovery.cs.illinois.edu/learn/Basics-of-Data-Science-with-Python/Experimental-Design-and-Blocking/-->
 . . .
 
-:::: {.columns}
-
-::: {.column width="70%"}
-![](precision_retention/blocking_0.png){fig-align="center"}
-
-:::
-
-::::
-
-## Block randomization
-
-:::: {.columns}
-
-::: {.column width="70%"}
-![](precision_retention/blocking.png){fig-align="center"}
-
-:::
-
-::::
-
-## Block randomization
-
-:::: {.columns}
-
-::: {.column width="70%"}
-![](precision_retention/blocking.png){fig-align="center"}
-
-:::
-
-::: {.column width="30%"}
-Weighted average across blocks:
-
-$$\widehat{ATE}_{\text{Block}} = \sum_{b=1}^B \frac{n_b}{N} \widehat{ATE}_b$$
-:::
-::::
-
-## Block randomization
-
-:::: {.columns}
-
-::: {.column width="70%"}
-![](precision_retention/blocking.png){fig-align="center"}
-
-:::
-
-::: {.column width="30%"}
-Weighted average across blocks:
-
-$$\widehat{ATE}_{\text{Block}} = \sum_{b=1}^B \frac{n_b}{N} \widehat{ATE}_b$$
-
+**Standard design**
 
 ```{r, echo = TRUE, eval = FALSE}
-# Standard design
-lm(Y ~ Z, 
-   data = data)
-
-# Block randomized
-lm(Y ~ Z + block, 
-   data = data)
+lm(vote_post ~ vignette, data = experiment)
 ```
 
-:::
-::::
 
-## Alternative designs
 
 ```{r}
-lit %>% 
-  tt() %>% 
-  group_tt(
-    j = list(
-      "Outcome measurement" = 2:3
-    )
-  )
+lm(vote ~ vignette, data = experiment) %>% 
+  tidy() %>% 
+  filter(term == "vignetteCorrupt") %>% 
+  select(estimate, std.error, p.value) %>% 
+  mutate(estimate = round(estimate, 3),
+         std.error = round(std.error, 4),
+         p.value = round(p.value, 5)) %>% 
+  tt()
 ```
+
+&nbsp;
 
 . . .
 
-Why these?
+**Pre-post design** ($\text{corr} = 0.5$)
 
-## Often recommended but rarely implemented
-
-## Often recommended but rarely implemented
+```{r, echo = TRUE, eval = FALSE}
+lm(vote_post ~ vignette + vote_pre, data = experiment)
+```
 
 ```{r}
-journals = tribble(
-  ~` `, ~N, ~`%`,
-  "Pre-post", 10, "5%",
-  "Blocking", 16, "7%",
-  "Both", 6, "3%",
-  "Neither", 184, "85%"
+lm(vote_post ~ vignette + vote_pre, data = experiment) %>% 
+  tidy() %>% 
+  filter(term == "vignetteCorrupt") %>% 
+  select(estimate, std.error, p.value) %>% 
+  mutate(estimate = round(estimate, 3),
+         std.error = round(std.error, 4),
+         p.value = round(p.value, 5)) %>%
+  tt()
+```
+
+## What does this do?
+
+```{r, fig.align='center'}
+coords = list(
+  x = c(Y_t2 = 1, Z = 0, Y_t1 = -1),
+  y = c(Y_t2 = 1, Z = 1, Y_t1 = 1)
 )
 
-journals %>% tt() %>% style_tt(fontsize = 0.9)
+vote_dag = dagify(
+  Y_t2 ~ Z + Y_t1,
+  coords = coords,
+  labels = c(
+    "Y_t2" = "vote_post",
+    "Y_t1" = "vote_pre",
+    "Z" = "vignette"
+  )
+) 
+
+vote_dag %>% 
+  tidy_dagitty() %>% 
+  ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +
+  geom_dag_point(size = 20) + 
+  geom_dag_edges_arc(
+    edge_width = 2,
+    curvature = c(-1, 0)) +
+  geom_dag_text(
+    size = 8,
+    parse = TRUE,
+    label = c(expression(Y["t=1"]), expression(Y["t=2"]), "Z")
+  ) +
+  theme_dag()
 ```
 
 
-::: aside
-Based on 2022-23 articles published in APSR, AJPS, JOP, PB, CPS, JEPS
-:::
 
-## Often recommended but rarely implemented
-
-```{r}
-journals2 = tribble(
-  ~` `, ~N, ~`%`,
-  "Pre-post", 10, "5%",
-  "Blocking", 16, "7%",
-  "Both", 6, "3%",
-  "Mention covariates", 169, "78%",
-  "Nothing", 15, "7%" 
-)
-
-journals2 %>% 
-  tt() %>% 
-  group_tt(i = list(
-    "Neither" = 4
-  )) %>% 
-  style_tt(
-    i = 5:6,
-    color = "#00000000"
-  ) %>% 
-  style_tt(fontsize = 0.9)
-
-```
-
-::: aside
-Based on 2022-23 articles published in APSR, AJPS, JOP, PB, CPS, JEPS
-:::
-
-## Often recommended but rarely implemented
-
-```{r}
-journals2 = tribble(
-  ~` `, ~N, ~`%`,
-  "Pre-post", 10, "5%",
-  "Blocking", 16, "7%",
-  "Both", 6, "3%",
-  "Mention covariates", 169, "78%",
-  "Nothing", 15, "7%" 
-)
-
-journals2 %>% 
-  tt() %>% 
-  group_tt(i = list(
-    "Neither" = 4
-  )) %>% 
-  style_tt(fontsize = 0.9)
-
-```
-
-::: aside
-Based on 2022-23 articles published in APSR, AJPS, JOP, PB, CPS, JEPS
-:::
 
 # Outline {background-color="#006747"}
 
 1. **Theory: Statistical precision, sample loss, alternative designs**
 
-2. Replication studies: Precision gains withstand sample loss
+2. Replication study: Precision gains withstand sample loss
 
 3. Conclusion: More diversity in research design
 
@@ -918,13 +766,13 @@ Based on 2022-23 articles published in APSR, AJPS, JOP, PB, CPS, JEPS
 
 1. Theory: Statistical precision, sample loss, alternative designs
 
-2. **Replication studies: Precision gains withstand sample loss**
+2. **Replication study: Precision gains withstand sample loss**
 
 3. Conclusion: More diversity in research design
 
 4. Related work
 
-## Replication studies
+## Replication study
 
 ```{r}
 reps = tribble(
@@ -942,40 +790,24 @@ reps = tribble(
 
 reps %>% tt() %>% 
   format_tt(markdown = TRUE) %>% 
-  style_tt(fontsize = 0.8) %>% 
-  style_tt(j = 2:4,
-           color = "#00000000")
-```
-
-## Replication studies
-
-```{r}
-reps %>% tt() %>% 
-  format_tt(markdown = TRUE) %>% 
-  style_tt(fontsize = 0.8) %>% 
-  style_tt(j = 3:4,
-           color = "#00000000")
-```
-
-
-## Replication studies
-
-```{r}
-reps %>% tt() %>% 
-  format_tt(markdown = TRUE) %>% 
-  style_tt(fontsize = 0.8) %>% 
-  style_tt(j = 4,
-           color = "#00000000")
-```
-
-## Replication studies
-
-```{r}
-reps %>% tt() %>% 
-  format_tt(markdown = TRUE) %>% 
   style_tt(fontsize = 0.8)
 ```
 
+## Replication study
+
+```{r}
+reps %>% tt() %>% 
+  format_tt(markdown = TRUE) %>% 
+  style_tt(fontsize = 0.8) %>% 
+  style_tt(
+    j = c(2, 4),
+    color = "gray"
+  ) %>% 
+  style_tt(
+    j = 3,
+    bold = TRUE
+  )
+```
 
 
 ## Replication design
@@ -984,7 +816,7 @@ reps %>% tt() %>%
 
 :::: {.columns}
 
-::: {.column width = "70%"}
+::: {.column width="70%"}
 
 ```{mermaid}
 %%| fig-width: 7
@@ -1007,23 +839,57 @@ flowchart LR
 
 :::
 
+::::
+
+
+## Replication design
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+```{mermaid}
+%%| fig-width: 7
+%%| mermaid-format: png
+flowchart LR
+  A("`**Sample**
+  N × 2`")
+  A --> B(["Randomize"])
+  B --> C("`**Design 1** 
+  Post only + 
+  Complete randomization
+  (Standard)`")
+  B --> D("`**Design 2**
+  Pre-post +
+  Complete randomization`")
+```
+
+:::
+
 ::: {.column width="30%"}
 
 ::: incremental
 
-- **Total N:** 6,605
+- N = 2,018
 
-- **Longer surveys:** 43%, 50%, 110%
+- 50% longer survey
 
-- **Principle:** Stack *against* alternative designs
-
-- **Goal:** Evaluate explicit/implicit sample loss
+- Focus on *earmarking* cost treatment (vs. control)
 
 :::
 
 :::
 
 ::::
+
+. . .
+
+**Principle:** Stack *against* alternative designs
+
+. . .
+
+- **Goal:** Evaluate explicit/implicit sample loss
+
 
 ## Explicit sample loss
 
@@ -1046,59 +912,29 @@ exp_loss$Design = fct_relevel(exp_loss$Design,
                               "Standard", "Pre-post",
                               "Pre-post + blocking")
 
-ggplot(exp_loss) +
-  aes(x = Study, y = Kept, fill = Design) +
+bg_only = exp_loss %>% 
+  filter(Study == "DH" & Design != "Pre-post + blocking")
+
+
+ggplot(bg_only) +
+  aes(x = Design , y = Kept) +
   geom_col(width = 0.5, position = "dodge", alpha = 0) + 
-  scale_fill_viridis_d() +
   labs(y = "% Sample kept") +
-  theme(legend.position = "bottom") +
-  geom_text(
-    data = exp_loss,
-    mapping = aes(x = Study, y = Kept + 4,
-                  label = p),             
-    position = position_dodge(
-                    width = 0.5
-                  ),
-    size = 4, alpha = 0
-  )
+  theme(legend.position = "bottom")
 ```
 
 ## Explicit sample loss
 
 ```{r}
-exp_plot = ggplot(exp_loss) +
-  aes(x = Study, y = Kept, fill = Design) +
-  geom_col(width = 0.5, position = "dodge") + 
-  scale_fill_viridis_d() +
+exp_plot = ggplot(bg_only) +
+  aes(x = Design , y = Kept) +
+  geom_col(width = 0.5, position = "dodge", fill = tulane) + 
   labs(y = "% Sample kept") +
   theme(legend.position = "bottom")
 
-exp_plot +
-  geom_text(
-    data = exp_loss,
-    mapping = aes(x = Study, y = Kept + 4,
-                  label = p),             
-    position = position_dodge(
-                    width = 0.5
-                  ),
-    size = 4, alpha = 0
-  )
+exp_plot
 ```
 
-## Explicit sample loss
-
-```{r}
-exp_plot +
-  geom_text(
-    data = exp_loss,
-    mapping = aes(x = Study, y = Kept + 4,
-                  label = p),             
-    position = position_dodge(
-                    width = 0.5
-                  ),
-    size = 4
-  )
-```
 
 
 ## Also
@@ -1115,6 +951,22 @@ exp_plot +
 
 ## Implicit sample loss
 
+. . .
+
+**Simulation**
+
+::: incremental
+- Start with original sample size
+
+- Randomly omit observations *in alternative design only* (0-50%)
+
+- Re-estimate treatment effects and record standard errors
+
+- Calculate % change in standard errors $\frac{(\text{Alternative} - \text{Standard})}{\text{Standard}}$
+
+- Repeat 1,000 times per sample size
+:::
+
 ## Implicit sample loss
 
 ```{r}
@@ -1127,36 +979,29 @@ sim_summary = sim_summary %>%
 
 sim_summary$design = fct_rev(sim_summary$design)
 
-ggplot(sim_summary, aes(x = pct_loss,
-                                                   y = pct_change,
-                                                   color = factor(design),
-                                                   shape = factor(design))) +
-  facet_wrap(~exp, scales = "fixed", nrow = 1) +
+sim_bg = sim_summary %>% 
+  filter(exp == "Bayram & Graham" &
+           design != "Block randomization")
+```
+
+```{r}
+ggplot(sim_bg,
+       aes(x = pct_loss,
+           y = pct_change)) +
   geom_pointrange(aes(ymin = pct_change_025, ymax = pct_change_975), size = 0.7,
                   position = position_dodge2(width = 0.03), alpha = 0) +
   # Horizontal line at 0
   geom_hline(aes(yintercept = 0),
              linetype = "dashed",
              color = "black") +
-  theme_gray() +
   theme(
     panel.border = element_rect(color = "black", fill = NA),
     panel.grid.minor.x = element_blank(),
     text = element_text(size = 14),
-    axis.title = element_text(size = 14),
-    legend.title = element_text(size = 14),
-    legend.text = element_text(size = 14),
-    strip.text = element_text(size = 14),
-    legend.position = "bottom"
+    axis.title = element_text(size = 14)
   ) +
   labs(x = "Implicit Sample Loss",
-       y = "Percentage Change in Standard Error\nRelative to Standard Design",
-       color = "Design") + 
-  scale_color_manual(values = c("grey50", "grey20")) +
-  scale_shape_manual(values = c(16,17)) + 
-  guides(color = guide_legend(title = "Design", override.aes = list(shape = c(16,17)),
-                              ncol = 2),
-         shape = FALSE) +
+       y = "Percentage Change in Standard Error\nRelative to Standard Design") + 
   scale_y_continuous(limits = c(-50, 90),
                      breaks = seq(-50, 90, by = 25),
                      labels = paste0(seq(-50, 90, by = 25), "%")) +
@@ -1168,83 +1013,36 @@ ggplot(sim_summary, aes(x = pct_loss,
 ## Implicit sample loss
 
 ```{r}
-p0 = ggplot(sim_summary, aes(x = pct_loss,
-                                               y = pct_change,
-                                               color = factor(design),
-                                               shape = factor(design))) +
-  facet_wrap(~exp, scales = "fixed", nrow = 1) +
-  geom_pointrange(aes(ymin = pct_change_025, ymax = pct_change_975), 
-                  size = 0.7,
-                  linewidth = 1,
-                  position = position_dodge2(width = 0.03)) +
+ggplot(sim_bg,
+       aes(x = pct_loss,
+           y = pct_change)) +
+  geom_pointrange(aes(ymin = pct_change_025, ymax = pct_change_975), size = 0.7,
+                  position = position_dodge2(width = 0.03), color = tulane) +
   # Horizontal line at 0
   geom_hline(aes(yintercept = 0),
              linetype = "dashed",
              color = "black") +
-  theme_gray() +
   theme(
     panel.border = element_rect(color = "black", fill = NA),
     panel.grid.minor.x = element_blank(),
     text = element_text(size = 14),
-    axis.title = element_text(size = 14),
-    legend.title = element_text(size = 14),
-    legend.text = element_text(size = 14),
-    strip.text = element_text(size = 14),
-    legend.position = "bottom"
+    axis.title = element_text(size = 14)
   ) +
   labs(x = "Implicit Sample Loss",
-       y = "Percentage Change in Standard Error\nRelative to Standard Design",
-       color = "Design") + 
-  scale_color_viridis_d(begin = 0, end = 0.5) +
-  scale_shape_manual(values = c(16,17)) + 
-  guides(color = guide_legend(title = "Design", override.aes = list(shape = c(16,17)),
-                              ncol = 2),
-         shape = FALSE) +
+       y = "Percentage Change in Standard Error\nRelative to Standard Design") + 
   scale_y_continuous(limits = c(-50, 90),
-                         breaks = seq(-50, 90, by = 25),
-                         labels = paste0(seq(-50, 90, by = 25), "%")) +
+                     breaks = seq(-50, 90, by = 25),
+                     labels = paste0(seq(-50, 90, by = 25), "%")) +
   scale_x_continuous(breaks = seq(0, .50, by = .10),
                      labels = paste0(seq(0, 50, by = 10), "%"))
 
-p0
-
-```
-
-## Implicit sample loss
-
-```{r}
-# annotations
-
-text = data.frame(
-  label = c("Sample too small +\n bad proxy outcome", 
-            "Ideal case", 
-            "Continuous blocking"),
-  pct_loss = c(0.2, 0.2, 0.2),
-  pct_change = c(-25, 25, 40),
-  exp = c("Dietrich & Hayes",
-          "Bayram & Graham",
-          "Tappin & Hewitt"),
-  design = c("Pre-post", "Pre-post", "Block randomization" )
-)
-
-text$exp = fct_relevel(text$exp,
-                      "Dietrich & Hayes",
-          "Bayram & Graham",
-          "Tappin & Hewitt" )
-p0 +
-  geom_text(
-    data = text,
-    mapping = aes(x = pct_loss, y = pct_change,
-                  label = label),
-    size = 5
-  )
 ```
 
 # Outline {background-color="#006747"}
 
 1. Theory: Statistical precision, sample loss, alternative designs
 
-2. **Replication studies: Precision gains withstand sample loss**
+2. **Replication study: Precision gains withstand sample loss**
 
 3. Conclusion: More diversity in research design
 
@@ -1254,7 +1052,7 @@ p0 +
 
 1. Theory: Statistical precision, sample loss, alternative designs
 
-2. Replication studies: Precision gains withstand sample loss
+2. Replication study: Precision gains withstand sample loss
 
 3. **Conclusion: More diversity in research design**
 
@@ -1268,18 +1066,20 @@ p0 +
 
 - **Findings:** Alternative designs withstand sample loss
 
-- **Wrinkle:** Alternative designs require more attention!
+- **Contribution:** Tools to navigate research design tradeoffs *before* data collection 
 
-- **Takeaway:** Try alternative designs!
+- **Wrinkle:** Alternative designs require extensive piloting
 
 ## Also in the paper
 
 ::: incremental
-1. More (simulated) replications
+1. More replications
 
-2. Balancing precision, retention, *and bias*
+2. Simulated replications
 
-3. Guidelines for pre-analysis stage
+3. Balancing precision, retention, *and bias*
+
+4. Guidelines for pre-analysis stage
 :::
 
 ## Research program

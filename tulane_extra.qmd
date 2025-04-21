@@ -1,0 +1,21 @@
+---
+title: "Balancing Precision and Retention in Experimental Design"
+subtitle: "Additional Materials"
+format: 
+  html:
+    page-layout: article
+navbar: false
+toc: true
+---
+
+# Testing
+
+Hey
+
+# Side
+
+Ho
+
+## Bar
+
+Let's go

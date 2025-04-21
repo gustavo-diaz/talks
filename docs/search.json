@@ -37,672 +37,672 @@
   {
     "objectID": "tec.html#improving-list-experiments",
     "href": "tec.html#improving-list-experiments",
-    "title": "Gustavo Diaz",
-    "section": "Improving List Experiments",
-    "text": "Improving List Experiments\n \nGustavo Diaz\nMcMaster University\ngustavodiaz.org\ndiazg2@mcmaster.ca\n \nSlides: talks.gustavodiaz.org/tec"
+    "title": "Research Agenda",
+    "section": "",
+    "text": "Gustavo Diaz\nMcMaster University\ngustavodiaz.org\ndiazg2@mcmaster.ca\n \nSlides: talks.gustavodiaz.org/tec"
   },
   {
     "objectID": "tec.html#bias-variance-tradeoff-as-darts",
     "href": "tec.html#bias-variance-tradeoff-as-darts",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Bias-variance tradeoff as darts",
     "text": "Bias-variance tradeoff as darts"
   },
   {
     "objectID": "tec.html#but-the-game-of-darts-is-more-complicated",
     "href": "tec.html#but-the-game-of-darts-is-more-complicated",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "But the game of darts is more complicated",
     "text": "But the game of darts is more complicated"
   },
   {
     "objectID": "tec.html#two-types-of-tradeoffs",
     "href": "tec.html#two-types-of-tradeoffs",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Two types of tradeoffs",
     "text": "Two types of tradeoffs\n\n\nExplicit: Is a little bias worth the increase in precision?\nImplicit: Improving precision without sacrificing unbiasedness?"
   },
   {
     "objectID": "tec.html#two-types-of-tradeoffs-1",
     "href": "tec.html#two-types-of-tradeoffs-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Two types of tradeoffs",
     "text": "Two types of tradeoffs\n\nExplicit: Is a little bias worth the increase in precision?\nImplicit: Improving precision without sacrificing unbiasedness?"
   },
   {
     "objectID": "tec.html#example",
     "href": "tec.html#example",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Example",
-    "text": "Example\n\n\n\n\n\n\nSource: NPR"
+    "text": "Example\n\n. . .\n\n\n\nSource: NPR"
   },
   {
     "objectID": "tec.html#list-experiment",
     "href": "tec.html#list-experiment",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "List experiment",
     "text": "List experiment\nHere is a list of things that some people have done.\n\n\nSource: Rosenfeld et al (2016)"
   },
   {
     "objectID": "tec.html#list-experiment-1",
     "href": "tec.html#list-experiment-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "List experiment",
     "text": "List experiment\nPlease listen to them and then tell me HOW MANY of them you have done in the past two years.\n\n\nSource: Rosenfeld et al (2016)"
   },
   {
     "objectID": "tec.html#list-experiment-2",
     "href": "tec.html#list-experiment-2",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "List experiment",
-    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n\n \nControl group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate\n\n\n\nSource: Rosenfeld et al (2016)"
+    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n\nSource: Rosenfeld et al (2016)\n. . .\n \n\nControl group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate"
   },
   {
     "objectID": "tec.html#list-experiment-3",
     "href": "tec.html#list-experiment-3",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "List experiment",
-    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n \nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate\n\n\nSource: Rosenfeld et al (2016)"
+    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n\nSource: Rosenfeld et al (2016)\n \n\nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate"
   },
   {
     "objectID": "tec.html#list-experiment-4",
     "href": "tec.html#list-experiment-4",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "List experiment",
-    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n \nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate\nVoted “YES” on the Personhood Initiative\n\n\nSource: Rosenfeld et al (2016)"
+    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n\nSource: Rosenfeld et al (2016)\n \n\nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate\nVoted “YES” on the Personhood Initiative"
   },
   {
     "objectID": "tec.html#prevalence-rate",
     "href": "tec.html#prevalence-rate",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Prevalence rate",
-    "text": "Prevalence rate\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(List with sensitive item)} -\\\\ \\text{Mean(List without sensitive item)}\n\\]\n\n\nWe get a prevalence rate estimate\n\n\n\n\nBut we do not know how individual respondents voted!"
+    "text": "Prevalence rate\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(List with sensitive item)} -\\\\ \\text{Mean(List without sensitive item)}\n\\]\n. . .\n\nWe get a prevalence rate estimate\n\n. . .\n\nBut we do not know how individual respondents voted!"
   },
   {
     "objectID": "tec.html#compare-with-direct-question",
     "href": "tec.html#compare-with-direct-question",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Compare with direct question",
-    "text": "Compare with direct question\nDid you vote YES or NO on the Personhood Initiative, which appeared on the November 2011 Mississippi General Election Ballot?\n\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(Voted yes)}\n\\]"
+    "text": "Compare with direct question\nDid you vote YES or NO on the Personhood Initiative, which appeared on the November 2011 Mississippi General Election Ballot?\n. . .\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(Voted yes)}\n\\]"
   },
   {
     "objectID": "tec.html#validation",
     "href": "tec.html#validation",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Validation",
     "text": "Validation\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
   },
   {
     "objectID": "tec.html#validation-1",
     "href": "tec.html#validation-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Validation",
     "text": "Validation\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
   },
   {
     "objectID": "tec.html#validation-2",
     "href": "tec.html#validation-2",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Validation",
     "text": "Validation\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
   },
   {
     "objectID": "tec.html#validation-3",
     "href": "tec.html#validation-3",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Validation",
     "text": "Validation\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
   },
   {
     "objectID": "tec.html#sensitivity-bias-reduction-not-always-worth-the-increased-variance",
     "href": "tec.html#sensitivity-bias-reduction-not-always-worth-the-increased-variance",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Sensitivity bias reduction not always worth the increased variance",
     "text": "Sensitivity bias reduction not always worth the increased variance"
   },
   {
     "objectID": "tec.html#can-we-do-better",
     "href": "tec.html#can-we-do-better",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Can we do better?",
     "text": "Can we do better?"
   },
   {
     "objectID": "tec.html#example-1",
     "href": "tec.html#example-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Example",
     "text": "Example\nList A\n\nCalifornians for Disability (advocating for people with disabilities)\nCalifornia National Organization for Women (advocating for women’s equality and empowerment)\nAmerican Family Association (advocating for pro-family values)\nAmerican Red Cross (humanitarian organization)\n\nList B\n\nAmerican Legion (veterans service organization)\nEquality California (gay and lesbian advocacy organization)\nTea Party Patriots (conservative group supporting lower taxes and limited government)\nSalvation Army (charitable organization)\n\n\n\nSource: Alvarez et al (2019)"
   },
   {
     "objectID": "tec.html#sensitive-item",
     "href": "tec.html#sensitive-item",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Sensitive item",
     "text": "Sensitive item\nOrganization X (advocating for immigration reduction and measures against undocumented immigration)\n\n\nRandomly appears in list A or B\nSingle list: Half of the respondents see sensitive item\nDouble list: Everyone sees it\nEquivalent to two parallel list experiments"
   },
   {
     "objectID": "tec.html#three-prevalence-estimators",
     "href": "tec.html#three-prevalence-estimators",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Three prevalence estimators",
-    "text": "Three prevalence estimators\n\\[\n\\hat{\\tau}_A = \\text{Mean}(A_t) - \\text{Mean}(A_c)\n\\]\n\n\\[\n\\hat{\\tau}_B = \\text{Mean}(B_t) - \\text{Mean}(B_c)\n\\]\n\n\n\\[\n\\hat{\\tau}_{Pooled} = (\\hat{\\tau}_A + \\hat{\\tau}_B)/2\n\\]\n\n\n\nSee Diaz (2023) and Miller (1984) for details"
+    "text": "Three prevalence estimators\n\\[\n\\hat{\\tau}_A = \\text{Mean}(A_t) - \\text{Mean}(A_c)\n\\]\n. . .\n\\[\n\\hat{\\tau}_B = \\text{Mean}(B_t) - \\text{Mean}(B_c)\n\\]\n. . .\n\\[\n\\hat{\\tau}_{Pooled} = (\\hat{\\tau}_A + \\hat{\\tau}_B)/2\n\\]\n\n\nSee Diaz (2023) and Miller (1984) for details"
   },
   {
     "objectID": "tec.html#dle-yields-more-precise-estimates",
     "href": "tec.html#dle-yields-more-precise-estimates",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLE yields more precise estimates",
     "text": "DLE yields more precise estimates\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Diaz (2023)"
   },
   {
     "objectID": "tec.html#dle-yields-more-precise-estimates-1",
     "href": "tec.html#dle-yields-more-precise-estimates-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLE yields more precise estimates",
     "text": "DLE yields more precise estimates\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Diaz (2023)"
   },
   {
     "objectID": "tec.html#but-variance-reduction-is-not-free",
     "href": "tec.html#but-variance-reduction-is-not-free",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "But variance reduction is not free",
     "text": "But variance reduction is not free\n\n\nBaseline lists need to be comparable\nEasiest way is to use paired items\nAmerican Family Association (A) \\(\\approx\\) Tea Party Patriots (B)\nBUT that makes it easier to spot the sensitive item"
   },
   {
     "objectID": "tec.html#different-baseline-estimates",
     "href": "tec.html#different-baseline-estimates",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Different baseline estimates",
     "text": "Different baseline estimates\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Diaz (2023)"
   },
   {
     "objectID": "tec.html#different-baseline-estimates-1",
     "href": "tec.html#different-baseline-estimates-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Different baseline estimates",
     "text": "Different baseline estimates\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Diaz (2023)"
   },
   {
     "objectID": "tec.html#dle-variants",
     "href": "tec.html#dle-variants",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLE variants",
-    "text": "DLE variants\n\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized"
+    "text": "DLE variants\n. . .\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized"
   },
   {
     "objectID": "tec.html#dle-variants-1",
     "href": "tec.html#dle-variants-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLE variants",
     "text": "DLE variants\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized\n\n\n\n\n\n\n\n\nFixed-fixed is not an admissible design"
   },
   {
     "objectID": "tec.html#dle-variants-2",
     "href": "tec.html#dle-variants-2",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLE variants",
     "text": "DLE variants\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized\n\n\n\n\n\n\n\n\nFixed-fixed is not an admissible design\nRandomized-fixed keeps sensitive item in second list"
   },
   {
     "objectID": "tec.html#dle-variants-3",
     "href": "tec.html#dle-variants-3",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLE variants",
     "text": "DLE variants\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized\n\n\n\n\n\n\n\n\nFixed-fixed is not an admissible design\nRandomized-fixed keeps sensitive item in second list"
   },
   {
     "objectID": "tec.html#dle-variants-4",
     "href": "tec.html#dle-variants-4",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLE variants",
     "text": "DLE variants\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized\n\n\n\n\n\n\n\n\nFixed-fixed is not an admissible design\nRandomized-fixed keeps sensitive item in second list\nFixed-randomized and randomized-randomized shuffle sensitive item order"
   },
   {
     "objectID": "tec.html#carryover-design-effects",
     "href": "tec.html#carryover-design-effects",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Carryover design effects",
-    "text": "Carryover design effects\n\n\n\n\n\n\nDesign effect (Blair and Imai 2012)\n\n\nThe inclusion of a sensitive item affects how survey participants respond to the baseline items within the list.\n\n\n\n\n\n\n\n\n\n\nCarryover design effect\n\n\nThe inclusion of a sensitive item in one list affects how participants respond to the baseline items in the other list."
+    "text": "Carryover design effects\n\n\n\n\n\n\nDesign effect (Blair and Imai 2012)\n\n\n\nThe inclusion of a sensitive item affects how survey participants respond to the baseline items within the list.\n\n\n. . .\n\n\n\n\n\n\nCarryover design effect\n\n\n\nThe inclusion of a sensitive item in one list affects how participants respond to the baseline items in the other list."
   },
   {
     "objectID": "tec.html#toy-example",
     "href": "tec.html#toy-example",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "tec.html#toy-example-1",
     "href": "tec.html#toy-example-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "tec.html#toy-example-2",
     "href": "tec.html#toy-example-2",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "tec.html#toy-example-3",
     "href": "tec.html#toy-example-3",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "tec.html#toy-example-4",
     "href": "tec.html#toy-example-4",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "tec.html#toy-example-5",
     "href": "tec.html#toy-example-5",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "tec.html#toy-example-6",
     "href": "tec.html#toy-example-6",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "tec.html#toy-example-7",
     "href": "tec.html#toy-example-7",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "tec.html#why-does-this-happen",
     "href": "tec.html#why-does-this-happen",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Why does this happen?",
     "text": "Why does this happen?\n\n\nUnique question format\nLists usually appear close to each other\nPositively correlation across lists (Glynn 2013)"
   },
   {
     "objectID": "tec.html#statistical-tests",
     "href": "tec.html#statistical-tests",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Statistical tests",
     "text": "Statistical tests\n\n\nGoal: Detect asymmetric shift across treatment schedules\nTwo tests:\n\n\nDifference-in-differences\nSigned-rank test"
   },
   {
     "objectID": "tec.html#statistical-tests-1",
     "href": "tec.html#statistical-tests-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Statistical tests",
     "text": "Statistical tests\n\n\nGoal: Detect asymmetric shift across treatment schedules\nTwo tests:\n\n\nDifference-in-differences\nSigned-rank test"
   },
   {
     "objectID": "tec.html#difference-in-differences-test",
     "href": "tec.html#difference-in-differences-test",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Difference-in-differences test",
     "text": "Difference-in-differences test\n\\[\n\\hat{\\tau}_1 = \\text{Mean}(\\text{First list}_t) - \\text{Mean}(\\text{First list}_c)\n\\]\n\\[\n\\hat{\\tau}_2 = \\text{Mean}(\\text{Second list}_t) - \\text{Mean}(\\text{Second list}_c)\n\\]\n\n\n\\(H_0: \\hat{\\tau}_1 - \\hat{\\tau}_2 = 0\\)\nDeflation: \\(\\hat{\\tau}_1 - \\hat{\\tau}_2 &lt; 0\\)\nInflation: \\(\\hat{\\tau}_1 - \\hat{\\tau}_2 &gt; 0\\)\nCalculate via regression or randomization inference"
   },
   {
     "objectID": "tec.html#application-to-alvarez-et-al-2019",
     "href": "tec.html#application-to-alvarez-et-al-2019",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Application to Alvarez et al (2019)",
     "text": "Application to Alvarez et al (2019)\n\n\n\n\n\nExperiment\nStatistic\np-value\n\n\n\n\nOrganization X (advocacy group)\n0.079\n0.623\n\n\nOrganization Y (border patrol)\n-0.268\n0.082"
   },
   {
     "objectID": "tec.html#application-to-alvarez-et-al-2019-1",
     "href": "tec.html#application-to-alvarez-et-al-2019-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Application to Alvarez et al (2019)",
     "text": "Application to Alvarez et al (2019)\n\n\n\n\n\nExperiment\nStatistic\np-value\n\n\n\n\nOrganization X (advocacy group)\n0.079\n0.623\n\n\nOrganization Y (border patrol)\n-0.268\n0.082"
   },
   {
     "objectID": "tec.html#application-to-alvarez-et-al-2019-2",
     "href": "tec.html#application-to-alvarez-et-al-2019-2",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Application to Alvarez et al (2019)",
     "text": "Application to Alvarez et al (2019)\n\n\n\n\n\nExperiment\nStatistic\np-value\n\n\n\n\nOrganization X (advocacy group)\n0.079\n0.623\n\n\nOrganization Y (border patrol)\n-0.268\n0.082"
   },
   {
     "objectID": "tec.html#tests-improve-our-ability-to-choose-baseline-items-for-a-dle",
     "href": "tec.html#tests-improve-our-ability-to-choose-baseline-items-for-a-dle",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Tests improve our ability to choose baseline items for a DLE",
     "text": "Tests improve our ability to choose baseline items for a DLE"
   },
   {
     "objectID": "tec.html#they-also-help-when-other-things-go-wrong",
     "href": "tec.html#they-also-help-when-other-things-go-wrong",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "They also help when other things go wrong",
     "text": "They also help when other things go wrong"
   },
   {
     "objectID": "tec.html#survey",
     "href": "tec.html#survey",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Survey",
-    "text": "Survey\n\nFacebook sample of Montevideo residents (N = 2688)\nFour criminal governance strategies\n\n\n\n\nNegative\n\nThreaten neighbors\nEvict neighbors\n\n\nPositive\n\nMake donations to neighbors\nOffer work to neighbors\n\n\n\n\n\n\nWork in progres with Ines Fynn, Verónica Pérez Bentancur, and Lucía Tiscornia"
+    "text": "Survey\n\nFacebook sample of Montevideo residents (N = 2688)\nFour criminal governance strategies\n\n. . .\n\n\n\nNegative\n\nThreaten neighbors\nEvict neighbors\n\n\n\n\nPositive\n\nMake donations to neighbors\nOffer work to neighbors\n\n\n\n\n\n\nWork in progres with Ines Fynn, Verónica Pérez Bentancur, and Lucía Tiscornia"
   },
   {
     "objectID": "tec.html#survey-1",
     "href": "tec.html#survey-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Survey",
-    "text": "Survey\n\nFacebook sample of Montevideo residents (N = 2688)\nFour criminal governance strategies\n\n\n\nNegative\n\nThreaten neighbors\nEvict neighbors\n\n\nPositive\n\nMake donations to neighbors\nOffer work to neighbors\n\n\n\n\n\nWork in progres with Ines Fynn, Verónica Pérez Bentancur, and Lucía Tiscornia"
+    "text": "Survey\n\nFacebook sample of Montevideo residents (N = 2688)\nFour criminal governance strategies\n\n\n\n\nNegative\n\nThreaten neighbors\nEvict neighbors\n\n\n\n\nPositive\n\nMake donations to neighbors\nOffer work to neighbors\n\n\n\n\n\n\nWork in progres with Ines Fynn, Verónica Pérez Bentancur, and Lucía Tiscornia"
   },
   {
     "objectID": "tec.html#dle-with-placebo-item",
     "href": "tec.html#dle-with-placebo-item",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLE with placebo item",
     "text": "DLE with placebo item\nThings people have experienced in the last six months:\n\n\n\n\n\nList A\nList B\n\n\n\n\nSaw people doing sports\nSaw people playing soccer\n\n\nVisited friends\nChatted with friends\n\n\nActivities by feminist groups\nActivities by LGBTQ groups\n\n\nWent to church\nWent to charity events"
   },
   {
     "objectID": "tec.html#dle-with-placebo-item-1",
     "href": "tec.html#dle-with-placebo-item-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLE with placebo item",
     "text": "DLE with placebo item\nThings people have experienced in the last six months:\n\n\n\n\n\nList A\nList B\n\n\n\n\nSaw people doing sports\nSaw people playing soccer\n\n\nVisited friends\nChatted with friends\n\n\nActivities by feminist groups\nActivities by LGBTQ groups\n\n\nWent to church\nWent to charity events\n\n\nGangs threatening neighbors\nDid not drink mate"
   },
   {
     "objectID": "tec.html#dle-with-placebo-item-2",
     "href": "tec.html#dle-with-placebo-item-2",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLE with placebo item",
     "text": "DLE with placebo item\nThings people have experienced in the last six months:\n\n\n\n\n\nList A\nList B\n\n\n\n\nSaw people doing sports\nSaw people playing soccer\n\n\nVisited friends\nChatted with friends\n\n\nActivities by feminist groups\nActivities by LGBTQ groups\n\n\nWent to church\nWent to charity events\n\n\nDid not drink mate\nGangs threatening neighbors"
   },
   {
     "objectID": "tec.html#prevalence-estimates",
     "href": "tec.html#prevalence-estimates",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Prevalence estimates",
     "text": "Prevalence estimates"
   },
   {
     "objectID": "tec.html#prevalence-estimates-1",
     "href": "tec.html#prevalence-estimates-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Prevalence estimates",
     "text": "Prevalence estimates"
   },
   {
     "objectID": "tec.html#prevalence-estimates-2",
     "href": "tec.html#prevalence-estimates-2",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Prevalence estimates",
     "text": "Prevalence estimates"
   },
   {
     "objectID": "tec.html#same-for-the-other-sensitive-items",
     "href": "tec.html#same-for-the-other-sensitive-items",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Same for the other sensitive items!",
     "text": "Same for the other sensitive items!"
   },
   {
     "objectID": "tec.html#what-went-wrong",
     "href": "tec.html#what-went-wrong",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "What went wrong?",
     "text": "What went wrong?\n\n\nPlacebo item more frequent than we anticipated\nOffsets prevalence rates we would have observed\nSolution: Reconstruct estimate bounds without placebo item\n\n\n\nProblem: Respondents may have noticed sensitive item and altered responses in unintended ways\nGoal: Rule out strategic errors"
   },
   {
     "objectID": "tec.html#assumptions",
     "href": "tec.html#assumptions",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Assumptions",
-    "text": "Assumptions\n\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying)\nNo design effects"
+    "text": "Assumptions\n. . .\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying)\nNo design effects"
   },
   {
     "objectID": "tec.html#assumptions-1",
     "href": "tec.html#assumptions-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Assumptions",
     "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying)\nNo design effects"
   },
   {
     "objectID": "tec.html#assumptions-2",
     "href": "tec.html#assumptions-2",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Assumptions",
     "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects"
   },
   {
     "objectID": "tec.html#assumptions-3",
     "href": "tec.html#assumptions-3",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Assumptions",
     "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects"
   },
   {
     "objectID": "tec.html#applying-difference-in-differences-test",
     "href": "tec.html#applying-difference-in-differences-test",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Applying difference-in-differences test",
     "text": "Applying difference-in-differences test\n\n\n\n\n\n\nSensitive item\nStatistic\np-value\n\n\n\n\nThreaten neighbors\n0.12\n0.41\n\n\nEvict neighbors\n0.08\n0.58\n\n\nMake donations\n-0.24\n0.16\n\n\nOffer work\n-0.11\n0.47"
   },
   {
     "objectID": "tec.html#applying-difference-in-differences-test-1",
     "href": "tec.html#applying-difference-in-differences-test-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Applying difference-in-differences test",
     "text": "Applying difference-in-differences test\n\n\n\n\n\nSensitive item\nStatistic\np-value\n\n\n\n\nThreaten neighbors\n0.12\n0.41\n\n\nEvict neighbors\n0.08\n0.58\n\n\nMake donations\n-0.24\n0.16\n\n\nOffer work\n-0.11\n0.47"
   },
   {
     "objectID": "tec.html#assumptions-4",
     "href": "tec.html#assumptions-4",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Assumptions",
-    "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\n\n\nImplications:\n\nControl responses never increase\nControl response = 5  always decrease by one\nControl response = 0  never change"
+    "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\n. . .\n\nImplications:\n\nControl responses never increase\nControl response = 5  always decrease by one\nControl response = 0  never change"
   },
   {
     "objectID": "tec.html#assumptions-5",
     "href": "tec.html#assumptions-5",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Assumptions",
-    "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\n\nAdditional:\n\n\n\nKnown placebo proportion"
+    "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\n. . .\nAdditional:\n. . .\n\nKnown placebo proportion"
   },
   {
     "objectID": "tec.html#assumptions-6",
     "href": "tec.html#assumptions-6",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Assumptions",
     "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\nAdditional:\n\nKnown placebo proportion\n\nNo survey question"
   },
   {
     "objectID": "tec.html#assumptions-7",
     "href": "tec.html#assumptions-7",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Assumptions",
     "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\nAdditional:\n\nKnown placebo proportion\n\nNo survey question \nNo auxiliary information"
   },
   {
     "objectID": "tec.html#assumptions-8",
     "href": "tec.html#assumptions-8",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Assumptions",
     "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\nAdditional:\n\nKnown placebo proportion\n\nNo survey question \nNo auxiliary information \nConstruct bounds at different hypothetical values"
   },
   {
     "objectID": "tec.html#dle-estimate-bounds",
     "href": "tec.html#dle-estimate-bounds",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLE Estimate bounds",
     "text": "DLE Estimate bounds"
   },
   {
     "objectID": "tec.html#dle-estimate-bounds-1",
     "href": "tec.html#dle-estimate-bounds-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLE Estimate bounds",
     "text": "DLE Estimate bounds"
   },
   {
     "objectID": "tec.html#dle-estimate-bounds-2",
     "href": "tec.html#dle-estimate-bounds-2",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLE Estimate bounds",
     "text": "DLE Estimate bounds"
   },
   {
     "objectID": "tec.html#conclusion",
     "href": "tec.html#conclusion",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Conclusion",
-    "text": "Conclusion\nSummary\n\n\nDLEs improve along bias-variance frontier\nBut bring additional questions about validity\nNew tools to address validity\nApplications: Justify research design and recover estimates\n\n\n\n\nLearn more: gustavodiaz.org"
+    "text": "Conclusion\n\nSummary\n\n\nDLEs improve along bias-variance frontier\nBut bring additional questions about validity\nNew tools to address validity\nApplications: Justify research design and recover estimates\n\n\n\n\nLearn more: gustavodiaz.org"
   },
   {
     "objectID": "tec.html#conclusion-1",
     "href": "tec.html#conclusion-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Conclusion",
-    "text": "Conclusion\nLessons\n\n\nDon’t give up!\nPilot, pilot, pilot\nAsk the same question in multiple ways\nCombine different questions to improve estimates\nMake adaptive rules before looking at results\n\n\n\n\nLearn more: gustavodiaz.org"
+    "text": "Conclusion\n\nLessons\n\n\nDon’t give up!\nPilot, pilot, pilot\nAsk the same question in multiple ways\nCombine different questions to improve estimates\nMake adaptive rules before looking at results\n\n\n\n\nLearn more: gustavodiaz.org"
   },
   {
     "objectID": "tec.html#appendix",
     "href": "tec.html#appendix",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Appendix",
     "text": "Appendix\n\n\nAlvarez et al (2019) details\nMontevideo survey responses\nSigned rank test\nDLE cost simulations\nPerformance simulations\nPlacebo tests\nNetwork scale-up"
   },
   {
     "objectID": "tec.html#cali",
     "href": "tec.html#cali",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Alvarez et al (2019) details",
     "text": "Alvarez et al (2019) details\n\n\n\n\n\n\n\n\n\n\n\n\nPlacement\n\n\n\n\nList A\nList B\n\n\n\n\nSensitive item\n\n\nOrganization X\n545\n525\n\n\nOrganization Y\n537\n543"
   },
   {
     "objectID": "tec.html#mean-supported-organizations",
     "href": "tec.html#mean-supported-organizations",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Mean supported organizations",
     "text": "Mean supported organizations"
   },
   {
     "objectID": "tec.html#control-list-distributions",
     "href": "tec.html#control-list-distributions",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Control list distributions",
     "text": "Control list distributions"
   },
   {
     "objectID": "tec.html#mvd",
     "href": "tec.html#mvd",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Montevideo survey",
     "text": "Montevideo survey"
   },
   {
     "objectID": "tec.html#montevideo-survey",
     "href": "tec.html#montevideo-survey",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Montevideo survey",
     "text": "Montevideo survey"
   },
   {
     "objectID": "tec.html#montevideo-survey-1",
     "href": "tec.html#montevideo-survey-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Montevideo survey",
     "text": "Montevideo survey"
   },
   {
     "objectID": "tec.html#montevideo-survey-2",
     "href": "tec.html#montevideo-survey-2",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Montevideo survey",
     "text": "Montevideo survey"
   },
   {
     "objectID": "tec.html#steph",
     "href": "tec.html#steph",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Stephenson’s signed rank test",
     "text": "Stephenson’s signed rank test\n\\[\n\\widetilde{T} = \\sum_{i=1}^N \\text{sgn} \\{(z_i - (1-z_i)) (Y_{i1} - Y_{i2})\\} \\times \\tilde{q}_i\n\\]\n\\[\n\\tilde{q}_i = {q_i-1 \\choose m-1} \\text{ for } q_i \\geq m\n\\]\n\\[\n\\tilde{q}_i = 0 \\text{ for } q_i &lt; m\n\\]\n\\[\n\\text{with } 1 \\leq m \\leq N\n\\]\n\n\n See Stephenson (1981) and Rosenbaum (2020) for details"
   },
   {
     "objectID": "tec.html#applied-to-alvarez-et-al-2019",
     "href": "tec.html#applied-to-alvarez-et-al-2019",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Applied to Alvarez et al (2019)",
     "text": "Applied to Alvarez et al (2019)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrganization X\n\n\nOrganization Y\n\n\n\nm\nStatistic\np-value\nStatistic\np-value\n\n\n\n\n2\n8.356400e+04\n1\n3.571300e+04\n1\n\n\n5\n3.809258e+12\n1\n3.323093e+12\n1\n\n\n10\n1.791638e+23\n1\n1.825804e+23\n1\n\n\n50\n1.439408e+86\n1\n2.533938e+86\n1"
   },
   {
     "objectID": "tec.html#cost",
     "href": "tec.html#cost",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "DLEs are costly to implement",
     "text": "DLEs are costly to implement"
   },
   {
     "objectID": "tec.html#performance",
     "href": "tec.html#performance",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Test performance",
     "text": "Test performance"
   },
   {
     "objectID": "tec.html#signed-rank-performance",
     "href": "tec.html#signed-rank-performance",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Signed rank performance",
     "text": "Signed rank performance"
   },
   {
     "objectID": "tec.html#placebo",
     "href": "tec.html#placebo",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Placebo tests",
     "text": "Placebo tests\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlacebo I\n\n\nPlacebo II\n\n\n\nItem\nEstimate\np\nn\nEstimate\np\nn\n\n\n\n\nDonate\n0.08\n0.55\n133\n-0.03\n0.32\n635\n\n\nEvict\n0.14\n0.46\n32\n0.00\n0.95\n628\n\n\nThreaten\n0.24\n0.08\n102\n0.02\n0.44\n641\n\n\nWork\n0.03\n0.88\n64\n0.01\n0.58\n647\n\n\n\n\n\n\n\n\n\n See Aronow et al (2015) for details"
   },
   {
     "objectID": "tec.html#nsum",
     "href": "tec.html#nsum",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Network scale-up method",
-    "text": "Network scale-up method\n\nHow many X do you know,"
+    "text": "Network scale-up method\n. . .\nHow many X do you know,"
   },
   {
     "objectID": "tec.html#network-scale-up-method",
     "href": "tec.html#network-scale-up-method",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Network scale-up method",
     "text": "Network scale-up method\nHow many X do you know, who also know you,"
   },
   {
     "objectID": "tec.html#network-scale-up-method-1",
     "href": "tec.html#network-scale-up-method-1",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Network scale-up method",
     "text": "Network scale-up method\nHow many X do you know, who also know you, with whom you have interacted in the last year"
   },
   {
     "objectID": "tec.html#network-scale-up-method-2",
     "href": "tec.html#network-scale-up-method-2",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Network scale-up method",
     "text": "Network scale-up method\nHow many X do you know, who also know you, with whom you have interacted in the last year in person, by phone, or any other channel?"
   },
   {
     "objectID": "tec.html#network-scale-up-method-3",
     "href": "tec.html#network-scale-up-method-3",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "Network scale-up method",
-    "text": "Network scale-up method\nHow many X do you know… \n\n\n\nFrom Las Piedras\nMale 25-29\nPolice officers\nUniversity students\nHad a kid last year\nPassed away last year\nMarried last year\nFemale 45-49\n\nPublic employees\nWelfare card holders\nRegistered with party\nWith kids in public school\nDid not vote in last election\nCurrently in jail\nRecently unemployed\nSENSITIVE ITEM"
+    "text": "Network scale-up method\nHow many X do you know… \n. . .\n\n\nFrom Las Piedras\nMale 25-29\nPolice officers\nUniversity students\nHad a kid last year\nPassed away last year\nMarried last year\nFemale 45-49\n\nPublic employees\nWelfare card holders\nRegistered with party\nWith kids in public school\nDid not vote in last election\nCurrently in jail\nRecently unemployed\nSENSITIVE ITEM"
   },
   {
     "objectID": "tec.html#nsum-results",
     "href": "tec.html#nsum-results",
-    "title": "Gustavo Diaz",
+    "title": "Research Agenda",
     "section": "NSUM results",
     "text": "NSUM results"
   },
@@ -1242,8 +1242,8 @@
     "objectID": "nu1.html#improving-list-experiments",
     "href": "nu1.html#improving-list-experiments",
     "title": "Gustavo Diaz",
-    "section": "Improving List Experiments",
-    "text": "Improving List Experiments\n \nGustavo Diaz\nMcMaster University\ngustavodiaz.org\ndiazg2@mcmaster.ca\n \nSlides: gustavodiaz.org/nu"
+    "section": "",
+    "text": "Gustavo Diaz\nMcMaster University\ngustavodiaz.org\ndiazg2@mcmaster.ca\n \nSlides: gustavodiaz.org/nu"
   },
   {
     "objectID": "nu1.html#questions",
@@ -1278,7 +1278,7 @@
     "href": "nu1.html#example",
     "title": "Gustavo Diaz",
     "section": "Example",
-    "text": "Example\n\n\n\n\n\n\nSource: NPR"
+    "text": "Example\n\n. . .\n\n\n\nSource: NPR"
   },
   {
     "objectID": "nu1.html#list-experiment",
@@ -1299,35 +1299,35 @@
     "href": "nu1.html#list-experiment-2",
     "title": "Gustavo Diaz",
     "section": "List experiment",
-    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n\n \nControl group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate\n\n\n\nSource: Rosenfeld et al (2016)"
+    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n\nSource: Rosenfeld et al (2016)\n. . .\n \n\nControl group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate"
   },
   {
     "objectID": "nu1.html#list-experiment-3",
     "href": "nu1.html#list-experiment-3",
     "title": "Gustavo Diaz",
     "section": "List experiment",
-    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n \nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate\n\n\nSource: Rosenfeld et al (2016)"
+    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n\nSource: Rosenfeld et al (2016)\n \n\nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate"
   },
   {
     "objectID": "nu1.html#list-experiment-4",
     "href": "nu1.html#list-experiment-4",
     "title": "Gustavo Diaz",
     "section": "List experiment",
-    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n \nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate\nVoted “YES” on the Personhood Initiative\n\n\nSource: Rosenfeld et al (2016)"
+    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n\nSource: Rosenfeld et al (2016)\n \n\nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate\nVoted “YES” on the Personhood Initiative"
   },
   {
     "objectID": "nu1.html#prevalence-rate",
     "href": "nu1.html#prevalence-rate",
     "title": "Gustavo Diaz",
     "section": "Prevalence rate",
-    "text": "Prevalence rate\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(List with sensitive item)} -\\\\ \\text{Mean(List without sensitive item)}\n\\]\n\nlibrary(estimatr)\ndifference_in_means(count ~ sensitive, data = df)\n\n \n\nWe get a prevalence rate estimate but we do not know how individual respondents voted!"
+    "text": "Prevalence rate\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(List with sensitive item)} -\\\\ \\text{Mean(List without sensitive item)}\n\\]\n\nlibrary(estimatr)\ndifference_in_means(count ~ sensitive, data = df)\n\n \n. . .\nWe get a prevalence rate estimate but we do not know how individual respondents voted!"
   },
   {
     "objectID": "nu1.html#compare-with-direct-question",
     "href": "nu1.html#compare-with-direct-question",
     "title": "Gustavo Diaz",
     "section": "Compare with direct question",
-    "text": "Compare with direct question\nDid you vote YES or NO on the Personhood Initiative, which appeared on the November 2011 Mississippi General Election Ballot?\n\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(Answer yes)}\n\\]\n\nt.test(yes ~ 1, data = df)"
+    "text": "Compare with direct question\nDid you vote YES or NO on the Personhood Initiative, which appeared on the November 2011 Mississippi General Election Ballot?\n. . .\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(Answer yes)}\n\\]\n\nt.test(yes ~ 1, data = df)"
   },
   {
     "objectID": "nu1.html#validation",
@@ -1376,7 +1376,7 @@
     "href": "nu1.html#double-list-experiment",
     "title": "Gustavo Diaz",
     "section": "Double list experiment",
-    "text": "Double list experiment\n\nList A\n\nCalifornians for Disability (advocating for people with disabilities)\nCalifornia National Organization for Women (advocating for women’s equality and empowerment)\nAmerican Family Association (advocating for pro-family values)\nAmerican Red Cross (humanitarian organization)\n\n\n\nList B\n\nAmerican Legion (veterans service organization)\nEquality California (gay and lesbian advocacy organization)\nTea Party Patriots (conservative group supporting lower taxes and limited government)\nSalvation Army (charitable organization)\n\n\n\n\nSource: Alvarez et al (2019)"
+    "text": "Double list experiment\n. . .\nList A\n\nCalifornians for Disability (advocating for people with disabilities)\nCalifornia National Organization for Women (advocating for women’s equality and empowerment)\nAmerican Family Association (advocating for pro-family values)\nAmerican Red Cross (humanitarian organization)\n\n. . .\nList B\n\nAmerican Legion (veterans service organization)\nEquality California (gay and lesbian advocacy organization)\nTea Party Patriots (conservative group supporting lower taxes and limited government)\nSalvation Army (charitable organization)\n\n\n\nSource: Alvarez et al (2019)"
   },
   {
     "objectID": "nu1.html#sensitive-item",
@@ -1390,7 +1390,7 @@
     "href": "nu1.html#three-prevalence-estimators",
     "title": "Gustavo Diaz",
     "section": "Three prevalence estimators",
-    "text": "Three prevalence estimators\n\n\\[\n\\hat{\\tau}_A = \\text{Mean}(A_t) - \\text{Mean}(A_c)\n\\]\n\ndifference_in_means(count ~ sensitive, subset = list == \"A\", data = df)\n\n\n\n\\[\n\\hat{\\tau}_B = \\text{Mean}(B_t) - \\text{Mean}(B_c)\n\\]\n\ndifference_in_means(count ~ sensitive, subset = list == \"B\", data = df )\n\n\n\n\\[\n\\hat{\\tau}_{Pooled} = (\\hat{\\tau}_A + \\hat{\\tau}_B)/2\n\\]\n\nlm_robust(count ~ sensitive + list, clusters = id, data = df)\n\n\n\n\nSee Diaz (2023) and Miller (1984) for details"
+    "text": "Three prevalence estimators\n. . .\n\\[\n\\hat{\\tau}_A = \\text{Mean}(A_t) - \\text{Mean}(A_c)\n\\]\n\ndifference_in_means(count ~ sensitive, subset = list == \"A\", data = df)\n\n. . .\n\\[\n\\hat{\\tau}_B = \\text{Mean}(B_t) - \\text{Mean}(B_c)\n\\]\n\ndifference_in_means(count ~ sensitive, subset = list == \"B\", data = df )\n\n. . .\n\\[\n\\hat{\\tau}_{Pooled} = (\\hat{\\tau}_A + \\hat{\\tau}_B)/2\n\\]\n\nlm_robust(count ~ sensitive + list, clusters = id, data = df)\n\n\n\nSee Diaz (2023) and Miller (1984) for details"
   },
   {
     "objectID": "nu1.html#dle-yields-more-precise-estimates",
@@ -1425,21 +1425,21 @@
     "href": "nu1.html#carryover-design-effects",
     "title": "Gustavo Diaz",
     "section": "Carryover design effects",
-    "text": "Carryover design effects\n\n\n\n\n\n\nDesign effect (Blair and Imai 2012)\n\n\nThe inclusion of a sensitive item affects how survey participants respond to the baseline items within the list.\n\n\n\n\n\n\n\n\n\n\nCarryover design effect\n\n\nThe inclusion of a sensitive item in one list affects how participants respond to the baseline items in the other list."
+    "text": "Carryover design effects\n\n\n\n\n\n\nDesign effect (Blair and Imai 2012)\n\n\n\nThe inclusion of a sensitive item affects how survey participants respond to the baseline items within the list.\n\n\n. . .\n\n\n\n\n\n\nCarryover design effect\n\n\n\nThe inclusion of a sensitive item in one list affects how participants respond to the baseline items in the other list."
   },
   {
     "objectID": "nu1.html#why-does-this-happen",
     "href": "nu1.html#why-does-this-happen",
     "title": "Gustavo Diaz",
     "section": "Why does this happen?",
-    "text": "Why does this happen?\n\n\nUnique question format\nLists usually appear close to each other\nPositive correlation across lists (Glynn 2013)"
+    "text": "Why does this happen?\n. . .\n\nUnique question format\nLists usually appear close to each other\nPositive correlation across lists (Glynn 2013)"
   },
   {
     "objectID": "nu1.html#dle-variants",
     "href": "nu1.html#dle-variants",
     "title": "Gustavo Diaz",
     "section": "DLE variants",
-    "text": "DLE variants\n\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized"
+    "text": "DLE variants\n. . .\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized"
   },
   {
     "objectID": "nu1.html#dle-variants-1",
@@ -1530,7 +1530,7 @@
     "href": "nu1.html#difference-in-differences-test",
     "title": "Gustavo Diaz",
     "section": "Difference-in-differences test",
-    "text": "Difference-in-differences test\n\\[\n\\hat{\\tau}_1 = \\text{Mean}(\\text{First list}_t) - \\text{Mean}(\\text{First list}_c)\n\\]\n\\[\n\\hat{\\tau}_2 = \\text{Mean}(\\text{Second list}_t) - \\text{Mean}(\\text{Second list}_c)\n\\]\n\n\n\\(H_0: \\hat{\\tau}_1 - \\hat{\\tau}_2 = 0\\)\nDeflation: \\(\\hat{\\tau}_1 - \\hat{\\tau}_2 &lt; 0\\)\nInflation: \\(\\hat{\\tau}_1 - \\hat{\\tau}_2 &gt; 0\\)\n\n\n\n\n# For fixed-randomized design\nlm_robust(count ~ sensitive*first, clusters = id, data = df)\n\n\n\n\nThere is also a signed-rank test (Diaz 2023)"
+    "text": "Difference-in-differences test\n\\[\n\\hat{\\tau}_1 = \\text{Mean}(\\text{First list}_t) - \\text{Mean}(\\text{First list}_c)\n\\]\n\\[\n\\hat{\\tau}_2 = \\text{Mean}(\\text{Second list}_t) - \\text{Mean}(\\text{Second list}_c)\n\\]\n\n\n\\(H_0: \\hat{\\tau}_1 - \\hat{\\tau}_2 = 0\\)\nDeflation: \\(\\hat{\\tau}_1 - \\hat{\\tau}_2 &lt; 0\\)\nInflation: \\(\\hat{\\tau}_1 - \\hat{\\tau}_2 &gt; 0\\)\n\n\n. . .\n\n# For fixed-randomized design\nlm_robust(count ~ sensitive*first, clusters = id, data = df)\n\n\n\nThere is also a signed-rank test (Diaz 2023)"
   },
   {
     "objectID": "nu1.html#application-to-alvarez-et-al-2019",
@@ -1572,14 +1572,14 @@
     "href": "nu1.html#criminal-governance-tools-in-uruguay",
     "title": "Gustavo Diaz",
     "section": "Criminal governance tools in Uruguay",
-    "text": "Criminal governance tools in Uruguay\n\nFacebook sample of Montevideo residents (N = 2688)\nFour criminal governance strategies\n\n\n\n\nViolent\n\nThreaten neighbors\nEvict neighbors\n\n\nNon-violent\n\nMake donations to neighbors\nOffer work to neighbors\n\n\n\n\n\n\nWork in progres with Ines Fynn, Verónica Pérez Bentancur, and Lucía Tiscornia"
+    "text": "Criminal governance tools in Uruguay\n\nFacebook sample of Montevideo residents (N = 2688)\nFour criminal governance strategies\n\n. . .\n\n\n\nViolent\n\nThreaten neighbors\nEvict neighbors\n\n\n\n\nNon-violent\n\nMake donations to neighbors\nOffer work to neighbors\n\n\n\n\n\n\nWork in progres with Ines Fynn, Verónica Pérez Bentancur, and Lucía Tiscornia"
   },
   {
     "objectID": "nu1.html#criminal-governance-tools-in-uruguay-1",
     "href": "nu1.html#criminal-governance-tools-in-uruguay-1",
     "title": "Gustavo Diaz",
     "section": "Criminal governance tools in Uruguay",
-    "text": "Criminal governance tools in Uruguay\n\nFacebook sample of Montevideo residents (N = 2688)\nFour criminal governance strategies\n\n\n\nViolent\n\nThreaten neighbors\nEvict neighbors\n\n\nNon-violent\n\nMake donations to neighbors\nOffer work to neighbors\n\n\n\n\n\nWork in progres with Ines Fynn, Verónica Pérez Bentancur, and Lucía Tiscornia"
+    "text": "Criminal governance tools in Uruguay\n\nFacebook sample of Montevideo residents (N = 2688)\nFour criminal governance strategies\n\n\n\n\nViolent\n\nThreaten neighbors\nEvict neighbors\n\n\n\n\nNon-violent\n\nMake donations to neighbors\nOffer work to neighbors\n\n\n\n\n\n\nWork in progres with Ines Fynn, Verónica Pérez Bentancur, and Lucía Tiscornia"
   },
   {
     "objectID": "nu1.html#dle-with-placebo-item",
@@ -1642,7 +1642,7 @@
     "href": "nu1.html#applying-difference-in-differences-test-1",
     "title": "Gustavo Diaz",
     "section": "Applying difference-in-differences test",
-    "text": "Applying difference-in-differences test\n\n\n\n\n\nSensitive item\nStatistic\np-value\n\n\n\n\nThreaten neighbors\n0.12\n0.41\n\n\nEvict neighbors\n0.08\n0.58\n\n\nMake donations\n-0.24\n0.16\n\n\nOffer work\n-0.11\n0.47\n\n\n\n\n\n\n\n\nObserved test statistics not unlikely under the null hypothesis of no carryover design effect"
+    "text": "Applying difference-in-differences test\n\n\n\n\n\nSensitive item\nStatistic\np-value\n\n\n\n\nThreaten neighbors\n0.12\n0.41\n\n\nEvict neighbors\n0.08\n0.58\n\n\nMake donations\n-0.24\n0.16\n\n\nOffer work\n-0.11\n0.47\n\n\n\n\n\n\n\n. . .\nObserved test statistics not unlikely under the null hypothesis of no carryover design effect"
   },
   {
     "objectID": "nu1.html#so-we-can-move-from-this",
@@ -1684,14 +1684,14 @@
     "href": "nu1.html#conclusion",
     "title": "Gustavo Diaz",
     "section": "Conclusion",
-    "text": "Conclusion\nSummary\n\n\nDLEs improve along bias-variance frontier\nBut bring additional questions about validity\nNew tools to address validity\nApplications: Justify research design and recover estimates\n\n\n\n\nLearn more: gustavodiaz.org"
+    "text": "Conclusion\n\nSummary\n\n\nDLEs improve along bias-variance frontier\nBut bring additional questions about validity\nNew tools to address validity\nApplications: Justify research design and recover estimates\n\n\n\n\nLearn more: gustavodiaz.org"
   },
   {
     "objectID": "nu1.html#conclusion-1",
     "href": "nu1.html#conclusion-1",
     "title": "Gustavo Diaz",
     "section": "Conclusion",
-    "text": "Conclusion\nLessons\n\n\nSeemingly cost-free innovations may have hidden costs\nNeed tools to incorporate into workflow\nAdaptive rules before confirmatory analyses\n\n\n\n\nLearn more: gustavodiaz.org"
+    "text": "Conclusion\n\nLessons\n\n\nSeemingly cost-free innovations may have hidden costs\nNeed tools to incorporate into workflow\nAdaptive rules before confirmatory analyses\n\n\n\n\nLearn more: gustavodiaz.org"
   },
   {
     "objectID": "nu1.html#appendix",
@@ -1796,7 +1796,7 @@
     "href": "nu1.html#nsum",
     "title": "Gustavo Diaz",
     "section": "Network scale-up method",
-    "text": "Network scale-up method\n\nHow many X do you know,"
+    "text": "Network scale-up method\n. . .\nHow many X do you know,"
   },
   {
     "objectID": "nu1.html#network-scale-up-method",
@@ -1824,7 +1824,7 @@
     "href": "nu1.html#network-scale-up-method-3",
     "title": "Gustavo Diaz",
     "section": "Network scale-up method",
-    "text": "Network scale-up method\nHow many X do you know… \n\n\n\nFrom Las Piedras\nMale 25-29\nPolice officers\nUniversity students\nHad a kid last year\nPassed away last year\nMarried last year\nFemale 45-49\n\nPublic employees\nWelfare card holders\nRegistered with party\nWith kids in public school\nDid not vote in last election\nCurrently in jail\nRecently unemployed\nSENSITIVE ITEM"
+    "text": "Network scale-up method\nHow many X do you know… \n. . .\n\n\nFrom Las Piedras\nMale 25-29\nPolice officers\nUniversity students\nHad a kid last year\nPassed away last year\nMarried last year\nFemale 45-49\n\nPublic employees\nWelfare card holders\nRegistered with party\nWith kids in public school\nDid not vote in last election\nCurrently in jail\nRecently unemployed\nSENSITIVE ITEM"
   },
   {
     "objectID": "nu1.html#nsum-results",
@@ -1878,623 +1878,623 @@
   {
     "objectID": "ucu.html#improving-list-experiments",
     "href": "ucu.html#improving-list-experiments",
-    "title": "Gustavo Diaz",
-    "section": "Improving List Experiments",
-    "text": "Improving List Experiments\n \nGustavo Diaz\nMcMaster University\ngustavodiaz.org\ndiazg2@mcmaster.ca\n \nSlides: talks.gustavodiaz.org/ucu"
+    "title": "Double list experiments",
+    "section": "",
+    "text": "Gustavo Diaz\nMcMaster University\ngustavodiaz.org\ndiazg2@mcmaster.ca\n \nSlides: talks.gustavodiaz.org/ucu"
   },
   {
     "objectID": "ucu.html#list-experiment",
     "href": "ucu.html#list-experiment",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "List experiment",
     "text": "List experiment\nHere is a list of things that some people have done.\n\n\nSource: Rosenfeld et al (2016)"
   },
   {
     "objectID": "ucu.html#list-experiment-1",
     "href": "ucu.html#list-experiment-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "List experiment",
     "text": "List experiment\nPlease listen to them and then tell me HOW MANY of them you have done in the past two years.\n\n\nSource: Rosenfeld et al (2016)"
   },
   {
     "objectID": "ucu.html#list-experiment-2",
     "href": "ucu.html#list-experiment-2",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "List experiment",
-    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n\n \nControl group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate\n\n\n\nSource: Rosenfeld et al (2016)"
+    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n\nSource: Rosenfeld et al (2016)\n. . .\n \n\nControl group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate"
   },
   {
     "objectID": "ucu.html#list-experiment-3",
     "href": "ucu.html#list-experiment-3",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "List experiment",
-    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n \nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate\n\n\nSource: Rosenfeld et al (2016)"
+    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n\nSource: Rosenfeld et al (2016)\n \n\nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate"
   },
   {
     "objectID": "ucu.html#list-experiment-4",
     "href": "ucu.html#list-experiment-4",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "List experiment",
-    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n \nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate\nVoted “YES” on the Personhood Initiative\n\n\nSource: Rosenfeld et al (2016)"
+    "text": "List experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\n\nSource: Rosenfeld et al (2016)\n \n\nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate\nVoted “YES” on the Personhood Initiative"
   },
   {
     "objectID": "ucu.html#prevalence-rate",
     "href": "ucu.html#prevalence-rate",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Prevalence rate",
-    "text": "Prevalence rate\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(List with sensitive item)} -\\\\ \\text{Mean(List without sensitive item)}\n\\]\n\n\nWe get a prevalence rate estimate\n\n\n\n\nBut we do not know how individual respondents voted!"
+    "text": "Prevalence rate\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(List with sensitive item)} -\\\\ \\text{Mean(List without sensitive item)}\n\\]\n. . .\n\nWe get a prevalence rate estimate\n\n. . .\n\nBut we do not know how individual respondents voted!"
   },
   {
     "objectID": "ucu.html#compare-with-direct-question",
     "href": "ucu.html#compare-with-direct-question",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Compare with direct question",
-    "text": "Compare with direct question\nDid you vote YES or NO on the Personhood Initiative, which appeared on the November 2011 Mississippi General Election Ballot?\n\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(Voted yes)}\n\\]"
+    "text": "Compare with direct question\nDid you vote YES or NO on the Personhood Initiative, which appeared on the November 2011 Mississippi General Election Ballot?\n. . .\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(Voted yes)}\n\\]"
   },
   {
     "objectID": "ucu.html#validation",
     "href": "ucu.html#validation",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Validation",
     "text": "Validation\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
   },
   {
     "objectID": "ucu.html#validation-1",
     "href": "ucu.html#validation-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Validation",
     "text": "Validation\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
   },
   {
     "objectID": "ucu.html#validation-2",
     "href": "ucu.html#validation-2",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Validation",
     "text": "Validation\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
   },
   {
     "objectID": "ucu.html#validation-3",
     "href": "ucu.html#validation-3",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Validation",
     "text": "Validation\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
   },
   {
     "objectID": "ucu.html#sensitivity-bias-reduction-not-always-worth-the-increased-variance",
     "href": "ucu.html#sensitivity-bias-reduction-not-always-worth-the-increased-variance",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Sensitivity bias reduction not always worth the increased variance",
     "text": "Sensitivity bias reduction not always worth the increased variance"
   },
   {
     "objectID": "ucu.html#can-we-do-better",
     "href": "ucu.html#can-we-do-better",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Can we do better?",
     "text": "Can we do better?"
   },
   {
     "objectID": "ucu.html#example",
     "href": "ucu.html#example",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Example",
     "text": "Example\nList A\n\nCalifornians for Disability (advocating for people with disabilities)\nCalifornia National Organization for Women (advocating for women’s equality and empowerment)\nAmerican Family Association (advocating for pro-family values)\nAmerican Red Cross (humanitarian organization)\n\nList B\n\nAmerican Legion (veterans service organization)\nEquality California (gay and lesbian advocacy organization)\nTea Party Patriots (conservative group supporting lower taxes and limited government)\nSalvation Army (charitable organization)\n\n\n\nSource: Alvarez et al (2019)"
   },
   {
     "objectID": "ucu.html#sensitive-item",
     "href": "ucu.html#sensitive-item",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Sensitive item",
     "text": "Sensitive item\nOrganization X (advocating for immigration reduction and measures against undocumented immigration)\n\n\nRandomly appears in list A or B\nSingle list: Half of the respondents see sensitive item\nDouble list: Everyone sees it\nEquivalent to two parallel list experiments"
   },
   {
     "objectID": "ucu.html#three-prevalence-estimators",
     "href": "ucu.html#three-prevalence-estimators",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Three prevalence estimators",
-    "text": "Three prevalence estimators\n\\[\n\\hat{\\tau}_A = \\text{Mean}(A_t) - \\text{Mean}(A_c)\n\\]\n\n\\[\n\\hat{\\tau}_B = \\text{Mean}(B_t) - \\text{Mean}(B_c)\n\\]\n\n\n\\[\n\\hat{\\tau}_{Pooled} = (\\hat{\\tau}_A + \\hat{\\tau}_B)/2\n\\]\n\n\n\nSee Diaz (2023) and Miller (1984) for details"
+    "text": "Three prevalence estimators\n\\[\n\\hat{\\tau}_A = \\text{Mean}(A_t) - \\text{Mean}(A_c)\n\\]\n. . .\n\\[\n\\hat{\\tau}_B = \\text{Mean}(B_t) - \\text{Mean}(B_c)\n\\]\n. . .\n\\[\n\\hat{\\tau}_{Pooled} = (\\hat{\\tau}_A + \\hat{\\tau}_B)/2\n\\]\n\n\nSee Diaz (2023) and Miller (1984) for details"
   },
   {
     "objectID": "ucu.html#dle-yields-more-precise-estimates",
     "href": "ucu.html#dle-yields-more-precise-estimates",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLE yields more precise estimates",
     "text": "DLE yields more precise estimates\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Diaz (2023)"
   },
   {
     "objectID": "ucu.html#dle-yields-more-precise-estimates-1",
     "href": "ucu.html#dle-yields-more-precise-estimates-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLE yields more precise estimates",
     "text": "DLE yields more precise estimates\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Diaz (2023)"
   },
   {
     "objectID": "ucu.html#but-variance-reduction-is-not-free",
     "href": "ucu.html#but-variance-reduction-is-not-free",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "But variance reduction is not free",
     "text": "But variance reduction is not free\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Diaz (2023)"
   },
   {
     "objectID": "ucu.html#but-variance-reduction-is-not-free-1",
     "href": "ucu.html#but-variance-reduction-is-not-free-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "But variance reduction is not free",
     "text": "But variance reduction is not free\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Diaz (2023)"
   },
   {
     "objectID": "ucu.html#dle-variants",
     "href": "ucu.html#dle-variants",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLE variants",
-    "text": "DLE variants\n\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized"
+    "text": "DLE variants\n. . .\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized"
   },
   {
     "objectID": "ucu.html#dle-variants-1",
     "href": "ucu.html#dle-variants-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLE variants",
     "text": "DLE variants\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized\n\n\n\n\n\n\n\n\nFixed-fixed is not an admissible design"
   },
   {
     "objectID": "ucu.html#dle-variants-2",
     "href": "ucu.html#dle-variants-2",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLE variants",
     "text": "DLE variants\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized\n\n\n\n\n\n\n\n\nFixed-fixed is not an admissible design\nRandomized-fixed keeps sensitive item in second list"
   },
   {
     "objectID": "ucu.html#dle-variants-3",
     "href": "ucu.html#dle-variants-3",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLE variants",
     "text": "DLE variants\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized\n\n\n\n\n\n\n\n\nFixed-fixed is not an admissible design\nRandomized-fixed keeps sensitive item in second list"
   },
   {
     "objectID": "ucu.html#dle-variants-4",
     "href": "ucu.html#dle-variants-4",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLE variants",
     "text": "DLE variants\n\n\n\n\n\nList order\nSensitive item location\n\n\n\n\nFixed\nFixed\n\n\nRandomized\nFixed\n\n\nFixed\nRandomized\n\n\nRandomized\nRandomized\n\n\n\n\n\n\n\n\nFixed-fixed is not an admissible design\nRandomized-fixed keeps sensitive item in second list\nFixed-randomized and randomized-randomized shuffle sensitive item order"
   },
   {
     "objectID": "ucu.html#carryover-design-effects",
     "href": "ucu.html#carryover-design-effects",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Carryover design effects",
-    "text": "Carryover design effects\n\n\n\n\n\n\nDesign effect (Blair and Imai 2012)\n\n\nThe inclusion of a sensitive item affects how survey participants respond to the baseline items within the list.\n\n\n\n\n\n\n\n\n\n\nCarryover design effect\n\n\nThe inclusion of a sensitive item in one list affects how participants respond to the baseline items in the other list."
+    "text": "Carryover design effects\n\n\n\n\n\n\nDesign effect (Blair and Imai 2012)\n\n\n\nThe inclusion of a sensitive item affects how survey participants respond to the baseline items within the list.\n\n\n. . .\n\n\n\n\n\n\nCarryover design effect\n\n\n\nThe inclusion of a sensitive item in one list affects how participants respond to the baseline items in the other list."
   },
   {
     "objectID": "ucu.html#toy-example",
     "href": "ucu.html#toy-example",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "ucu.html#toy-example-1",
     "href": "ucu.html#toy-example-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "ucu.html#toy-example-2",
     "href": "ucu.html#toy-example-2",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "ucu.html#toy-example-3",
     "href": "ucu.html#toy-example-3",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "ucu.html#toy-example-4",
     "href": "ucu.html#toy-example-4",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "ucu.html#toy-example-5",
     "href": "ucu.html#toy-example-5",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "ucu.html#toy-example-6",
     "href": "ucu.html#toy-example-6",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "ucu.html#toy-example-7",
     "href": "ucu.html#toy-example-7",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Toy example",
     "text": "Toy example\n\n\n\n\n\nObserved response\nList 1\nList 2\nDifference\n\n\n\n\nBaseline\n2\n2\n0\n\n\nDeflation\n\n\nSensitive first\n1\n1\n0\n\n\nSensitive second\n2\n1\n1\n\n\nInflation\n\n\nSensitive first\n3\n3\n0\n\n\nSensitive second\n2\n3\n-1"
   },
   {
     "objectID": "ucu.html#why-does-this-happen",
     "href": "ucu.html#why-does-this-happen",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Why does this happen?",
     "text": "Why does this happen?\n\n\nUnique question format\nLists usually appear close to each other\nPositive correlation across lists (Glynn 2013)"
   },
   {
     "objectID": "ucu.html#statistical-tests",
     "href": "ucu.html#statistical-tests",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Statistical tests",
     "text": "Statistical tests\n\n\nGoal: Detect asymmetric shift across treatment schedules\nTwo tests:\n\n\nDifference-in-differences\nSigned-rank test"
   },
   {
     "objectID": "ucu.html#statistical-tests-1",
     "href": "ucu.html#statistical-tests-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Statistical tests",
     "text": "Statistical tests\n\n\nGoal: Detect asymmetric shift across treatment schedules\nTwo tests:\n\n\nDifference-in-differences\nSigned-rank test"
   },
   {
     "objectID": "ucu.html#difference-in-differences-test",
     "href": "ucu.html#difference-in-differences-test",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Difference-in-differences test",
     "text": "Difference-in-differences test\n\\[\n\\hat{\\tau}_1 = \\text{Mean}(\\text{First list}_t) - \\text{Mean}(\\text{First list}_c)\n\\]\n\\[\n\\hat{\\tau}_2 = \\text{Mean}(\\text{Second list}_t) - \\text{Mean}(\\text{Second list}_c)\n\\]\n\n\n\\(H_0: \\hat{\\tau}_1 - \\hat{\\tau}_2 = 0\\)\nDeflation: \\(\\hat{\\tau}_1 - \\hat{\\tau}_2 &lt; 0\\)\nInflation: \\(\\hat{\\tau}_1 - \\hat{\\tau}_2 &gt; 0\\)\nCalculate via regression or randomization inference"
   },
   {
     "objectID": "ucu.html#application-to-alvarez-et-al-2019",
     "href": "ucu.html#application-to-alvarez-et-al-2019",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Application to Alvarez et al (2019)",
     "text": "Application to Alvarez et al (2019)\n\n\n\n\n\nExperiment\nStatistic\np-value\n\n\n\n\nOrganization X (advocacy group)\n0.079\n0.623\n\n\nOrganization Y (border patrol)\n-0.268\n0.082"
   },
   {
     "objectID": "ucu.html#application-to-alvarez-et-al-2019-1",
     "href": "ucu.html#application-to-alvarez-et-al-2019-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Application to Alvarez et al (2019)",
     "text": "Application to Alvarez et al (2019)\n\n\n\n\n\nExperiment\nStatistic\np-value\n\n\n\n\nOrganization X (advocacy group)\n0.079\n0.623\n\n\nOrganization Y (border patrol)\n-0.268\n0.082"
   },
   {
     "objectID": "ucu.html#application-to-alvarez-et-al-2019-2",
     "href": "ucu.html#application-to-alvarez-et-al-2019-2",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Application to Alvarez et al (2019)",
     "text": "Application to Alvarez et al (2019)\n\n\n\n\n\nExperiment\nStatistic\np-value\n\n\n\n\nOrganization X (advocacy group)\n0.079\n0.623\n\n\nOrganization Y (border patrol)\n-0.268\n0.082"
   },
   {
     "objectID": "ucu.html#tests-improve-our-ability-to-choose-baseline-items-for-a-dle",
     "href": "ucu.html#tests-improve-our-ability-to-choose-baseline-items-for-a-dle",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Tests improve our ability to choose baseline items for a DLE",
     "text": "Tests improve our ability to choose baseline items for a DLE"
   },
   {
     "objectID": "ucu.html#they-also-help-when-other-things-go-wrong",
     "href": "ucu.html#they-also-help-when-other-things-go-wrong",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "They also help when other things go wrong",
     "text": "They also help when other things go wrong"
   },
   {
     "objectID": "ucu.html#survey",
     "href": "ucu.html#survey",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Survey",
-    "text": "Survey\n\nFacebook sample of Montevideo residents (N = 2688)\nFour criminal governance strategies\n\n\n\n\nViolent\n\nThreaten neighbors\nEvict neighbors\n\n\nNon-violent\n\nMake donations to neighbors\nOffer work to neighbors\n\n\n\n\n\n\nWork in progres with Ines Fynn, Verónica Pérez Bentancur, and Lucía Tiscornia"
+    "text": "Survey\n\nFacebook sample of Montevideo residents (N = 2688)\nFour criminal governance strategies\n\n. . .\n\n\n\nViolent\n\nThreaten neighbors\nEvict neighbors\n\n\n\n\nNon-violent\n\nMake donations to neighbors\nOffer work to neighbors\n\n\n\n\n\n\nWork in progres with Ines Fynn, Verónica Pérez Bentancur, and Lucía Tiscornia"
   },
   {
     "objectID": "ucu.html#survey-1",
     "href": "ucu.html#survey-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Survey",
-    "text": "Survey\n\nFacebook sample of Montevideo residents (N = 2688)\nFour criminal governance strategies\n\n\n\nViolent\n\nThreaten neighbors\nEvict neighbors\n\n\nNon-violent\n\nMake donations to neighbors\nOffer work to neighbors\n\n\n\n\n\nWork in progres with Ines Fynn, Verónica Pérez Bentancur, and Lucía Tiscornia"
+    "text": "Survey\n\nFacebook sample of Montevideo residents (N = 2688)\nFour criminal governance strategies\n\n\n\n\nViolent\n\nThreaten neighbors\nEvict neighbors\n\n\n\n\nNon-violent\n\nMake donations to neighbors\nOffer work to neighbors\n\n\n\n\n\n\nWork in progres with Ines Fynn, Verónica Pérez Bentancur, and Lucía Tiscornia"
   },
   {
     "objectID": "ucu.html#dle-with-placebo-item",
     "href": "ucu.html#dle-with-placebo-item",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLE with placebo item",
     "text": "DLE with placebo item\nThings people have experienced in the last six months:\n\n\n\n\n\nList A\nList B\n\n\n\n\nSaw people doing sports\nSaw people playing soccer\n\n\nVisited friends\nChatted with friends\n\n\nActivities by feminist groups\nActivities by LGBTQ groups\n\n\nWent to church\nWent to charity events"
   },
   {
     "objectID": "ucu.html#dle-with-placebo-item-1",
     "href": "ucu.html#dle-with-placebo-item-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLE with placebo item",
     "text": "DLE with placebo item\nThings people have experienced in the last six months:\n\n\n\n\n\nList A\nList B\n\n\n\n\nSaw people doing sports\nSaw people playing soccer\n\n\nVisited friends\nChatted with friends\n\n\nActivities by feminist groups\nActivities by LGBTQ groups\n\n\nWent to church\nWent to charity events\n\n\nGangs threatening neighbors\nDid not drink mate"
   },
   {
     "objectID": "ucu.html#dle-with-placebo-item-2",
     "href": "ucu.html#dle-with-placebo-item-2",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLE with placebo item",
     "text": "DLE with placebo item\nThings people have experienced in the last six months:\n\n\n\n\n\nList A\nList B\n\n\n\n\nSaw people doing sports\nSaw people playing soccer\n\n\nVisited friends\nChatted with friends\n\n\nActivities by feminist groups\nActivities by LGBTQ groups\n\n\nWent to church\nWent to charity events\n\n\nDid not drink mate\nGangs threatening neighbors"
   },
   {
     "objectID": "ucu.html#prevalence-estimates",
     "href": "ucu.html#prevalence-estimates",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Prevalence estimates",
     "text": "Prevalence estimates\n\n\n\n\n\n\n\n\n\n\n\nLooks the same for the other sensitive items!"
   },
   {
     "objectID": "ucu.html#prevalence-estimates-1",
     "href": "ucu.html#prevalence-estimates-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Prevalence estimates",
     "text": "Prevalence estimates\n\n\n\n\n\n\n\n\n\n\n\nLooks the same for the other sensitive items!"
   },
   {
     "objectID": "ucu.html#prevalence-estimates-2",
     "href": "ucu.html#prevalence-estimates-2",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Prevalence estimates",
     "text": "Prevalence estimates\n\n\n\n\n\n\n\n\n\n\n\nLooks the same for the other sensitive items!"
   },
   {
     "objectID": "ucu.html#what-went-wrong",
     "href": "ucu.html#what-went-wrong",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "What went wrong?",
     "text": "What went wrong?\n\n\nPlacebo item more frequent than we anticipated\nOffsets prevalence rates we would have observed\nSolution: Reconstruct estimate bounds without placebo item\n\n\n\nProblem: Respondents may have noticed sensitive item and altered responses in unintended ways\nGoal: Rule out strategic errors"
   },
   {
     "objectID": "ucu.html#assumptions",
     "href": "ucu.html#assumptions",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Assumptions",
-    "text": "Assumptions\n\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying)\nNo design effects"
+    "text": "Assumptions\n. . .\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying)\nNo design effects"
   },
   {
     "objectID": "ucu.html#assumptions-1",
     "href": "ucu.html#assumptions-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Assumptions",
     "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying)\nNo design effects"
   },
   {
     "objectID": "ucu.html#assumptions-2",
     "href": "ucu.html#assumptions-2",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Assumptions",
     "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects"
   },
   {
     "objectID": "ucu.html#assumptions-3",
     "href": "ucu.html#assumptions-3",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Assumptions",
     "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects"
   },
   {
     "objectID": "ucu.html#applying-difference-in-differences-test",
     "href": "ucu.html#applying-difference-in-differences-test",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Applying difference-in-differences test",
     "text": "Applying difference-in-differences test\n\n\n\n\n\n\nSensitive item\nStatistic\np-value\n\n\n\n\nThreaten neighbors\n0.12\n0.41\n\n\nEvict neighbors\n0.08\n0.58\n\n\nMake donations\n-0.24\n0.16\n\n\nOffer work\n-0.11\n0.47"
   },
   {
     "objectID": "ucu.html#applying-difference-in-differences-test-1",
     "href": "ucu.html#applying-difference-in-differences-test-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Applying difference-in-differences test",
     "text": "Applying difference-in-differences test\n\n\n\n\n\nSensitive item\nStatistic\np-value\n\n\n\n\nThreaten neighbors\n0.12\n0.41\n\n\nEvict neighbors\n0.08\n0.58\n\n\nMake donations\n-0.24\n0.16\n\n\nOffer work\n-0.11\n0.47"
   },
   {
     "objectID": "ucu.html#assumptions-4",
     "href": "ucu.html#assumptions-4",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Assumptions",
-    "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\n\n\nImplications:\n\nControl responses never increase\nControl response = 5  always decrease by one\nControl response = 0  never change"
+    "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\n. . .\n\nImplications:\n\nControl responses never increase\nControl response = 5  always decrease by one\nControl response = 0  never change"
   },
   {
     "objectID": "ucu.html#assumptions-5",
     "href": "ucu.html#assumptions-5",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Assumptions",
-    "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\n\nAdditional:\n\n\n\nKnown placebo proportion"
+    "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\n. . .\nAdditional:\n. . .\n\nKnown placebo proportion"
   },
   {
     "objectID": "ucu.html#assumptions-6",
     "href": "ucu.html#assumptions-6",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Assumptions",
     "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\nAdditional:\n\nKnown placebo proportion\n\nNo survey question"
   },
   {
     "objectID": "ucu.html#assumptions-7",
     "href": "ucu.html#assumptions-7",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Assumptions",
     "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\nAdditional:\n\nKnown placebo proportion\n\nNo survey question \nNo auxiliary information"
   },
   {
     "objectID": "ucu.html#assumptions-8",
     "href": "ucu.html#assumptions-8",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Assumptions",
     "text": "Assumptions\nStandard (Blair and Imai 2012):\n\nNo liars (one-sided lying) \nNo design effects \n\nAdditional:\n\nKnown placebo proportion\n\nNo survey question \nNo auxiliary information \nConstruct bounds at different hypothetical values"
   },
   {
     "objectID": "ucu.html#dle-estimate-bounds",
     "href": "ucu.html#dle-estimate-bounds",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLE Estimate bounds",
     "text": "DLE Estimate bounds"
   },
   {
     "objectID": "ucu.html#dle-estimate-bounds-1",
     "href": "ucu.html#dle-estimate-bounds-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLE Estimate bounds",
     "text": "DLE Estimate bounds"
   },
   {
     "objectID": "ucu.html#dle-estimate-bounds-2",
     "href": "ucu.html#dle-estimate-bounds-2",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLE Estimate bounds",
     "text": "DLE Estimate bounds"
   },
   {
     "objectID": "ucu.html#conclusion",
     "href": "ucu.html#conclusion",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Conclusion",
-    "text": "Conclusion\nSummary\n\n\nDLEs improve along bias-variance frontier\nBut bring additional questions about validity\nNew tools to address validity\nApplications: Justify research design and recover estimates\n\n\n\n\nLearn more: gustavodiaz.org"
+    "text": "Conclusion\n\nSummary\n\n\nDLEs improve along bias-variance frontier\nBut bring additional questions about validity\nNew tools to address validity\nApplications: Justify research design and recover estimates\n\n\n\n\nLearn more: gustavodiaz.org"
   },
   {
     "objectID": "ucu.html#conclusion-1",
     "href": "ucu.html#conclusion-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Conclusion",
-    "text": "Conclusion\nLessons\n\n\nDon’t give up!\nPilot, pilot, pilot\nAsk the same question in multiple ways\nCombine different questions to improve estimates\nMake adaptive rules before looking at results\n\n\n\n\nLearn more: gustavodiaz.org"
+    "text": "Conclusion\n\nLessons\n\n\nDon’t give up!\nPilot, pilot, pilot\nAsk the same question in multiple ways\nCombine different questions to improve estimates\nMake adaptive rules before looking at results\n\n\n\n\nLearn more: gustavodiaz.org"
   },
   {
     "objectID": "ucu.html#appendix",
     "href": "ucu.html#appendix",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Appendix",
     "text": "Appendix\n\n\nAlvarez et al (2019) details\nMontevideo survey responses\nSigned rank test\nDLE cost simulations\nPerformance simulations\nPlacebo tests\nNetwork scale-up"
   },
   {
     "objectID": "ucu.html#cali",
     "href": "ucu.html#cali",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Alvarez et al (2019) details",
     "text": "Alvarez et al (2019) details\n\n\n\n\n\n\n\n\n\n\n\n\nPlacement\n\n\n\n\nList A\nList B\n\n\n\n\nSensitive item\n\n\nOrganization X\n545\n525\n\n\nOrganization Y\n537\n543"
   },
   {
     "objectID": "ucu.html#mean-supported-organizations",
     "href": "ucu.html#mean-supported-organizations",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Mean supported organizations",
     "text": "Mean supported organizations"
   },
   {
     "objectID": "ucu.html#control-list-distributions",
     "href": "ucu.html#control-list-distributions",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Control list distributions",
     "text": "Control list distributions"
   },
   {
     "objectID": "ucu.html#mvd",
     "href": "ucu.html#mvd",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Montevideo survey",
     "text": "Montevideo survey"
   },
   {
     "objectID": "ucu.html#montevideo-survey",
     "href": "ucu.html#montevideo-survey",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Montevideo survey",
     "text": "Montevideo survey"
   },
   {
     "objectID": "ucu.html#montevideo-survey-1",
     "href": "ucu.html#montevideo-survey-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Montevideo survey",
     "text": "Montevideo survey"
   },
   {
     "objectID": "ucu.html#montevideo-survey-2",
     "href": "ucu.html#montevideo-survey-2",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Montevideo survey",
     "text": "Montevideo survey"
   },
   {
     "objectID": "ucu.html#steph",
     "href": "ucu.html#steph",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Stephenson’s signed rank test",
     "text": "Stephenson’s signed rank test\n\\[\n\\widetilde{T} = \\sum_{i=1}^N \\text{sgn} \\{(z_i - (1-z_i)) (Y_{i1} - Y_{i2})\\} \\times \\tilde{q}_i\n\\]\n\\[\n\\tilde{q}_i = {q_i-1 \\choose m-1} \\text{ for } q_i \\geq m\n\\]\n\\[\n\\tilde{q}_i = 0 \\text{ for } q_i &lt; m\n\\]\n\\[\n\\text{with } 1 \\leq m \\leq N\n\\]\n\n\n See Stephenson (1981) and Rosenbaum (2020) for details"
   },
   {
     "objectID": "ucu.html#applied-to-alvarez-et-al-2019",
     "href": "ucu.html#applied-to-alvarez-et-al-2019",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Applied to Alvarez et al (2019)",
     "text": "Applied to Alvarez et al (2019)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrganization X\n\n\nOrganization Y\n\n\n\nm\nStatistic\np-value\nStatistic\np-value\n\n\n\n\n2\n8.356400e+04\n1\n3.571300e+04\n1\n\n\n5\n3.809258e+12\n1\n3.323093e+12\n1\n\n\n10\n1.791638e+23\n1\n1.825804e+23\n1\n\n\n50\n1.439408e+86\n1\n2.533938e+86\n1"
   },
   {
     "objectID": "ucu.html#cost",
     "href": "ucu.html#cost",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "DLEs are costly to implement",
     "text": "DLEs are costly to implement"
   },
   {
     "objectID": "ucu.html#performance",
     "href": "ucu.html#performance",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Test performance",
     "text": "Test performance"
   },
   {
     "objectID": "ucu.html#signed-rank-performance",
     "href": "ucu.html#signed-rank-performance",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Signed rank performance",
     "text": "Signed rank performance"
   },
   {
     "objectID": "ucu.html#placebo",
     "href": "ucu.html#placebo",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Placebo tests",
     "text": "Placebo tests\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlacebo I\n\n\nPlacebo II\n\n\n\nItem\nEstimate\np\nn\nEstimate\np\nn\n\n\n\n\nDonate\n0.08\n0.55\n133\n-0.03\n0.32\n635\n\n\nEvict\n0.14\n0.46\n32\n0.00\n0.95\n628\n\n\nThreaten\n0.24\n0.08\n102\n0.02\n0.44\n641\n\n\nWork\n0.03\n0.88\n64\n0.01\n0.58\n647\n\n\n\n\n\n\n\n\n\n See Aronow et al (2015) for details"
   },
   {
     "objectID": "ucu.html#nsum",
     "href": "ucu.html#nsum",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Network scale-up method",
-    "text": "Network scale-up method\n\nHow many X do you know,"
+    "text": "Network scale-up method\n. . .\nHow many X do you know,"
   },
   {
     "objectID": "ucu.html#network-scale-up-method",
     "href": "ucu.html#network-scale-up-method",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Network scale-up method",
     "text": "Network scale-up method\nHow many X do you know, who also know you,"
   },
   {
     "objectID": "ucu.html#network-scale-up-method-1",
     "href": "ucu.html#network-scale-up-method-1",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Network scale-up method",
     "text": "Network scale-up method\nHow many X do you know, who also know you, with whom you have interacted in the last year"
   },
   {
     "objectID": "ucu.html#network-scale-up-method-2",
     "href": "ucu.html#network-scale-up-method-2",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Network scale-up method",
     "text": "Network scale-up method\nHow many X do you know, who also know you, with whom you have interacted in the last year in person, by phone, or any other channel?"
   },
   {
     "objectID": "ucu.html#network-scale-up-method-3",
     "href": "ucu.html#network-scale-up-method-3",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "Network scale-up method",
-    "text": "Network scale-up method\nHow many X do you know… \n\n\n\nFrom Las Piedras\nMale 25-29\nPolice officers\nUniversity students\nHad a kid last year\nPassed away last year\nMarried last year\nFemale 45-49\n\nPublic employees\nWelfare card holders\nRegistered with party\nWith kids in public school\nDid not vote in last election\nCurrently in jail\nRecently unemployed\nSENSITIVE ITEM"
+    "text": "Network scale-up method\nHow many X do you know… \n. . .\n\n\nFrom Las Piedras\nMale 25-29\nPolice officers\nUniversity students\nHad a kid last year\nPassed away last year\nMarried last year\nFemale 45-49\n\nPublic employees\nWelfare card holders\nRegistered with party\nWith kids in public school\nDid not vote in last election\nCurrently in jail\nRecently unemployed\nSENSITIVE ITEM"
   },
   {
     "objectID": "ucu.html#nsum-results",
     "href": "ucu.html#nsum-results",
-    "title": "Gustavo Diaz",
+    "title": "Double list experiments",
     "section": "NSUM results",
     "text": "NSUM results"
   },
@@ -3118,8 +3118,8 @@
     "objectID": "texmeth25.html#balancing-precision-and-retention-in-experimental-design",
     "href": "texmeth25.html#balancing-precision-and-retention-in-experimental-design",
     "title": "Gustavo Diaz",
-    "section": "Balancing Precision and Retentionin Experimental Design",
-    "text": "Balancing Precision and Retentionin Experimental Design\n \n\n\nGustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\ngustavodiaz.org\n\nErin Rossiter\nUniversity of Notre Dame\nerossite@nd.edu\nerossiter.com\n\n \nPaper and slides: gustavodiaz.org/talk"
+    "section": "",
+    "text": "Gustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\ngustavodiaz.org\n\nErin Rossiter\nUniversity of Notre Dame\nerossite@nd.edu\nerossiter.com\n\n\n \nPaper and slides: gustavodiaz.org/talk"
   },
   {
     "objectID": "texmeth25.html#bias-variance-tradeoff-as-darts",
@@ -3147,14 +3147,14 @@
     "href": "texmeth25.html#two-types-of-tradeoffs-1",
     "title": "Gustavo Diaz",
     "section": "Two types of tradeoffs",
-    "text": "Two types of tradeoffs\n\nImprove precision at the expense of unbiasedness\nImproving precision without sacrificing unbiasedness?\n\n\n \nCost has to come from somewhere else!"
+    "text": "Two types of tradeoffs\n\nImprove precision at the expense of unbiasedness\nImproving precision without sacrificing unbiasedness?\n\n. . .\n \nCost has to come from somewhere else!"
   },
   {
     "objectID": "texmeth25.html#improving-precision-in-experiments",
     "href": "texmeth25.html#improving-precision-in-experiments",
     "title": "Gustavo Diaz",
     "section": "Improving precision in experiments",
-    "text": "Improving precision in experiments\n\nStandard error of estimated ATE in conventional experimental design (Gerber and Green 2012, p. 57)\n\n\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}{N-1}}\n\\]\n\n\n\n\\(N\\): Sample size\n\\(Y_i(*)\\): Potential outcomes under treatment/control (1/0)"
+    "text": "Improving precision in experiments\n. . .\nStandard error of estimated ATE in conventional experimental design (Gerber and Green 2012, p. 57)\n. . .\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}{N-1}}\n\\]\n\n\n\\(N\\): Sample size\n\\(Y_i(*)\\): Potential outcomes under treatment/control (1/0)"
   },
   {
     "objectID": "texmeth25.html#improving-precision-in-experiments-1",
@@ -3168,7 +3168,7 @@
     "href": "texmeth25.html#improving-precision-in-experiments-2",
     "title": "Gustavo Diaz",
     "section": "Improving precision in experiments",
-    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{N-1}}\n\\]\n\n\nVariance component\nDecrease \\(SE(\\widehat{ATE})\\) with alternative research designs"
+    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{N-1}}\n\\]\n. . .\n\nVariance component\nDecrease \\(SE(\\widehat{ATE})\\) with alternative research designs"
   },
   {
     "objectID": "texmeth25.html#improving-precision-in-experiments-3",
@@ -3203,21 +3203,21 @@
     "href": "texmeth25.html#improving-precision-in-experiments-7",
     "title": "Gustavo Diaz",
     "section": "Improving precision in experiments",
-    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#00843D}{N-1}}}\n\\]\n\n\nSample size component"
+    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#00843D}{N-1}}}\n\\]\n. . .\n\nSample size component"
   },
   {
     "objectID": "texmeth25.html#improving-precision-in-experiments-8",
     "href": "texmeth25.html#improving-precision-in-experiments-8",
     "title": "Gustavo Diaz",
     "section": "Improving precision in experiments",
-    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#00843D}{N-1}}}\n\\]\n\nSample size component\nQuadruple to halve \\(SE(\\widehat{ATE})\\)\n\n\nFocus: Increasing numerator may come at the cost of decreasing denominator\n\n\nPrecision gains from alternative designs may be offset by sample loss"
+    "text": "Improving precision in experiments\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#00843D}{N-1}}}\n\\]\n\nSample size component\nQuadruple to halve \\(SE(\\widehat{ATE})\\)\n\n. . .\nFocus: Increasing numerator may come at the cost of decreasing denominator\n. . .\nPrecision gains from alternative designs may be offset by sample loss"
   },
   {
     "objectID": "texmeth25.html#sample-loss",
     "href": "texmeth25.html#sample-loss",
     "title": "Gustavo Diaz",
     "section": "Sample loss",
-    "text": "Sample loss\n\n\nExplicit\n\n\nMore pre-treatment questions \\(\\rightarrow\\) more attrition/inattention\nBlock-randomization \\(\\rightarrow\\) discard units\n\n\nImplicit\n\n\nAdding a baseline survey \\(\\rightarrow\\) half sample size\nFour more survey questions (2 min.) \\(\\rightarrow\\) 72% sample size\n\n\n\n\nConcerns about prevent widespread implementation"
+    "text": "Sample loss\n\n. . .\nExplicit\n\n\nMore pre-treatment questions \\(\\rightarrow\\) more attrition/inattention\nBlock-randomization \\(\\rightarrow\\) discard units\n\n\nImplicit\n\n\nAdding a baseline survey \\(\\rightarrow\\) half sample size\nFour more survey questions (2 min.) \\(\\rightarrow\\) 72% sample size\n\n\n. . .\nConcerns about prevent widespread implementation"
   },
   {
     "objectID": "texmeth25.html#use-of-alternative-designs-to-increase-precision",
@@ -3245,7 +3245,7 @@
     "href": "texmeth25.html#goal",
     "title": "Gustavo Diaz",
     "section": "Goal",
-    "text": "Goal\nShow that precision gains offset sample loss\n\nPaper:\n\nReplication of selected studies\nSimulation on randomly sampled studies\nSimulations/code/advice for pre-analysis stage"
+    "text": "Goal\nShow that precision gains offset sample loss\n. . .\nPaper:\n\nReplication of selected studies\nSimulation on randomly sampled studies\nSimulations/code/advice for pre-analysis stage"
   },
   {
     "objectID": "texmeth25.html#goal-1",
@@ -3294,14 +3294,14 @@
     "href": "texmeth25.html#cond",
     "title": "Gustavo Diaz",
     "section": "Experimental conditions",
-    "text": "Experimental conditions\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Condition\n                Outcomes\n                Randomization\n              \n        \n        \n        \n                \n                  Design 1\n                  Post only\n                  Complete\n                \n                \n                  Design 2\n                  Pre-post \n                  Complete\n                \n                \n                  Design 3\n                  Pre-post \n                  Blocking\n                \n        \n      \n    \n\n\n\n\n\nSample size same as original\nIncreased length (DH: 43%, BG: 50%, TH: 110%)\n\n\n\nEvaluate extent of explicit/implicit sample loss\n\n\n\nSee more here"
+    "text": "Experimental conditions\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Condition\n                Outcomes\n                Randomization\n              \n        \n        \n        \n                \n                  Design 1\n                  Post only\n                  Complete\n                \n                \n                  Design 2\n                  Pre-post \n                  Complete\n                \n                \n                  Design 3\n                  Pre-post \n                  Blocking\n                \n        \n      \n    \n\n\n\n\n\nSample size same as original\nIncreased length (DH: 43%, BG: 50%, TH: 110%)\n\n\n. . .\nEvaluate extent of explicit/implicit sample loss\n\n\nSee more here"
   },
   {
     "objectID": "texmeth25.html#imp",
     "href": "texmeth25.html#imp",
     "title": "Gustavo Diaz",
     "section": "Implementation details",
-    "text": "Implementation details\n\n\n\n\n\n\n\n\n\nBack"
+    "text": "Implementation details\n\n\n\n\n\nBack"
   },
   {
     "objectID": "texmeth25.html#explicit-sample-loss",
@@ -4239,7 +4239,7 @@
     "href": "tulane.html#summary",
     "title": "Gustavo Diaz",
     "section": "Summary",
-    "text": "Summary\n\nPuzzle: Alternative designs rare\nArgument: Concerns about explicit/implicit sample loss offsetting precision gains\nFindings: Alternative designs withstand sample loss\nWrinkle: Alternative designs require more attention!\nTakeaway: Try alternative designs!"
+    "text": "Summary\n\nPuzzle: Alternative designs rare\nArgument: Concerns about explicit/implicit sample loss offsetting precision gains\nFindings: Alternative designs withstand sample loss\nContribution: Tools to navigate research design tradeoffs before data collection\nWrinkle: Alternative designs require extensive piloting"
   },
   {
     "objectID": "tulane.html#repeated-measurement-as-a-distribution",
@@ -4295,7 +4295,7 @@
     "href": "tulane.html#solution-research-design",
     "title": "Gustavo Diaz",
     "section": "Solution: Research design",
-    "text": "Solution: Research design\n\nMany ways to improve statistical precision in experiments before data collection"
+    "text": "Solution: Research design\nMany ways to improve statistical precision in experiments before data collection\nPuzzle: Political science rarely deviates from standard experimental design\n\nArgument: Scholars wary of hidden costs in alternative designs\n\n\nGoal: Show that benefits outweigh costs\n\n\nTakeaway: Statistical precision gains from alternative designs withstand considerable sample loss [wording]"
   },
   {
     "objectID": "tulane.html#solution-research-design-1",
@@ -4323,7 +4323,7 @@
     "href": "tulane.html#standard-experiment-1",
     "title": "Gustavo Diaz",
     "section": "Standard experiment",
-    "text": "Standard experiment\nEstimator\n\nDifference-in-means\n\\[\n\\widehat{ATE} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]\n\\]\n\n\n\n# Difference-in-means\nt.test(Y ~ Z, data = data)\n\n# Regression equivalent\nlm(Y ~ Z, data = data)"
+    "text": "Standard experiment\nEstimator\n\nDifference-in-means\n\\[\n\\widehat{ATE} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]\n\\]\n\n\n\n# Difference-in-means\nt.test(vote ~ vignette, data = experiment)\n\n# Regression equivalent\nlm(vote ~ vignette, data = experiment)"
   },
   {
     "objectID": "tulane.html#standard-experiment-2",
@@ -4372,49 +4372,49 @@
     "href": "tulane.html#sample-loss",
     "title": "Gustavo Diaz",
     "section": "Sample loss",
-    "text": "Sample loss\n\nExplicit: Introduced by implementation of alternative designs"
+    "text": "Sample loss\n\n\n\n\n\n\n\nExplicit\n\n\nSample loss introduced as a consequence of implementing an alternative design"
   },
   {
     "objectID": "tulane.html#sample-loss-1",
     "href": "tulane.html#sample-loss-1",
     "title": "Gustavo Diaz",
     "section": "Sample loss",
-    "text": "Sample loss\nImplicit: Costs internalized by researcher"
+    "text": "Sample loss\n\n\n\n\n\n\nImplicit\n\n\nSample loss internalized by the researcher before implementing an alternative design"
   },
   {
     "objectID": "tulane.html#sample-loss-2",
     "href": "tulane.html#sample-loss-2",
     "title": "Gustavo Diaz",
     "section": "Sample loss",
-    "text": "Sample loss\nImplicit: Costs internalized by researcher\n\n\n\nprolific.com/calculator"
+    "text": "Sample loss\n\n\n\n\n\n\nImplicit\n\n\nSample loss internalized by the researcher before implementing an alternative design"
   },
   {
     "objectID": "tulane.html#sample-loss-3",
     "href": "tulane.html#sample-loss-3",
     "title": "Gustavo Diaz",
     "section": "Sample loss",
-    "text": "Sample loss\nImplicit: Costs internalized by researcher\n\n\n\n\n\n\n\nprolific.com/calculator"
+    "text": "Sample loss\n\n\n\n\n\n\nImplicit\n\n\nSample loss internalized by the researcher before implementing an alternative design"
   },
   {
     "objectID": "tulane.html#sample-loss-4",
     "href": "tulane.html#sample-loss-4",
     "title": "Gustavo Diaz",
     "section": "Sample loss",
-    "text": "Sample loss\nImplicit: Costs internalized by researcher\n\n\n\n\n\n\n\n\n\nprolific.com/calculator"
+    "text": "Sample loss\n\n\n\n\n\n\nImplicit\n\n\nSample loss internalized by the researcher before implementing an alternative design"
   },
   {
     "objectID": "tulane.html#alternative-designs",
     "href": "tulane.html#alternative-designs",
     "title": "Gustavo Diaz",
     "section": "Alternative designs",
-    "text": "Alternative designs\n\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both"
+    "text": "Alternative designs\nAny deviation from the standard design aimed at improving statistical precision"
   },
   {
     "objectID": "tulane.html#alternative-designs-1",
     "href": "tulane.html#alternative-designs-1",
     "title": "Gustavo Diaz",
     "section": "Alternative designs",
-    "text": "Alternative designs\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both"
+    "text": "Alternative designs\n\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both"
   },
   {
     "objectID": "tulane.html#alternative-designs-2",
@@ -4533,7 +4533,7 @@
     "href": "tulane.html#alternative-designs-8",
     "title": "Gustavo Diaz",
     "section": "Alternative designs",
-    "text": "Alternative designs\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both             \n                \n        \n      \n    \n\n\n\n\nWhy these?"
+    "text": "Alternative designs\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both"
   },
   {
     "objectID": "tulane.html#block-randomization-3",
@@ -4624,7 +4624,7 @@
     "href": "tulane.html#implicit-sample-loss",
     "title": "Gustavo Diaz",
     "section": "Implicit sample loss",
-    "text": "Implicit sample loss"
+    "text": "Implicit sample loss\n\nSimulation\n\n\nStart with original sample size\nRandomly omit observations in alternative design only (0-50%)\nRe-estimate treatment effects and record standard errors\nCalculate % change in standard errors \\(\\frac{(\\text{Alternative} - \\text{Standard})}{\\text{Standard}}\\)\nRepeat 1,000 times per sample size"
   },
   {
     "objectID": "tulane.html#implicit-sample-loss-1",
@@ -4645,14 +4645,14 @@
     "href": "tulane.html#replication-design",
     "title": "Gustavo Diaz",
     "section": "Replication design",
-    "text": "Replication design\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTotal N: 6,605\nLonger surveys: 43%, 50%, 110%\nPrinciple: Stack against alternative designs\nGoal: Evaluate explicit/implicit sample loss"
+    "text": "Replication design"
   },
   {
     "objectID": "tulane.html#replication-design-1",
     "href": "tulane.html#replication-design-1",
     "title": "Gustavo Diaz",
     "section": "Replication design",
-    "text": "Replication design\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTotal N: 6,605\nLonger surveys: 43%, 50%, 110%\nPrinciple: Stack against alternative designs\nGoal: Evaluate explicit/implicit sample loss"
+    "text": "Replication design\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nN = 2,018\n50% longer survey\nFocus on earmarking cost treatment (vs. control)\n\n\n\n\nPrinciple: Stack against alternative designs\n\n\n\nGoal: Evaluate explicit/implicit sample loss"
   },
   {
     "objectID": "tulane.html#replication-design-2",
@@ -4680,7 +4680,7 @@
     "href": "tulane.html#also-in-the-paper",
     "title": "Gustavo Diaz",
     "section": "Also in the paper",
-    "text": "Also in the paper\n\n\nMore (simulated) replications\nBalancing precision, retention, and bias\nGuidelines for pre-analysis stage"
+    "text": "Also in the paper\n\n\nMore replications\nSimulated replications\nBalancing precision, retention, and bias\nGuidelines for pre-analysis stage"
   },
   {
     "objectID": "tulane.html#research-program",
@@ -4701,7 +4701,7 @@
     "href": "tulane.html#sample-loss-5",
     "title": "Gustavo Diaz",
     "section": "Sample loss",
-    "text": "Sample loss\nImplicit: Costs internalized by researcher\n \n\nFixed budget\n\n\n5 minutes  6 minutes\n\n\nN = 1,000  N = 833\n\n\n\nprolific.com/calculator"
+    "text": "Sample loss\n\n\n\n\n\n\nImplicit\n\n\nSample loss internalized by the researcher before implementing an alternative design\n\n\n\n \n\nFixed budget\n\n\n5 minutes  6 minutes\n\n\nN = 1,000  N = 833\n\n\n\nprolific.com/calculator"
   },
   {
     "objectID": "tulane.html#explicit-sample-loss-2",
@@ -4709,5 +4709,215 @@
     "title": "Gustavo Diaz",
     "section": "Explicit sample loss",
     "text": "Explicit sample loss"
+  },
+  {
+    "objectID": "tulane.html#a-survey-experiment",
+    "href": "tulane.html#a-survey-experiment",
+    "title": "Gustavo Diaz",
+    "section": "A survey experiment",
+    "text": "A survey experiment\n\n\nN = 1,000\nVignette: Incumbent politician seeking reelection\nManipulation: Clean (control); corrupt (treatment)\nOutcome: Would you vote to reelect? (0: no, 1: yes)\n\n\n\n\n\n\n\n\n\nStandard design\n\n\n\nTreatments assigned by simple/complete randomization\nOutcome measured once after tretment"
+  },
+  {
+    "objectID": "tulane.html#a-survey-experiment-1",
+    "href": "tulane.html#a-survey-experiment-1",
+    "title": "Gustavo Diaz",
+    "section": "A survey experiment",
+    "text": "A survey experiment\n\nN = 1,000\nVignette: Incumbent politician seeking reelection\nManipulation: Clean (control); corrupt (treatment)\nOutcome: Would you vote to reelect? (0: no, 1: yes)\n\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Vignette\n                Vote\n                p.value\n              \n        \n        \n        \n                \n                  Clean     \n                   0.510\n                  \n                \n                \n                  Corrupt   \n                   0.448\n                  \n                \n                \n                  Difference\n                  -0.062\n                  0.04979"
+  },
+  {
+    "objectID": "tulane.html#a-survey-experiment-2",
+    "href": "tulane.html#a-survey-experiment-2",
+    "title": "Gustavo Diaz",
+    "section": "A survey experiment",
+    "text": "A survey experiment\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Vignette\n                Vote\n                p.value\n              \n        \n        \n        \n                \n                  Clean     \n                   0.510\n                  \n                \n                \n                  Corrupt   \n                   0.448\n                  \n                \n                \n                  Difference\n                  -0.062\n                  0.04979\n                \n        \n      \n    \n\n\n\n\n \n\nWhat is the problem?"
+  },
+  {
+    "objectID": "tulane.html#a-survey-experiment-3",
+    "href": "tulane.html#a-survey-experiment-3",
+    "title": "Gustavo Diaz",
+    "section": "A survey experiment",
+    "text": "A survey experiment\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Vignette\n                Vote\n                p.value\n              \n        \n        \n        \n                \n                  Clean     \n                   0.510\n                  \n                \n                \n                  Corrupt   \n                   0.448\n                  \n                \n                \n                  Difference\n                  -0.062\n                  0.04979\n                \n        \n      \n    \n\n\n\n \n\nWhat is the problem?"
+  },
+  {
+    "objectID": "tulane.html#research-design",
+    "href": "tulane.html#research-design",
+    "title": "Gustavo Diaz",
+    "section": "Research design",
+    "text": "Research design"
+  },
+  {
+    "objectID": "tulane.html#research-design-1",
+    "href": "tulane.html#research-design-1",
+    "title": "Gustavo Diaz",
+    "section": "Research design",
+    "text": "Research design\n\n\n\n\n\n\nAlternative designs\n\n\nA deviation from the standard design aimed at improving statistical precision\n\n\n\n\nPuzzle: Often recommended, rarely implemented\n\n\nArgument: Scholars wary of hidden costs (sample loss)\n\n\nGoal: Show that benefits outweigh costs\n\n\nTakeaway: Alternative designs increase precision even when incurring sample loss"
+  },
+  {
+    "objectID": "tulane.html#alternative-designs-9",
+    "href": "tulane.html#alternative-designs-9",
+    "title": "Gustavo Diaz",
+    "section": "Alternative designs",
+    "text": "Alternative designs\n\n\n\n\n    \n\n    \n    \n      \n        \n\n \nOutcome measurement\n\n        \n              \n                Randomization\n                Post-only\n                Pre-post\n              \n        \n        \n        \n                \n                  Simple/Complete\n                  Standard        \n                  Repeated measures\n                \n                \n                  Blocking       \n                  Block randomized\n                  Both             \n                \n        \n      \n    \n\n\n\n\nWhy these?"
+  },
+  {
+    "objectID": "tulane.html#a-survey-experiment-4",
+    "href": "tulane.html#a-survey-experiment-4",
+    "title": "Gustavo Diaz",
+    "section": "A survey experiment",
+    "text": "A survey experiment\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Vignette\n                Vote\n                p.value\n              \n        \n        \n        \n                \n                  Clean     \n                   0.510\n                  \n                \n                \n                  Corrupt   \n                   0.448\n                  \n                \n                \n                  Difference\n                  -0.062\n                  0.04979\n                \n        \n      \n    \n\n\n\n \n\nWhat is the problem?\nLow statistical precision\n\n\n \n\nWhat could we have done differently?"
+  },
+  {
+    "objectID": "tulane.html#replication-study",
+    "href": "tulane.html#replication-study",
+    "title": "Gustavo Diaz",
+    "section": "Replication study",
+    "text": "Replication study\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                \n                Dietrich and Hayes (2023 JOP)\n                Bayram and Graham (2022 JOP)\n                Tappin and Hewitt (2023 JEPS)\n              \n        \n        \n        \n                \n                  Study\n                  1 (DH)\n                  2 (BG)\n                  3 (TH)\n                \n                \n                  Subfield\n                  AP\n                  IR\n                  AP\n                \n                \n                  Topic\n                  Race and issue-based symbolism\n                  Support for IO foreign aid\n                  Party cues and policy opinions\n                \n                \n                  Arms\n                  8\n                  5\n                  2\n                \n                \n                  Obs.\n                  515\n                  1000\n                  775\n                \n                \n                  Waves\n                  1\n                  1\n                  2\n                \n                \n                  Concern\n                  Hard to reach population\n                  More precision\n                  Effect persistence"
+  },
+  {
+    "objectID": "tulane.html#replication-study-1",
+    "href": "tulane.html#replication-study-1",
+    "title": "Gustavo Diaz",
+    "section": "Replication study",
+    "text": "Replication study\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                \n                Dietrich and Hayes (2023 JOP)\n                Bayram and Graham (2022 JOP)\n                Tappin and Hewitt (2023 JEPS)\n              \n        \n        \n        \n                \n                  Study\n                  1 (DH)\n                  2 (BG)\n                  3 (TH)\n                \n                \n                  Subfield\n                  AP\n                  IR\n                  AP\n                \n                \n                  Topic\n                  Race and issue-based symbolism\n                  Support for IO foreign aid\n                  Party cues and policy opinions\n                \n                \n                  Arms\n                  8\n                  5\n                  2\n                \n                \n                  Obs.\n                  515\n                  1000\n                  775\n                \n                \n                  Waves\n                  1\n                  1\n                  2\n                \n                \n                  Concern\n                  Hard to reach population\n                  More precision\n                  Effect persistence"
+  },
+  {
+    "objectID": "tulane.html#replication-study-2",
+    "href": "tulane.html#replication-study-2",
+    "title": "Gustavo Diaz",
+    "section": "Replication study",
+    "text": "Replication study\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                \n                Dietrich and Hayes (2023 JOP)\n                Bayram and Graham (2022 JOP)\n                Tappin and Hewitt (2023 JEPS)\n              \n        \n        \n        \n                \n                  Study\n                  1 (DH)\n                  2 (BG)\n                  3 (TH)\n                \n                \n                  Subfield\n                  AP\n                  IR\n                  AP\n                \n                \n                  Topic\n                  Race and issue-based symbolism\n                  Support for IO foreign aid\n                  Party cues and policy opinions\n                \n                \n                  Arms\n                  8\n                  5\n                  2\n                \n                \n                  Obs.\n                  515\n                  1000\n                  775\n                \n                \n                  Waves\n                  1\n                  1\n                  2\n                \n                \n                  Concern\n                  Hard to reach population\n                  More precision\n                  Effect persistence"
+  },
+  {
+    "objectID": "tulane.html#replication-study-3",
+    "href": "tulane.html#replication-study-3",
+    "title": "Gustavo Diaz",
+    "section": "Replication study",
+    "text": "Replication study\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                \n                Dietrich and Hayes (2023 JOP)\n                Bayram and Graham (2022 JOP)\n                Tappin and Hewitt (2023 JEPS)\n              \n        \n        \n        \n                \n                  Study\n                  1 (DH)\n                  2 (BG)\n                  3 (TH)\n                \n                \n                  Subfield\n                  AP\n                  IR\n                  AP\n                \n                \n                  Topic\n                  Race and issue-based symbolism\n                  Support for IO foreign aid\n                  Party cues and policy opinions\n                \n                \n                  Arms\n                  8\n                  5\n                  2\n                \n                \n                  Obs.\n                  515\n                  1000\n                  775\n                \n                \n                  Waves\n                  1\n                  1\n                  2\n                \n                \n                  Concern\n                  Hard to reach population\n                  More precision\n                  Effect persistence"
+  },
+  {
+    "objectID": "tulane.html#example-repeated-measures",
+    "href": "tulane.html#example-repeated-measures",
+    "title": "Gustavo Diaz",
+    "section": "Example: Repeated measures",
+    "text": "Example: Repeated measures\n\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)"
+  },
+  {
+    "objectID": "tulane.html#example-repeated-measures-1",
+    "href": "tulane.html#example-repeated-measures-1",
+    "title": "Gustavo Diaz",
+    "section": "Example: Repeated measures",
+    "text": "Example: Repeated measures\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)"
+  },
+  {
+    "objectID": "tulane.html#example-repeated-measures-2",
+    "href": "tulane.html#example-repeated-measures-2",
+    "title": "Gustavo Diaz",
+    "section": "Example: Repeated measures",
+    "text": "Example: Repeated measures\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)\n\n\n\n\n\n\n\\[\n\\widehat{ATE}_{\\text{Standard}} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]\n\\]\n\n\n\\[\n\\begin{align}\n\\widehat{ATE}_{\\text{Pre-post}} = & E[(Y_{i,t=2}(1) - Y_{i,t=1}) | Z_i = 1] - \\\\\n& E[(Y_{i,t=2}(0) - Y_{i,t=1}) | Z_i = 0]\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "tulane.html#example-repeated-measures-3",
+    "href": "tulane.html#example-repeated-measures-3",
+    "title": "Gustavo Diaz",
+    "section": "Example: Repeated measures",
+    "text": "Example: Repeated measures\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)\n\n\n\n\n\n\\[\n\\widehat{ATE}_{\\text{Standard}} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]\n\\]\n\\[\n\\begin{align}\n\\widehat{ATE}_{\\text{Pre-post}} = & E[(Y_{i,t=2}(1) \\color{#006747}{- Y_{i,t=1}}) | Z_i = 1] - \\\\\n& E[(Y_{i,t=2}(0) \\color{#006747}{- Y_{i,t=1}}) | Z_i = 0]\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "tulane.html#example-repeated-measures-4",
+    "href": "tulane.html#example-repeated-measures-4",
+    "title": "Gustavo Diaz",
+    "section": "Example: Repeated measures",
+    "text": "Example: Repeated measures\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)\n\n\n\n\n\n \n\n# Standard design\nlm(vote ~ vignette, data = experiment)\n\n# Pre-post\nlm(vote_post ~ vignette + vote_pre, data = experiment)"
+  },
+  {
+    "objectID": "tulane.html#what-does-this-do",
+    "href": "tulane.html#what-does-this-do",
+    "title": "Gustavo Diaz",
+    "section": "What does this do?",
+    "text": "What does this do?\n\nStandard design\n\nlm(vote_post ~ vignette, data = experiment)\n\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                estimate\n                std.error\n                p.value\n              \n        \n        \n        \n                \n                  -0.062\n                  0.0316\n                  0.04979\n                \n        \n      \n    \n\n\n\n \n\n\nPre-post design (\\(\\text{corr} = 0.5\\))\n\nlm(vote_post ~ vignette + vote_pre, data = experiment)\n\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                estimate\n                std.error\n                p.value\n              \n        \n        \n        \n                \n                  -0.074\n                  0.0298\n                  0.01358"
+  },
+  {
+    "objectID": "tulane.html#example-pre-post-design",
+    "href": "tulane.html#example-pre-post-design",
+    "title": "Gustavo Diaz",
+    "section": "Example: Pre-post design",
+    "text": "Example: Pre-post design\n\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)"
+  },
+  {
+    "objectID": "tulane.html#example-pre-post-design-1",
+    "href": "tulane.html#example-pre-post-design-1",
+    "title": "Gustavo Diaz",
+    "section": "Example: Pre-post design",
+    "text": "Example: Pre-post design\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)"
+  },
+  {
+    "objectID": "tulane.html#example-pre-post-design-2",
+    "href": "tulane.html#example-pre-post-design-2",
+    "title": "Gustavo Diaz",
+    "section": "Example: Pre-post design",
+    "text": "Example: Pre-post design\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)\n\n\n\n\n\n\n\\[\n\\widehat{ATE}_{\\text{Standard}} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]\n\\]\n\n\n\\[\n\\begin{align}\n\\widehat{ATE}_{\\text{Pre-post}} = & E[(Y_{i,t=2}(1) - Y_{i,t=1}) | Z_i = 1] - \\\\\n& E[(Y_{i,t=2}(0) - Y_{i,t=1}) | Z_i = 0]\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "tulane.html#example-pre-post-design-3",
+    "href": "tulane.html#example-pre-post-design-3",
+    "title": "Gustavo Diaz",
+    "section": "Example: Pre-post design",
+    "text": "Example: Pre-post design\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)\n\n\n\n\n\n\\[\n\\widehat{ATE}_{\\text{Standard}} = E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]\n\\]\n\\[\n\\begin{align}\n\\widehat{ATE}_{\\text{Pre-post}} = & E[(Y_{i,t=2}(1) \\color{#006747}{- Y_{i,t=1}}) | Z_i = 1] - \\\\\n& E[(Y_{i,t=2}(0) \\color{#006747}{- Y_{i,t=1}}) | Z_i = 0]\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "tulane.html#example-pre-post-design-4",
+    "href": "tulane.html#example-pre-post-design-4",
+    "title": "Gustavo Diaz",
+    "section": "Example: Pre-post design",
+    "text": "Example: Pre-post design\n\n\n\n\n\nDesign\n\n\nPre-treatment\n\n\nTreatment\n\n\nPost-treatment\n\n\n\n\n\n\nStandard\n\n\n\n\n\\(Z_i\\)\n\n\n\\(Y_i\\)\n\n\n\n\nPre-post\n\n\n\\(Y_{i, t=1}\\)\n\n\n\\(Z_i\\)\n\n\n\\(Y_{i, t=2}\\)\n\n\n\n\n\n \n\n# Standard design\nlm(vote ~ vignette, data = experiment)\n\n# Pre-post\nlm(vote_post ~ vignette + vote_pre, data = experiment)"
+  },
+  {
+    "objectID": "tulane.html#what-does-this-do-1",
+    "href": "tulane.html#what-does-this-do-1",
+    "title": "Gustavo Diaz",
+    "section": "What does this do?",
+    "text": "What does this do?"
+  },
+  {
+    "objectID": "tulane_extra.html",
+    "href": "tulane_extra.html",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "",
+    "text": "Hey"
+  },
+  {
+    "objectID": "tulane_extra.html#bar",
+    "href": "tulane_extra.html#bar",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "Bar",
+    "text": "Bar\nLet’s go"
+  },
+  {
+    "objectID": "nu1.html",
+    "href": "nu1.html",
+    "title": "Gustavo Diaz",
+    "section": "",
+    "text": "Gustavo Diaz\nMcMaster University\ngustavodiaz.org\ndiazg2@mcmaster.ca\n \nSlides: gustavodiaz.org/nu"
+  },
+  {
+    "objectID": "ucu.html",
+    "href": "ucu.html",
+    "title": "Double list experiments",
+    "section": "",
+    "text": "Gustavo Diaz\nMcMaster University\ngustavodiaz.org\ndiazg2@mcmaster.ca\n \nSlides: talks.gustavodiaz.org/ucu\n. . ."
+  },
+  {
+    "objectID": "texmeth25.html",
+    "href": "texmeth25.html",
+    "title": "Gustavo Diaz",
+    "section": "",
+    "text": "Gustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\ngustavodiaz.org\n\nErin Rossiter\nUniversity of Notre Dame\nerossite@nd.edu\nerossiter.com\n\n\n \nPaper and slides: gustavodiaz.org/talk"
+  },
+  {
+    "objectID": "tec.html",
+    "href": "tec.html",
+    "title": "Research Agenda",
+    "section": "",
+    "text": "Gustavo Diaz\nMcMaster University\ngustavodiaz.org\ndiazg2@mcmaster.ca\n \nSlides: talks.gustavodiaz.org/tec"
   }
 ]
