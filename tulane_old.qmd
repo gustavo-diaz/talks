@@ -39,9 +39,9 @@ University of Notre Dame
 
 &nbsp;
 
-Paper and slides: [gustavodiaz.org/talk](https://gustavodiaz.org/talk.html)
+Paper and slides: [gustavodiaz.org/tulane](https://gustavodiaz.org/tulane.html)
 
-![](talk_qr.png){.absolute bottom=-100 right=-50 width="200" height="200"}
+![](tulane_qr.png){.absolute bottom=-100 right=-50 width="200" height="200"}
 
 :::
 
@@ -1336,7 +1336,7 @@ p0 +
 
 &nbsp;
 
-**Paper and slides:** [gustavodiaz.org/talk](https://gustavodiaz.org/talk.html)
+**Paper and slides:** [gustavodiaz.org/tulane](https://gustavodiaz.org/tulane.html)
 
 
-![](talk_qr.png){fig-align="right" width="200" height="200"}
+![](tulane_qr.png){fig-align="right" width="200" height="200"}
