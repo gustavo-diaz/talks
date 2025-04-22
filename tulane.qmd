@@ -685,7 +685,7 @@ lm(vote_post ~ vignette, data = experiment)
 
 
 ```{r}
-lm(vote ~ vignette, data = experiment) %>% 
+lm(vote_post ~ vignette, data = experiment) %>% 
   tidy() %>% 
   filter(term == "vignetteCorrupt") %>% 
   select(estimate, std.error, p.value) %>% 
@@ -888,7 +888,7 @@ flowchart LR
 
 . . .
 
-- **Goal:** Evaluate explicit/implicit sample loss
+**Goal:** Evaluate explicit/implicit sample loss
 
 
 ## Explicit sample loss
