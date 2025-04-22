@@ -874,7 +874,7 @@ flowchart LR
 
 - 50% longer survey
 
-- Focus on *earmarking* cost treatment (vs. control)
+- Focus on *earmarking cost* treatment (vs. control)
 
 :::
 
@@ -1136,7 +1136,7 @@ ggplot(sim_bg,
 
 &nbsp;
 
-**Paper and slides:** [gustavodiaz.org/talk](https://gustavodiaz.org/tulane.html)
+**Paper and slides:** [gustavodiaz.org/tulane](https://gustavodiaz.org/tulane.html)
 
 
 ![](tulane_qr.png){fig-align="right" width="200" height="200"}
