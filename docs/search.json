@@ -4883,7 +4883,7 @@
     "href": "tulane_extra.html",
     "title": "Balancing Precision and Retention in Experimental Design",
     "section": "",
-    "text": "Hey"
+    "text": "\\[\\widehat{ATE}_{\\text{Block}} = \\sum_{b=1}^B \\frac{n_b}{N} \\widehat{ATE}_b\\]\n\n\n\n\n# Standard design\nlm(Y ~ Z, \n   data = data)\n\n# Block randomized\nlm(Y ~ Z + block, \n   data = data)"
   },
   {
     "objectID": "tulane_extra.html#bar",
@@ -5332,5 +5332,131 @@
     "title": "Gustavo Diaz",
     "section": "Research program",
     "text": "Research program\n\nDevelop standards to navigate research design tradeoffs (this project)\nCreate tools to inform research design choices\n\n\n\nInform applications in CP and political behavior"
+  },
+  {
+    "objectID": "tulane_extra.html#estimator",
+    "href": "tulane_extra.html#estimator",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "",
+    "text": "\\[\\widehat{ATE}_{\\text{Block}} = \\sum_{b=1}^B \\frac{n_b}{N} \\widehat{ATE}_b\\]"
+  },
+  {
+    "objectID": "tulane_extra.html#code",
+    "href": "tulane_extra.html#code",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "",
+    "text": "# Standard design\nlm(Y ~ Z, \n   data = data)\n\n# Block randomized\nlm(Y ~ Z + block, \n   data = data)"
+  },
+  {
+    "objectID": "tulane_extra.html#studies",
+    "href": "tulane_extra.html#studies",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "Studies",
+    "text": "Studies\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                \n                Dietrich and Hayes (2023 JOP)\n                Bayram and Graham (2022 JOP)\n                Tappin and Hewitt (2023 JEPS)\n              \n        \n        \n        \n                \n                  Study\n                  1 (DH)\n                  2 (BG)\n                  3 (TH)\n                \n                \n                  Subfield\n                  AP\n                  IR\n                  AP\n                \n                \n                  Topic\n                  Race and issue-based symbolism\n                  Support for IO foreign aid\n                  Party cues and policy opinions\n                \n                \n                  Arms\n                  8\n                  5\n                  2\n                \n                \n                  Obs.\n                  515\n                  1000\n                  775\n                \n                \n                  Waves\n                  1\n                  1\n                  2\n                \n                \n                  Concern\n                  Hard to reach population\n                  More precision\n                  Effect persistence"
+  },
+  {
+    "objectID": "tulane_extra.html#explicit-sample-loss",
+    "href": "tulane_extra.html#explicit-sample-loss",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "Explicit sample loss",
+    "text": "Explicit sample loss\n\n\n\n\n\nStudy\nDesign\nStarting sample size\nAll loss\nPost-treatment loss\np-value\n\n\n\n\nDietrich & Hayes\n1. Standard\n426\n0.005 (2)\n0.000 (0)\n\n\n\n\n2. Pre-post\n427\n0.007 (3)\n0.005 (2)\n0.499\n\n\n\n3. Pre-post & blocking\n429\n0.007 (3)\n0.002 (1)\n1\n\n\nBayram & Graham\n1. Standard\n1008\n0.005 (5)\n0.001 (1)\n\n\n\n\n2. Pre-post\n1010\n0.005 (5)\n0.002 (2)\n1\n\n\n\n3. Pre-post & blocking\n1006\n0.007 (7)\n0.005 (5)\n0.124\n\n\nTappin & Hewitt\n1. Standard\n752\n0.130 (98)\n0.125 (94)\n\n\n\n\n2. Pre-post\n780\n0.142 (111)\n0.141 (110)\n0.368\n\n\n\n3. Pre-post & blocking\n767\n0.207 (159)\n0.132 (101)\n0.702"
+  },
+  {
+    "objectID": "tulane_extra.html#explicit-sample-loss-1",
+    "href": "tulane_extra.html#explicit-sample-loss-1",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "Explicit sample loss",
+    "text": "Explicit sample loss"
+  },
+  {
+    "objectID": "tulane_extra.html#implicit-sample-loss",
+    "href": "tulane_extra.html#implicit-sample-loss",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "Implicit sample loss",
+    "text": "Implicit sample loss"
+  },
+  {
+    "objectID": "tulane_extra.html#more-results",
+    "href": "tulane_extra.html#more-results",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "More results",
+    "text": "More results"
+  },
+  {
+    "objectID": "tulane_extra.html#more-implementation-details",
+    "href": "tulane_extra.html#more-implementation-details",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "More implementation details",
+    "text": "More implementation details"
+  },
+  {
+    "objectID": "tulane_extra.html#sample",
+    "href": "tulane_extra.html#sample",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "Sample",
+    "text": "Sample\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOriginal experiment\n\n\nSimulation\n\n\n\nStudy\nArticle\nType\nArms\nN\nCountry\nn\nBlocking Covariates\nPredictiveness\n\n\n\n\n1\nGalasso et al (2023)\nSurvey\n6\n2971\nItaly\n946\n7\nLow\n\n\n2\nManekin and Mitts (2022)\nSurvey\n12\n3013\nUnited States\n2784\n3\nHigh\n\n\n3\nLyon (2023)\nSurvey\n3\n1029\nUganda\n561\n4\nLow\n\n\n4\nGoerger et al (2023)\nField\n2\n2942\nUnited States\n2712\n5\nModerate\n\n\n5\nCuriel et al (2023)\nField\n2\n275\nColombia\n275\n7\nLow\n\n\n6\nSimas (2022)\nSurvey\n2\n1176\nUnited States\n1175\n2\nModerate"
+  },
+  {
+    "objectID": "tulane_extra.html#results",
+    "href": "tulane_extra.html#results",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "tulane_extra.html#dag",
+    "href": "tulane_extra.html#dag",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "DAG",
+    "text": "DAG"
+  },
+  {
+    "objectID": "tulane_extra.html#designs",
+    "href": "tulane_extra.html#designs",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "Designs",
+    "text": "Designs\n\nComplete + post-only (Standard design)\nComplete + pre-post\nBlock on one covariate + post-only\nBlock on one covariate + pre-post\nBlock on all covariates + post-only\nBlock on all covariates + pre-post"
+  },
+  {
+    "objectID": "tulane_extra.html#study-2",
+    "href": "tulane_extra.html#study-2",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "Study 2",
+    "text": "Study 2"
+  },
+  {
+    "objectID": "tulane_extra.html#study-6",
+    "href": "tulane_extra.html#study-6",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "Study 6",
+    "text": "Study 6"
+  },
+  {
+    "objectID": "tulane_extra.html#simulation",
+    "href": "tulane_extra.html#simulation",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "Simulation",
+    "text": "Simulation"
+  },
+  {
+    "objectID": "tulane_extra.html#flowchart",
+    "href": "tulane_extra.html#flowchart",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "Flowchart",
+    "text": "Flowchart"
+  },
+  {
+    "objectID": "tulane_extra.html#all",
+    "href": "tulane_extra.html#all",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "All",
+    "text": "All"
+  },
+  {
+    "objectID": "tulane_extra.html#covariates",
+    "href": "tulane_extra.html#covariates",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "Covariates",
+    "text": "Covariates"
   }
 ]
