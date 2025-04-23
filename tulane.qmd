@@ -179,22 +179,6 @@ What is the problem?
 ![](precision_retention/ps_underpowered.png){fig-align="center" width="70%"}
 
 
-## A survey experiment
-
-```{r}
-exp_tab %>% 
-  tt() %>% 
-  format_tt(
-    j = 3,
-    replace = TRUE
-  )
-```
-
-&nbsp;
-
-::: {.r-stack}
-What is the problem?
-:::
 
 ## A survey experiment
 
@@ -659,64 +643,12 @@ lm(vote_post ~ vignette + vote_pre, data = experiment)
 ```
 
 
+
+
 ## What does this do?
-
-```{r}
-experiment = experiment %>% 
-  mutate(vote = Y,
-         vote_post = Y,
-         vignette = ifelse(Z == 0, "Clean", "Corrupt"))
-
-experiment$vote_pre = correlate(
-  given = experiment$vote_post,
-  rho = 0.5,
-  rbinom, size = 1, prob = 0.5
-)
-```
 
 . . .
 
-**Standard design**
-
-```{r, echo = TRUE, eval = FALSE}
-lm(vote_post ~ vignette, data = experiment)
-```
-
-
-
-```{r}
-lm(vote_post ~ vignette, data = experiment) %>% 
-  tidy() %>% 
-  filter(term == "vignetteCorrupt") %>% 
-  select(estimate, std.error, p.value) %>% 
-  mutate(estimate = round(estimate, 3),
-         std.error = round(std.error, 4),
-         p.value = round(p.value, 5)) %>% 
-  tt()
-```
-
-&nbsp;
-
-. . .
-
-**Pre-post design** ($\text{corr} = 0.5$)
-
-```{r, echo = TRUE, eval = FALSE}
-lm(vote_post ~ vignette + vote_pre, data = experiment)
-```
-
-```{r}
-lm(vote_post ~ vignette + vote_pre, data = experiment) %>% 
-  tidy() %>% 
-  filter(term == "vignetteCorrupt") %>% 
-  select(estimate, std.error, p.value) %>% 
-  mutate(estimate = round(estimate, 3),
-         std.error = round(std.error, 4),
-         p.value = round(p.value, 5)) %>%
-  tt()
-```
-
-## What does this do?
 
 ```{r, fig.align='center'}
 coords = list(

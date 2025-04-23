@@ -4736,7 +4736,7 @@
     "href": "tulane.html#a-survey-experiment-3",
     "title": "Gustavo Diaz",
     "section": "A survey experiment",
-    "text": "A survey experiment\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Vignette\n                Vote\n                p.value\n              \n        \n        \n        \n                \n                  Clean     \n                   0.510\n                  \n                \n                \n                  Corrupt   \n                   0.448\n                  \n                \n                \n                  Difference\n                  -0.062\n                  0.04979\n                \n        \n      \n    \n\n\n\n \n\nWhat is the problem?"
+    "text": "A survey experiment\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Vignette\n                Vote\n                p.value\n              \n        \n        \n        \n                \n                  Clean     \n                   0.510\n                  \n                \n                \n                  Corrupt   \n                   0.448\n                  \n                \n                \n                  Difference\n                  -0.062\n                  0.04979\n                \n        \n      \n    \n\n\n\n \n\nWhat is the problem?\nLow statistical precision\n\n\n \n\nWhat could we have done differently?"
   },
   {
     "objectID": "tulane.html#research-design",
@@ -4834,7 +4834,7 @@
     "href": "tulane.html#what-does-this-do",
     "title": "Gustavo Diaz",
     "section": "What does this do?",
-    "text": "What does this do?\n\nStandard design\n\nlm(vote_post ~ vignette, data = experiment)\n\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                estimate\n                std.error\n                p.value\n              \n        \n        \n        \n                \n                  -0.062\n                  0.0316\n                  0.04979\n                \n        \n      \n    \n\n\n\n \n\n\nPre-post design (\\(\\text{corr} = 0.5\\))\n\nlm(vote_post ~ vignette + vote_pre, data = experiment)\n\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                estimate\n                std.error\n                p.value\n              \n        \n        \n        \n                \n                  -0.074\n                  0.0298\n                  0.01358"
+    "text": "What does this do?"
   },
   {
     "objectID": "tulane.html#example-pre-post-design",
