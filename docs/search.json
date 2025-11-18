@@ -5458,5 +5458,152 @@
     "title": "Balancing Precision and Retention in Experimental Design",
     "section": "Covariates",
     "text": "Covariates"
+  },
+  {
+    "objectID": "mapor25.html#recovering-informative-estimates-in-failed-placebo-controlled-list-experiments",
+    "href": "mapor25.html#recovering-informative-estimates-in-failed-placebo-controlled-list-experiments",
+    "title": "Gustavo Diaz",
+    "section": "Recovering Informative Estimatesin Failed Placebo-ControlledList Experiments",
+    "text": "Recovering Informative Estimatesin Failed Placebo-ControlledList Experiments\n\n\nGustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\nVerónica Pérez Bentancur\nUniversidad de la República veronica.perez@cienciassociales.edu.uy\n\nInes Fynn\nUniversidad Católica del Uruguay ines.fynn@ucu.edu.uy\nLucía Tiscornia\nUniversity College Dublin\nlucia.tiscornia@ucd.ie\n\n \n\nSlides: gustavodiaz.org/talk"
+  },
+  {
+    "objectID": "mapor25.html#list-experiment",
+    "href": "mapor25.html#list-experiment",
+    "title": "Gustavo Diaz",
+    "section": "List experiment",
+    "text": "List experiment\nNow I am going to read you things that make people angry or upset"
+  },
+  {
+    "objectID": "mapor25.html#list-experiment-1",
+    "href": "mapor25.html#list-experiment-1",
+    "title": "Gustavo Diaz",
+    "section": "List experiment",
+    "text": "List experiment\nAfter I read them all, tell me HOW MANY of them upset you"
+  },
+  {
+    "objectID": "mapor25.html#list-experiment-2",
+    "href": "mapor25.html#list-experiment-2",
+    "title": "Gustavo Diaz",
+    "section": "List experiment",
+    "text": "List experiment\nI don’t want to know which ones, just tell me HOW MANY\n\nControl group\n\nThe federal government increasing tax on gasoline\nProfessional athletes getting million dollar contracts\nLarge corporations polluting the environment"
+  },
+  {
+    "objectID": "mapor25.html#list-experiment-3",
+    "href": "mapor25.html#list-experiment-3",
+    "title": "Gustavo Diaz",
+    "section": "List experiment",
+    "text": "List experiment\nI don’t want to know which ones, just tell me HOW MANY\nTreatment group\n\nThe federal government increasing tax on gasoline\nProfessional athletes getting million dollar contracts\nLarge corporations polluting the environment"
+  },
+  {
+    "objectID": "mapor25.html#list-experiment-4",
+    "href": "mapor25.html#list-experiment-4",
+    "title": "Gustavo Diaz",
+    "section": "List experiment",
+    "text": "List experiment\nI don’t want to know which ones, just tell me HOW MANY\nTreatment group\n\nThe federal government increasing tax on gasoline\nProfessional athletes getting million dollar contracts\nLarge corporations polluting the environment\nA black family moving next door"
+  },
+  {
+    "objectID": "mapor25.html#reduces-bias-but-increase-variance",
+    "href": "mapor25.html#reduces-bias-but-increase-variance",
+    "title": "Gustavo Diaz",
+    "section": "Reduces bias but increase variance",
+    "text": "Reduces bias but increase variance\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld, Imai, and Shapiro (2016)"
+  },
+  {
+    "objectID": "mapor25.html#reduces-bias-but-increase-variance-1",
+    "href": "mapor25.html#reduces-bias-but-increase-variance-1",
+    "title": "Gustavo Diaz",
+    "section": "Reduces bias but increase variance",
+    "text": "Reduces bias but increase variance\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld, Imai, and Shapiro (2016)"
+  },
+  {
+    "objectID": "mapor25.html#reduces-bias-but-increase-variance-2",
+    "href": "mapor25.html#reduces-bias-but-increase-variance-2",
+    "title": "Gustavo Diaz",
+    "section": "Reduces bias but increase variance",
+    "text": "Reduces bias but increase variance\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld, Imai, and Shapiro (2016)"
+  },
+  {
+    "objectID": "mapor25.html#reduces-bias-but-increase-variance-3",
+    "href": "mapor25.html#reduces-bias-but-increase-variance-3",
+    "title": "Gustavo Diaz",
+    "section": "Reduces bias but increase variance",
+    "text": "Reduces bias but increase variance\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld, Imai, and Shapiro (2016)"
+  },
+  {
+    "objectID": "mapor25.html#reduces-bias-but-increases-variance",
+    "href": "mapor25.html#reduces-bias-but-increases-variance",
+    "title": "Gustavo Diaz",
+    "section": "Reduces bias but increases variance",
+    "text": "Reduces bias but increases variance"
+  },
+  {
+    "objectID": "mapor25.html#reduces-bias-but-increases-variance-1",
+    "href": "mapor25.html#reduces-bias-but-increases-variance-1",
+    "title": "Gustavo Diaz",
+    "section": "Reduces bias but increases variance",
+    "text": "Reduces bias but increases variance"
+  },
+  {
+    "objectID": "mapor25.html#reduces-bias-but-increases-variance-2",
+    "href": "mapor25.html#reduces-bias-but-increases-variance-2",
+    "title": "Gustavo Diaz",
+    "section": "Reduces bias but increases variance",
+    "text": "Reduces bias but increases variance"
+  },
+  {
+    "objectID": "mapor25.html#reduces-bias-but-increases-variance-3",
+    "href": "mapor25.html#reduces-bias-but-increases-variance-3",
+    "title": "Gustavo Diaz",
+    "section": "Reduces bias but increases variance",
+    "text": "Reduces bias but increases variance"
+  },
+  {
+    "objectID": "mapor25.html#ideas-to-reduce-variance",
+    "href": "mapor25.html#ideas-to-reduce-variance",
+    "title": "Gustavo Diaz",
+    "section": "Ideas to reduce variance",
+    "text": "Ideas to reduce variance\n\nNegatively correlated items (Glynn 2013)\nCovariate adjustment (Blair and Imai 2012)\nAuxiliary information (Chou 2020)\nDouble list experiments (Miller 1984)\nCombine with direct questions (Aronow et al 2015)"
+  },
+  {
+    "objectID": "mapor25.html#reduces-sensitivity-bias",
+    "href": "mapor25.html#reduces-sensitivity-bias",
+    "title": "Gustavo Diaz",
+    "section": "Reduces sensitivity bias",
+    "text": "Reduces sensitivity bias"
+  },
+  {
+    "objectID": "mapor25.html#reduces-sensitivity-bias-1",
+    "href": "mapor25.html#reduces-sensitivity-bias-1",
+    "title": "Gustavo Diaz",
+    "section": "Reduces sensitivity bias",
+    "text": "Reduces sensitivity bias"
+  },
+  {
+    "objectID": "mapor25.html#reduces-sensitivity-bias-2",
+    "href": "mapor25.html#reduces-sensitivity-bias-2",
+    "title": "Gustavo Diaz",
+    "section": "Reduces sensitivity bias",
+    "text": "Reduces sensitivity bias"
+  },
+  {
+    "objectID": "mapor25.html#reduces-sensitivity-bias-3",
+    "href": "mapor25.html#reduces-sensitivity-bias-3",
+    "title": "Gustavo Diaz",
+    "section": "Reduces sensitivity bias",
+    "text": "Reduces sensitivity bias"
+  },
+  {
+    "objectID": "mapor25.html#problem",
+    "href": "mapor25.html#problem",
+    "title": "Gustavo Diaz",
+    "section": "Problem",
+    "text": "Problem\n \n \n\nCannot see “true” proportion\n\n \n\n\nHow to tell if a list experiment brings you closer?"
+  },
+  {
+    "objectID": "mapor25.html#artificial-inflation",
+    "href": "mapor25.html#artificial-inflation",
+    "title": "Gustavo Diaz",
+    "section": "Artificial inflation",
+    "text": "Artificial inflation\n[CONTINUE HERE]"
   }
 ]
