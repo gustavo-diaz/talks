@@ -49,7 +49,7 @@ University College Dublin
 
 Slides: [gustavodiaz.org/talk](https://gustavodiaz.org/talk)
 
-![](talk_qr.png){.absolute bottom=-100 right=-50 width="200" height="200"}
+![](talk_qr.png){.absolute bottom=-100 right=-50 width="180" height="180"}
 
 :::
 
@@ -71,6 +71,9 @@ library(tinytable)
 
 # ggplot global options
 theme_set(theme_gray(base_size = 20))
+
+# Northwestern purple
+nu_purple = "#4E2A84"
 ```
 
 ## List experiment
@@ -212,25 +215,189 @@ ggplot(validation) +
 <!-- ::: -->
 
 
-## Problem
+## Problem {.center}
 
-&nbsp;
 
-&nbsp;
 
-::: {.r-stack}
+
 Cannot see "true" proportion
-:::
-
-&nbsp;
 
 
 . . .
 
-::: {.r-stack}
+
 How to tell if a list experiment brings you closer?
-:::
+
 
 ## Artificial inflation
 
-[CONTINUE HERE]
+```{r}
+inflation = tribble(
+  ~Control, ~Treatment,
+  "The federal government increasing tax on gasoline",
+  "The federal government increasing tax on gasoline",
+  "Professional athletes getting million dollar contracts",
+  "Professional athletes getting million dollar contracts",
+  "Large corporations polluting the environment",
+  "Large corporations polluting the environment",
+  " ",
+  "**A black family moving next door**"
+)
+
+inflation %>% 
+  tt() %>%
+  format_tt(markdown = TRUE)
+```
+
+
+::: aside
+Things that make people angry or upset
+:::
+
+## Solution: Add a placebo statement
+
+```{r}
+inflation %>% tt() %>% format_tt(markdown = TRUE)
+```
+
+::: aside
+Things that make people angry or upset
+:::
+
+## Solution: Add a placebo statement
+
+```{r}
+inflation2 = tribble(
+  ~Control, ~Treatment,
+  "The federal government increasing tax on gasoline",
+  "The federal government increasing tax on gasoline",
+  "Professional athletes getting million dollar contracts",
+  "Professional athletes getting million dollar contracts",
+  "Large corporations polluting the environment",
+  "Large corporations polluting the environment",
+  "**Finding money in a jacket pocket**",
+  "**A black family moving next door**"
+)
+
+inflation2 %>% tt() %>% 
+  format_tt(markdown = TRUE) %>% 
+  style_tt(i = 4, j = 1, color = nu_purple)
+```
+
+::: aside
+Things that make people angry or upset
+:::
+
+## Placebo-controlled list experiments {.center}
+
+. . .
+
+Reduce bias from *non-strategic* response errors
+
+. . . 
+
+But they can backfire if you pick a  **bad placebo item**
+
+::: {style="text-align: center"}
+## It happened to us! {.center}
+:::
+
+## Our experiment
+
+Things people have experienced in the last six months:
+
+```{r}
+list0 = tribble(
+  ~`List A`, ~`List B`,
+  "Saw people doing sports", "Saw people playing soccer",
+  "Visited friends", "Chatted with friends",
+  "Activities by feminist groups", "Activities by LGBTQ groups",
+  "Went to church", "Went to charity events"
+)
+
+list0 %>% tt()
+```
+
+::: aside
+Online sample in Montevideo, Uruguay. $N = 2688$
+:::
+
+## Manipulations
+
+. . .
+
+**Sensitive items:** 
+
+- Saw criminal groups threatening neighbors
+- Saw criminal groups evicting neighbors from their homes
+- Saw criminal groups making donations to neighbors
+- Saw criminal groups offering work to neighbors
+
+## Manipulations
+
+**Sensitive items:** 
+
+- **Saw criminal groups threatening neighbors**
+- [Saw criminal groups evicting neighbors from their homes]{style="color: gray;"}
+- [Saw criminal groups making donations to neighbors]{style="color: gray;"}
+- [Saw criminal groups offering work to neighbors]{style="color: gray;"}
+
+. . .
+
+**Placebo item:**
+
+- I did not drink *mate*
+
+## Our experiment
+
+Things people have experienced in the last six months:
+
+```{r}
+list0 %>% tt()
+```
+
+
+## Our experiment
+
+Things people have experienced in the last six months:
+
+```{r}
+list1 = tribble(
+  ~`List A`, ~`List B`,
+  "Saw people doing sports", "Saw people playing soccer",
+  "Visited friends", "Chatted with friends",
+  "Activities by feminist groups", "Activities by LGBTQ groups",
+  "Went to church", "Went to charity events",
+  "**Saw criminal groups<br>threatening neighbors**",
+  "**I did not drink mate**"
+)
+
+list1 %>% 
+  tt() %>% 
+  format_tt(markdown = TRUE) %>% 
+  style_tt(j = 2, i = 5, color = nu_purple)
+```
+
+## Our experiment
+
+Things people have experienced in the last six months:
+
+```{r}
+list2 = tribble(
+  ~`List A`, ~`List B`,
+  "Saw people doing sports", "Saw people playing soccer",
+  "Visited friends", "Chatted with friends",
+  "Activities by feminist groups", "Activities by LGBTQ groups",
+  "Went to church", "Went to charity events",
+  "**I did not drink mate**",
+  "**Saw criminal groups<br>threatening neighbors**"
+)
+
+list2 %>% 
+  tt() %>% 
+  format_tt(markdown = TRUE) %>% 
+  style_tt(j = 1, i = 5, color = nu_purple)
+```
+
+## Results
+
