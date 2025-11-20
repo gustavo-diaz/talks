@@ -5639,7 +5639,7 @@
     "href": "mapor25.html#our-experiment",
     "title": "Gustavo Diaz",
     "section": "Our experiment",
-    "text": "Our experiment\nThings people have experienced in the last six months:\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                List A\n                List B\n              \n        \n        \n        \n                \n                  Saw people doing sports\n                  Saw people playing soccer\n                \n                \n                  Visited friends\n                  Chatted with friends\n                \n                \n                  Activities by feminist groups\n                  Activities by LGBTQ groups\n                \n                \n                  Went to church\n                  Went to charity events\n                \n        \n      \n    \n\n\n\n\n\nOnline sample in Montevideo, Uruguay. \\(N = 2688\\)"
+    "text": "Our experiment\nThings people have experienced in the last six months:\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                List A\n                List B\n              \n        \n        \n        \n                \n                  Saw people doing sports      \n                  Saw people playing soccer \n                \n                \n                  Visited friends              \n                  Chatted with friends      \n                \n                \n                  Activities by feminist groups\n                  Activities by LGBTQ groups\n                \n                \n                  Went to church               \n                  Went to charity events    \n                \n        \n      \n    \n\n\n\n\n\nOnline sample in Montevideo, Uruguay. \\(N = 2688\\)"
   },
   {
     "objectID": "mapor25.html#manipulations",
@@ -5660,7 +5660,7 @@
     "href": "mapor25.html#our-experiment-1",
     "title": "Gustavo Diaz",
     "section": "Our experiment",
-    "text": "Our experiment\nThings people have experienced in the last six months:\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                List A\n                List B\n              \n        \n        \n        \n                \n                  Saw people doing sports\n                  Saw people playing soccer\n                \n                \n                  Visited friends\n                  Chatted with friends\n                \n                \n                  Activities by feminist groups\n                  Activities by LGBTQ groups\n                \n                \n                  Went to church\n                  Went to charity events"
+    "text": "Our experiment\nThings people have experienced in the last six months:\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                List A\n                List B\n              \n        \n        \n        \n                \n                  Saw people doing sports      \n                  Saw people playing soccer \n                \n                \n                  Visited friends              \n                  Chatted with friends      \n                \n                \n                  Activities by feminist groups\n                  Activities by LGBTQ groups\n                \n                \n                  Went to church               \n                  Went to charity events"
   },
   {
     "objectID": "mapor25.html#our-experiment-2",
@@ -5682,5 +5682,96 @@
     "title": "Gustavo Diaz",
     "section": "Results",
     "text": "Results"
+  },
+  {
+    "objectID": "mapor25.html#results-1",
+    "href": "mapor25.html#results-1",
+    "title": "Gustavo Diaz",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "mapor25.html#what-do-we-do",
+    "href": "mapor25.html#what-do-we-do",
+    "title": "Gustavo Diaz",
+    "section": "What do we do?",
+    "text": "What do we do?\n\nImagine how responses would have looked like without including the placebo\n\n\nEquivalent to assuming estimated proportion is partially identified\n\n\nProduce non-parametric bounds"
+  },
+  {
+    "objectID": "mapor25.html#sharp-bounds",
+    "href": "mapor25.html#sharp-bounds",
+    "title": "Gustavo Diaz",
+    "section": "Sharp bounds",
+    "text": "Sharp bounds\nMain idea: Assume nothing beyond observed data and research design assumptions\n\nExperimental design: Only control responses change\n\n\nSharp bounds: Impute minimun/maximum possible value"
+  },
+  {
+    "objectID": "mapor25.html#very-uninformative",
+    "href": "mapor25.html#very-uninformative",
+    "title": "Gustavo Diaz",
+    "section": "Very uninformative",
+    "text": "Very uninformative"
+  },
+  {
+    "objectID": "mapor25.html#not-very-informative",
+    "href": "mapor25.html#not-very-informative",
+    "title": "Gustavo Diaz",
+    "section": "Not very informative",
+    "text": "Not very informative"
+  },
+  {
+    "objectID": "mapor25.html#what-else-can-we-assume",
+    "href": "mapor25.html#what-else-can-we-assume",
+    "title": "Gustavo Diaz",
+    "section": "What else can we assume?",
+    "text": "What else can we assume?\n\nList experiment assumptions\n\nNo liars: Rs do not endorse sensitive item when they it does not apply to them\nNo design effects: Adding/removing an item does not affect how R responds to other items\n\n\n\nImplications:\n\nResponses can only decrease\n…by a magnitude of one"
+  },
+  {
+    "objectID": "mapor25.html#list-experiment-bounds",
+    "href": "mapor25.html#list-experiment-bounds",
+    "title": "Gustavo Diaz",
+    "section": "List experiment bounds",
+    "text": "List experiment bounds\nImplications:\n\nResponses can only decrease\n…by a magnitude of one\n\n\nLower bound: All 5s become 4s\n\n\nUpper bound: Everything decreases by one unless already 0"
+  },
+  {
+    "objectID": "mapor25.html#a-bit-more-informative",
+    "href": "mapor25.html#a-bit-more-informative",
+    "title": "Gustavo Diaz",
+    "section": "A bit more informative?",
+    "text": "A bit more informative?"
+  },
+  {
+    "objectID": "mapor25.html#can-we-do-better",
+    "href": "mapor25.html#can-we-do-better",
+    "title": "Gustavo Diaz",
+    "section": "Can we do better?",
+    "text": "Can we do better?"
+  },
+  {
+    "objectID": "mapor25.html#refinement-known-placebo-proportion",
+    "href": "mapor25.html#refinement-known-placebo-proportion",
+    "title": "Gustavo Diaz",
+    "section": "Refinement: Known placebo proportion",
+    "text": "Refinement: Known placebo proportion\n\nIf you know the proportion of placebo holders in the population of interest\n\n\nLower bound: All 5s become 4s\n\n\nUpper bound: \\[\n(1- \\delta) \\times \\text{Observed proportion} + \\delta \\times \\text{List upper bound}\n\\]\nwhere \\(\\delta\\) is the known placebo proportion\n\n\n\n\n\nThese bounds cannot be considered “sharp” anymore"
+  },
+  {
+    "objectID": "mapor25.html#refinement",
+    "href": "mapor25.html#refinement",
+    "title": "Gustavo Diaz",
+    "section": "Refinement",
+    "text": "Refinement\n\nIf you know the proportion of placebo holders in the population of interest\n\n\nLower bound: All 5s become 4s (unchanged)\n\n\nUpper bound: \\[\n(1- \\delta) \\times \\text{Observed proportion} + \\delta \\times \\text{List upper bound}\n\\]\nwhere \\(\\delta\\) is the known placebo proportion\n\n\n\nThese bounds cannot be considered “sharp” anymore"
+  },
+  {
+    "objectID": "mapor25.html#imagine",
+    "href": "mapor25.html#imagine",
+    "title": "Gustavo Diaz",
+    "section": "Imagine",
+    "text": "Imagine"
+  },
+  {
+    "objectID": "mapor25.html#takeaways",
+    "href": "mapor25.html#takeaways",
+    "title": "Gustavo Diaz",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nA design-based method to recover informative bounds in failed-placebo controlled experiment\nAlso helpful to justify choice of placebo\nCaveat: This is a VERY EXTREME example\nAlways ask about placebo items directly!\n\nQuestions\n\nIdeas to refine lower bounds?\n\n\n\n\n\n\nSlides: gustavodiaz.org/talk"
   }
 ]

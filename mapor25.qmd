@@ -401,3 +401,342 @@ list2 %>%
 
 ## Results
 
+```{r}
+main_df = read.csv("crim_gov/main.csv")
+
+threat_df = main_df %>% 
+  filter(list_treatment == "Threatening neighbors")
+
+
+
+ggplot(threat_df) +
+  aes(x = estimator, 
+      y = estimate) +
+  ylim(-0.3, 0.3) +
+  geom_hline(
+    yintercept = 0,
+    linetype = "dashed"
+  ) +
+  geom_point(size = 3, 
+             color = nu_purple,
+             alpha = 0) +
+  geom_linerange(aes(
+    ymin = conf.low,
+    ymax = conf.high,
+    x = estimator
+  ),
+  color = nu_purple,
+  linewidth = 1,
+  alpha = 0) +
+  labs(
+    x = "Estimator",
+    y = "Proportion saw gangs\nthreatening neighbors"
+  )
+```
+
+
+## Results
+
+```{r}
+main_df = read.csv("crim_gov/main.csv")
+
+threat_df = main_df %>% 
+  filter(list_treatment == "Threatening neighbors") %>% 
+  mutate(estimator = ifelse(
+    estimator == "DLE",
+    "Pooled",
+    estimator
+  ))
+
+ggplot(threat_df) +
+  aes(x = estimator, 
+      y = estimate) +
+  ylim(-0.3, 0.3) +
+  geom_hline(
+    yintercept = 0,
+    linetype = "dashed"
+  ) +
+  geom_point(size = 3, color = nu_purple) +
+  geom_linerange(aes(
+    ymin = conf.low,
+    ymax = conf.high,
+    x = estimator
+  ),
+  color = nu_purple,
+  linewidth = 1) +
+  labs(
+    x = "Estimator",
+    y = "Proportion saw gangs\nthreatening neighbors"
+  )
+```
+
+## What do we do? {.center}
+
+. . .
+
+Imagine how responses would have looked like without including the placebo
+
+. . .
+
+Equivalent to assuming estimated proportion is *partially identified*
+
+. . .
+
+Produce **non-parametric bounds**
+
+
+## Sharp bounds {.center}
+
+**Main idea:** Assume nothing beyond observed data and research design assumptions
+
+. . .
+
+**Experimental design:** Only control responses change
+
+. . .
+
+**Sharp bounds:** Impute minimun/maximum possible value
+
+## Not very informative
+
+
+```{r}
+bounds_df = read.csv("crim_gov/bounds.csv")
+
+std = bounds_df %>% 
+  filter(list_treatment == "Threaten" &
+           Assumptions == "Standard") %>% 
+  mutate(Estimator = case_when(
+    Estimator == "Single list" &
+      list == "count_a" ~ "List A",
+    Estimator == "Single list" &
+      list == "count_b" ~ "List B",
+    Estimator == "DLE" ~ "Pooled",
+    .default = Estimator
+  ))  %>% 
+  select(
+    Estimator, 
+    outcome,
+    estimate,
+    boot_ci_which
+  ) %>% 
+  pivot_wider(
+    names_from = outcome,
+    values_from = c(estimate, boot_ci_which)
+  )
+
+ggplot(std) +
+  aes(x = Estimator,
+      y = estimate_count_hi) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed") +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = estimate_count_lo,
+    ymax = estimate_count_hi
+  ), color = nu_purple,
+  linewidth = 3) +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = boot_ci_which_count_lo,
+    ymax = boot_ci_which_count_hi
+  ), color = nu_purple,
+  linewidth = 1) +
+  labs(y = "Proportion saw gangs\nthreatening neighbors")
+
+```
+
+## What else can we assume?
+
+. . .
+
+**List experiment assumptions**
+
+::: incremental
+1. *No liars:* Rs do not endorse sensitive item when they it does not apply to them
+2. *No design effects:* Adding/removing an item does not affect how R responds to other items
+:::
+
+. . .
+
+**Implications:**
+
+::: incremental
+1. Responses can only *decrease*
+2. ...by a magnitude of *one*
+:::
+
+## List experiment bounds
+
+**Implications:**
+
+1. Responses can only *decrease*
+2. ...by a magnitude of *one*
+
+. . .
+
+**Lower bound:** All 5s become 4s
+
+. . .
+
+**Upper bound:** Everything decreases by one unless already 0
+
+## A bit more informative?
+
+```{r}
+le = bounds_df %>% 
+  filter(list_treatment == "Threaten" &
+           Assumptions == "List") %>% 
+  mutate(Estimator = case_when(
+    Estimator == "Single list" &
+      list == "count_a" ~ "List A",
+    Estimator == "Single list" &
+      list == "count_b" ~ "List B",
+    Estimator == "DLE" ~ "Pooled",
+    .default = Estimator
+  )) %>% 
+# the boot CIs are backwards
+  mutate(boot_ci_which = ifelse(
+    outcome == "count_hi",
+    boot_ci_hi,
+    boot_ci_lo
+  )) %>% 
+    select(
+    Estimator, 
+    outcome,
+    estimate,
+    boot_ci_which
+  ) %>% 
+  pivot_wider(
+    names_from = outcome,
+    values_from = c(estimate, boot_ci_which)
+  )
+
+ggplot(le) +
+  aes(x = Estimator,
+      y = estimate_count_hi) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed") +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = estimate_count_lo,
+    ymax = estimate_count_hi
+  ), color = nu_purple,
+  linewidth = 3) +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = boot_ci_which_count_lo,
+    ymax = boot_ci_which_count_hi
+  ), color = nu_purple,
+  linewidth = 1) +
+  labs(y = "Proportion saw gangs\nthreatening neighbors") +
+  ylim(-0.2, 1.2)
+```
+::: {style="text-align: center"}
+## Can we do better? {.center}
+:::
+
+## Refinement
+
+. . .
+
+If you *know* the proportion of placebo holders in the population of interest
+
+. . .
+
+**Lower bound:** All 5s become 4s (unchanged)
+
+. . .
+
+**Upper bound:** 
+$$
+(1- \delta) \times \text{Observed proportion} + \delta \times \text{List upper bound}
+$$
+
+where $\delta$ is the known placebo proportion
+
+::: aside
+These bounds cannot be considered "sharp" anymore
+:::
+
+## Imagine
+
+```{r}
+bounds_known_prop = read.csv("crim_gov/bounds_known_prop.csv")
+
+# I messed up the proportion labels
+bkp_hi = bounds_known_prop %>% 
+  filter(list_treatment == "Threaten") %>% 
+  mutate(p = case_when(
+    p == 1 ~ 0.05,
+    p == 2 ~ 0.1,
+    p == 3 ~ 0.2,
+    p == 4 ~ 0.3
+  ),
+  estimator = case_when(
+    estimator == "List" &
+      list == "count_a" ~ "List A",
+    estimator == "List" &
+      list == "count_b" ~ "List B",
+    estimator == "DLE" ~ "Pooled",
+    .default = estimator
+  )) %>% 
+  select(
+    p, estimator, 
+    estimate_hi = estimate,
+    boot_ci_hi,
+  )
+
+bkp_lo = le %>% select(
+  estimator = Estimator,
+  estimate_lo = estimate_count_lo,
+  boot_ci_lo = boot_ci_which_count_lo
+)
+
+bkp = left_join(bkp_hi, bkp_lo, by = "estimator")
+
+ggplot(bkp) +
+    aes(x = estimator,
+      y = estimate_hi,
+      color = factor(p)) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed") +
+  geom_linerange(aes(
+    x = estimator,
+    ymin = estimate_lo,
+    ymax = estimate_hi
+  ), linewidth = 3,
+  position = position_dodge(width = 0.5)) +
+  geom_linerange(aes(
+    x = estimator,
+    ymin = boot_ci_lo,
+    ymax = boot_ci_hi
+  ),  linewidth = 1,
+  position = position_dodge(width = 0.5)) +
+  scale_color_viridis_d() +
+  labs(y = "Proportion saw gangs\nthreatening neighbors",
+       color = "Placebo proportion") +
+  theme(legend.position = "bottom") +
+  ylim(-0.2, 1.2)
+```
+
+## Takeaways
+
+- A **design-based** method to recover informative bounds in failed-placebo controlled experiment
+
+- Also helpful to justify choice of placebo
+
+- **Caveat:** This is a VERY EXTREME example
+
+- Always ask about placebo items directly!
+
+
+**Questions**
+
+- Ideas to refine lower bounds?
+
+::: aside
+**Slides:** [gustavodiaz.org/talk](https://gustavodiaz.org/talk)
+:::
+
+![](talk_qr.png){.absolute bottom=0 right=-50 width="180" height="180"}
