@@ -5773,5 +5773,26 @@
     "title": "Gustavo Diaz",
     "section": "Takeaways",
     "text": "Takeaways\n\nA design-based method to recover informative bounds in failed-placebo controlled experiment\nAlso helpful to justify choice of placebo\nCaveat: This is a VERY EXTREME example\nAlways ask about placebo items directly!\n\nQuestions\n\nIdeas to refine lower bounds?\n\n\n\n\n\n\nSlides: gustavodiaz.org/talk"
+  },
+  {
+    "objectID": "uchicago.html#recovering-informative-estimates-in-failed-placebo-controlled-list-experiments",
+    "href": "uchicago.html#recovering-informative-estimates-in-failed-placebo-controlled-list-experiments",
+    "title": "Gustavo Diaz",
+    "section": "Recovering Informative Estimatesin Failed Placebo-ControlledList Experiments",
+    "text": "Recovering Informative Estimatesin Failed Placebo-ControlledList Experiments\n \nGustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\n \nPaper and slides: gustavodiaz.org/talk"
+  },
+  {
+    "objectID": "uchicago.html#erc-starting-grant",
+    "href": "uchicago.html#erc-starting-grant",
+    "title": "Gustavo Diaz",
+    "section": "ERC Starting Grant",
+    "text": "ERC Starting Grant\nCriminal Governance in Unexpected Contexts: the Role of the Welfare State in Latin America\nwith\n\nVerónica Pérez Bentancur (Universidad de la República)\nInes Fynn (Universidad Católica del Uruguay )\nLucía Tiscornia (University College Dublin)"
+  },
+  {
+    "objectID": "uchicago.html#takeaways",
+    "href": "uchicago.html#takeaways",
+    "title": "Gustavo Diaz",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nWe included a placebo statement in our list experiment and it broke everything\nUse ideas from partial identification to recover informative estimates\nLooking for more ideas to refine bounds"
   }
 ]

@@ -1,0 +1,43 @@
+---
+format:
+  revealjs:
+    center: true
+    slide-number: false
+    progress: false
+    theme: [default, custom.scss]
+---
+
+::: {style="text-align: center"}
+##  Recovering Informative Estimates<br>in Failed Placebo-Controlled<br>List Experiments {.center .smaller}
+
+&nbsp;
+
+**Gustavo Diaz**  
+Northwestern University  
+<gustavo.diaz@northwestern.edu>  
+
+&nbsp;
+
+
+Paper and slides: [gustavodiaz.org/talk](https://gustavodiaz.org/talk)
+
+![](talk_qr.png){.absolute bottom=-100 right=-50 width="180" height="180"}
+
+:::
+
+## ERC Starting Grant
+**Criminal Governance in Unexpected Contexts: the Role of the Welfare State in Latin America**
+
+with 
+
+- [Verónica Pérez Bentancur](https://veronicaperezbentancur.com/homepage-ingles/) (Universidad de la República)
+- [Ines Fynn](https://www.inesfynn.com) (Universidad Católica del Uruguay )
+- [Lucía Tiscornia](https://luciatiscornia.com) (University College Dublin)
+
+## Takeaways
+
+- We included a placebo statement in our list experiment and it broke everything
+
+- Use ideas from partial identification to recover *informative* estimates
+
+- Looking for more ideas to refine bounds

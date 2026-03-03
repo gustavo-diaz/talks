@@ -6,3 +6,5 @@
 slides.Rproj
 .DS_Store
 talks.Rproj
+
+**/*.quarto_ipynb
