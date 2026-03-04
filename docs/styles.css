@@ -1,0 +1,7 @@
+.reveal .slide.center aside, .reveal .slide.center div.aside {
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  font-size: 0.7em; /* Optional: adjust font size */
+  color: #6f6f6f;   /* Optional: adjust color */
+}

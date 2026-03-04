@@ -5794,5 +5794,292 @@
     "title": "Gustavo Diaz",
     "section": "Takeaways",
     "text": "Takeaways\n\nWe included a placebo statement in our list experiment and it broke everything\nUse ideas from partial identification to recover informative estimates\nLooking for more ideas to refine bounds"
+  },
+  {
+    "objectID": "uchicago.html#agenda",
+    "href": "uchicago.html#agenda",
+    "title": "Gustavo Diaz",
+    "section": "Agenda",
+    "text": "Agenda\n\nImproving list experiments\nOur failed placebo (double) list experiment\nRecovering informative estimates\nDiscussion"
+  },
+  {
+    "objectID": "uchicago.html#reduces-sensitivity-bias",
+    "href": "uchicago.html#reduces-sensitivity-bias",
+    "title": "Gustavo Diaz",
+    "section": "Reduces sensitivity bias",
+    "text": "Reduces sensitivity bias\n\n\n\n\n\n\n\n\n\n\n\nAdapted from: Rosenfeld, Imai, and Shapiro. 2016. “An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.” American Journal of Political Science 60 (3): 783-802"
+  },
+  {
+    "objectID": "uchicago.html#reduces-sensitivity-bias-1",
+    "href": "uchicago.html#reduces-sensitivity-bias-1",
+    "title": "Gustavo Diaz",
+    "section": "Reduces sensitivity bias",
+    "text": "Reduces sensitivity bias\n\n\n\n\n\n\n\n\n\n\n\nAdapted from: Rosenfeld, Imai, and Shapiro. 2016. “An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.” American Journal of Political Science 60 (3): 783-802"
+  },
+  {
+    "objectID": "uchicago.html#reduces-sensitivity-bias-2",
+    "href": "uchicago.html#reduces-sensitivity-bias-2",
+    "title": "Gustavo Diaz",
+    "section": "Reduces sensitivity bias",
+    "text": "Reduces sensitivity bias\n\n\n\n\n\n\n\n\n\n\n\nAdapted from: Rosenfeld, Imai, and Shapiro. 2016. “An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.” American Journal of Political Science 60 (3): 783-802"
+  },
+  {
+    "objectID": "uchicago.html#concerns-with-list-experiments",
+    "href": "uchicago.html#concerns-with-list-experiments",
+    "title": "Gustavo Diaz",
+    "section": "Concerns with list experiments",
+    "text": "Concerns with list experiments\n\nStrategic errors\nNon-strategic errors"
+  },
+  {
+    "objectID": "uchicago.html#concerns-with-list-experiments-1",
+    "href": "uchicago.html#concerns-with-list-experiments-1",
+    "title": "Gustavo Diaz",
+    "section": "Concerns with list experiments",
+    "text": "Concerns with list experiments\n\nStrategic errors\nNon-strategic errors"
+  },
+  {
+    "objectID": "uchicago.html#artificial-inflation",
+    "href": "uchicago.html#artificial-inflation",
+    "title": "Gustavo Diaz",
+    "section": "Artificial inflation",
+    "text": "Artificial inflation\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Control\n                Treatment\n              \n        \n        \n        \n                \n                  The federal government increasing tax on gasoline\n                  The federal government increasing tax on gasoline\n                \n                \n                  Professional athletes getting million dollar contracts\n                  Professional athletes getting million dollar contracts\n                \n                \n                  Large corporations polluting the environment\n                  Large corporations polluting the environment\n                \n                \n                  \n                  A black family moving next door\n                \n        \n      \n    \n\n\n\n\n\nThings that make people angry or upset"
+  },
+  {
+    "objectID": "uchicago.html#solution-add-a-placebo-statement",
+    "href": "uchicago.html#solution-add-a-placebo-statement",
+    "title": "Gustavo Diaz",
+    "section": "Solution: Add a placebo statement",
+    "text": "Solution: Add a placebo statement\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Control\n                Treatment\n              \n        \n        \n        \n                \n                  The federal government increasing tax on gasoline\n                  The federal government increasing tax on gasoline\n                \n                \n                  Professional athletes getting million dollar contracts\n                  Professional athletes getting million dollar contracts\n                \n                \n                  Large corporations polluting the environment\n                  Large corporations polluting the environment\n                \n                \n                  \n                  A black family moving next door\n                \n        \n      \n    \n\n\n\n\n\nThings that make people angry or upset"
+  },
+  {
+    "objectID": "uchicago.html#solution-add-a-placebo-statement-1",
+    "href": "uchicago.html#solution-add-a-placebo-statement-1",
+    "title": "Gustavo Diaz",
+    "section": "Solution: Add a placebo statement",
+    "text": "Solution: Add a placebo statement\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Control\n                Treatment\n              \n        \n        \n        \n                \n                  The federal government increasing tax on gasoline\n                  The federal government increasing tax on gasoline\n                \n                \n                  Professional athletes getting million dollar contracts\n                  Professional athletes getting million dollar contracts\n                \n                \n                  Large corporations polluting the environment\n                  Large corporations polluting the environment\n                \n                \n                  Finding money in a jacket pocket\n                  A black family moving next door\n                \n        \n      \n    \n\n\n\n\n\nThings that make people angry or upset"
+  },
+  {
+    "objectID": "uchicago.html#placebo-controlled-list-experiments",
+    "href": "uchicago.html#placebo-controlled-list-experiments",
+    "title": "Gustavo Diaz",
+    "section": "Placebo-controlled list experiments",
+    "text": "Placebo-controlled list experiments\n\nReduce bias from non-strategic response errors\n\n\nBut a bad placebo item can introduce attenuation bias"
+  },
+  {
+    "objectID": "uchicago.html#it-happened-to-us",
+    "href": "uchicago.html#it-happened-to-us",
+    "title": "Gustavo Diaz",
+    "section": "It happened to us!",
+    "text": "It happened to us!"
+  },
+  {
+    "objectID": "uchicago.html#double-list-experiment",
+    "href": "uchicago.html#double-list-experiment",
+    "title": "Gustavo Diaz",
+    "section": "Double list experiment",
+    "text": "Double list experiment\nThings people have experienced in the last six months:\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                List A\n                List B\n              \n        \n        \n        \n                \n                  Saw people doing sports\n                  Saw people playing soccer\n                \n                \n                  Visited friends\n                  Chatted with friends\n                \n                \n                  Activities by feminist groups\n                  Activities by LGBTQ groups\n                \n                \n                  Went to church\n                  Went to charity events\n                \n        \n      \n    \n\n\n\n\n\nOnline sample in Montevideo, Uruguay. \\(N = 2688\\).Block-randomized by police-defined risk zones."
+  },
+  {
+    "objectID": "uchicago.html#manipulations",
+    "href": "uchicago.html#manipulations",
+    "title": "Gustavo Diaz",
+    "section": "Manipulations",
+    "text": "Manipulations\n\nSensitive items:\n\nSaw criminal groups threatening neighbors\nSaw criminal groups evicting neighbors from their homes\nSaw criminal groups making donations to neighbors\nSaw criminal groups offering work to neighbors"
+  },
+  {
+    "objectID": "uchicago.html#manipulations-1",
+    "href": "uchicago.html#manipulations-1",
+    "title": "Gustavo Diaz",
+    "section": "Manipulations",
+    "text": "Manipulations\nSensitive items:\n\nSaw criminal groups threatening neighbors\nSaw criminal groups evicting neighbors from their homes\nSaw criminal groups making donations to neighbors\nSaw criminal groups offering work to neighbors"
+  },
+  {
+    "objectID": "uchicago.html#double-list-experiment-1",
+    "href": "uchicago.html#double-list-experiment-1",
+    "title": "Gustavo Diaz",
+    "section": "Double list experiment",
+    "text": "Double list experiment\nThings people have experienced in the last six months:\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                List A\n                List B\n              \n        \n        \n        \n                \n                  Saw people doing sports\n                  Saw people playing soccer\n                \n                \n                  Visited friends\n                  Chatted with friends\n                \n                \n                  Activities by feminist groups\n                  Activities by LGBTQ groups\n                \n                \n                  Went to church\n                  Went to charity events"
+  },
+  {
+    "objectID": "uchicago.html#double-list-experiment-2",
+    "href": "uchicago.html#double-list-experiment-2",
+    "title": "Gustavo Diaz",
+    "section": "Double list experiment",
+    "text": "Double list experiment\nThings people have experienced in the last six months:\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                List A\n                List B\n              \n        \n        \n        \n                \n                  Saw people doing sports\n                  Saw people playing soccer\n                \n                \n                  Visited friends\n                  Chatted with friends\n                \n                \n                  Activities by feminist groups\n                  Activities by LGBTQ groups\n                \n                \n                  Went to church\n                  Went to charity events\n                \n                \n                  Saw criminal groupsthreatening neighbors\n                  I did not drink mate"
+  },
+  {
+    "objectID": "uchicago.html#double-list-experiment-3",
+    "href": "uchicago.html#double-list-experiment-3",
+    "title": "Gustavo Diaz",
+    "section": "Double list experiment",
+    "text": "Double list experiment\nThings people have experienced in the last six months:\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                List A\n                List B\n              \n        \n        \n        \n                \n                  Saw people doing sports\n                  Saw people playing soccer\n                \n                \n                  Visited friends\n                  Chatted with friends\n                \n                \n                  Activities by feminist groups\n                  Activities by LGBTQ groups\n                \n                \n                  Went to church\n                  Went to charity events\n                \n                \n                  I did not drink mate\n                  Saw criminal groupsthreatening neighbors"
+  },
+  {
+    "objectID": "uchicago.html#mate",
+    "href": "uchicago.html#mate",
+    "title": "Gustavo Diaz",
+    "section": "Mate",
+    "text": "Mate"
+  },
+  {
+    "objectID": "uchicago.html#yerba-mate",
+    "href": "uchicago.html#yerba-mate",
+    "title": "Gustavo Diaz",
+    "section": "Yerba mate",
+    "text": "Yerba mate"
+  },
+  {
+    "objectID": "uchicago.html#three-prevalence-estimators",
+    "href": "uchicago.html#three-prevalence-estimators",
+    "title": "Gustavo Diaz",
+    "section": "Three prevalence estimators",
+    "text": "Three prevalence estimators\n\n\\[\n\\hat{\\tau}_A = \\widehat E[Y_{iA }(1)] - \\widehat E[Y_{iA }(0)]\n\\]\n\ndifference_in_means(count ~ z, subset = list == \"A\", data = df)\n\n\n\n\\[\n\\hat{\\tau}_B = \\widehat E[Y_{iB }(1)] - \\widehat E[Y_{iB }(0)]\n\\]\n\ndifference_in_means(count ~ z, subset = list == \"B\", data = df )\n\n\n\n\\[\n\\hat{\\tau}_{Pooled} = \\frac{(\\hat{\\tau}_A + \\hat{\\tau}_B)}{2}\n\\]\n\nlm_robust(count ~ z + list, clusters = id, data = df)"
+  },
+  {
+    "objectID": "uchicago.html#results",
+    "href": "uchicago.html#results",
+    "title": "Gustavo Diaz",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "uchicago.html#results-1",
+    "href": "uchicago.html#results-1",
+    "title": "Gustavo Diaz",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "uchicago.html#usual-problem",
+    "href": "uchicago.html#usual-problem",
+    "title": "Gustavo Diaz",
+    "section": "Usual problem",
+    "text": "Usual problem\n\n\n\n\n\n\n\n\n\n\n\nAdapted from: Diaz. 2024. “Assessing the Validity of Prevalence Estimates in Double List Experiments.” Journal of Experimental Political Science 11 (SI 2): 162-174"
+  },
+  {
+    "objectID": "uchicago.html#this-is-even-worse",
+    "href": "uchicago.html#this-is-even-worse",
+    "title": "Gustavo Diaz",
+    "section": "This is even worse",
+    "text": "This is even worse"
+  },
+  {
+    "objectID": "uchicago.html#what-do-we-do",
+    "href": "uchicago.html#what-do-we-do",
+    "title": "Gustavo Diaz",
+    "section": "What do we do?",
+    "text": "What do we do?\n\nProblem: Estimates are no longer valid\n\n\nIdea: Imagine how responses would have looked like without including the placebo\n\n\nEquivalent to assuming estimated proportion is partially identified\n\n\nProduce non-parametric bounds\n\n\nUsually uninformative, but list experiment structure helps"
+  },
+  {
+    "objectID": "uchicago.html#sharp-bounds",
+    "href": "uchicago.html#sharp-bounds",
+    "title": "Gustavo Diaz",
+    "section": "Sharp bounds",
+    "text": "Sharp bounds\nMain idea: Assume nothing beyond observed data + SUTVA\n\nImplication: Only control responses change\n\n\nSharp bounds: Impute minimun/maximum possible value"
+  },
+  {
+    "objectID": "uchicago.html#not-very-informative",
+    "href": "uchicago.html#not-very-informative",
+    "title": "Gustavo Diaz",
+    "section": "Not very informative",
+    "text": "Not very informative"
+  },
+  {
+    "objectID": "uchicago.html#list-experiment-bounds",
+    "href": "uchicago.html#list-experiment-bounds",
+    "title": "Gustavo Diaz",
+    "section": "List experiment bounds",
+    "text": "List experiment bounds\nImplications:\n\nControl responses can only decrease\n…by a magnitude of one\n\n\nLower bound: All 5s become 4s\n\n\nUpper bound: Everything decreases by one unless already 0"
+  },
+  {
+    "objectID": "uchicago.html#a-bit-more-informative",
+    "href": "uchicago.html#a-bit-more-informative",
+    "title": "Gustavo Diaz",
+    "section": "A bit more informative?",
+    "text": "A bit more informative?"
+  },
+  {
+    "objectID": "uchicago.html#can-we-do-better",
+    "href": "uchicago.html#can-we-do-better",
+    "title": "Gustavo Diaz",
+    "section": "Can we do better?",
+    "text": "Can we do better?\nWe did not include a direct question for the placebo"
+  },
+  {
+    "objectID": "uchicago.html#what-else-can-we-assume",
+    "href": "uchicago.html#what-else-can-we-assume",
+    "title": "Gustavo Diaz",
+    "section": "What else can we assume?",
+    "text": "What else can we assume?\n\nList experiment assumptions\n\nNo liars: Rs do not endorse sensitive item when they it does not apply to them\nNo design effects: Adding/removing an item does not affect how R responds to other items\n\n\n\nIdea: These also need to be true for placebo!\n\n\nImplications:\n\nControl responses can only decrease\n…by a magnitude of one"
+  },
+  {
+    "objectID": "uchicago.html#refinement",
+    "href": "uchicago.html#refinement",
+    "title": "Gustavo Diaz",
+    "section": "Refinement",
+    "text": "Refinement\n\nIf you know the proportion of placebo holders in the population of interest\n\n\nLower bound: All 5s become 4s (unchanged)\n\n\nUpper bound:\n\\[\n\\hat \\tau_{H} = (1- \\delta) \\times \\bar V_{obs} + \\delta \\times \\bar V_{max}\n\\]\n\\(\\delta\\): known placebo proportion\n\\(\\bar V_{obs}\\): LE estimate with observed data\n\\(\\bar V_{max}\\): LE estimate with “all decrease” data"
+  },
+  {
+    "objectID": "uchicago.html#imagine",
+    "href": "uchicago.html#imagine",
+    "title": "Gustavo Diaz",
+    "section": "Imagine",
+    "text": "Imagine"
+  },
+  {
+    "objectID": "uchicago.html#wrapping-up",
+    "href": "uchicago.html#wrapping-up",
+    "title": "Gustavo Diaz",
+    "section": "Wrapping up",
+    "text": "Wrapping up\n\nA design-based method to recover informative bounds in failed-placebo controlled experiment\nAlso helpful to justify choice of placebo\nCaveat: This is a VERY EXTREME example\nAlways ask about placebo items directly!\n\nQuestions\n\nIdeas to refine lower bounds?"
+  },
+  {
+    "objectID": "uchicago.html#direct-qs",
+    "href": "uchicago.html#direct-qs",
+    "title": "Gustavo Diaz",
+    "section": "Direct Qs",
+    "text": "Direct Qs"
+  },
+  {
+    "objectID": "uchicago.html#combined-estimates",
+    "href": "uchicago.html#combined-estimates",
+    "title": "Gustavo Diaz",
+    "section": "Combined estimates",
+    "text": "Combined estimates"
+  },
+  {
+    "objectID": "uchicago.html#maybe-combining-with-direct-questions",
+    "href": "uchicago.html#maybe-combining-with-direct-questions",
+    "title": "Gustavo Diaz",
+    "section": "Maybe combining with direct questions?",
+    "text": "Maybe combining with direct questions?"
+  },
+  {
+    "objectID": "uchicago.html#combining-estimates",
+    "href": "uchicago.html#combining-estimates",
+    "title": "Gustavo Diaz",
+    "section": "Combining estimates",
+    "text": "Combining estimates\n\n\n\n\n\n\n\n\n\n\n\nAdapted from: Diaz et al. 2025. “Combining List Experiments and the Network Scale-Up Method to Improve Prevalence Estimates of Sensitive Attitudes and Behaviors.”"
+  },
+  {
+    "objectID": "uchicago.html#combining-estimates-1",
+    "href": "uchicago.html#combining-estimates-1",
+    "title": "Gustavo Diaz",
+    "section": "Combining estimates",
+    "text": "Combining estimates\n\n\n\n\n\n\n\n\n\n\n\nAdapted from: Diaz et al. 2025. “Combining List Experiments and the Network Scale-Up Method to Improve Prevalence Estimates of Sensitive Attitudes and Behaviors.”"
+  },
+  {
+    "objectID": "uchicago.html#thank-you",
+    "href": "uchicago.html#thank-you",
+    "title": "Gustavo Diaz",
+    "section": "Thank you!",
+    "text": "Thank you!\nFeedback: gustavo.diaz@northwestern.edu\nPaper and slides: gustavodiaz.org/talk"
+  },
+  {
+    "objectID": "uchicago.html#manipulations-2",
+    "href": "uchicago.html#manipulations-2",
+    "title": "Gustavo Diaz",
+    "section": "Manipulations",
+    "text": "Manipulations\nPlacebo item:\n\nI did not drink mate"
   }
 ]

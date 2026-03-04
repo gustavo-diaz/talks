@@ -6,8 +6,10 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.26">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.32">
 
   <title>Gustavo Diaz – uchicago</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -27,8 +29,74 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-d4a496172dc514ebc3fb907a4d5d31f8.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f75a6dde847e55bef954660260116088.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -153,9 +221,1132 @@ Northwestern University<br>
 <li><p>Use ideas from partial identification to recover <em>informative</em> estimates</p></li>
 <li><p>Looking for more ideas to refine bounds</p></li>
 </ul>
-
+</section>
+<section id="agenda" class="slide level2 center">
+<h2>Agenda</h2>
+<ul>
+<li><p>Improving list experiments</p></li>
+<li><p>Our failed placebo (double) list experiment</p></li>
+<li><p>Recovering informative estimates</p></li>
+<li><p>Discussion</p></li>
+</ul>
+</section>
+<section>
+<section id="list-experiments" class="title-slide slide level1 center">
+<h1>List Experiments</h1>
 
 </section>
+<section class="slide level2 center">
+
+<p><i class="fa-solid fa-phone" aria-hidden="true"></i> Now I am going to read you things that make people angry or upset</p>
+</section>
+<section class="slide level2 center">
+
+<p><i class="fa-solid fa-phone" aria-hidden="true"></i> After I read them all, tell me HOW MANY of them upset you</p>
+</section>
+<section class="slide level2 center">
+
+<p><i class="fa-solid fa-phone" aria-hidden="true"></i> I don’t want to know which ones, just tell me HOW MANY</p>
+<div class="fragment">
+<h3 id="control-group">Control group</h3>
+<ol type="1">
+<li>The federal government increasing tax on gasoline</li>
+<li>Professional athletes getting million dollar contracts</li>
+<li>Large corporations polluting the environment</li>
+</ol>
+
+</div>
+<aside><div>
+<p><strong>Adapted from:</strong> Kuklinski, Cobb, and Gilens. 1997. <a href="https://doi.org/10.1017/S0022381600053470">“Racial Attitudes and the ‘New South’.”</a> <em>Journal of Politics</em> 59 (2): 323-349</p>
+</div></aside></section>
+<section class="slide level2 center">
+
+<p><i class="fa-solid fa-phone" aria-hidden="true"></i> I don’t want to know which ones, just tell me HOW MANY</p>
+<h3 id="treatment-group">Treatment group</h3>
+<ol type="1">
+<li>The federal government increasing tax on gasoline</li>
+<li>Professional athletes getting million dollar contracts</li>
+<li>Large corporations polluting the environment</li>
+</ol>
+
+<aside><div>
+<p><strong>Adapted from:</strong> Kuklinski, Cobb, and Gilens. 1997. <a href="https://doi.org/10.1017/S0022381600053470">“Racial Attitudes and the ‘New South’.”</a> <em>Journal of Politics</em> 59 (2): 323-349</p>
+</div></aside></section>
+<section class="slide level2 center">
+
+<p><i class="fa-solid fa-phone" aria-hidden="true"></i> I don’t want to know which ones, just tell me HOW MANY</p>
+<h3 id="treatment-group-1">Treatment group</h3>
+<ol type="1">
+<li>The federal government increasing tax on gasoline</li>
+<li>Professional athletes getting million dollar contracts</li>
+<li>Large corporations polluting the environment</li>
+<li><strong>A black family moving next door</strong></li>
+</ol>
+
+<aside><div>
+<p><strong>Adapted from:</strong> Kuklinski, Cobb, and Gilens. 1997. <a href="https://doi.org/10.1017/S0022381600053470">“Racial Attitudes and the ‘New South’.”</a> <em>Journal of Politics</em> 59 (2): 323-349</p>
+</div></aside></section>
+<section id="reduces-sensitivity-bias" class="slide level2 center">
+<h2>Reduces sensitivity bias</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="uchicago_files/figure-revealjs/unnamed-chunk-2-1.png" data-fig-pos="center" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+
+<aside><div>
+<p><strong>Adapted from:</strong> Rosenfeld, Imai, and Shapiro. 2016. <a href="https://doi.org/10.1111/ajps.12205">“An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.”</a> <em>American Journal of Political Science</em> 60 (3): 783-802</p>
+</div></aside></section>
+<section id="reduces-sensitivity-bias-1" class="slide level2 center">
+<h2>Reduces sensitivity bias</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="uchicago_files/figure-revealjs/unnamed-chunk-3-1.png" data-fig-pos="center" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+
+<aside><div>
+<p><strong>Adapted from:</strong> Rosenfeld, Imai, and Shapiro. 2016. <a href="https://doi.org/10.1111/ajps.12205">“An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.”</a> <em>American Journal of Political Science</em> 60 (3): 783-802</p>
+</div></aside></section>
+<section id="reduces-sensitivity-bias-2" class="slide level2 center">
+<h2>Reduces sensitivity bias</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="uchicago_files/figure-revealjs/unnamed-chunk-4-1.png" data-fig-pos="center" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+
+<aside><div>
+<p><strong>Adapted from:</strong> Rosenfeld, Imai, and Shapiro. 2016. <a href="https://doi.org/10.1111/ajps.12205">“An Empirical Validation Study of Popular Survey Methodologies for Sensitive Questions.”</a> <em>American Journal of Political Science</em> 60 (3): 783-802</p>
+</div></aside></section>
+<section id="concerns-with-list-experiments" class="slide level2 center">
+<h2>Concerns with list experiments</h2>
+<ol type="1">
+<li><p>Strategic errors</p></li>
+<li><p>Non-strategic errors</p></li>
+</ol>
+</section>
+<section id="concerns-with-list-experiments-1" class="slide level2 center">
+<h2>Concerns with list experiments</h2>
+<ol type="1">
+<li><p>Strategic errors</p></li>
+<li><p><strong>Non-strategic errors</strong></p></li>
+</ol>
+</section>
+<section class="slide level2 center">
+
+
+<img data-src="crim_gov/riambau_placebo.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="artificial-inflation" class="slide level2 center">
+<h2>Artificial inflation</h2>
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script>
+
+      function styleCell_rpi3fyujj05uidcjlr22(i, j, css_id) {
+          var table = document.getElementById("tinytable_rpi3fyujj05uidcjlr22");
+          var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+          if (cell) {
+              console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
+              cell.classList.add(css_id);
+          } else {
+              console.warn(`Cell at (${i}, ${j}) not found.`);
+          }
+      }
+      function spanCell_rpi3fyujj05uidcjlr22(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_rpi3fyujj05uidcjlr22");
+        const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+        if (!targetCell) {
+          console.warn(`Cell at (${i}, ${j}) not found.`);
+        }
+
+        // Get all cells that need to be removed
+        const cellsToRemove = [];
+        for (let r = 0; r < rowspan; r++) {
+          for (let c = 0; c < colspan; c++) {
+            if (r === 0 && c === 0) continue; // Skip the target cell
+            const cell = table.querySelector(`[data-row="${i + r}"][data-col="${j + c}"]`);
+            if (cell) {
+              cellsToRemove.push(cell);
+            }
+          }
+        }
+
+        // Remove all cells
+        cellsToRemove.forEach(cell => cell.remove());
+
+        // Set rowspan and colspan of the target cell if it exists
+        if (targetCell) {
+          targetCell.rowSpan = rowspan;
+          targetCell.colSpan = colspan;
+        }
+      }
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '4', j: 0 }, { i: '4', j: 1 },  ], css_id: 'tinytable_css_9nhxbqb6krnyg9szm4xk',}, 
+          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 },  ], css_id: 'tinytable_css_lqrosmdbjzcky384npht',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  styleCell_rpi3fyujj05uidcjlr22(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <style>
+      /* tinytable css entries after */
+      .table td.tinytable_css_9nhxbqb6krnyg9szm4xk, .table th.tinytable_css_9nhxbqb6krnyg9szm4xk { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_lqrosmdbjzcky384npht, .table th.tinytable_css_lqrosmdbjzcky384npht { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+    </style>
+    <div class="container">
+      <table class="table table-borderless" id="tinytable_rpi3fyujj05uidcjlr22" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        <thead>
+        
+              <tr>
+                <th scope="col" data-row="0" data-col="0">Control</th>
+                <th scope="col" data-row="0" data-col="1">Treatment</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="0">The federal government increasing tax on gasoline</td>
+                  <td data-row="1" data-col="1">The federal government increasing tax on gasoline</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="0">Professional athletes getting million dollar contracts</td>
+                  <td data-row="2" data-col="1">Professional athletes getting million dollar contracts</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="0">Large corporations polluting the environment</td>
+                  <td data-row="3" data-col="1">Large corporations polluting the environment</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="0"></td>
+                  <td data-row="4" data-col="1"><strong>A black family moving next door</strong></td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+
+<aside><div>
+<p>Things that make people angry or upset</p>
+</div></aside></section>
+<section id="solution-add-a-placebo-statement" class="slide level2 center">
+<h2>Solution: Add a placebo statement</h2>
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script>
+
+      function styleCell_0l1mz4591210k21vt0bh(i, j, css_id) {
+          var table = document.getElementById("tinytable_0l1mz4591210k21vt0bh");
+          var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+          if (cell) {
+              console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
+              cell.classList.add(css_id);
+          } else {
+              console.warn(`Cell at (${i}, ${j}) not found.`);
+          }
+      }
+      function spanCell_0l1mz4591210k21vt0bh(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_0l1mz4591210k21vt0bh");
+        const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+        if (!targetCell) {
+          console.warn(`Cell at (${i}, ${j}) not found.`);
+        }
+
+        // Get all cells that need to be removed
+        const cellsToRemove = [];
+        for (let r = 0; r < rowspan; r++) {
+          for (let c = 0; c < colspan; c++) {
+            if (r === 0 && c === 0) continue; // Skip the target cell
+            const cell = table.querySelector(`[data-row="${i + r}"][data-col="${j + c}"]`);
+            if (cell) {
+              cellsToRemove.push(cell);
+            }
+          }
+        }
+
+        // Remove all cells
+        cellsToRemove.forEach(cell => cell.remove());
+
+        // Set rowspan and colspan of the target cell if it exists
+        if (targetCell) {
+          targetCell.rowSpan = rowspan;
+          targetCell.colSpan = colspan;
+        }
+      }
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '4', j: 0 }, { i: '4', j: 1 },  ], css_id: 'tinytable_css_jm5ppt6j51zdgrtearma',}, 
+          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 },  ], css_id: 'tinytable_css_46b3759cjv7n75x9g234',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  styleCell_0l1mz4591210k21vt0bh(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <style>
+      /* tinytable css entries after */
+      .table td.tinytable_css_jm5ppt6j51zdgrtearma, .table th.tinytable_css_jm5ppt6j51zdgrtearma { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_46b3759cjv7n75x9g234, .table th.tinytable_css_46b3759cjv7n75x9g234 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+    </style>
+    <div class="container">
+      <table class="table table-borderless" id="tinytable_0l1mz4591210k21vt0bh" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        <thead>
+        
+              <tr>
+                <th scope="col" data-row="0" data-col="0">Control</th>
+                <th scope="col" data-row="0" data-col="1">Treatment</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="0">The federal government increasing tax on gasoline</td>
+                  <td data-row="1" data-col="1">The federal government increasing tax on gasoline</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="0">Professional athletes getting million dollar contracts</td>
+                  <td data-row="2" data-col="1">Professional athletes getting million dollar contracts</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="0">Large corporations polluting the environment</td>
+                  <td data-row="3" data-col="1">Large corporations polluting the environment</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="0"></td>
+                  <td data-row="4" data-col="1"><strong>A black family moving next door</strong></td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+
+<aside><div>
+<p>Things that make people angry or upset</p>
+</div></aside></section>
+<section id="solution-add-a-placebo-statement-1" class="slide level2 center">
+<h2>Solution: Add a placebo statement</h2>
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script>
+
+      function styleCell_zoid3ri6ny9ehj85mo7w(i, j, css_id) {
+          var table = document.getElementById("tinytable_zoid3ri6ny9ehj85mo7w");
+          var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+          if (cell) {
+              console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
+              cell.classList.add(css_id);
+          } else {
+              console.warn(`Cell at (${i}, ${j}) not found.`);
+          }
+      }
+      function spanCell_zoid3ri6ny9ehj85mo7w(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_zoid3ri6ny9ehj85mo7w");
+        const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+        if (!targetCell) {
+          console.warn(`Cell at (${i}, ${j}) not found.`);
+        }
+
+        // Get all cells that need to be removed
+        const cellsToRemove = [];
+        for (let r = 0; r < rowspan; r++) {
+          for (let c = 0; c < colspan; c++) {
+            if (r === 0 && c === 0) continue; // Skip the target cell
+            const cell = table.querySelector(`[data-row="${i + r}"][data-col="${j + c}"]`);
+            if (cell) {
+              cellsToRemove.push(cell);
+            }
+          }
+        }
+
+        // Remove all cells
+        cellsToRemove.forEach(cell => cell.remove());
+
+        // Set rowspan and colspan of the target cell if it exists
+        if (targetCell) {
+          targetCell.rowSpan = rowspan;
+          targetCell.colSpan = colspan;
+        }
+      }
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '4', j: 1 },  ], css_id: 'tinytable_css_wb8pnyzzq3d2i92ge0ep',}, 
+          { positions: [ { i: '4', j: 0 },  ], css_id: 'tinytable_css_o0i6eqb4bnotqy8cq643',}, 
+          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 },  ], css_id: 'tinytable_css_wwi0lektr07caq2kwj2c',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  styleCell_zoid3ri6ny9ehj85mo7w(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <style>
+      /* tinytable css entries after */
+      .table td.tinytable_css_wb8pnyzzq3d2i92ge0ep, .table th.tinytable_css_wb8pnyzzq3d2i92ge0ep { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_o0i6eqb4bnotqy8cq643, .table th.tinytable_css_o0i6eqb4bnotqy8cq643 { color: #4E2A84; border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_wwi0lektr07caq2kwj2c, .table th.tinytable_css_wwi0lektr07caq2kwj2c { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+    </style>
+    <div class="container">
+      <table class="table table-borderless" id="tinytable_zoid3ri6ny9ehj85mo7w" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        <thead>
+        
+              <tr>
+                <th scope="col" data-row="0" data-col="0">Control</th>
+                <th scope="col" data-row="0" data-col="1">Treatment</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="0">The federal government increasing tax on gasoline</td>
+                  <td data-row="1" data-col="1">The federal government increasing tax on gasoline</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="0">Professional athletes getting million dollar contracts</td>
+                  <td data-row="2" data-col="1">Professional athletes getting million dollar contracts</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="0">Large corporations polluting the environment</td>
+                  <td data-row="3" data-col="1">Large corporations polluting the environment</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="0"><strong>Finding money in a jacket pocket</strong></td>
+                  <td data-row="4" data-col="1"><strong>A black family moving next door</strong></td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+
+<aside><div>
+<p>Things that make people angry or upset</p>
+</div></aside></section>
+<section id="placebo-controlled-list-experiments" class="slide level2 center">
+<h2>Placebo-controlled list experiments</h2>
+<div class="fragment">
+<p>Reduce bias from <em>non-strategic</em> response errors</p>
+</div>
+<div class="fragment">
+<p>But a <strong>bad placebo item</strong> can introduce <em>attenuation bias</em></p>
+</div>
+</section>
+<section id="it-happened-to-us" class="slide level2 center" style="text-align: center">
+<h2>It happened to us!</h2>
+</section></section>
+<section>
+<section id="our-experiment" class="title-slide slide level1 center">
+<h1>Our Experiment</h1>
+
+</section>
+<section id="double-list-experiment" class="slide level2 center">
+<h2>Double list experiment</h2>
+<p>Things people have experienced in the last six months:</p>
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script>
+
+      function styleCell_kiqqgsdifgdh66vfht7y(i, j, css_id) {
+          var table = document.getElementById("tinytable_kiqqgsdifgdh66vfht7y");
+          var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+          if (cell) {
+              console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
+              cell.classList.add(css_id);
+          } else {
+              console.warn(`Cell at (${i}, ${j}) not found.`);
+          }
+      }
+      function spanCell_kiqqgsdifgdh66vfht7y(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_kiqqgsdifgdh66vfht7y");
+        const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+        if (!targetCell) {
+          console.warn(`Cell at (${i}, ${j}) not found.`);
+        }
+
+        // Get all cells that need to be removed
+        const cellsToRemove = [];
+        for (let r = 0; r < rowspan; r++) {
+          for (let c = 0; c < colspan; c++) {
+            if (r === 0 && c === 0) continue; // Skip the target cell
+            const cell = table.querySelector(`[data-row="${i + r}"][data-col="${j + c}"]`);
+            if (cell) {
+              cellsToRemove.push(cell);
+            }
+          }
+        }
+
+        // Remove all cells
+        cellsToRemove.forEach(cell => cell.remove());
+
+        // Set rowspan and colspan of the target cell if it exists
+        if (targetCell) {
+          targetCell.rowSpan = rowspan;
+          targetCell.colSpan = colspan;
+        }
+      }
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '4', j: 0 }, { i: '4', j: 1 },  ], css_id: 'tinytable_css_zqs2jfti8n1ie5mdyrqi',}, 
+          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 },  ], css_id: 'tinytable_css_0s492kpf0i0e1gy6415q',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  styleCell_kiqqgsdifgdh66vfht7y(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <style>
+      /* tinytable css entries after */
+      .table td.tinytable_css_zqs2jfti8n1ie5mdyrqi, .table th.tinytable_css_zqs2jfti8n1ie5mdyrqi { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_0s492kpf0i0e1gy6415q, .table th.tinytable_css_0s492kpf0i0e1gy6415q { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+    </style>
+    <div class="container">
+      <table class="table table-borderless" id="tinytable_kiqqgsdifgdh66vfht7y" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        <thead>
+        
+              <tr>
+                <th scope="col" data-row="0" data-col="0">List A</th>
+                <th scope="col" data-row="0" data-col="1">List B</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="0">Saw people doing sports</td>
+                  <td data-row="1" data-col="1">Saw people playing soccer</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="0">Visited friends</td>
+                  <td data-row="2" data-col="1">Chatted with friends</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="0">Activities by feminist groups</td>
+                  <td data-row="3" data-col="1">Activities by LGBTQ groups</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="0">Went to church</td>
+                  <td data-row="4" data-col="1">Went to charity events</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+
+<aside><div>
+<p>Online sample in Montevideo, Uruguay. <span class="math inline">\(N = 2688\)</span>.<br>Block-randomized by police-defined risk zones.</p>
+</div></aside></section>
+<section id="manipulations" class="slide level2 center">
+<h2>Manipulations</h2>
+<div class="fragment">
+<p><strong>Sensitive items:</strong></p>
+<ul>
+<li>Saw criminal groups threatening neighbors</li>
+<li>Saw criminal groups evicting neighbors from their homes</li>
+<li>Saw criminal groups making donations to neighbors</li>
+<li>Saw criminal groups offering work to neighbors</li>
+</ul>
+</div>
+</section>
+<section id="manipulations-1" class="slide level2 center">
+<h2>Manipulations</h2>
+<p><strong>Sensitive items:</strong></p>
+<ul>
+<li><strong>Saw criminal groups threatening neighbors</strong></li>
+<li><span style="color: gray;">Saw criminal groups evicting neighbors from their homes</span></li>
+<li><span style="color: gray;">Saw criminal groups making donations to neighbors</span></li>
+<li><span style="color: gray;">Saw criminal groups offering work to neighbors</span></li>
+</ul>
+</section>
+<section id="manipulations-2" class="slide level2 center">
+<h2>Manipulations</h2>
+<p><strong>Placebo item:</strong></p>
+<ul>
+<li>I did not drink <em>mate</em></li>
+</ul>
+</section>
+<section id="yerba-mate" class="slide level2 center">
+<h2>Yerba mate</h2>
+
+<img data-src="https://pampadirect.com/product_images/uploaded_images/ritual.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="double-list-experiment-1" class="slide level2 center">
+<h2>Double list experiment</h2>
+<p>Things people have experienced in the last six months:</p>
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script>
+
+      function styleCell_4ecferh3v0j8db0aebwa(i, j, css_id) {
+          var table = document.getElementById("tinytable_4ecferh3v0j8db0aebwa");
+          var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+          if (cell) {
+              console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
+              cell.classList.add(css_id);
+          } else {
+              console.warn(`Cell at (${i}, ${j}) not found.`);
+          }
+      }
+      function spanCell_4ecferh3v0j8db0aebwa(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_4ecferh3v0j8db0aebwa");
+        const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+        if (!targetCell) {
+          console.warn(`Cell at (${i}, ${j}) not found.`);
+        }
+
+        // Get all cells that need to be removed
+        const cellsToRemove = [];
+        for (let r = 0; r < rowspan; r++) {
+          for (let c = 0; c < colspan; c++) {
+            if (r === 0 && c === 0) continue; // Skip the target cell
+            const cell = table.querySelector(`[data-row="${i + r}"][data-col="${j + c}"]`);
+            if (cell) {
+              cellsToRemove.push(cell);
+            }
+          }
+        }
+
+        // Remove all cells
+        cellsToRemove.forEach(cell => cell.remove());
+
+        // Set rowspan and colspan of the target cell if it exists
+        if (targetCell) {
+          targetCell.rowSpan = rowspan;
+          targetCell.colSpan = colspan;
+        }
+      }
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '4', j: 0 }, { i: '4', j: 1 },  ], css_id: 'tinytable_css_3pedcdo84vs5yvago0yi',}, 
+          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 },  ], css_id: 'tinytable_css_gxiohbs4fgtw34gmqvzg',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  styleCell_4ecferh3v0j8db0aebwa(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <style>
+      /* tinytable css entries after */
+      .table td.tinytable_css_3pedcdo84vs5yvago0yi, .table th.tinytable_css_3pedcdo84vs5yvago0yi { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_gxiohbs4fgtw34gmqvzg, .table th.tinytable_css_gxiohbs4fgtw34gmqvzg { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+    </style>
+    <div class="container">
+      <table class="table table-borderless" id="tinytable_4ecferh3v0j8db0aebwa" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        <thead>
+        
+              <tr>
+                <th scope="col" data-row="0" data-col="0">List A</th>
+                <th scope="col" data-row="0" data-col="1">List B</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="0">Saw people doing sports</td>
+                  <td data-row="1" data-col="1">Saw people playing soccer</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="0">Visited friends</td>
+                  <td data-row="2" data-col="1">Chatted with friends</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="0">Activities by feminist groups</td>
+                  <td data-row="3" data-col="1">Activities by LGBTQ groups</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="0">Went to church</td>
+                  <td data-row="4" data-col="1">Went to charity events</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</section>
+<section id="double-list-experiment-2" class="slide level2 center">
+<h2>Double list experiment</h2>
+<p>Things people have experienced in the last six months:</p>
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script>
+
+      function styleCell_2llxgabxiojcq89dm0ax(i, j, css_id) {
+          var table = document.getElementById("tinytable_2llxgabxiojcq89dm0ax");
+          var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+          if (cell) {
+              console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
+              cell.classList.add(css_id);
+          } else {
+              console.warn(`Cell at (${i}, ${j}) not found.`);
+          }
+      }
+      function spanCell_2llxgabxiojcq89dm0ax(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_2llxgabxiojcq89dm0ax");
+        const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+        if (!targetCell) {
+          console.warn(`Cell at (${i}, ${j}) not found.`);
+        }
+
+        // Get all cells that need to be removed
+        const cellsToRemove = [];
+        for (let r = 0; r < rowspan; r++) {
+          for (let c = 0; c < colspan; c++) {
+            if (r === 0 && c === 0) continue; // Skip the target cell
+            const cell = table.querySelector(`[data-row="${i + r}"][data-col="${j + c}"]`);
+            if (cell) {
+              cellsToRemove.push(cell);
+            }
+          }
+        }
+
+        // Remove all cells
+        cellsToRemove.forEach(cell => cell.remove());
+
+        // Set rowspan and colspan of the target cell if it exists
+        if (targetCell) {
+          targetCell.rowSpan = rowspan;
+          targetCell.colSpan = colspan;
+        }
+      }
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '5', j: 1 },  ], css_id: 'tinytable_css_uo32ka6fyzvtsmogknbx',}, 
+          { positions: [ { i: '5', j: 0 },  ], css_id: 'tinytable_css_912wyv1g8a303uv2zu4r',}, 
+          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 },  ], css_id: 'tinytable_css_sx4itiskqf7bgra8ja6y',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  styleCell_2llxgabxiojcq89dm0ax(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <style>
+      /* tinytable css entries after */
+      .table td.tinytable_css_uo32ka6fyzvtsmogknbx, .table th.tinytable_css_uo32ka6fyzvtsmogknbx { color: #4E2A84; border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_912wyv1g8a303uv2zu4r, .table th.tinytable_css_912wyv1g8a303uv2zu4r { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_sx4itiskqf7bgra8ja6y, .table th.tinytable_css_sx4itiskqf7bgra8ja6y { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+    </style>
+    <div class="container">
+      <table class="table table-borderless" id="tinytable_2llxgabxiojcq89dm0ax" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        <thead>
+        
+              <tr>
+                <th scope="col" data-row="0" data-col="0">List A</th>
+                <th scope="col" data-row="0" data-col="1">List B</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="0">Saw people doing sports</td>
+                  <td data-row="1" data-col="1">Saw people playing soccer</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="0">Visited friends</td>
+                  <td data-row="2" data-col="1">Chatted with friends</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="0">Activities by feminist groups</td>
+                  <td data-row="3" data-col="1">Activities by LGBTQ groups</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="0">Went to church</td>
+                  <td data-row="4" data-col="1">Went to charity events</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="0"><strong>Saw criminal groups<br>threatening neighbors</strong></td>
+                  <td data-row="5" data-col="1"><strong>I did not drink mate</strong></td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</section>
+<section id="double-list-experiment-3" class="slide level2 center">
+<h2>Double list experiment</h2>
+<p>Things people have experienced in the last six months:</p>
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script>
+
+      function styleCell_lkskk7osumcgps5owgdp(i, j, css_id) {
+          var table = document.getElementById("tinytable_lkskk7osumcgps5owgdp");
+          var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+          if (cell) {
+              console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
+              cell.classList.add(css_id);
+          } else {
+              console.warn(`Cell at (${i}, ${j}) not found.`);
+          }
+      }
+      function spanCell_lkskk7osumcgps5owgdp(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_lkskk7osumcgps5owgdp");
+        const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+        if (!targetCell) {
+          console.warn(`Cell at (${i}, ${j}) not found.`);
+        }
+
+        // Get all cells that need to be removed
+        const cellsToRemove = [];
+        for (let r = 0; r < rowspan; r++) {
+          for (let c = 0; c < colspan; c++) {
+            if (r === 0 && c === 0) continue; // Skip the target cell
+            const cell = table.querySelector(`[data-row="${i + r}"][data-col="${j + c}"]`);
+            if (cell) {
+              cellsToRemove.push(cell);
+            }
+          }
+        }
+
+        // Remove all cells
+        cellsToRemove.forEach(cell => cell.remove());
+
+        // Set rowspan and colspan of the target cell if it exists
+        if (targetCell) {
+          targetCell.rowSpan = rowspan;
+          targetCell.colSpan = colspan;
+        }
+      }
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '5', j: 1 },  ], css_id: 'tinytable_css_1ivrg7tay3zlqimvizse',}, 
+          { positions: [ { i: '5', j: 0 },  ], css_id: 'tinytable_css_c34k4op4r61cfghiqdt2',}, 
+          { positions: [ { i: '0', j: 0 }, { i: '0', j: 1 },  ], css_id: 'tinytable_css_h6cl6dfkih87hh9rdzfn',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  styleCell_lkskk7osumcgps5owgdp(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <style>
+      /* tinytable css entries after */
+      .table td.tinytable_css_1ivrg7tay3zlqimvizse, .table th.tinytable_css_1ivrg7tay3zlqimvizse { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_c34k4op4r61cfghiqdt2, .table th.tinytable_css_c34k4op4r61cfghiqdt2 { color: #4E2A84; border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_h6cl6dfkih87hh9rdzfn, .table th.tinytable_css_h6cl6dfkih87hh9rdzfn { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+    </style>
+    <div class="container">
+      <table class="table table-borderless" id="tinytable_lkskk7osumcgps5owgdp" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        <thead>
+        
+              <tr>
+                <th scope="col" data-row="0" data-col="0">List A</th>
+                <th scope="col" data-row="0" data-col="1">List B</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="0">Saw people doing sports</td>
+                  <td data-row="1" data-col="1">Saw people playing soccer</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="0">Visited friends</td>
+                  <td data-row="2" data-col="1">Chatted with friends</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="0">Activities by feminist groups</td>
+                  <td data-row="3" data-col="1">Activities by LGBTQ groups</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="0">Went to church</td>
+                  <td data-row="4" data-col="1">Went to charity events</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="0"><strong>I did not drink mate</strong></td>
+                  <td data-row="5" data-col="1"><strong>Saw criminal groups<br>threatening neighbors</strong></td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</section>
+<section id="three-prevalence-estimators" class="slide level2 center">
+<h2>Three prevalence estimators</h2>
+<div class="fragment">
+<p><span class="math display">\[
+\hat{\tau}_A = \widehat E[Y_{iA }(1)] - \widehat E[Y_{iA }(0)]
+\]</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">difference_in_means</span>(count <span class="sc">~</span> z, <span class="at">subset =</span> list <span class="sc">==</span> <span class="st">"A"</span>, <span class="at">data =</span> df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="fragment">
+<p><span class="math display">\[
+\hat{\tau}_B = \widehat E[Y_{iB }(1)] - \widehat E[Y_{iB }(0)]
+\]</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">difference_in_means</span>(count <span class="sc">~</span> z, <span class="at">subset =</span> list <span class="sc">==</span> <span class="st">"B"</span>, <span class="at">data =</span> df )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="fragment">
+<p><span class="math display">\[
+\hat{\tau}_{Pooled} = \frac{(\hat{\tau}_A + \hat{\tau}_B)}{2}
+\]</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">lm_robust</span>(count <span class="sc">~</span> z <span class="sc">+</span> list, <span class="at">clusters =</span> id, <span class="at">data =</span> df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="results" class="slide level2 center">
+<h2>Results</h2>
+
+<img data-src="uchicago_files/figure-revealjs/unnamed-chunk-15-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="results-1" class="slide level2 center">
+<h2>Results</h2>
+
+<img data-src="uchicago_files/figure-revealjs/unnamed-chunk-16-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="usual-problem" class="slide level2 center">
+<h2>Usual problem</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="uchicago_files/figure-revealjs/unnamed-chunk-18-1.png" data-fig-pos="center" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+
+<aside><div>
+<p><strong>Adapted from:</strong> Diaz. 2024. <a href="https://doi.org/10.1017/XPS.2023.24">“Assessing the Validity of Prevalence Estimates in Double List Experiments.”</a> <em>Journal of Experimental Political Science</em> 11 (SI 2): 162-174</p>
+</div></aside></section>
+<section id="this-is-even-worse" class="slide level2 center">
+<h2>This is even worse</h2>
+
+<img data-src="uchicago_files/figure-revealjs/unnamed-chunk-19-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="what-do-we-do" class="slide level2 center">
+<h2>What do we do?</h2>
+<div class="fragment">
+<p><strong>Problem:</strong> Estimates are no longer valid</p>
+</div>
+<div class="fragment">
+<p><strong>Idea:</strong> Imagine how responses would have looked like without including the placebo</p>
+</div>
+<div class="fragment">
+<p>Equivalent to assuming estimated proportion is <em>partially identified</em></p>
+</div>
+<div class="fragment">
+<p>Produce <strong>non-parametric bounds</strong></p>
+</div>
+<div class="fragment">
+<p>Usually uninformative, but list experiment structure helps</p>
+</div>
+</section>
+<section id="sharp-bounds" class="slide level2 center">
+<h2>Sharp bounds</h2>
+<p><strong>Main idea:</strong> Assume nothing beyond observed data + SUTVA</p>
+<div class="fragment">
+<p><strong>Implication:</strong> Only control responses change</p>
+</div>
+<div class="fragment">
+<p><strong>Sharp bounds:</strong> Impute minimun/maximum possible value</p>
+</div>
+</section>
+<section id="not-very-informative" class="slide level2 center">
+<h2>Not very informative</h2>
+
+<img data-src="uchicago_files/figure-revealjs/unnamed-chunk-20-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="what-else-can-we-assume" class="slide level2 center">
+<h2>What else can we assume?</h2>
+<div class="fragment">
+<p><strong>List experiment assumptions</strong></p>
+<ol type="1">
+<li class="fragment"><em>No liars:</em> Rs do not endorse sensitive item when they it does not apply to them</li>
+<li class="fragment"><em>No design effects:</em> Adding/removing an item does not affect how R responds to other items</li>
+</ol>
+</div>
+<div class="fragment">
+<p><strong>Idea:</strong> These also need to be true for placebo!</p>
+</div>
+<div class="fragment">
+<p><strong>Implications:</strong></p>
+<ol type="1">
+<li class="fragment">Control responses can only <em>decrease</em></li>
+<li class="fragment">…by a magnitude of <em>one</em></li>
+</ol>
+</div>
+</section>
+<section id="list-experiment-bounds" class="slide level2 center">
+<h2>List experiment bounds</h2>
+<p><strong>Implications:</strong></p>
+<ol type="1">
+<li>Control responses can only <em>decrease</em></li>
+<li>…by a magnitude of <em>one</em></li>
+</ol>
+<div class="fragment">
+<p><strong>Lower bound:</strong> All 5s become 4s</p>
+</div>
+<div class="fragment">
+<p><strong>Upper bound:</strong> Everything decreases by one unless already 0</p>
+</div>
+</section>
+<section id="a-bit-more-informative" class="slide level2 center">
+<h2>A bit more informative?</h2>
+
+<img data-src="uchicago_files/figure-revealjs/unnamed-chunk-21-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="can-we-do-better" class="slide level2 center">
+<h2>Can we do better?</h2>
+<p>We did not include a direct question for the placebo <i class="fa-solid fa-face-sad-tear" aria-hidden="true"></i></p>
+</section>
+<section id="refinement" class="slide level2 center">
+<h2>Refinement</h2>
+<div class="fragment">
+<p>If you <em>know</em> the proportion of placebo holders in the population of interest</p>
+</div>
+<div class="fragment">
+<p><strong>Lower bound:</strong> All 5s become 4s (unchanged)</p>
+</div>
+<div class="fragment">
+<p><strong>Upper bound:</strong></p>
+<p><span class="math display">\[
+\hat \tau_{H} = (1- \delta) \times \bar V_{obs} + \delta \times \bar V_{max}
+\]</span></p>
+<p><span class="math inline">\(\delta\)</span>: known placebo proportion</p>
+<p><span class="math inline">\(\bar V_{obs}\)</span>: LE estimate with observed data</p>
+<p><span class="math inline">\(\bar V_{max}\)</span>: LE estimate with “all decrease” data</p>
+</div>
+</section>
+<section id="imagine" class="slide level2 center">
+<h2>Imagine</h2>
+
+<img data-src="uchicago_files/figure-revealjs/unnamed-chunk-22-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="wrapping-up" class="slide level2 center">
+<h2>Wrapping up</h2>
+<ul>
+<li><p>A <strong>design-based</strong> method to recover informative bounds in failed-placebo controlled experiment</p></li>
+<li><p>Also helpful to justify choice of placebo</p></li>
+<li><p><strong>Caveat:</strong> This is a VERY EXTREME example</p></li>
+<li><p>Always ask about placebo items directly!</p></li>
+</ul>
+<p><strong>Questions</strong></p>
+<ul>
+<li>Ideas to refine lower bounds?</li>
+</ul>
+</section>
+<section id="maybe-combining-with-direct-questions" class="slide level2 center">
+<h2>Maybe combining with direct questions?</h2>
+</section>
+<section id="combining-estimates" class="slide level2 center">
+<h2>Combining estimates</h2>
+
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="uchicago_files/figure-revealjs/unnamed-chunk-24-1.png" data-fig-pos="center" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside><div>
+<p><strong>Adapted from:</strong> Diaz et al.&nbsp;2025. <a href="https://gustavodiaz.org/files/research/list_nsum.pdf">“Combining List Experiments and the Network Scale-Up Method to Improve Prevalence Estimates of Sensitive Attitudes and Behaviors.”</a></p>
+</div></aside></section>
+<section id="combining-estimates-1" class="slide level2 center">
+<h2>Combining estimates</h2>
+
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="uchicago_files/figure-revealjs/unnamed-chunk-25-1.png" data-fig-pos="center" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside><div>
+<p><strong>Adapted from:</strong> Diaz et al.&nbsp;2025. <a href="https://gustavodiaz.org/files/research/list_nsum.pdf">“Combining List Experiments and the Network Scale-Up Method to Improve Prevalence Estimates of Sensitive Attitudes and Behaviors.”</a></p>
+</div></aside></section>
+<section id="thank-you" class="slide level2 center">
+<h2>Thank you!</h2>
+<p><strong>Feedback:</strong> <a href="mailto:gustavo.diaz@northwestern.edu" class="email">gustavo.diaz@northwestern.edu</a></p>
+<p><strong>Paper and slides:</strong> <a href="https://gustavodiaz.org/talk">gustavodiaz.org/talk</a></p>
+<p><img data-src="talk_qr.png" class="absolute" style="bottom: 0px; right: -50px; width: 180px; height: 180px; "></p>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -345,7 +1536,7 @@ Northwestern University<br>
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -371,6 +1562,44 @@ Northwestern University<br>
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
@@ -419,14 +1648,13 @@ Northwestern University<br>
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
             }
-          }
-          return codeEl.innerText;
+            return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
