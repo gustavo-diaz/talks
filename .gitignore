@@ -8,3 +8,4 @@ slides.Rproj
 talks.Rproj
 
 **/*.quarto_ipynb
+.positai
