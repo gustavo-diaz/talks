@@ -8,3 +8,16 @@ $link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
 
+/*-- scss:rules --*/
+.reveal.center .slides section {
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reveal.center .slide aside,
+.reveal.center .slide div.aside {
+  position: absolute;
+  bottom: 20px;
+}

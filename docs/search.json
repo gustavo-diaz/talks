@@ -3756,28 +3756,28 @@
     "href": "mpsa25_experimental.html#jenke-and-green",
     "title": "Gustavo Diaz",
     "section": "Jenke and Green",
-    "text": "Jenke and Green\nWhy should you care?\n\n\nEVERYTHING IS AN ENCOURAGEMENT DESIGN\nEVERYTHING VIOLATES THE EXCLUSION RESTRICTION\nEVERYTHING IS SUSCEPTIBLE TO PTOVB"
+    "text": "Jenke and Green\nWhy should you care?\n\nEVERYTHING IS AN ENCOURAGEMENT DESIGN\nEVERYTHING VIOLATES THE EXCLUSION RESTRICTION\nEVERYTHING IS SUSCEPTIBLE TO PTOVB"
   },
   {
     "objectID": "mpsa25_experimental.html#jenke-and-green-1",
     "href": "mpsa25_experimental.html#jenke-and-green-1",
     "title": "Gustavo Diaz",
     "section": "Jenke and Green",
-    "text": "Jenke and Green\nWhy should you care?\n\nEVERYTHING IS AN ENCOURAGEMENT DESIGN\nEVERYTHING VIOLATES THE EXCLUSION RESTRICTION\nEVERYTHING IS SUSCEPTIBLE TO PTOVB\n\n\nThings I like\n\n\nBig picture framing\nNotation and math easy to follow\nSimulations nail the idea perfectly (cf. fig 2)"
+    "text": "Jenke and Green\nWhy should you care?\n\nEVERYTHING IS AN ENCOURAGEMENT DESIGN\nEVERYTHING VIOLATES THE EXCLUSION RESTRICTION\nEVERYTHING IS SUSCEPTIBLE TO PTOVB\n\n\nThings I like\n\nBig picture framing\nNotation and math easy to follow\nSimulations nail the idea perfectly (cf. fig 2)"
   },
   {
     "objectID": "mpsa25_experimental.html#jenke-and-green-2",
     "href": "mpsa25_experimental.html#jenke-and-green-2",
     "title": "Gustavo Diaz",
     "section": "Jenke and Green",
-    "text": "Jenke and Green\nQuestions and comments\n\n\n(PT)OVB is always a problem no matter what you do\nWhy not (a special kind of) sensitivity analysis?\nBias-variance trade-off on the number of \\(Z^{\\prime}\\), \\(F^{\\prime}\\)?\nPlacebo outcomes? (If \\(Z\\) does not affect \\(Y^{\\prime}\\), then \\(Z^{\\prime}\\) is unlikely)\nClarify: Requirement is (at least) as many \\(Z^{\\prime}\\) as \\(F^{\\prime}\\), not necessarily one per each (mismatch theory/application)"
+    "text": "Jenke and Green\nQuestions and comments\n\n(PT)OVB is always a problem no matter what you do\nWhy not (a special kind of) sensitivity analysis?\nBias-variance trade-off on the number of \\(Z^{\\prime}\\), \\(F^{\\prime}\\)?\nPlacebo outcomes? (If \\(Z\\) does not affect \\(Y^{\\prime}\\), then \\(Z^{\\prime}\\) is unlikely)\nClarify: Requirement is (at least) as many \\(Z^{\\prime}\\) as \\(F^{\\prime}\\), not necessarily one per each (mismatch theory/application)"
   },
   {
     "objectID": "mpsa25_experimental.html#jordan-ollerenshaw-trexler",
     "href": "mpsa25_experimental.html#jordan-ollerenshaw-trexler",
     "title": "Gustavo Diaz",
     "section": "Jordan, Ollerenshaw, Trexler",
-    "text": "Jordan, Ollerenshaw, Trexler\nWhy should you care?\n\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#00843D}{N-1}}}\n\\]\n\n\nEasiest way to increase statistical precision with a larger sample size\nBut usually cost prohibitive!\nIn many applications, the only way is to reduce variance in outcomes through research design"
+    "text": "Jordan, Ollerenshaw, Trexler\nWhy should you care?\n\n\\[\nSE(\\widehat{ATE}) = \\sqrt{\\frac{\\color{#4E2A84}{\\text{Var}(Y_i(0)) + \\text{Var}(Y_i(1)) + 2\\text{Cov}(Y_i(0), Y_i(1))}}{\\color{#00843D}{N-1}}}\n\\]\n\nEasiest way to increase statistical precision with a larger sample size\nBut usually cost prohibitive!\nIn many applications, the only way is to reduce variance in outcomes through research design"
   },
   {
     "objectID": "mpsa25_experimental.html#jordan-ollerenshaw-trexler-1",
@@ -3791,14 +3791,14 @@
     "href": "mpsa25_experimental.html#jordan-ollerenshaw-trexler-2",
     "title": "Gustavo Diaz",
     "section": "Jordan, Ollerenshaw, Trexler",
-    "text": "Jordan, Ollerenshaw, Trexler\nThings I like\n\n\nPartial replication! (replication + extension?)\nDifferent samples\nThinking carefully about implementation decisions (e.g. proximity of repeated measures)\nHonesty about limitations (e.g. sensitive questions)"
+    "text": "Jordan, Ollerenshaw, Trexler\nThings I like\n\nPartial replication! (replication + extension?)\nDifferent samples\nThinking carefully about implementation decisions (e.g. proximity of repeated measures)\nHonesty about limitations (e.g. sensitive questions)"
   },
   {
     "objectID": "mpsa25_experimental.html#jordan-ollerenshaw-trexler-3",
     "href": "mpsa25_experimental.html#jordan-ollerenshaw-trexler-3",
     "title": "Gustavo Diaz",
     "section": "Jordan, Ollerenshaw, Trexler",
-    "text": "Jordan, Ollerenshaw, Trexler\nQuestions and comments\n\n\nHelp the reader visualize your randomizations\nRepeating repeated measures creates attenuation bias. Why exactly? Inattention? Priming?\nReplicate/simulate more diverse studies? (Harden et al 2019)\nIf repeated measures are just covariate adjustment, why not using Lin’s (2013) adjustment for more precision? (s/o Ransi Clark)\n\n\n\n\n\n\n\n\n\n\nAlso, citation to Diaz (2025) should be Diaz and Rossiter (2025)"
+    "text": "Jordan, Ollerenshaw, Trexler\nQuestions and comments\n\nHelp the reader visualize your randomizations\nRepeating repeated measures creates attenuation bias. Why exactly? Inattention? Priming?\nReplicate/simulate more diverse studies? (Harden et al 2019)\nIf repeated measures are just covariate adjustment, why not using Lin’s (2013) adjustment for more precision? (s/o Ransi Clark)\n\n\n\n\n\nAlso, citation to Diaz (2025) should be Diaz and Rossiter (2025)"
   },
   {
     "objectID": "list_nsum_mpsa25.html#combining-list-experiments-and-the-network-scale-up-method",
@@ -6081,5 +6081,82 @@
     "title": "Gustavo Diaz",
     "section": "Manipulations",
     "text": "Manipulations\nPlacebo item:\n\nI did not drink mate"
+  },
+  {
+    "objectID": "mpsa26_ml.html#discussion-machine-learning-applications",
+    "href": "mpsa26_ml.html#discussion-machine-learning-applications",
+    "title": "Gustavo Diaz",
+    "section": "Discussion:Machine Learning Applications",
+    "text": "Discussion:Machine Learning Applications\n\nMalmberg. “Investigating the Utility of LLM-Based ‘Silicon Samples’ in Political Science Conjoint Experiments”\nSanaei, Wang, Koh. “Simulating Realistic Focus Group Discussions Using Large Language Models”\n\n\n\nSlides: talks.gustavodiaz.org/mpsa26_ml"
+  },
+  {
+    "objectID": "mpsa26_ml.html#centered-slide",
+    "href": "mpsa26_ml.html#centered-slide",
+    "title": "Gustavo Diaz",
+    "section": "Centered slide",
+    "text": "Centered slide\nWith an aside on bottom?\n\n\n\n\nTesting"
+  },
+  {
+    "objectID": "mpsa26_ml.html#disclaimers",
+    "href": "mpsa26_ml.html#disclaimers",
+    "title": "Gustavo Diaz",
+    "section": "Disclaimers",
+    "text": "Disclaimers"
+  },
+  {
+    "objectID": "mpsa26_ml.html#disclaimers-1",
+    "href": "mpsa26_ml.html#disclaimers-1",
+    "title": "Gustavo Diaz",
+    "section": "Disclaimers",
+    "text": "Disclaimers\n\n\n\n\n\nAI decreases cost of prediction\nwhich increases the value of judgment\nIndustry: Techbros in the board room\nSocial science: Need to come off stronger on ethical implications and safeguards"
+  },
+  {
+    "objectID": "mpsa26_ml.html#malmberg",
+    "href": "mpsa26_ml.html#malmberg",
+    "title": "Gustavo Diaz",
+    "section": "Malmberg",
+    "text": "Malmberg\n\nWhy should you care?"
+  },
+  {
+    "objectID": "mpsa26_ml.html#malmberg-llm-conjoints",
+    "href": "mpsa26_ml.html#malmberg-llm-conjoints",
+    "title": "Gustavo Diaz",
+    "section": "Malmberg: LLM conjoints",
+    "text": "Malmberg: LLM conjoints\n\nWhy should you care?\n\n\nExperimenters must simulate designs before data collection"
+  },
+  {
+    "objectID": "mpsa26_ml.html#malmberg-llm-conjoints-1",
+    "href": "mpsa26_ml.html#malmberg-llm-conjoints-1",
+    "title": "Gustavo Diaz",
+    "section": "Malmberg: LLM conjoints",
+    "text": "Malmberg: LLM conjoints\nWhy should you care?\nExperimenters must simulate designs before data collection\n\nThis is “easy” for vignette designs\n\n\nBut conjoints are all about multidimensional preferences"
+  },
+  {
+    "objectID": "mpsa26_ml.html#malmberg-llm-conjoints-2",
+    "href": "mpsa26_ml.html#malmberg-llm-conjoints-2",
+    "title": "Gustavo Diaz",
+    "section": "Malmberg: LLM conjoints",
+    "text": "Malmberg: LLM conjoints\nWhy should you care?\nExperimenters must simulate designs before data collection\nThis is “easy” for vignette designs\nBut conjoints are all about multidimensional preferences\n\nYou may want more nuanced data generation"
+  },
+  {
+    "objectID": "mpsa26_ml.html#malmberg-llm-conjoints-3",
+    "href": "mpsa26_ml.html#malmberg-llm-conjoints-3",
+    "title": "Gustavo Diaz",
+    "section": "Malmberg: LLM conjoints",
+    "text": "Malmberg: LLM conjoints\nThings I like\n\nLarge N benchmark study (CHIP50, N \\(\\approx\\) 25k )\nZero shot algorithm\nCovariate importance to understand what LLMs pay most attention to"
+  },
+  {
+    "objectID": "mpsa26_ml.html#malmberg-llm-conjoints-4",
+    "href": "mpsa26_ml.html#malmberg-llm-conjoints-4",
+    "title": "Gustavo Diaz",
+    "section": "Malmberg: LLM conjoints",
+    "text": "Malmberg: LLM conjoints\nFeedback\n\nNot enough predictive covariates?\nWhat is the alternative? Supervised learning?\nWould a stack of many LLMs perform better?\nExtension: Can we learn about hypothetical effects, new outcomes?"
+  },
+  {
+    "objectID": "mpsa26_ml.html#sanaei-et-al-llm-focus-groups",
+    "href": "mpsa26_ml.html#sanaei-et-al-llm-focus-groups",
+    "title": "Gustavo Diaz",
+    "section": "Sanaei et al: LLM Focus groups",
+    "text": "Sanaei et al: LLM Focus groups\n\nWhy should you care?\n\nFocus groups are open-ended but expensive, need to train facilitators well\nFidelity, roleplay, and facsimile problems at the same time!"
   }
 ]
