@@ -6158,5 +6158,19 @@
     "title": "Gustavo Diaz",
     "section": "Sanaei et al: LLM Focus groups",
     "text": "Sanaei et al: LLM Focus groups\n\nWhy should you care?\n\nFocus groups are open-ended but expensive, need to train facilitators well\nFidelity, roleplay, and facsimile problems at the same time!"
+  },
+  {
+    "objectID": "mpsa26_ml.html#sanaei-et-al-llm-focus-groups-1",
+    "href": "mpsa26_ml.html#sanaei-et-al-llm-focus-groups-1",
+    "title": "Gustavo Diaz",
+    "section": "Sanaei et al: LLM Focus groups",
+    "text": "Sanaei et al: LLM Focus groups\nThings I Like\n\nTransparency in motivation for experiments\nMoving beyond static data\nCareful thinking about features of focus groups (e.g. turn-taking, moderation)"
+  },
+  {
+    "objectID": "mpsa26_ml.html#sanaei-et-al-llm-focus-groups-2",
+    "href": "mpsa26_ml.html#sanaei-et-al-llm-focus-groups-2",
+    "title": "Gustavo Diaz",
+    "section": "Sanaei et al: LLM Focus groups",
+    "text": "Sanaei et al: LLM Focus groups\nFeedback\n\nCan R package be turned into (Shiny) app?\nCan we simulate a real time focus group with a human moderator?\nUse existing focus group transcripts to ask “what if” questions?\nMany insights focus groups are non-verbal (e.g. agreeing out of conformity)"
   }
 ]

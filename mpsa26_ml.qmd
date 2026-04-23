@@ -139,3 +139,24 @@ You may want more nuanced data generation
 2. [Fidelity](https://doi.org/10.1017/pan.2023.2), [roleplay](https://www.nature.com/articles/s41586-023-06647-8), and [facsimile](https://www.nature.com/articles/s41586-025-10021-1) problems at the same time!
 
 :::
+
+## Sanaei et al: LLM Focus groups
+
+**Things I Like**
+
+::: incremental
+- Transparency in motivation for experiments
+- Moving beyond static data
+- Careful thinking about features of focus groups (e.g. turn-taking, moderation)
+:::
+
+## Sanaei et al: LLM Focus groups
+
+**Feedback**
+
+::: incremental
+- Can R package be turned into (Shiny) app?
+- Can we simulate a real time focus group with a human moderator?
+- Use existing focus group transcripts to ask "what if" questions?
+- Many insights focus groups are non-verbal (e.g. agreeing out of conformity)
+:::
