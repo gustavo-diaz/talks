@@ -6172,5 +6172,117 @@
     "title": "Gustavo Diaz",
     "section": "Sanaei et al: LLM Focus groups",
     "text": "Sanaei et al: LLM Focus groups\nFeedback\n\nCan R package be turned into (Shiny) app?\nCan we simulate a real time focus group with a human moderator?\nUse existing focus group transcripts to ask “what if” questions?\nMany insights focus groups are non-verbal (e.g. agreeing out of conformity)"
+  },
+  {
+    "objectID": "mpsa26_exp.html#discussion-experiments-on-taxes-corruption-and-prejudice",
+    "href": "mpsa26_exp.html#discussion-experiments-on-taxes-corruption-and-prejudice",
+    "title": "Gustavo Diaz",
+    "section": "Discussion:Experiments on Taxes, Corruption, and Prejudice",
+    "text": "Discussion:Experiments on Taxes, Corruption, and Prejudice\n\nScartascini and Barinas-Forero. “Wage Cuts, Social Distributional Preferences, and Political Corruption”\nRodrigues. “Making Sense of Shaming: A Field Experiment on Moral Disengagement and Corporate Tax Delinquency in Brazil”\n\n\n\nSlides: talks.gustavodiaz.org/mpsa26_exp"
+  },
+  {
+    "objectID": "mpsa26_exp.html#common-theme",
+    "href": "mpsa26_exp.html#common-theme",
+    "title": "Gustavo Diaz",
+    "section": "Common theme",
+    "text": "Common theme\n\n\n\n\n\n\n\nFisman, Raymond and Miriam Golden. 2017. “How to fight corruption.” Science 356 (6340)"
+  },
+  {
+    "objectID": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment",
+    "href": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment",
+    "title": "Gustavo Diaz",
+    "section": "Scartascini: Wage cut lab experiment",
+    "text": "Scartascini: Wage cut lab experiment\nWhy should you care?\n\n\nBudget cuts are a popular anti-corruption policy"
+  },
+  {
+    "objectID": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-1",
+    "href": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-1",
+    "title": "Gustavo Diaz",
+    "section": "Scartascini: Wage cut lab experiment",
+    "text": "Scartascini: Wage cut lab experiment\nWhy should you care?\n\nBudget cuts are a popular anti-corruption policy\n\n\n\nNovelty: “Evidence on the role of wages on corruption, while holding selection constant” (p. 3)\n\n\n\n\nEven “good types” are corruptible"
+  },
+  {
+    "objectID": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-2",
+    "href": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-2",
+    "title": "Gustavo Diaz",
+    "section": "Scartascini: Wage cut lab experiment",
+    "text": "Scartascini: Wage cut lab experiment\nThings I like\n\nTight connection with literature\nLab experiment setup\nLarge sample size\nPre-treatment outcome baseline"
+  },
+  {
+    "objectID": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-3",
+    "href": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-3",
+    "title": "Gustavo Diaz",
+    "section": "Scartascini: Wage cut lab experiment",
+    "text": "Scartascini: Wage cut lab experiment\nFeedback\nStuff a polisci reviewer may care about\n\nWhy Colombia?\nExternal validity/ecological validity\nWhy 60% wage reduction?"
+  },
+  {
+    "objectID": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-4",
+    "href": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-4",
+    "title": "Gustavo Diaz",
+    "section": "Scartascini: Wage cut lab experiment",
+    "text": "Scartascini: Wage cut lab experiment\nFeedback\nMy own quibbles\n\nCan you extrapolate to general budget cuts?\nEfficiency factor? (p. 9)\nSection 2.3 should include experimental flow diagram\nShow raw p-values in figures!\n\n\n\nI am splitting hairs because the paper at an advanced stage"
+  },
+  {
+    "objectID": "mpsa26_exp.html#rodrigues-tax-delinquency-field-experiment",
+    "href": "mpsa26_exp.html#rodrigues-tax-delinquency-field-experiment",
+    "title": "Gustavo Diaz",
+    "section": "Rodrigues: Tax delinquency field experiment",
+    "text": "Rodrigues: Tax delinquency field experiment\nWhy should you care?\n\nTax evasion \\(\\neq\\) tax delinquency\nBig problem, (relatively) small intervention, potential high payoff"
+  },
+  {
+    "objectID": "mpsa26_exp.html#rodrigues-tax-delinquency-field-experiment-1",
+    "href": "mpsa26_exp.html#rodrigues-tax-delinquency-field-experiment-1",
+    "title": "Gustavo Diaz",
+    "section": "Rodrigues: Tax delinquency field experiment",
+    "text": "Rodrigues: Tax delinquency field experiment\nThings I like\n\nEffect of shaming depends is very context dependent!\nMulti-experiment design\nCareful thinking on effect suppressors and antidotes"
+  },
+  {
+    "objectID": "mpsa26_exp.html#rodrigues-tax-delinquency-field-experiment-2",
+    "href": "mpsa26_exp.html#rodrigues-tax-delinquency-field-experiment-2",
+    "title": "Gustavo Diaz",
+    "section": "Rodrigues: Tax delinquency field experiment",
+    "text": "Rodrigues: Tax delinquency field experiment\nFeedback\n\nConsider adaptive design for next experiments (e.g. Offer-Westort et al 2021 AJPS)\nCan you look at payment amounts?\n… and make statements about cost effectiveness?\nThe language around mediation confused me\nCan you estimate CATEs?"
+  },
+  {
+    "objectID": "mpsa26_exp.html#connection-with-encouragement-designs",
+    "href": "mpsa26_exp.html#connection-with-encouragement-designs",
+    "title": "Gustavo Diaz",
+    "section": "Connection with encouragement designs",
+    "text": "Connection with encouragement designs\n\nControl: No postcard\nCivic Duty: “DO YOUR CIVIC DUTY – VOTE!”\nHawthorne: Civic duty message + “YOU ARE BEING STUDIED!” + explanation of how voting behavior can be examined by means of public record\nNeighbors: Civic duty message + household’s previous voting record in 2004 + neighbors’ voting record in 2004\n\n\n\n\n\nAdapted from Gerber, Green, Larimer (2004, APSR)"
+  },
+  {
+    "objectID": "mpsa26_exp.html#connect-with-encouragement-designs",
+    "href": "mpsa26_exp.html#connect-with-encouragement-designs",
+    "title": "Gustavo Diaz",
+    "section": "Connect with encouragement designs",
+    "text": "Connect with encouragement designs\n\nControl: No postcard\nCivic Duty: “DO YOUR CIVIC DUTY – VOTE!”\nHawthorne: Civic duty message + “YOU ARE BEING STUDIED!” + explanation of how voting behavior can be examined by means of public record\nNeighbors: Civic duty message + household’s previous voting record in 2004 + neighbors’ voting record in 2004\n\n\n\nAdapted from Gerber, Green, Larimer (2004, APSR)"
+  },
+  {
+    "objectID": "mpsa26_exp.html#outcomes-are-bounded",
+    "href": "mpsa26_exp.html#outcomes-are-bounded",
+    "title": "Gustavo Diaz",
+    "section": "Outcomes are bounded",
+    "text": "Outcomes are bounded\n\n\n\n\n\n\n\n\n\ndoi.org/10.1093/ectj/utaf003"
+  },
+  {
+    "objectID": "mpsa26_exp.html#so-outcomes-are-bounded",
+    "href": "mpsa26_exp.html#so-outcomes-are-bounded",
+    "title": "Gustavo Diaz",
+    "section": "So outcomes are bounded",
+    "text": "So outcomes are bounded\n\n\n\n\n\n\n\n\n\ndoi.org/10.1093/ectj/utaf003"
+  },
+  {
+    "objectID": "mpsa26_exp.html#so-outcome-is-bounded",
+    "href": "mpsa26_exp.html#so-outcome-is-bounded",
+    "title": "Gustavo Diaz",
+    "section": "So outcome is bounded",
+    "text": "So outcome is bounded\n\n\n\n\n\n\n\n\n\ndoi.org/10.1093/ectj/utaf003"
+  },
+  {
+    "objectID": "mpsa26_exp.html#connects-with-encouragement-designs",
+    "href": "mpsa26_exp.html#connects-with-encouragement-designs",
+    "title": "Gustavo Diaz",
+    "section": "Connects with encouragement designs",
+    "text": "Connects with encouragement designs\n\nControl: No postcard\nCivic Duty: “DO YOUR CIVIC DUTY – VOTE!”\nHawthorne: Civic duty message + “YOU ARE BEING STUDIED!” + explanation of how voting behavior can be examined by means of public record\nNeighbors: Civic duty message + household’s previous voting record in 2004 + neighbors’ voting record in 2004\n\n\n\nAdapted from Gerber, Green, Larimer (2004, APSR)"
   }
 ]
