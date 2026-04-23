@@ -158,5 +158,5 @@ You may want more nuanced data generation
 - Can R package be turned into (Shiny) app?
 - Can we simulate a real time focus group with a human moderator?
 - Use existing focus group transcripts to ask "what if" questions?
-- Many insights focus groups are non-verbal (e.g. agreeing out of conformity)
+- Many insights from focus groups are non-verbal (e.g. agreeing out of conformity)
 :::
