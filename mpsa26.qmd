@@ -622,7 +622,10 @@ ggplot(le) +
 ## Can we do better? {.center}
 :::
 
+
 ## Refinement 1
+
+**Known placebo proportion**
 
 . . .
 
@@ -641,74 +644,26 @@ $$
 
 where $\delta$ is the known placebo proportion
 
-::: aside
-These bounds cannot be considered "sharp" anymore
-:::
-
-## Known proportion bounds
-
-```{r}
-bounds_known_prop = read.csv("crim_gov/bounds_known_prop.csv")
-
-# I messed up the proportion labels
-bkp_hi = bounds_known_prop %>% 
-  filter(list_treatment == "Threaten") %>% 
-  mutate(p = case_when(
-    p == 1 ~ 0.05,
-    p == 2 ~ 0.1,
-    p == 3 ~ 0.2,
-    p == 4 ~ 0.3
-  ),
-  estimator = case_when(
-    estimator == "List" &
-      list == "count_a" ~ "List A",
-    estimator == "List" &
-      list == "count_b" ~ "List B",
-    estimator == "DLE" ~ "Pooled",
-    .default = estimator
-  )) %>% 
-  select(
-    p, estimator, 
-    estimate_hi = estimate,
-    boot_ci_hi,
-  )
-
-bkp_lo = le %>% select(
-  estimator = Estimator,
-  estimate_lo = estimate_count_lo,
-  boot_ci_lo = boot_ci_which_count_lo
-)
-
-bkp = left_join(bkp_hi, bkp_lo, by = "estimator")
-
-ggplot(bkp) +
-    aes(x = estimator,
-      y = estimate_hi,
-      color = factor(p)) +
-  geom_hline(yintercept = 0,
-             linetype = "dashed") +
-  geom_linerange(aes(
-    x = estimator,
-    ymin = estimate_lo,
-    ymax = estimate_hi
-  ), linewidth = 3,
-  position = position_dodge(width = 0.5)) +
-  geom_linerange(aes(
-    x = estimator,
-    ymin = boot_ci_lo,
-    ymax = boot_ci_hi
-  ),  linewidth = 1,
-  position = position_dodge(width = 0.5)) +
-  scale_color_viridis_d() +
-  labs(y = "Proportion saw gangs\nthreatening neighbors",
-       color = "Placebo proportion") +
-  theme(legend.position = "bottom") +
-  ylim(-0.2, 1.2)
-```
 
 ## Refinement 2
 
-[CONTINUE HERE]
+**Combine with direct questions**
+
+. . .
+
+Combined estimator
+
+$$
+\hat \tau = \bar Y + (1- \bar Y) \times \bar V^*_{Y_i=0}
+$$
+
+- $\bar Y$: Proportion "yes" to direct question
+
+- $\bar V^*_{Y_i=0}$: LE estimate (upper/lower bound)
+
+::: aside
+See [Aronow et al (2015)](https://doi.org/10.1093/jssam/smu023) for details
+:::
 
 ## Takeaways
 
