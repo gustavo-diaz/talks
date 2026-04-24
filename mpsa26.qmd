@@ -391,7 +391,12 @@ list2 %>%
 main_df = read.csv("crim_gov/main.csv")
 
 threat_df = main_df %>% 
-  filter(list_treatment == "Threatening neighbors")
+  filter(list_treatment == "Threatening neighbors") %>% 
+  mutate(estimator = ifelse(
+    estimator == "DLE",
+    "Pooled",
+    estimator
+  ))
 
 
 
@@ -424,16 +429,6 @@ ggplot(threat_df) +
 ## Results
 
 ```{r}
-main_df = read.csv("crim_gov/main.csv")
-
-threat_df = main_df %>% 
-  filter(list_treatment == "Threatening neighbors") %>% 
-  mutate(estimator = ifelse(
-    estimator == "DLE",
-    "Pooled",
-    estimator
-  ))
-
 ggplot(threat_df) +
   aes(x = estimator, 
       y = estimate) +
