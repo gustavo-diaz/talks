@@ -1,0 +1,278 @@
+---
+format:
+  revealjs:
+    center: true
+    slide-number: false
+    progress: false
+    code-line-numbers: false
+    theme: [default, temp.scss]
+    pointer:
+      pointerSize: 32
+      color: '#FEC60D'
+revealjs-plugins:
+  - pointer
+---
+
+::: {style="text-align: center"}
+##  Recovering Informative Estimates<br>in Failed Placebo-Controlled<br>List Experiments {.center .smaller}
+
+&nbsp;
+
+**Gustavo Diaz**  
+Northwestern University  
+<gustavo.diaz@northwestern.edu>  
+
+&nbsp;
+
+
+Paper and slides: [gustavodiaz.org/talk](https://gustavodiaz.org/talk)
+
+![](talk_qr.png){.absolute bottom=0 right=-50 width="180" height="180"}
+
+:::
+
+```{r include=FALSE}
+library(knitr)
+
+opts_chunk$set(fig.pos = "center", echo = FALSE, 
+               message = FALSE, warning = FALSE)
+```
+
+```{r setup}
+# Packages
+library(tidyverse)
+library(DeclareDesign)
+library(kableExtra)
+library(tinytable)
+
+
+# ggplot global options
+theme_set(theme_gray(base_size = 20))
+
+# Northwestern purple
+nu_purple = "#4E2A84"
+```
+
+## ERC Starting Grant
+**Criminal Governance in Unexpected Contexts: the Role of the Welfare State in Latin America**
+
+
+- [Verónica Pérez Bentancur](https://veronicaperezbentancur.com/) (Universidad de la República)
+- [Ines Fynn](https://www.inesfynn.com) (Universidad Católica del Uruguay )
+- [Lucía Tiscornia](https://luciatiscornia.com) (University College Dublin)
+
+## Puntos clave
+
+- *Experimento de lista* en Uruguay
+
+- *Control con placebo* arruinó resultados
+
+- Ideas de *identificación parcial* ayudan a recuperar estimaciones informativas
+
+## Agenda
+
+- Diseño de experimentos de lista
+
+- Experimento fallido
+
+- Recuperando estimaciones informativas
+
+# Experimentos de lista
+
+---
+
+{{< fa phone >}} Le voy a leer cosas que a algunas personas les molesta
+
+::: aside
+Adaptado de [Kuklinski, Cobb, y Gilens (1997)](https://doi.org/10.1017/S0022381600053470)
+:::
+
+---
+
+{{< fa phone >}} Luego de que se las lea, dígame CUANTAS le molestan a usted
+
+::: aside
+Adaptado de [Kuklinski, Cobb, y Gilens (1997)](https://doi.org/10.1017/S0022381600053470)
+:::
+
+---
+
+{{< fa phone >}} No me diga CUALES, solo dígame CUANTAS
+
+. . .
+
+### Control
+
+1. Que el gobierno aumente el impuesto a la bencina
+2. Que los futbolistas reciban salarios millonarios
+3. Que las grandes empresas contaminen el medio ambiente
+
+::: aside
+Adaptado de [Kuklinski, Cobb, y Gilens (1997)](https://doi.org/10.1017/S0022381600053470)
+:::
+
+---
+
+{{< fa phone >}} No me diga CUALES, solo dígame CUANTAS
+
+### Tratamiento
+
+1. Que el gobierno aumente el impuesto a la bencina
+2. Que los futbolistas reciban salarios millonarios
+3. Que las grandes empresas contaminen el medio ambiente
+
+
+::: aside
+Adaptado de [Kuklinski, Cobb, y Gilens (1997)](https://doi.org/10.1017/S0022381600053470)
+:::
+
+---
+
+{{< fa phone >}} No me diga CUALES, solo dígame CUANTAS
+
+
+### Tratamiento
+
+1. Que el gobierno aumente el impuesto a la bencina
+2. Que los futbolistas reciban salarios millonarios
+3. Que las grandes empresas contaminen el medio ambiente
+4. **Que una familia venezolana se mude a la casa de al lado**
+
+::: aside
+Adaptado de [Kuklinski, Cobb, y Gilens (1997)](https://doi.org/10.1017/S0022381600053470)
+:::
+
+
+## Reduce sesgo por sensibilidad
+
+```{r}
+# got this through
+# https://automeris.io/WebPlotDigitizer/
+# And by reverse engineering fig 1
+# Because replication data was not available
+# So this has some human error
+validation = data.frame(
+  technique = c("Directa", "Experimento\nde lista"),
+  estimate = c(0.396, 0.487),
+  upper = c(0.419, 0.562),
+  lower = c(0.376, 0.417)
+)
+
+actual_vote = 0.65
+
+ggplot(validation) +
+  aes(x = technique, y = estimate) +
+  geom_point(size = 4, alpha = 0) + 
+  geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
+                 linewidth = 1, alpha = 0) +
+  ylim(0.2, 0.8) +
+  labs(x = "Tipo de pregunta", 
+       y = "Proporción ítem sensible")
+```
+
+
+## Reduce sesgo por sensibilidad
+
+```{r}
+ggplot(validation) +
+  aes(x = technique, y = estimate) +
+  geom_hline(yintercept = actual_vote, 
+             linetype = "dashed",
+             linewidth = 1) +
+  geom_point(size = 4, alpha = 0) + 
+  geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
+                 linewidth = 1, alpha = 0) +
+  annotate("text", x = 0.7, y = 0.7, size = 5, 
+           label = "Valor real") +
+  ylim(0.2, 0.8) +
+  labs(x = "Tipo de pregunta", 
+       y = "Proporción ítem sensible")
+```
+
+
+## Reduce sesgo por sensibilidad
+
+```{r}
+ggplot(validation) +
+  aes(x = technique, y = estimate) +
+  geom_hline(yintercept = actual_vote, 
+             linetype = "dashed",
+             linewidth = 1) +
+  geom_point(size = 4) + 
+  annotate("text", x = 0.7, y = 0.7, size = 5, 
+           label = "Valor real") +
+  ylim(0.2, 0.8) +
+  labs(x = "Tipo de pregunta", 
+       y = "Proporción ítem sensible")
+```
+
+## Reduce sesgo por sensibilidad
+
+```{r}
+ggplot(validation) +
+  aes(x = technique, y = estimate) +
+  geom_hline(yintercept = actual_vote, 
+             linetype = "dashed",
+             linewidth = 1) +
+  geom_point(size = 4) + 
+  geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
+                 linewidth = 1) +
+  annotate("text", x = 0.7, y = 0.7, size = 5, 
+           label = "Valor real") +
+  ylim(0.2, 0.8) +
+  labs(x = "Tipo de pregunta", 
+       y = "Proporción ítem sensible")
+```
+
+---
+
+![](list/bias_variance.jpg){fig-align="center"}
+
+---
+
+![](list/bias_var_ml.png){fig-align="center"}
+
+
+## Problema
+
+. . .
+
+Resultados varían con el diseño de la lista
+
+---
+
+![](list/diaz_dle.png){fig-align="center"}
+
+
+---
+
+[Redo this as tt]
+
+::::{.columns}
+
+:::{.column width=50%}
+
+**Lista A**
+
+- Californians for Disability
+- California National Organization for Women
+- American Family Association
+- American Red Cross
+
+:::
+
+::: {.column width=50%}
+
+**Lista B**
+
+- American Legion
+- Equality California
+- Tea Party Patriots
+- Salvation Army
+:::
+
+::::
+
+. . .
+
+**Ítem sensible:** Citizen order patrol combating undocumented immigration

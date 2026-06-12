@@ -6543,5 +6543,159 @@
     "title": "Gustavo Diaz",
     "section": "Refinement 2",
     "text": "Refinement 2\nCombine with direct questions\n\nCombined estimator\n\\[\n\\hat \\tau = \\bar Y + (1- \\bar Y) \\times \\bar V^*_{Y_i=0}\n\\]\n\n\\(\\bar Y\\): Proportion “yes” to direct question\n\\(\\bar V^*_{Y_i=0}\\): LE estimate (upper/lower bound)\n\n\n\n\nSee Aronow et al (2015) for details"
+  },
+  {
+    "objectID": "puc.html#recovering-informative-estimates-in-failed-placebo-controlled-list-experiments",
+    "href": "puc.html#recovering-informative-estimates-in-failed-placebo-controlled-list-experiments",
+    "title": "Gustavo Diaz",
+    "section": "Recovering Informative Estimatesin Failed Placebo-ControlledList Experiments",
+    "text": "Recovering Informative Estimatesin Failed Placebo-ControlledList Experiments\n \nGustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\n \nPaper and slides: gustavodiaz.org/talk"
+  },
+  {
+    "objectID": "puc.html#erc-starting-grant",
+    "href": "puc.html#erc-starting-grant",
+    "title": "Gustavo Diaz",
+    "section": "ERC Starting Grant",
+    "text": "ERC Starting Grant\nCriminal Governance in Unexpected Contexts: the Role of the Welfare State in Latin America\n\nVerónica Pérez Bentancur (Universidad de la República)\nInes Fynn (Universidad Católica del Uruguay )\nLucía Tiscornia (University College Dublin)"
+  },
+  {
+    "objectID": "puc.html#experimento-de-lista",
+    "href": "puc.html#experimento-de-lista",
+    "title": "Gustavo Diaz",
+    "section": "Experimento de lista",
+    "text": "Experimento de lista\n Le voy a leer cosas que a algunas personas les molesta\n\n\nAdaptado de Kuklinski, Cobb, y Gilens (1997)"
+  },
+  {
+    "objectID": "puc.html#experimento-de-lista-1",
+    "href": "puc.html#experimento-de-lista-1",
+    "title": "Gustavo Diaz",
+    "section": "Experimento de lista",
+    "text": "Experimento de lista\n Luego de que se las lea, dígame CUANTAS le molestan a usted\n\n\nAdaptado de Kuklinski, Cobb, y Gilens (1997)"
+  },
+  {
+    "objectID": "puc.html#experimento-de-lista-2",
+    "href": "puc.html#experimento-de-lista-2",
+    "title": "Gustavo Diaz",
+    "section": "Experimento de lista",
+    "text": "Experimento de lista\n No me diga CUALES, solo dígame CUANTAS\n\nControl\n\nQue el gobierno aumente el impuesto a la bencina\nQue los futbolistas reciban salarios millonarios\nQue las grandes empresas contaminen el medio ambiente\n\n\n\n\nAdaptado de Kuklinski, Cobb, y Gilens (1997)"
+  },
+  {
+    "objectID": "puc.html#list-experiment",
+    "href": "puc.html#list-experiment",
+    "title": "Gustavo Diaz",
+    "section": "List experiment",
+    "text": "List experiment\n No me diga CUALES, solo dígame CUANTAS\nTratamiento\n\nQue el gobierno aumente el impuesto a la bencina\nQue los futbolistas reciban salarios millonarios\nQue las grandes empresas contaminen el medio ambiente\n\n\n\nAdaptado de Kuklinski, Cobb, and Gilens (1997)"
+  },
+  {
+    "objectID": "puc.html#list-experiment-1",
+    "href": "puc.html#list-experiment-1",
+    "title": "Gustavo Diaz",
+    "section": "List experiment",
+    "text": "List experiment\n No me diga CUALES, solo dígame CUANTAS\nTratamiento\n\nQue el gobierno aumente el impuesto a la bencina\nQue los futbolistas reciban salarios millonarios\nQue las grandes empresas contaminen el medio ambiente\nQue una familia venezolana se mude a la casa de al lado\n\n\n\nAdaptado de Kuklinski, Cobb, and Gilens (1997)"
+  },
+  {
+    "objectID": "puc.html#reduces-sensitivity-bias",
+    "href": "puc.html#reduces-sensitivity-bias",
+    "title": "Gustavo Diaz",
+    "section": "Reduces sensitivity bias",
+    "text": "Reduces sensitivity bias"
+  },
+  {
+    "objectID": "puc.html#reduces-sensitivity-bias-1",
+    "href": "puc.html#reduces-sensitivity-bias-1",
+    "title": "Gustavo Diaz",
+    "section": "Reduces sensitivity bias",
+    "text": "Reduces sensitivity bias"
+  },
+  {
+    "objectID": "puc.html#reduces-sensitivity-bias-2",
+    "href": "puc.html#reduces-sensitivity-bias-2",
+    "title": "Gustavo Diaz",
+    "section": "Reduces sensitivity bias",
+    "text": "Reduces sensitivity bias"
+  },
+  {
+    "objectID": "puc.html#experimento-de-lista-3",
+    "href": "puc.html#experimento-de-lista-3",
+    "title": "Gustavo Diaz",
+    "section": "Experimento de lista",
+    "text": "Experimento de lista\n No me diga CUALES, solo dígame CUANTAS\nTratamiento\n\nQue el gobierno aumente el impuesto a la bencina\nQue los futbolistas reciban salarios millonarios\nQue las grandes empresas contaminen el medio ambiente\n\n\n\nAdaptado de Kuklinski, Cobb, y Gilens (1997)"
+  },
+  {
+    "objectID": "puc.html#experimento-de-lista-4",
+    "href": "puc.html#experimento-de-lista-4",
+    "title": "Gustavo Diaz",
+    "section": "Experimento de lista",
+    "text": "Experimento de lista\n No me diga CUALES, solo dígame CUANTAS\nTratamiento\n\nQue el gobierno aumente el impuesto a la bencina\nQue los futbolistas reciban salarios millonarios\nQue las grandes empresas contaminen el medio ambiente\nQue una familia venezolana se mude a la casa de al lado\n\n\n\nAdaptado de Kuklinski, Cobb, y Gilens (1997)"
+  },
+  {
+    "objectID": "puc.html#reduce-sesgo-por-sensibilidad",
+    "href": "puc.html#reduce-sesgo-por-sensibilidad",
+    "title": "Gustavo Diaz",
+    "section": "Reduce sesgo por sensibilidad",
+    "text": "Reduce sesgo por sensibilidad"
+  },
+  {
+    "objectID": "puc.html#reduce-sesgo-por-sensibilidad-1",
+    "href": "puc.html#reduce-sesgo-por-sensibilidad-1",
+    "title": "Gustavo Diaz",
+    "section": "Reduce sesgo por sensibilidad",
+    "text": "Reduce sesgo por sensibilidad"
+  },
+  {
+    "objectID": "puc.html#reduce-sesgo-por-sensibilidad-2",
+    "href": "puc.html#reduce-sesgo-por-sensibilidad-2",
+    "title": "Gustavo Diaz",
+    "section": "Reduce sesgo por sensibilidad",
+    "text": "Reduce sesgo por sensibilidad"
+  },
+  {
+    "objectID": "puc.html#reduce-sesgo-por-sensibilidad-3",
+    "href": "puc.html#reduce-sesgo-por-sensibilidad-3",
+    "title": "Gustavo Diaz",
+    "section": "Reduce sesgo por sensibilidad",
+    "text": "Reduce sesgo por sensibilidad"
+  },
+  {
+    "objectID": "puc.html#puntos-clave",
+    "href": "puc.html#puntos-clave",
+    "title": "Gustavo Diaz",
+    "section": "Puntos clave",
+    "text": "Puntos clave\n\nExperimento de lista en Uruguay\nControl con placebo arruinó resultados\nIdeas de identificación parcial ayudan a recuperar estimaciones informativas"
+  },
+  {
+    "objectID": "puc.html#agenda",
+    "href": "puc.html#agenda",
+    "title": "Gustavo Diaz",
+    "section": "Agenda",
+    "text": "Agenda\n\nDiseño de experimentos de lista\nExperimento fallido\nRecuperando estimaciones informativas"
+  },
+  {
+    "objectID": "puc.html#problema",
+    "href": "puc.html#problema",
+    "title": "Gustavo Diaz",
+    "section": "Problema",
+    "text": "Problema\n\nResultados varían con el diseño de la lista"
+  },
+  {
+    "objectID": "puc.html#list-a",
+    "href": "puc.html#list-a",
+    "title": "Gustavo Diaz",
+    "section": "List A",
+    "text": "List A\n\nCalifornians for Disability\nCalifornia National Organization for Women\nAmerican Family Association\nAmerican Red Cross"
+  },
+  {
+    "objectID": "puc.html#list-b",
+    "href": "puc.html#list-b",
+    "title": "Gustavo Diaz",
+    "section": "List B",
+    "text": "List B\n\nAmerican Legion\nEquality California\nTea Party Patriots\nSalvation Army"
+  },
+  {
+    "objectID": "puc.html#organizaciones",
+    "href": "puc.html#organizaciones",
+    "title": "Gustavo Diaz",
+    "section": "Organizaciones",
+    "text": "Organizaciones\n\n\nList A\n\nCalifornians for Disability\nCalifornia National Organization for Women\nAmerican Family Association\nAmerican Red Cross\n\n\nList B\n\nAmerican Legion\nEquality California\nTea Party Patriots\nSalvation Army"
   }
 ]
