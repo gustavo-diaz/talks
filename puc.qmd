@@ -25,7 +25,7 @@ Northwestern University
 &nbsp;
 
 
-Paper and slides: [gustavodiaz.org/talk](https://gustavodiaz.org/talk)
+Paper and slides: [gustavodiaz.org/talk](https://gustavodiaz.org/puc)
 
 ![](talk_qr.png){.absolute bottom=0 right=-50 width="180" height="180"}
 
@@ -50,7 +50,7 @@ library(tinytable)
 theme_set(theme_gray(base_size = 20))
 
 # Northwestern purple
-nu_purple = "#4E2A84"
+puc_blue = "#0176DE"
 ```
 
 ## ERC Starting Grant
@@ -81,19 +81,15 @@ nu_purple = "#4E2A84"
 
 ---
 
-{{< fa phone >}} Le voy a leer cosas que a algunas personas les molesta
+{{< fa phone >}} Le voy a leer cosas que a algunas personas les molestan
 
-::: aside
-Adaptado de [Kuklinski, Cobb, y Gilens (1997)](https://doi.org/10.1017/S0022381600053470)
-:::
+
 
 ---
 
 {{< fa phone >}} Luego de que se las lea, dígame CUANTAS le molestan a usted
 
-::: aside
-Adaptado de [Kuklinski, Cobb, y Gilens (1997)](https://doi.org/10.1017/S0022381600053470)
-:::
+
 
 ---
 
@@ -107,9 +103,7 @@ Adaptado de [Kuklinski, Cobb, y Gilens (1997)](https://doi.org/10.1017/S00223816
 2. Que los futbolistas reciban salarios millonarios
 3. Que las grandes empresas contaminen el medio ambiente
 
-::: aside
-Adaptado de [Kuklinski, Cobb, y Gilens (1997)](https://doi.org/10.1017/S0022381600053470)
-:::
+
 
 ---
 
@@ -122,9 +116,7 @@ Adaptado de [Kuklinski, Cobb, y Gilens (1997)](https://doi.org/10.1017/S00223816
 3. Que las grandes empresas contaminen el medio ambiente
 
 
-::: aside
-Adaptado de [Kuklinski, Cobb, y Gilens (1997)](https://doi.org/10.1017/S0022381600053470)
-:::
+
 
 ---
 
@@ -133,14 +125,12 @@ Adaptado de [Kuklinski, Cobb, y Gilens (1997)](https://doi.org/10.1017/S00223816
 
 ### Tratamiento
 
-1. Que el gobierno aumente el impuesto a la bencina
+1. Que el gobierno suba el impuesto a la bencina
 2. Que los futbolistas reciban salarios millonarios
 3. Que las grandes empresas contaminen el medio ambiente
 4. **Que una familia venezolana se mude a la casa de al lado**
 
-::: aside
-Adaptado de [Kuklinski, Cobb, y Gilens (1997)](https://doi.org/10.1017/S0022381600053470)
-:::
+
 
 
 ## Reduce sesgo por sensibilidad
@@ -237,7 +227,7 @@ ggplot(validation) +
 
 . . .
 
-Resultados varían con el diseño de la lista
+Resultados dependen de la lista base
 
 ---
 
@@ -246,33 +236,229 @@ Resultados varían con el diseño de la lista
 
 ---
 
-[Redo this as tt]
+::: {.list-table}
 
-::::{.columns}
+- - **Lista A**
+  - **Lista B**
 
-:::{.column width=50%}
+- - Californians for Disability
+  - American Legion
 
-**Lista A**
-
-- Californians for Disability
-- California National Organization for Women
-- American Family Association
-- American Red Cross
-
+- - California National<br>Organization for Women
+  - Equality California
+  
+- - American Family Association
+  - Tea Party Patriots
+  
+- - American Red Cross
+  - Salvation Army
+  
 :::
-
-::: {.column width=50%}
-
-**Lista B**
-
-- American Legion
-- Equality California
-- Tea Party Patriots
-- Salvation Army
-:::
-
-::::
 
 . . .
 
 **Ítem sensible:** Citizen order patrol combating undocumented immigration
+
+---
+
+```{r}
+# Data prep
+load("list/attn_rep.RData")
+
+cali = dle
+
+remove(dle)
+
+# Analysis
+a = cali %>% 
+  split(.$experiment) %>% 
+  map(~difference_in_means(listA ~ trt_A, data = .)) %>% 
+  map(tidy) %>% 
+  bind_rows(.id = "experiment")
+
+b = cali %>% 
+  split(.$experiment) %>% 
+  map(~difference_in_means(listB ~ trt_B, data = .)) %>% 
+  map(tidy) %>% 
+  bind_rows(.id = "experiment")
+
+pool = cali %>% 
+  mutate(id = row_number()) %>% 
+  pivot_longer(cols = c(listA, listB)) %>% 
+  rename(list = name, count = value) %>% 
+  mutate(Z = ifelse(trt_A == 1 & list == "listA" | trt_B == 1 & list == "listB",
+                    1, 0)) %>% 
+  split(.$experiment) %>% 
+  map(~ lm_robust(count ~ Z + list, clusters = id, se_type = "stata", data = .)) %>% 
+  map(tidy) %>% 
+  bind_rows(.id = "experiment") %>% 
+  filter(term == "Z")
+  
+est_df = rbind(a, b, pool)
+
+est_df$term = fct_relevel(est_df$term, "trt_A", "trt_B", "Z")
+```
+
+```{r}
+ggplot(est_df %>% filter(experiment == "Y" &
+                           outcome != "count")) +
+  aes(x = term, y = estimate, shape = term) +
+  geom_hline(yintercept = 0, linetype = "dashed") + 
+  geom_point(size = 4, position = position_dodge(width = 0.5), alpha = 0) +
+  geom_linerange(aes(x = term, ymin = conf.low, ymax = conf.high), 
+                 size = 1, position = position_dodge(width = 0.5), alpha = 0) +
+  theme(legend.position = "none") +
+  labs(x = "Referencia", 
+       y = "Proporción apoyo") +
+  scale_x_discrete(labels = c("Lista A", "Lista B"))
+```
+
+::: aside
+Adaptado de [Diaz (2023)](https://doi.org/10.1017/XPS.2023.24)
+:::
+
+---
+
+```{r}
+ggplot(est_df %>% filter(experiment == "Y" &
+                           outcome != "count")) +
+  aes(x = term, y = estimate, shape = term) +
+  geom_hline(yintercept = 0, linetype = "dashed") + 
+  geom_point(size = 4, position = position_dodge(width = 0.5)) +
+  geom_linerange(aes(x = term, ymin = conf.low, ymax = conf.high), 
+                 size = 1, position = position_dodge(width = 0.5)) +
+  theme(legend.position = "none") +
+  labs(x = "Referencia", 
+       y = "Proporción apoyo") +
+  scale_x_discrete(labels = c("Lista A", "Lista B"))
+```
+
+::: aside
+Adaptado de [Diaz (2023)](https://doi.org/10.1017/XPS.2023.24)
+:::
+
+## Problema
+
+
+Resultados dependen de la lista base
+
+. . .
+
+**Origen**
+
+. . .
+
+1. Errores estratégicos
+
+2. Errores no estratégicos
+
+## Problema
+
+
+Resultados dependen de la lista base
+
+**Origen**
+
+
+1. Errores estratégicos
+
+2. **Errores no estratégicos**
+
+## Error no estratégico
+
+**Cosas que molestan**
+
+```{r}
+inflation = tribble(
+  ~Control, ~Tratamiento,
+  "Gobierno sube el impuesto a la bencina",
+  "Gobierno sube el impuesto a la bencina",
+  "Futbolistas reciben salarios millonarios",
+  "Futbolistas reciben salarios millonarios",
+  "Empresas contaminan el medio ambiente",
+  "Empresas contaminan el medio ambiente",
+  " ",
+  "**Familia venezolana se muda al lado**"
+)
+
+inflation %>% 
+  tt() %>%
+  style_tt(fontsize = 0.7) %>% 
+  format_tt(markdown = TRUE)
+```
+
+. . .
+
+&nbsp;
+
+:::{.r-stack}
+Lista tratamiendo es más larga
+:::
+. . .
+
+:::{.r-stack}
+{{< fa arrow-down >}}
+:::
+
+:::{.r-stack}
+Estimación positiva de manera artificial
+:::
+
+## Error no estratégico
+
+**Cosas que molestan**
+
+```{r}
+inflation = tribble(
+  ~Control, ~Tratamiento,
+  "Gobierno sube el impuesto a la bencina",
+  "Gobierno sube el impuesto a la bencina",
+  "Futbolistas reciben salarios millonarios",
+  "Futbolistas reciben salarios millonarios",
+  "Empresas contaminan el medio ambiente",
+  "Empresas contaminan el medio ambiente",
+  " ",
+  "**Familia venezolana se muda al lado**"
+)
+
+inflation %>% 
+  tt() %>%
+  style_tt(fontsize = 0.7) %>% 
+  format_tt(markdown = TRUE)
+```
+
+**Solución:** Añadir ítem placebo
+
+## Error no estratégico
+
+**Cosas que molestan**
+
+```{r}
+inflation2 = tribble(
+  ~Control, ~Tratamiento,
+  "Gobierno sube el impuesto a la bencina",
+  "Gobierno sube el impuesto a la bencina",
+  "Futbolistas reciben salarios millonarios",
+  "Futbolistas reciben salarios millonarios",
+  "Empresas contaminan el medio ambiente",
+  "Empresas contaminan el medio ambiente",
+  "**Vagón del metro viene vacío**",
+  "**Familia venezolana se muda al lado**"
+)
+
+inflation2 %>% 
+  tt() %>%
+  style_tt(i = 4, j = 1, color = puc_blue) %>% 
+  style_tt(fontsize = 0.7) %>% 
+  format_tt(markdown = TRUE)
+```
+
+**Solución:** Añadir ítem placebo
+
+## Placebo-controlled list experiments
+
+. . .
+
+**Ventaja**
+
+[CONTINUE HERE NADA ES GRATIS MY MANTRA SI ALGO REDUCE BIAS SIN AUMENTAR VARIANCE THEN COSTO VIENE FROM SOMEWHERE ELSE]
