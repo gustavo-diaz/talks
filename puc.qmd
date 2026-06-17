@@ -216,6 +216,11 @@ ggplot(validation) +
 
 ---
 
+## ¿Y a mí, qué me importa?
+
+
+---
+
 ![](list/bias_variance.jpg){fig-align="center"}
 
 ---
@@ -461,4 +466,4 @@ inflation2 %>%
 
 **Ventaja**
 
-[CONTINUE HERE NADA ES GRATIS MY MANTRA SI ALGO REDUCE BIAS SIN AUMENTAR VARIANCE THEN COSTO VIENE FROM SOMEWHERE ELSE]
+Reduce sesgo por inflación artificial de manera eficiente
