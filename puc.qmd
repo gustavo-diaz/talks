@@ -25,7 +25,7 @@ Northwestern University
 &nbsp;
 
 
-Paper and slides: [gustavodiaz.org/talk](https://gustavodiaz.org/puc)
+Paper y presentación: [gustavodiaz.org/puc](https://gustavodiaz.org/puc)
 
 ![](talk_qr.png){.absolute bottom=0 right=-50 width="180" height="180"}
 
@@ -467,3 +467,641 @@ inflation2 %>%
 **Ventaja**
 
 Reduce sesgo por inflación artificial de manera eficiente
+
+. . .
+
+Sólo 5/81 estudios desde 2014 usan este diseño
+
+## ¿Por qué?
+
+## Mantra
+
+. . .
+
+Mejoras en sesgo/varianza que no comprometen la otra dimensión imponen *costos ocultos*
+
+. . .
+
+{{< fa arrow-right >}} Ítem placebo puede sustituir un tipo de sesgo por otro
+
+::: {style="text-align: center"}
+## ¡Nos pasó a nosotros!
+:::
+
+# Nuestro experimento
+
+## Double list experiment
+
+Ha experimentado (en su barrio) en los últimos seis meses:
+
+```{r}
+list0 = tribble(
+  ~`**Lista A**`, ~`**Lista B**`,
+  "Vi personas haciendo deporte", "Vi personas jugando al fútbol",
+  "Visité amigos el fin de semana", "Conversé con mis amigos",
+  "Participé en actividades organizadas por grupos feministas", "Participé en actividades organizadas por grupos de la diversidad sexual",
+  "Participé en ceremonias religiosas", "Participé en actividades solidarias en la iglesia"
+)
+
+list0 %>% 
+  tt() %>%
+  style_tt(fontsize = 0.7) %>% 
+  format_tt(markdown = TRUE)
+```
+
+::: aside
+Muestra online en Montevideo. $N = 2688$.<br>Aleatorizado en bloque por zonas policiales de riesgo.
+:::
+
+## Manipulaciones
+
+. . .
+
+**Ítems sensibles:** 
+
+- Vi a miembros de bandas amenazar a vecinos
+- Vi a miembros de bandas sacar a vecinos de sus casas
+- Vi a miembros de bandas hacer donaciones
+- Vi a miembros de bandas ofrecer trabajo
+
+## Manipulaciones
+
+**Ítems sensibles:** 
+
+- **Vi a miembros de bandas amenazar a vecinos**
+- [Vi a miembros de bandas sacar a vecinos de sus casas]{style="color: gray;"}
+- [Vi a miembros de bandas hacer donaciones]{style="color: gray;"}
+- [Vi a miembros de bandas ofrecer trabajo]{style="color: gray;"}
+
+
+## Manipulaciones
+
+**Ítem placebo:**
+
+- No tomé mate
+
+## Double list experiment
+
+Ha experimentado (en su barrio) en los últimos seis meses:
+
+```{r}
+list0 %>% 
+  tt() %>%
+  style_tt(fontsize = 0.7) %>% 
+  format_tt(markdown = TRUE)
+```
+
+
+## Double list experiment
+
+Ha experimentado (en su barrio) en los últimos seis meses:
+
+```{r}
+list1 = tribble(
+  ~`**Lista A**`, ~`**Lista B**`,
+  "Vi personas haciendo deporte", "Vi personas jugando al fútbol",
+  "Visité amigos el fin de semana", "Conversé con mis amigos",
+  "Participé en actividades organizadas por grupos feministas", "Participé en actividades organizadas por grupos de la diversidad sexual",
+  "Participé en ceremonias religiosas", "Participé en actividades solidarias en la iglesia",
+  "**Vi a miembros de bandas amenazar a vecinos**",
+  "**No tomé mate**"
+)
+
+list1 %>% 
+  tt() %>% 
+  style_tt(fontsize = 0.7) %>%
+  format_tt(markdown = TRUE) %>% 
+  style_tt(j = 2, i = 5, color = puc_blue)
+```
+
+## Double list experiment
+
+Ha experimentado (en su barrio) en los últimos seis meses:
+
+```{r}
+list2 = tribble(
+  ~`**Lista A**`, ~`**Lista B**`,
+  "Vi personas haciendo deporte", "Vi personas jugando al fútbol",
+  "Visité amigos el fin de semana", "Conversé con mis amigos",
+  "Participé en actividades organizadas por grupos feministas", "Participé en actividades organizadas por grupos de la diversidad sexual",
+  "Participé en ceremonias religiosas", "Participé en actividades solidarias en la iglesia",
+  "**No tomé mate**",
+  "**Vi a miembros de bandas amenazar a vecinos**"
+)
+
+list2 %>% 
+  tt() %>% 
+  style_tt(fontsize = 0.7) %>%
+  format_tt(markdown = TRUE) %>% 
+  style_tt(j = 1, i = 5, color = puc_blue)
+```
+
+## Estimadores
+
+. . .
+
+$$
+\hat{\tau}_A = \widehat E[Y_{iA }(1)] - \widehat E[Y_{iA }(0)]
+$$
+
+```{r, echo=TRUE, eval=FALSE}
+difference_in_means(count ~ z, subset = list == "A", data = df)
+```
+
+
+. . .
+
+$$
+\hat{\tau}_B = \widehat E[Y_{iB }(1)] - \widehat E[Y_{iB }(0)]
+$$
+
+```{r, echo=TRUE, eval=FALSE}
+difference_in_means(count ~ z, subset = list == "B", data = df )
+```
+
+
+. . .
+
+
+$$
+\hat{\tau}_{Doble} = \frac{(\hat{\tau}_A + \hat{\tau}_B)}{2}
+$$ 
+
+```{r, echo = TRUE, eval=FALSE}
+lm_robust(count ~ z + list, clusters = id, data = df)
+```
+
+## Resultados
+
+```{r}
+main_df = read.csv("crim_gov/main.csv")
+
+threat_df = main_df %>% 
+  filter(list_treatment == "Threatening neighbors") %>% 
+  mutate(estimator = case_when(
+    estimator == "Direct" ~ "Pregunta\ndirecta",
+    estimator == "List A" ~ "Lista A",
+    estimator == "List B" ~ "Lista B",
+    estimator == "DLE" ~ "Doble"
+  )) %>% 
+  mutate(estimator = factor(
+    estimator,
+    levels = c("Pregunta\ndirecta",
+               "Lista A",
+               "Lista B",
+               "Doble")))
+
+
+
+ggplot(threat_df) +
+  aes(x = estimator, 
+      y = estimate) +
+  ylim(-0.3, 0.3) +
+  geom_hline(
+    yintercept = 0,
+    linetype = "dashed"
+  ) +
+  geom_point(size = 3, 
+             color = puc_blue,
+             alpha = 0) +
+  geom_linerange(aes(
+    ymin = conf.low,
+    ymax = conf.high,
+    x = estimator
+  ),
+  color = puc_blue,
+  linewidth = 1,
+  alpha = 0) +
+  labs(
+    x = "Estimador",
+    y = "Proporción vio bandas\namenazando a vecinos"
+  )
+```
+
+
+## Resultados
+
+```{r}
+ggplot(threat_df) +
+  aes(x = estimator, 
+      y = estimate) +
+  ylim(-0.3, 0.3) +
+  geom_hline(
+    yintercept = 0,
+    linetype = "dashed"
+  ) +
+  geom_point(aes(alpha = estimator == "Pregunta\ndirecta"),
+             size = 3, color = puc_blue) +
+  geom_linerange(aes(
+    ymin = conf.low,
+    ymax = conf.high,
+    x = estimator,
+    alpha = estimator == "Pregunta\ndirecta"
+  ),
+  color = puc_blue,
+  linewidth = 1) +
+  scale_alpha_manual(values = c(`TRUE` = 1, `FALSE` = 0), guide = "none") +
+  labs(
+    x = "Estimador",
+    y = "Proporción vio bandas\namenazando a vecinos"
+  )
+```
+
+## Resultados
+
+```{r}
+ggplot(threat_df) +
+  aes(x = estimator,
+      y = estimate) +
+  ylim(-0.3, 0.3) +
+  geom_hline(
+    yintercept = 0,
+    linetype = "dashed"
+  ) +
+  geom_point(size = 3, color = puc_blue) +
+  geom_linerange(aes(
+    ymin = conf.low,
+    ymax = conf.high,
+    x = estimator
+  ),
+  color = puc_blue,
+  linewidth = 1) +
+  labs(
+    x = "Estimador",
+    y = "Proporción vio bandas\namenazando a vecinos"
+  )
+```
+
+## ¿Qué pasó?
+
+. . .
+
+{{< fa xmark >}} Prevalencia > 0
+
+. . .
+
+{{< fa xmark >}} Falta de atención
+
+. . .
+
+{{< fa check >}} LLama la atención
+
+## ¿Qué hacer?
+
+. . .
+
+**Problema:** Estimación inválida
+
+. . .
+
+**Idea:** Imaginar cómo participantes habrían respondido sin el placebo
+
+. . .
+
+Equivalente a asumir que el estimando está *identificado parcialmente*
+
+. . .
+
+Permite construir **cotas no-paramétricas**
+
+## Sharp bounds
+
+. . .
+
+Asumen solo datos + diseño experimental (SUTVA)
+
+. . .
+
+**Implica:** Cambio solo en respuestas de control
+
+. . .
+
+**Sharp bounds:** Imputar valor mínimo/máximo posible
+
+::: aside
+**En español:** Cotas óptimas, estrechas, o ajustadas. **Economía:** *Manski bounds*
+:::
+
+## No informa
+
+```{r}
+bounds_df = read.csv("crim_gov/bounds.csv")
+
+std = bounds_df %>%
+  filter(list_treatment == "Threaten" &
+           Assumptions == "Standard") %>%
+  mutate(Estimator = case_when(
+    Estimator == "Single list" &
+      list == "count_a" ~ "Lista A",
+    Estimator == "Single list" &
+      list == "count_b" ~ "Lista B",
+    Estimator == "DLE" ~ "Doble",
+    .default = Estimator
+  ))  %>%
+  mutate(Estimator = factor(
+    Estimator,
+    levels = c(
+      "Lista A",
+      "Lista B",
+      "Doble"
+    )
+  )) %>% 
+  select(
+    Estimator,
+    outcome,
+    estimate,
+    boot_ci_which
+  ) %>%
+  pivot_wider(
+    names_from = outcome,
+    values_from = c(estimate, boot_ci_which)
+  )
+
+ggplot(std) +
+  aes(x = Estimator,
+      y = estimate_count_hi) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed") +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = estimate_count_lo,
+    ymax = estimate_count_hi
+  ), color = puc_blue,
+  linewidth = 3,
+  alpha = 0) +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = boot_ci_which_count_lo,
+    ymax = boot_ci_which_count_hi
+  ), color = puc_blue,
+  linewidth = 1,
+  alpha = 0) +
+  labs(y = "Proporción vio bandas\namenazando a vecinos")
+
+```
+
+## No informa
+
+```{r}
+ggplot(std) +
+  aes(x = Estimator,
+      y = estimate_count_hi) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed") +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = estimate_count_lo,
+    ymax = estimate_count_hi
+  ), color = puc_blue,
+  linewidth = 3) +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = boot_ci_which_count_lo,
+    ymax = boot_ci_which_count_hi
+  ), color = puc_blue,
+  linewidth = 1) +
+  labs(y = "Proporción vio bandas\namenazando a vecinos",
+       x = "Estimador")
+
+```
+
+## Refinamiento 1
+
+. . .
+
+**Supuestos de experimentos de lista**
+
+::: incremental
+1. *No liars:* Participante no cuenta el ítem sensible si no aplica
+
+2. *No design effects:* Añadir/remover ítem sensible no cambia la cuenta de la lista base
+:::
+
+. . .
+
+**Implica:**
+
+::: incremental
+- Cambio solo en respuestas de control
+- ... por una unidad
+:::
+
+## Cotas con supuestos adicionales
+
+**Implica:**
+
+- Cambio solo en respuestas de control
+- ... por una unidad
+
+. . .
+
+**Cota inferior:** Respuestas de 5 se vuelven 4
+
+. . .
+
+**Cota superior:** Respuestas de control -1 (truncado en 0)
+
+## ¿Mejor?
+
+```{r}
+le = bounds_df %>% 
+  filter(list_treatment == "Threaten" &
+           Assumptions == "List") %>% 
+  mutate(Estimator = case_when(
+    Estimator == "Single list" &
+      list == "count_a" ~ "Lista A",
+    Estimator == "Single list" &
+      list == "count_b" ~ "Lista B",
+    Estimator == "DLE" ~ "Doble",
+    .default = Estimator
+  )) %>% 
+  mutate(Estimator = factor(
+    Estimator,
+    levels = c(
+      "Lista A",
+      "Lista B",
+      "Doble"
+    )
+  )) %>% 
+# the boot CIs are backwards
+  mutate(boot_ci_which = ifelse(
+    outcome == "count_hi",
+    boot_ci_hi,
+    boot_ci_lo
+  )) %>% 
+    select(
+    Estimator, 
+    outcome,
+    estimate,
+    boot_ci_which
+  ) %>% 
+  pivot_wider(
+    names_from = outcome,
+    values_from = c(estimate, boot_ci_which)
+  )
+
+ggplot(le) +
+  aes(x = Estimator,
+      y = estimate_count_hi) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed") +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = estimate_count_lo,
+    ymax = estimate_count_hi
+  ), color = puc_blue,
+  linewidth = 3) +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = boot_ci_which_count_lo,
+    ymax = boot_ci_which_count_hi
+  ), color = puc_blue,
+  linewidth = 1) +
+  labs(y = "Proporción vio bandas\namenazando a vecinos",
+       x = "Estimador") +
+  ylim(-0.2, 1.2)
+```
+
+## Información auxiliar
+
+Cota inferior es conservativa
+
+. . .
+
+Cota superior es *demasiado agresiva* porque asume todos habrían cambiado su respuesta
+
+. . . 
+
+Podríamos mejorar si supieramos:
+
+- A quién aplica el placebo en la cuesta
+- Proporción a nivel agregado
+
+## Refinamiento 2
+
+**Incorporar información auxiliar sobre placebo**
+
+. . .
+
+**Cota inferior:** Respuestas de 5 se vuelven 4
+
+. . .
+
+**Cota superior:** 
+
+$$
+\hat \tau_{H} = (1- \delta) \times \bar V_{obs} + \delta \times \bar V_{max}
+$$
+
+$\delta$: Proporción placebo auxiliar
+
+$\bar V_{obs}$: Estimación con datos observados
+
+$\bar V_{max}$: Estimación asumiendo todas las respuestas disminuyen
+
+---
+
+No tenemos información sobre el placebo {{< fa face-sad-tear >}}
+
+. . .
+
+¡Pero podemos simular!
+
+## Simulando proporción placebo
+
+```{r}
+bounds_known_prop = read.csv("crim_gov/bounds_known_prop.csv")
+
+# I messed up the proportion labels
+bkp_hi = bounds_known_prop %>% 
+  filter(list_treatment == "Threaten") %>% 
+  mutate(p = case_when(
+    p == 1 ~ 0.05,
+    p == 2 ~ 0.1,
+    p == 3 ~ 0.2,
+    p == 4 ~ 0.3
+  ),
+  estimator = case_when(
+    estimator == "List" &
+      list == "count_a" ~ "Lista A",
+    estimator == "List" &
+      list == "count_b" ~ "Lista B",
+    estimator == "DLE" ~ "Doble",
+    .default = estimator
+  )) %>% 
+  mutate(estimator = factor(
+    estimator,
+    levels = c(
+      "Lista A",
+      "Lista B",
+      "Doble"
+    )
+  )) %>%
+  select(
+    p, estimator, 
+    estimate_hi = estimate,
+    boot_ci_hi,
+  )
+
+bkp_lo = le %>% select(
+  estimator = Estimator,
+  estimate_lo = estimate_count_lo,
+  boot_ci_lo = boot_ci_which_count_lo
+)
+
+bkp = left_join(bkp_hi, bkp_lo, by = "estimator")
+
+ggplot(bkp) +
+    aes(x = estimator,
+      y = estimate_hi,
+      color = factor(p)) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed") +
+  geom_linerange(aes(
+    x = estimator,
+    ymin = estimate_lo,
+    ymax = estimate_hi
+  ), linewidth = 3,
+  position = position_dodge(width = 0.5)) +
+  geom_linerange(aes(
+    x = estimator,
+    ymin = boot_ci_lo,
+    ymax = boot_ci_hi
+  ),  linewidth = 1,
+  position = position_dodge(width = 0.5)) +
+  scale_color_viridis_d() +
+  labs(y = "Proporción vio bandas\namenazando a vecinos",
+       x = "Estimador",
+       color = "Proporción placebo") +
+  theme(legend.position = "bottom") +
+  ylim(-0.2, 1.2)
+```
+
+## Paper
+
+::: incremental
+- **Refinamiento 3:** Incorporar preguntas directas sobre ítem sensible
+
+- **Validación:** Signos zodiacales en China
+:::
+
+## Conclusión
+
+- Método basado en diseño para recuperar estimaciones informatives en experimentos de lista cuando el control con placebo falla
+
+- Basado en situación *extrema*
+
+- Herramienta para justificar diseño de lista
+
+- Reflejo de cómo usar propiedades estadísticas para informar diseño de investigación
+
+- ¡Hacer preguntas directas de todo!
+
+## ¡Gracias!
+
+**Contacto:** <gustavo.diaz@northwestern.edu>
+
+**Información adicional:** [gustavodiaz.org/puc](https://gustavodiaz.org/puc)
+
+
+![](talk_qr.png){.absolute bottom=0 right=-50 width="180" height="180"}

@@ -6549,7 +6549,7 @@
     "href": "puc.html#recovering-informative-estimates-in-failed-placebo-controlled-list-experiments",
     "title": "Gustavo Diaz",
     "section": "Recovering Informative Estimatesin Failed Placebo-ControlledList Experiments",
-    "text": "Recovering Informative Estimatesin Failed Placebo-ControlledList Experiments\n \nGustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\n \nPaper and slides: gustavodiaz.org/talk"
+    "text": "Recovering Informative Estimatesin Failed Placebo-ControlledList Experiments\n \nGustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\n \nPaper y presentación: gustavodiaz.org/puc"
   },
   {
     "objectID": "puc.html#erc-starting-grant",
@@ -6752,7 +6752,7 @@
     "href": "puc.html#placebo-controlled-list-experiments",
     "title": "Gustavo Diaz",
     "section": "Placebo-controlled list experiments",
-    "text": "Placebo-controlled list experiments\n\nVentaja\nReduce sesgo por inflación artificial de manera eficiente"
+    "text": "Placebo-controlled list experiments\n\nVentaja\nReduce sesgo por inflación artificial de manera eficiente\n\n\nSólo 5/81 estudios desde 2014 usan este diseño"
   },
   {
     "objectID": "puc.html#y-a-mí-qué-me-importa",
@@ -6760,5 +6760,229 @@
     "title": "Gustavo Diaz",
     "section": "¿Y a mí, qué me importa?",
     "text": "¿Y a mí, qué me importa?"
+  },
+  {
+    "objectID": "puc.html#por-qué",
+    "href": "puc.html#por-qué",
+    "title": "Gustavo Diaz",
+    "section": "¿Por qué?",
+    "text": "¿Por qué?"
+  },
+  {
+    "objectID": "puc.html#mantra",
+    "href": "puc.html#mantra",
+    "title": "Gustavo Diaz",
+    "section": "Mantra",
+    "text": "Mantra\n\nMejoras en sesgo/varianza que no comprometen la otra dimensión imponen costos ocultos\n\n\n Ítem placebo puede sustituir un tipo de sesgo por otro"
+  },
+  {
+    "objectID": "puc.html#nos-pasó-a-nosotros",
+    "href": "puc.html#nos-pasó-a-nosotros",
+    "title": "Gustavo Diaz",
+    "section": "¡Nos pasó a nosotros!",
+    "text": "¡Nos pasó a nosotros!"
+  },
+  {
+    "objectID": "puc.html#double-list-experiment",
+    "href": "puc.html#double-list-experiment",
+    "title": "Gustavo Diaz",
+    "section": "Double list experiment",
+    "text": "Double list experiment\nHa experimentado (en su barrio) en los últimos seis meses:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Lista A\n                Lista B\n              \n        \n        \n        \n                \n                  Vi personas haciendo deporte\n                  Vi personas jugando al fútbol\n                \n                \n                  Visité amigos el fin de semana\n                  Conversé con mis amigos\n                \n                \n                  Participé en actividades organizadas por grupos feministas\n                  Participé en actividades organizadas por grupos de la diversidad sexual\n                \n                \n                  Participé en ceremonias religiosas\n                  Participé en actividades solidarias en la iglesia\n                \n        \n      \n    \n\n\n\n\n\nMuestra online en Montevideo. \\(N = 2688\\).Aleatorizado en bloque por zonas policiales de riesgo."
+  },
+  {
+    "objectID": "puc.html#manipulations",
+    "href": "puc.html#manipulations",
+    "title": "Gustavo Diaz",
+    "section": "Manipulations",
+    "text": "Manipulations\n\nSensitive items:\n\nSaw criminal groups threatening neighbors\nSaw criminal groups evicting neighbors from their homes\nSaw criminal groups making donations to neighbors\nSaw criminal groups offering work to neighbors"
+  },
+  {
+    "objectID": "puc.html#manipulations-1",
+    "href": "puc.html#manipulations-1",
+    "title": "Gustavo Diaz",
+    "section": "Manipulations",
+    "text": "Manipulations\nSensitive items:\n\nSaw criminal groups threatening neighbors\nSaw criminal groups evicting neighbors from their homes\nSaw criminal groups making donations to neighbors\nSaw criminal groups offering work to neighbors"
+  },
+  {
+    "objectID": "puc.html#manipulations-2",
+    "href": "puc.html#manipulations-2",
+    "title": "Gustavo Diaz",
+    "section": "Manipulations",
+    "text": "Manipulations\nPlacebo item:\n\nI did not drink mate"
+  },
+  {
+    "objectID": "puc.html#yerba-mate",
+    "href": "puc.html#yerba-mate",
+    "title": "Gustavo Diaz",
+    "section": "Yerba mate",
+    "text": "Yerba mate"
+  },
+  {
+    "objectID": "puc.html#double-list-experiment-1",
+    "href": "puc.html#double-list-experiment-1",
+    "title": "Gustavo Diaz",
+    "section": "Double list experiment",
+    "text": "Double list experiment\nHa experimentado (en su barrio) en los últimos seis meses:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Lista A\n                Lista B\n              \n        \n        \n        \n                \n                  Vi personas haciendo deporte\n                  Vi personas jugando al fútbol\n                \n                \n                  Visité amigos el fin de semana\n                  Conversé con mis amigos\n                \n                \n                  Participé en actividades organizadas por grupos feministas\n                  Participé en actividades organizadas por grupos de la diversidad sexual\n                \n                \n                  Participé en ceremonias religiosas\n                  Participé en actividades solidarias en la iglesia"
+  },
+  {
+    "objectID": "puc.html#double-list-experiment-2",
+    "href": "puc.html#double-list-experiment-2",
+    "title": "Gustavo Diaz",
+    "section": "Double list experiment",
+    "text": "Double list experiment\nHa experimentado (en su barrio) en los últimos seis meses:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Lista A\n                Lista B\n              \n        \n        \n        \n                \n                  Vi personas haciendo deporte\n                  Vi personas jugando al fútbol\n                \n                \n                  Visité amigos el fin de semana\n                  Conversé con mis amigos\n                \n                \n                  Participé en actividades organizadas por grupos feministas\n                  Participé en actividades organizadas por grupos de la diversidad sexual\n                \n                \n                  Participé en ceremonias religiosas\n                  Participé en actividades solidarias en la iglesia\n                \n                \n                  Vi a miembros de bandas amenazar a vecinos\n                  No tomé mate"
+  },
+  {
+    "objectID": "puc.html#double-list-experiment-3",
+    "href": "puc.html#double-list-experiment-3",
+    "title": "Gustavo Diaz",
+    "section": "Double list experiment",
+    "text": "Double list experiment\nHa experimentado (en su barrio) en los últimos seis meses:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Lista A\n                Lista B\n              \n        \n        \n        \n                \n                  Vi personas haciendo deporte\n                  Vi personas jugando al fútbol\n                \n                \n                  Visité amigos el fin de semana\n                  Conversé con mis amigos\n                \n                \n                  Participé en actividades organizadas por grupos feministas\n                  Participé en actividades organizadas por grupos de la diversidad sexual\n                \n                \n                  Participé en ceremonias religiosas\n                  Participé en actividades solidarias en la iglesia\n                \n                \n                  No tomé mate\n                  Vi a miembros de bandas amenazar a vecinos"
+  },
+  {
+    "objectID": "puc.html#manipulaciones",
+    "href": "puc.html#manipulaciones",
+    "title": "Gustavo Diaz",
+    "section": "Manipulaciones",
+    "text": "Manipulaciones\n\nÍtems sensibles:\n\nVi a miembros de bandas amenazar a vecinos\nVi a miembros de bandas sacar a vecinos de sus casas\nVi a miembros de bandas hacer donaciones\nVi a miembros de bandas ofrecer trabajo"
+  },
+  {
+    "objectID": "puc.html#manipulaciones-1",
+    "href": "puc.html#manipulaciones-1",
+    "title": "Gustavo Diaz",
+    "section": "Manipulaciones",
+    "text": "Manipulaciones\nÍtems sensibles:\n\nVi a miembros de bandas amenazar a vecinos\nVi a miembros de bandas sacar a vecinos de sus casas\nVi a miembros de bandas hacer donaciones\nVi a miembros de bandas ofrecer trabajo"
+  },
+  {
+    "objectID": "puc.html#manipulaciones-2",
+    "href": "puc.html#manipulaciones-2",
+    "title": "Gustavo Diaz",
+    "section": "Manipulaciones",
+    "text": "Manipulaciones\nÍtem placebo:\n\nNo tomé mate"
+  },
+  {
+    "objectID": "puc.html#estimadores",
+    "href": "puc.html#estimadores",
+    "title": "Gustavo Diaz",
+    "section": "Estimadores",
+    "text": "Estimadores\n\n\\[\n\\hat{\\tau}_A = \\widehat E[Y_{iA }(1)] - \\widehat E[Y_{iA }(0)]\n\\]\n\ndifference_in_means(count ~ z, subset = list == \"A\", data = df)\n\n\n\n\\[\n\\hat{\\tau}_B = \\widehat E[Y_{iB }(1)] - \\widehat E[Y_{iB }(0)]\n\\]\n\ndifference_in_means(count ~ z, subset = list == \"B\", data = df )\n\n\n\n\\[\n\\hat{\\tau}_{Doble} = \\frac{(\\hat{\\tau}_A + \\hat{\\tau}_B)}{2}\n\\]\n\nlm_robust(count ~ z + list, clusters = id, data = df)"
+  },
+  {
+    "objectID": "puc.html#resultados",
+    "href": "puc.html#resultados",
+    "title": "Gustavo Diaz",
+    "section": "Resultados",
+    "text": "Resultados"
+  },
+  {
+    "objectID": "puc.html#resultados-1",
+    "href": "puc.html#resultados-1",
+    "title": "Gustavo Diaz",
+    "section": "Resultados",
+    "text": "Resultados"
+  },
+  {
+    "objectID": "puc.html#resultados-2",
+    "href": "puc.html#resultados-2",
+    "title": "Gustavo Diaz",
+    "section": "Resultados",
+    "text": "Resultados"
+  },
+  {
+    "objectID": "puc.html#qué-pasó",
+    "href": "puc.html#qué-pasó",
+    "title": "Gustavo Diaz",
+    "section": "¿Qué pasó?",
+    "text": "¿Qué pasó?\n\n Prevalencia &gt; 0\n\n\n Falta de atención\n\n\n LLama la atención"
+  },
+  {
+    "objectID": "puc.html#qué-hacer",
+    "href": "puc.html#qué-hacer",
+    "title": "Gustavo Diaz",
+    "section": "¿Qué hacer?",
+    "text": "¿Qué hacer?\n\nProblema: Estimación inválida\n\n\nIdea: Imaginar cómo participantes habrían respondido sin el placebo\n\n\nEquivalente a asumir que el estimando está identificado parcialmente\n\n\nPermite construir cotas no-paramétricas"
+  },
+  {
+    "objectID": "puc.html#sharp-bounds",
+    "href": "puc.html#sharp-bounds",
+    "title": "Gustavo Diaz",
+    "section": "Sharp bounds",
+    "text": "Sharp bounds\n\nAsumen solo datos + diseño experimental (SUTVA)\n\n\nImplica: Cambio solo en respuestas de control\n\n\nSharp bounds: Imputar valor mínimo/máximo posible\n\n\n\nEn español: Cotas óptimas, estrechas, o ajustadas. Economía: Manski bounds"
+  },
+  {
+    "objectID": "puc.html#no-informa",
+    "href": "puc.html#no-informa",
+    "title": "Gustavo Diaz",
+    "section": "No informa",
+    "text": "No informa"
+  },
+  {
+    "objectID": "puc.html#no-informa-1",
+    "href": "puc.html#no-informa-1",
+    "title": "Gustavo Diaz",
+    "section": "No informa",
+    "text": "No informa"
+  },
+  {
+    "objectID": "puc.html#refinamiento-1",
+    "href": "puc.html#refinamiento-1",
+    "title": "Gustavo Diaz",
+    "section": "Refinamiento 1",
+    "text": "Refinamiento 1\n\nSupuestos de experimentos de lista\n\nNo liars: Participante no cuenta el ítem sensible si no aplica\nNo design effects: Añadir/remover ítem sensible no cambia la cuenta de la lista base\n\n\n\nImplica:\n\nCambio solo en respuestas de control\n… por una unidad"
+  },
+  {
+    "objectID": "puc.html#cotas-con-supuestos-adicionales",
+    "href": "puc.html#cotas-con-supuestos-adicionales",
+    "title": "Gustavo Diaz",
+    "section": "Cotas con supuestos adicionales",
+    "text": "Cotas con supuestos adicionales\nImplica:\n\nCambio solo en respuestas de control\n… por una unidad\n\n\nCota inferior: Respuestas de 5 se vuelven 4\n\n\nCota superior: Respuestas de control -1 (truncado en 0)"
+  },
+  {
+    "objectID": "puc.html#mejor",
+    "href": "puc.html#mejor",
+    "title": "Gustavo Diaz",
+    "section": "¿Mejor?",
+    "text": "¿Mejor?"
+  },
+  {
+    "objectID": "puc.html#información-auxiliar",
+    "href": "puc.html#información-auxiliar",
+    "title": "Gustavo Diaz",
+    "section": "Información auxiliar",
+    "text": "Información auxiliar\nCota inferior es conservativa\n\nCota superior es demasiado agresiva porque asume todos habrían cambiado su respuesta\n\n\nPodríamos mejorar si supieramos:\n\nA quién aplica el placebo en la cuesta\nProporción a nivel agregado"
+  },
+  {
+    "objectID": "puc.html#refinamiento-2",
+    "href": "puc.html#refinamiento-2",
+    "title": "Gustavo Diaz",
+    "section": "Refinamiento 2",
+    "text": "Refinamiento 2\nIncorporar información auxiliar sobre placebo\n\nCota inferior: Respuestas de 5 se vuelven 4\n\n\nCota superior:\n\\[\n\\hat \\tau_{H} = (1- \\delta) \\times \\bar V_{obs} + \\delta \\times \\bar V_{max}\n\\]\n\\(\\delta\\): Proporción placebo auxiliar\n\\(\\bar V_{obs}\\): Estimación con datos observados\n\\(\\bar V_{max}\\): Estimación asumiendo todas las respuestas disminuyen"
+  },
+  {
+    "objectID": "puc.html#simulando-proporción-placebo",
+    "href": "puc.html#simulando-proporción-placebo",
+    "title": "Gustavo Diaz",
+    "section": "Simulando proporción placebo",
+    "text": "Simulando proporción placebo"
+  },
+  {
+    "objectID": "puc.html#paper",
+    "href": "puc.html#paper",
+    "title": "Gustavo Diaz",
+    "section": "Paper",
+    "text": "Paper\n\nRefinamiento 3: Incorporar preguntas directas sobre ítem sensible\nValidación: Signos zodiacales en China"
+  },
+  {
+    "objectID": "puc.html#conclusión",
+    "href": "puc.html#conclusión",
+    "title": "Gustavo Diaz",
+    "section": "Conclusión",
+    "text": "Conclusión\n\nMétodo basado en diseño para recuperar estimaciones informatives en experimentos de lista cuando el control con placebo falla\nBasado en situación extrema\nHerramienta para justificar diseño de lista\nReflejo de cómo usar propiedades estadísticas para informar diseño de investigación\n¡Hacer preguntas directas de todo!"
+  },
+  {
+    "objectID": "puc.html#gracias",
+    "href": "puc.html#gracias",
+    "title": "Gustavo Diaz",
+    "section": "¡Gracias!",
+    "text": "¡Gracias!\nContacto: gustavo.diaz@northwestern.edu\nInformación adicional: gustavodiaz.org/puc"
   }
 ]
