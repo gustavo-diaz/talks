@@ -27,7 +27,7 @@ Northwestern University
 
 Paper y presentación: [gustavodiaz.org/puc](https://gustavodiaz.org/puc)
 
-![](talk_qr.png){.absolute bottom=0 right=-50 width="180" height="180"}
+![](puc_qr.png){.absolute bottom=0 right=-50 width="180" height="180"}
 
 :::
 
@@ -1104,4 +1104,4 @@ ggplot(bkp) +
 **Información adicional:** [gustavodiaz.org/puc](https://gustavodiaz.org/puc)
 
 
-![](talk_qr.png){.absolute bottom=0 right=-50 width="180" height="180"}
+![](puc_qr.png){.absolute bottom=0 right=-50 width="180" height="180"}
