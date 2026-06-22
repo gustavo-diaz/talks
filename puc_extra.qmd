@@ -35,7 +35,7 @@ theme_set(theme_gray(base_size = 25))
 ggdodge = position_dodge(width = 0.5)
 
 # color
-tulane = "#006747"
+puc_blue = "#0176DE"
 ```
 
 # Block randomization

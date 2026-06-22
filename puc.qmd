@@ -49,7 +49,6 @@ library(tinytable)
 # ggplot global options
 theme_set(theme_gray(base_size = 20))
 
-# Northwestern purple
 puc_blue = "#0176DE"
 ```
 
