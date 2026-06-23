@@ -963,7 +963,7 @@
     "href": "puc_extra.html",
     "title": "Balancing Precision and Retention in Experimental Design",
     "section": "",
-    "text": "\\[\\widehat{ATE}_{\\text{Block}} = \\sum_{b=1}^B \\frac{n_b}{N} \\widehat{ATE}_b\\]\n\n\n\n\n# Standard design\nlm(Y ~ Z, \n   data = data)\n\n# Block randomized\nlm(Y ~ Z + block, \n   data = data)"
+    "text": "Item location\nSensitive item\n\n              \n                Sensitive\n                Placebo\n                Threaten\n                Evict\n                Donation\n                Work\n              \n        \n        \n        \n                \n                  List A\n                  List B\n                  328\n                  322\n                  339\n                  341\n                \n                \n                  List B\n                  List A\n                  340\n                  339\n                  326\n                  333\n                \n        \n      \n    \n\n\n\n\n\n\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Variable\n                N\n                Mean\n                SD\n                Min\n                Max\n              \n        \n        \n        \n                \n                  Age (years)\n                  2668\n                  41.372\n                  15.192\n                  18\n                  100\n                \n                \n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                \n                \n                  Female\n                  2668\n                  0.642\n                  0.479\n                  0\n                  1\n                \n                \n                  Male\n                  2668\n                  0.353\n                  0.478\n                  0\n                  1\n                \n                \n                  Other sex\n                  2668\n                  0.005\n                  0.070\n                  0\n                  1\n                \n                \n                  Education\n                  Education\n                  Education\n                  Education\n                  Education\n                  Education\n                \n                \n                  Primary incomplete\n                  2555\n                  0.023\n                  0.149\n                  0\n                  1\n                \n                \n                  Primary complete\n                  2555\n                  0.069\n                  0.254\n                  0\n                  1\n                \n                \n                  Secondary incomplete\n                  2555\n                  0.291\n                  0.454\n                  0\n                  1\n                \n                \n                  Secondary complete\n                  2555\n                  0.190\n                  0.392\n                  0\n                  1\n                \n                \n                  Tertiary incomplete\n                  2555\n                  0.264\n                  0.441\n                  0\n                  1\n                \n                \n                  Tertiary complete\n                  2555\n                  0.163\n                  0.370\n                  0\n                  1\n                \n                \n                  Race\n                  Race\n                  Race\n                  Race\n                  Race\n                  Race\n                \n                \n                  White\n                  2525\n                  0.741\n                  0.438\n                  0\n                  1\n                \n                \n                  Afro-descendant\n                  2525\n                  0.104\n                  0.306\n                  0\n                  1\n                \n                \n                  Indigenous\n                  2525\n                  0.069\n                  0.253\n                  0\n                  1\n                \n                \n                  Other race\n                  2525\n                  0.086\n                  0.280\n                  0\n                  1\n                \n                \n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                \n                \n                  Worked last week\n                  2545\n                  0.560\n                  0.496\n                  0\n                  1\n                \n                \n                  Income\n                  Income\n                  Income\n                  Income\n                  Income\n                  Income\n                \n                \n                  Not enough, faces great difficulties\n                  2519\n                  0.112\n                  0.316\n                  0\n                  1\n                \n                \n                  Not enough, faces some difficulty\n                  2519\n                  0.353\n                  0.478\n                  0\n                  1\n                \n                \n                  Enough to make ends meet\n                  2519\n                  0.424\n                  0.494\n                  0\n                  1\n                \n                \n                  Enough to save\n                  2519\n                  0.110\n                  0.313\n                  0\n                  1\n                \n        \n      \n    \n\n\n\n\n\n\n[Convert chi_bar.pdf to png]\n\n\n\n[Convert main.pdf to png]"
   },
   {
     "objectID": "puc_extra.html#estimator",
@@ -1193,8 +1193,8 @@
     "objectID": "mpsa26_ml.html#discussion-machine-learning-applications",
     "href": "mpsa26_ml.html#discussion-machine-learning-applications",
     "title": "Gustavo Diaz",
-    "section": "Discussion:Machine Learning Applications",
-    "text": "Discussion:Machine Learning Applications\n\nMalmberg. “Investigating the Utility of LLM-Based ‘Silicon Samples’ in Political Science Conjoint Experiments”\nSanaei, Wang, Koh. “Simulating Realistic Focus Group Discussions Using Large Language Models”\n\n\n\nSlides: talks.gustavodiaz.org/mpsa26_ml"
+    "section": "",
+    "text": "Malmberg. “Investigating the Utility of LLM-Based ‘Silicon Samples’ in Political Science Conjoint Experiments”\nSanaei, Wang, Koh. “Simulating Realistic Focus Group Discussions Using Large Language Models”\n\n\n\nSlides: talks.gustavodiaz.org/mpsa26_ml"
   },
   {
     "objectID": "mpsa26_ml.html#disclaimers",
@@ -1208,63 +1208,63 @@
     "href": "mpsa26_ml.html#disclaimers-1",
     "title": "Gustavo Diaz",
     "section": "Disclaimers",
-    "text": "Disclaimers\n\n\n\n\n\nAI decreases cost of prediction\nwhich increases the value of judgment\nIndustry: Techbros in the board room\nSocial science: Need to come off stronger on ethical implications and safeguards"
+    "text": "Disclaimers\n\n\n\n\n\n\nAI decreases cost of prediction\nwhich increases the value of judgment\nIndustry: Techbros in the board room\nSocial science: Need to come off stronger on ethical implications and safeguards"
   },
   {
     "objectID": "mpsa26_ml.html#malmberg-llm-conjoints",
     "href": "mpsa26_ml.html#malmberg-llm-conjoints",
     "title": "Gustavo Diaz",
     "section": "Malmberg: LLM conjoints",
-    "text": "Malmberg: LLM conjoints\n\nWhy should you care?\n\n\nExperimenters must simulate designs before data collection"
+    "text": "Malmberg: LLM conjoints\n. . .\nWhy should you care?\n. . .\nExperimenters must simulate designs before data collection\n\n\n\n\n\n\n\n\nbook.declaredesign.org"
   },
   {
     "objectID": "mpsa26_ml.html#malmberg-llm-conjoints-1",
     "href": "mpsa26_ml.html#malmberg-llm-conjoints-1",
     "title": "Gustavo Diaz",
     "section": "Malmberg: LLM conjoints",
-    "text": "Malmberg: LLM conjoints\nWhy should you care?\nExperimenters must simulate designs before data collection\n\nThis is “easy” for vignette designs\n\n\nBut conjoints are all about multidimensional preferences"
+    "text": "Malmberg: LLM conjoints\nWhy should you care?\nExperimenters must simulate designs before data collection\n. . .\nThis is “easy” for vignette designs\n. . .\nBut conjoints are all about multidimensional preferences\n\n\n\n\n\n\n\n\nhttps://doi.org/10.48550/arXiv.2604.10845"
   },
   {
     "objectID": "mpsa26_ml.html#malmberg-llm-conjoints-2",
     "href": "mpsa26_ml.html#malmberg-llm-conjoints-2",
     "title": "Gustavo Diaz",
     "section": "Malmberg: LLM conjoints",
-    "text": "Malmberg: LLM conjoints\nWhy should you care?\nExperimenters must simulate designs before data collection\nThis is “easy” for vignette designs\nBut conjoints are all about multidimensional preferences\n\nYou may want more nuanced data generation"
+    "text": "Malmberg: LLM conjoints\nWhy should you care?\nExperimenters must simulate designs before data collection\nThis is “easy” for vignette designs\nBut conjoints are all about multidimensional preferences\n. . .\nYou may want more nuanced data generation"
   },
   {
     "objectID": "mpsa26_ml.html#malmberg-llm-conjoints-3",
     "href": "mpsa26_ml.html#malmberg-llm-conjoints-3",
     "title": "Gustavo Diaz",
     "section": "Malmberg: LLM conjoints",
-    "text": "Malmberg: LLM conjoints\nThings I like\n\nLarge N benchmark study (CHIP50, N \\(\\approx\\) 25k )\nZero shot algorithm\nCovariate importance to understand what LLMs pay most attention to"
+    "text": "Malmberg: LLM conjoints\nThings I like\n\n\nLarge N benchmark study (CHIP50, N \\(\\approx\\) 25k )\nZero shot algorithm\nCovariate importance to understand what LLMs pay most attention to"
   },
   {
     "objectID": "mpsa26_ml.html#malmberg-llm-conjoints-4",
     "href": "mpsa26_ml.html#malmberg-llm-conjoints-4",
     "title": "Gustavo Diaz",
     "section": "Malmberg: LLM conjoints",
-    "text": "Malmberg: LLM conjoints\nFeedback\n\nNot enough predictive covariates?\nWhat is the alternative? Supervised learning?\nWould a stack of many LLMs perform better?\nExtension: Can we learn about hypothetical effects, new outcomes?"
+    "text": "Malmberg: LLM conjoints\nFeedback\n\n\nNot enough predictive covariates?\nWhat is the alternative? Supervised learning?\nWould a stack of many LLMs perform better?\nExtension: Can we learn about hypothetical effects, new outcomes?"
   },
   {
     "objectID": "mpsa26_ml.html#sanaei-et-al-llm-focus-groups",
     "href": "mpsa26_ml.html#sanaei-et-al-llm-focus-groups",
     "title": "Gustavo Diaz",
     "section": "Sanaei et al: LLM Focus groups",
-    "text": "Sanaei et al: LLM Focus groups\n\nWhy should you care?\n\nFocus groups are open-ended but expensive, need to train facilitators well\nFidelity, roleplay, and facsimile problems at the same time!"
+    "text": "Sanaei et al: LLM Focus groups\n\nWhy should you care?\n\n\nFocus groups are open-ended but expensive, need to train facilitators well\nFidelity, roleplay, and facsimile problems at the same time!"
   },
   {
     "objectID": "mpsa26_ml.html#sanaei-et-al-llm-focus-groups-1",
     "href": "mpsa26_ml.html#sanaei-et-al-llm-focus-groups-1",
     "title": "Gustavo Diaz",
     "section": "Sanaei et al: LLM Focus groups",
-    "text": "Sanaei et al: LLM Focus groups\nThings I Like\n\nTransparency in motivation for experiments\nMoving beyond static data\nCareful thinking about features of focus groups (e.g. turn-taking, moderation)"
+    "text": "Sanaei et al: LLM Focus groups\nThings I Like\n\n\nTransparency in motivation for experiments\nMoving beyond static data\nCareful thinking about features of focus groups (e.g. turn-taking, moderation)"
   },
   {
     "objectID": "mpsa26_ml.html#sanaei-et-al-llm-focus-groups-2",
     "href": "mpsa26_ml.html#sanaei-et-al-llm-focus-groups-2",
     "title": "Gustavo Diaz",
     "section": "Sanaei et al: LLM Focus groups",
-    "text": "Sanaei et al: LLM Focus groups\nFeedback\n\nCan R package be turned into (Shiny) app?\nCan we simulate a real time focus group with a human moderator?\nUse existing focus group transcripts to ask “what if” questions?\nMany insights from focus groups are non-verbal (e.g. agreeing out of conformity)"
+    "text": "Sanaei et al: LLM Focus groups\nFeedback\n\n\nCan R package be turned into (Shiny) app?\nCan we simulate a real time focus group with a human moderator?\nUse existing focus group transcripts to ask “what if” questions?\nMany insights from focus groups are non-verbal (e.g. agreeing out of conformity)"
   },
   {
     "objectID": "mpsa26.html#recovering-informative-estimates-in-failed-placebo-controlled-list-experiments",
@@ -3111,8 +3111,8 @@
     "objectID": "mpsa26_exp.html#discussion-experiments-on-taxes-corruption-and-prejudice",
     "href": "mpsa26_exp.html#discussion-experiments-on-taxes-corruption-and-prejudice",
     "title": "Gustavo Diaz",
-    "section": "Discussion:Experiments on Taxes, Corruption, and Prejudice",
-    "text": "Discussion:Experiments on Taxes, Corruption, and Prejudice\n\nScartascini and Barinas-Forero. “Wage Cuts, Social Distributional Preferences, and Political Corruption”\nRodrigues. “Making Sense of Shaming: A Field Experiment on Moral Disengagement and Corporate Tax Delinquency in Brazil”\n\n\n\nSlides: talks.gustavodiaz.org/mpsa26_exp"
+    "section": "",
+    "text": "Scartascini and Barinas-Forero. “Wage Cuts, Social Distributional Preferences, and Political Corruption”\nRodrigues. “Making Sense of Shaming: A Field Experiment on Moral Disengagement and Corporate Tax Delinquency in Brazil”\n\n\n\nSlides: talks.gustavodiaz.org/mpsa26_exp"
   },
   {
     "objectID": "mpsa26_exp.html#common-theme",
@@ -3126,56 +3126,56 @@
     "href": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment",
     "title": "Gustavo Diaz",
     "section": "Scartascini: Wage cut lab experiment",
-    "text": "Scartascini: Wage cut lab experiment\nWhy should you care?\n\n\nBudget cuts are a popular anti-corruption policy"
+    "text": "Scartascini: Wage cut lab experiment\nWhy should you care?\n. . .\n\nBudget cuts are a popular anti-corruption policy\n\n\n\n\n\ndoge.gov/savings\n\n\n\n\nBudget cuts reach President’s office: Kast plans reductions in personnel and events(About $706M CLP \\(\\approx\\) $8M USD)\n\n\n\n\nSource: biobiochile.cl"
   },
   {
     "objectID": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-1",
     "href": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-1",
     "title": "Gustavo Diaz",
     "section": "Scartascini: Wage cut lab experiment",
-    "text": "Scartascini: Wage cut lab experiment\nWhy should you care?\n\nBudget cuts are a popular anti-corruption policy\n\n\n\nNovelty: “Evidence on the role of wages on corruption, while holding selection constant” (p. 3)\n\n\n\n\nEven “good types” are corruptible"
+    "text": "Scartascini: Wage cut lab experiment\nWhy should you care?\n\nBudget cuts are a popular anti-corruption policy\n\n. . .\n\nNovelty: “Evidence on the role of wages on corruption, while holding selection constant” (p. 3)\n\n. . .\n\nEven “good types” are corruptible"
   },
   {
     "objectID": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-2",
     "href": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-2",
     "title": "Gustavo Diaz",
     "section": "Scartascini: Wage cut lab experiment",
-    "text": "Scartascini: Wage cut lab experiment\nThings I like\n\nTight connection with literature\nLab experiment setup\nLarge sample size\nPre-treatment outcome baseline"
+    "text": "Scartascini: Wage cut lab experiment\nThings I like\n\n\nTight connection with literature\nLab experiment setup\nLarge sample size\nPre-treatment outcome baseline"
   },
   {
     "objectID": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-3",
     "href": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-3",
     "title": "Gustavo Diaz",
     "section": "Scartascini: Wage cut lab experiment",
-    "text": "Scartascini: Wage cut lab experiment\nFeedback\nStuff a polisci reviewer may care about\n\nWhy Colombia?\nExternal validity/ecological validity\nWhy 60% wage reduction?"
+    "text": "Scartascini: Wage cut lab experiment\nFeedback\nStuff a polisci reviewer may care about\n\n\nWhy Colombia?\nExternal validity/ecological validity\nWhy 60% wage reduction?"
   },
   {
     "objectID": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-4",
     "href": "mpsa26_exp.html#scartascini-wage-cut-lab-experiment-4",
     "title": "Gustavo Diaz",
     "section": "Scartascini: Wage cut lab experiment",
-    "text": "Scartascini: Wage cut lab experiment\nFeedback\nMy own quibbles\n\nCan you extrapolate to general budget cuts?\nEfficiency factor? (p. 9)\nSection 2.3 should include experimental flow diagram\nShow raw p-values in figures!\n\n\n\nI am splitting hairs because the paper is at an advanced stage"
+    "text": "Scartascini: Wage cut lab experiment\nFeedback\nMy own quibbles\n\n\nCan you extrapolate to general budget cuts?\nEfficiency factor? (p. 9)\nSection 2.3 should include experimental flow diagram\nShow raw p-values in figures!\n\n\n\n\nI am splitting hairs because the paper is at an advanced stage"
   },
   {
     "objectID": "mpsa26_exp.html#rodrigues-tax-delinquency-field-experiment",
     "href": "mpsa26_exp.html#rodrigues-tax-delinquency-field-experiment",
     "title": "Gustavo Diaz",
     "section": "Rodrigues: Tax delinquency field experiment",
-    "text": "Rodrigues: Tax delinquency field experiment\nWhy should you care?\n\nTax evasion \\(\\neq\\) tax delinquency\nBig problem, (relatively) small intervention, potential high payoff"
+    "text": "Rodrigues: Tax delinquency field experiment\nWhy should you care?\n\n\nTax evasion \\(\\neq\\) tax delinquency\nBig problem, (relatively) small intervention, potential high payoff"
   },
   {
     "objectID": "mpsa26_exp.html#rodrigues-tax-delinquency-field-experiment-1",
     "href": "mpsa26_exp.html#rodrigues-tax-delinquency-field-experiment-1",
     "title": "Gustavo Diaz",
     "section": "Rodrigues: Tax delinquency field experiment",
-    "text": "Rodrigues: Tax delinquency field experiment\nThings I like\n\nEffect of shaming depends is very context dependent!\nMulti-experiment design\nCareful thinking on effect suppressors and antidotes"
+    "text": "Rodrigues: Tax delinquency field experiment\nThings I like\n\n\nEffect of shaming depends is very context dependent!\nMulti-experiment design\nCareful thinking on effect suppressors and antidotes"
   },
   {
     "objectID": "mpsa26_exp.html#rodrigues-tax-delinquency-field-experiment-2",
     "href": "mpsa26_exp.html#rodrigues-tax-delinquency-field-experiment-2",
     "title": "Gustavo Diaz",
     "section": "Rodrigues: Tax delinquency field experiment",
-    "text": "Rodrigues: Tax delinquency field experiment\nFeedback\n\nConsider adaptive design for next experiments (e.g. Offer-Westort et al 2021 AJPS)\nCan you look at payment amounts?\n… and make statements about cost effectiveness?\nThe language around mediation confused me\nCan you estimate CATEs?"
+    "text": "Rodrigues: Tax delinquency field experiment\nFeedback\n\n\nConsider adaptive design for next experiments (e.g. Offer-Westort et al 2021 AJPS)\nCan you look at payment amounts?\n… and make statements about cost effectiveness?\nThe language around mediation confused me\nCan you estimate CATEs?"
   },
   {
     "objectID": "mpsa26_exp.html#connects-with-encouragement-designs",
@@ -5171,5 +5171,47 @@
     "title": "Gustavo Diaz",
     "section": "Thank you!",
     "text": "Thank you!\nFeedback: gustavo.diaz@northwestern.edu\nPaper and slides: gustavodiaz.org/talk"
+  },
+  {
+    "objectID": "puc_extra.html#sample-sizes-by-experimental-condition",
+    "href": "puc_extra.html#sample-sizes-by-experimental-condition",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "",
+    "text": "Item location\nSensitive item\n\n              \n                Sensitive\n                Placebo\n                Threaten\n                Evict\n                Donation\n                Work\n              \n        \n        \n        \n                \n                  List A\n                  List B\n                  328\n                  322\n                  339\n                  341\n                \n                \n                  List B\n                  List A\n                  340\n                  339\n                  326\n                  333"
+  },
+  {
+    "objectID": "mpsa26_ml.html",
+    "href": "mpsa26_ml.html",
+    "title": "Gustavo Diaz",
+    "section": "",
+    "text": "Malmberg. “Investigating the Utility of LLM-Based ‘Silicon Samples’ in Political Science Conjoint Experiments”\nSanaei, Wang, Koh. “Simulating Realistic Focus Group Discussions Using Large Language Models”\n\n\n\nSlides: talks.gustavodiaz.org/mpsa26_ml"
+  },
+  {
+    "objectID": "mpsa26_exp.html",
+    "href": "mpsa26_exp.html",
+    "title": "Gustavo Diaz",
+    "section": "",
+    "text": "Scartascini and Barinas-Forero. “Wage Cuts, Social Distributional Preferences, and Political Corruption”\nRodrigues. “Making Sense of Shaming: A Field Experiment on Moral Disengagement and Corporate Tax Delinquency in Brazil”\n\n\n\nSlides: talks.gustavodiaz.org/mpsa26_exp"
+  },
+  {
+    "objectID": "puc_extra.html#sample-characteristics",
+    "href": "puc_extra.html#sample-characteristics",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "",
+    "text": "Variable\n                N\n                Mean\n                SD\n                Min\n                Max\n              \n        \n        \n        \n                \n                  Age (years)\n                  2668\n                  41.372\n                  15.192\n                  18\n                  100\n                \n                \n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                \n                \n                  Female\n                  2668\n                  0.642\n                  0.479\n                  0\n                  1\n                \n                \n                  Male\n                  2668\n                  0.353\n                  0.478\n                  0\n                  1\n                \n                \n                  Other sex\n                  2668\n                  0.005\n                  0.070\n                  0\n                  1\n                \n                \n                  Education\n                  Education\n                  Education\n                  Education\n                  Education\n                  Education\n                \n                \n                  Primary incomplete\n                  2555\n                  0.023\n                  0.149\n                  0\n                  1\n                \n                \n                  Primary complete\n                  2555\n                  0.069\n                  0.254\n                  0\n                  1\n                \n                \n                  Secondary incomplete\n                  2555\n                  0.291\n                  0.454\n                  0\n                  1\n                \n                \n                  Secondary complete\n                  2555\n                  0.190\n                  0.392\n                  0\n                  1\n                \n                \n                  Tertiary incomplete\n                  2555\n                  0.264\n                  0.441\n                  0\n                  1\n                \n                \n                  Tertiary complete\n                  2555\n                  0.163\n                  0.370\n                  0\n                  1\n                \n                \n                  Race\n                  Race\n                  Race\n                  Race\n                  Race\n                  Race\n                \n                \n                  White\n                  2525\n                  0.741\n                  0.438\n                  0\n                  1\n                \n                \n                  Afro-descendant\n                  2525\n                  0.104\n                  0.306\n                  0\n                  1\n                \n                \n                  Indigenous\n                  2525\n                  0.069\n                  0.253\n                  0\n                  1\n                \n                \n                  Other race\n                  2525\n                  0.086\n                  0.280\n                  0\n                  1\n                \n                \n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                \n                \n                  Worked last week\n                  2545\n                  0.560\n                  0.496\n                  0\n                  1\n                \n                \n                  Income\n                  Income\n                  Income\n                  Income\n                  Income\n                  Income\n                \n                \n                  Not enough, faces great difficulties\n                  2519\n                  0.112\n                  0.316\n                  0\n                  1\n                \n                \n                  Not enough, faces some difficulty\n                  2519\n                  0.353\n                  0.478\n                  0\n                  1\n                \n                \n                  Enough to make ends meet\n                  2519\n                  0.424\n                  0.494\n                  0\n                  1\n                \n                \n                  Enough to save\n                  2519\n                  0.110\n                  0.313\n                  0\n                  1"
+  },
+  {
+    "objectID": "puc_extra.html#observed-responses",
+    "href": "puc_extra.html#observed-responses",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "",
+    "text": "[Convert chi_bar.pdf to png]"
+  },
+  {
+    "objectID": "puc_extra.html#results-with-all-items",
+    "href": "puc_extra.html#results-with-all-items",
+    "title": "Balancing Precision and Retention in Experimental Design",
+    "section": "",
+    "text": "[Convert main.pdf to png]"
   }
 ]

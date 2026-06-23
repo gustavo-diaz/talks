@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -69,7 +34,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-f8d2b756ebd680c5e7baf86afdffbb79.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -90,38 +55,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -137,37 +71,17 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#block-randomization" id="toc-block-randomization" class="nav-link active" data-scroll-target="#block-randomization">Block randomization</a>
+  <li><a href="#additional-information-and-results" id="toc-additional-information-and-results" class="nav-link active" data-scroll-target="#additional-information-and-results">Additional information and results</a>
   <ul class="collapse">
-  <li><a href="#illustration" id="toc-illustration" class="nav-link" data-scroll-target="#illustration">Illustration</a></li>
-  <li><a href="#estimator" id="toc-estimator" class="nav-link" data-scroll-target="#estimator">Estimator</a></li>
-  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
+  <li><a href="#sample-sizes-by-experimental-condition" id="toc-sample-sizes-by-experimental-condition" class="nav-link" data-scroll-target="#sample-sizes-by-experimental-condition">Sample sizes by experimental condition</a></li>
+  <li><a href="#sample-characteristics" id="toc-sample-characteristics" class="nav-link" data-scroll-target="#sample-characteristics">Sample characteristics</a></li>
+  <li><a href="#observed-responses" id="toc-observed-responses" class="nav-link" data-scroll-target="#observed-responses">Observed responses</a></li>
+  <li><a href="#results-with-all-items" id="toc-results-with-all-items" class="nav-link" data-scroll-target="#results-with-all-items">Results with all items</a></li>
+  <li><a href="#bounds-with-all-items" id="toc-bounds-with-all-items" class="nav-link" data-scroll-target="#bounds-with-all-items">Bounds with all items</a></li>
+  <li><a href="#known-placebo-proportion-bounds" id="toc-known-placebo-proportion-bounds" class="nav-link" data-scroll-target="#known-placebo-proportion-bounds">Known placebo proportion bounds</a></li>
   </ul></li>
-  <li><a href="#current-use" id="toc-current-use" class="nav-link" data-scroll-target="#current-use">Current use</a></li>
-  <li><a href="#full-replication-results" id="toc-full-replication-results" class="nav-link" data-scroll-target="#full-replication-results">Full replication results</a>
-  <ul class="collapse">
-  <li><a href="#studies" id="toc-studies" class="nav-link" data-scroll-target="#studies">Studies</a></li>
-  <li><a href="#more-implementation-details" id="toc-more-implementation-details" class="nav-link" data-scroll-target="#more-implementation-details">More implementation details</a></li>
-  <li><a href="#explicit-sample-loss" id="toc-explicit-sample-loss" class="nav-link" data-scroll-target="#explicit-sample-loss">Explicit sample loss</a></li>
-  <li><a href="#implicit-sample-loss" id="toc-implicit-sample-loss" class="nav-link" data-scroll-target="#implicit-sample-loss">Implicit sample loss</a></li>
-  </ul></li>
-  <li><a href="#simulation-evidence" id="toc-simulation-evidence" class="nav-link" data-scroll-target="#simulation-evidence">Simulation evidence</a>
-  <ul class="collapse">
-  <li><a href="#sample" id="toc-sample" class="nav-link" data-scroll-target="#sample">Sample</a></li>
-  <li><a href="#designs" id="toc-designs" class="nav-link" data-scroll-target="#designs">Designs</a></li>
-  <li><a href="#study-2" id="toc-study-2" class="nav-link" data-scroll-target="#study-2">Study 2</a></li>
-  <li><a href="#study-6" id="toc-study-6" class="nav-link" data-scroll-target="#study-6">Study 6</a></li>
-  <li><a href="#all" id="toc-all" class="nav-link" data-scroll-target="#all">All</a></li>
-  </ul></li>
-  <li><a href="#correlated-attrition" id="toc-correlated-attrition" class="nav-link" data-scroll-target="#correlated-attrition">Correlated attrition</a>
-  <ul class="collapse">
-  <li><a href="#dag" id="toc-dag" class="nav-link" data-scroll-target="#dag">DAG</a></li>
-  </ul></li>
-  <li><a href="#research-design-guidelines" id="toc-research-design-guidelines" class="nav-link" data-scroll-target="#research-design-guidelines">Research design guidelines</a>
-  <ul class="collapse">
-  <li><a href="#simulation" id="toc-simulation" class="nav-link" data-scroll-target="#simulation">Simulation</a></li>
-  <li><a href="#flowchart" id="toc-flowchart" class="nav-link" data-scroll-target="#flowchart">Flowchart</a></li>
-  </ul></li>
+  <li><a href="#statistical-tests" id="toc-statistical-tests" class="nav-link" data-scroll-target="#statistical-tests">Statistical tests</a></li>
+  <li><a href="#validation-study" id="toc-validation-study" class="nav-link" data-scroll-target="#validation-study">Validation study</a></li>
   </ul>
 </nav>
     </div>
@@ -194,37 +108,11 @@ window.Quarto = {
 </header>
 
 
-<section id="block-randomization" class="level1">
-<h1>Block randomization</h1>
-<section id="illustration" class="level2">
-<h2 class="anchored" data-anchor-id="illustration">Illustration</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="precision_retention/blocking.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-<section id="estimator" class="level2">
-<h2 class="anchored" data-anchor-id="estimator">Estimator</h2>
-<p><span class="math display">\[\widehat{ATE}_{\text{Block}} = \sum_{b=1}^B \frac{n_b}{N} \widehat{ATE}_b\]</span></p>
-</section>
-<section id="code" class="level2">
-<h2 class="anchored" data-anchor-id="code">Code</h2>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Standard design</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(Y <span class="sc">~</span> Z, </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>   <span class="at">data =</span> data)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Block randomized</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(Y <span class="sc">~</span> Z <span class="sc">+</span> block, </span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>   <span class="at">data =</span> data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</section>
-</section>
-<section id="current-use" class="level1">
-<h1>Current use</h1>
-<p>Based on 2022-23 articles published in APSR, AJPS, JOP, PB, CPS, JEPS.</p>
-<div class="cell" data-layout-align="center">
+<section id="additional-information-and-results" class="level1">
+<h1>Additional information and results</h1>
+<section id="sample-sizes-by-experimental-condition" class="level2">
+<h2 class="anchored" data-anchor-id="sample-sizes-by-experimental-condition">Sample sizes by experimental condition</h2>
+<div class="cell">
 <div class="cell-output-display">
 <!-- preamble start -->
 
@@ -232,21 +120,22 @@ window.Quarto = {
 
     <script>
       // Create table-specific functions using external factory
-      const tableFns_7kieyr11klcgiucm6k3b = TinyTable.createTableFunctions("tinytable_7kieyr11klcgiucm6k3b");
+      const tableFns_uq61tz2ps6x4smug3p97 = TinyTable.createTableFunctions("tinytable_uq61tz2ps6x4smug3p97");
       // tinytable span after
-      window.addEventListener('load', function () { tableFns_7kieyr11klcgiucm6k3b.spanCell(4, 1, 1, 3) })
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '6', j: 1 }, { i: '6', j: 2 }, { i: '6', j: 3 } ], css_id: 'tinytable_css_vgdho5yhvexm3quyhkku',}, 
-          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '1', j: 3 }, { i: '2', j: 3 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 } ], css_id: 'tinytable_css_p0z4z2k5r4bb16bd99an',}, 
-          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 } ], css_id: 'tinytable_css_bxp4h4vqhnhygq7xvqy0',}, 
+          { positions: [ { i: '-1', j: 3 } ], css_id: 'tinytable_css_1ykih9k24bnix6eh4tjx',}, 
+          { positions: [ { i: '-1', j: 2 } ], css_id: 'tinytable_css_07abdodvueh0ue74f7c2',}, 
+          { positions: [ { i: '2', j: 1 }, { i: '2', j: 2 }, { i: '2', j: 3 }, { i: '2', j: 4 }, { i: '2', j: 5 }, { i: '2', j: 6 } ], css_id: 'tinytable_css_ttgfye4vj0j5nsup6y1a',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 }, { i: '0', j: 5 }, { i: '0', j: 6 } ], css_id: 'tinytable_css_unsb5ijypdwrajtgtd0l',}, 
+          { positions: [ { i: '-1', j: 1 }, { i: '-1', j: 4 }, { i: '-1', j: 5 }, { i: '-1', j: 6 } ], css_id: 'tinytable_css_mnwbxyfm4guxf8a67qoz',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  tableFns_7kieyr11klcgiucm6k3b.styleCell(cell.i, cell.j, group.css_id);
+                  tableFns_uq61tz2ps6x4smug3p97.styleCell(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -255,51 +144,301 @@ window.Quarto = {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
     <style>
     /* tinytable css entries after */
-    #tinytable_7kieyr11klcgiucm6k3b td.tinytable_css_vgdho5yhvexm3quyhkku, #tinytable_7kieyr11klcgiucm6k3b th.tinytable_css_vgdho5yhvexm3quyhkku {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.9em }
-    #tinytable_7kieyr11klcgiucm6k3b td.tinytable_css_p0z4z2k5r4bb16bd99an, #tinytable_7kieyr11klcgiucm6k3b th.tinytable_css_p0z4z2k5r4bb16bd99an { font-size: 0.9em }
-    #tinytable_7kieyr11klcgiucm6k3b td.tinytable_css_bxp4h4vqhnhygq7xvqy0, #tinytable_7kieyr11klcgiucm6k3b th.tinytable_css_bxp4h4vqhnhygq7xvqy0 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.9em }
+    #tinytable_uq61tz2ps6x4smug3p97 td.tinytable_css_1ykih9k24bnix6eh4tjx, #tinytable_uq61tz2ps6x4smug3p97 th.tinytable_css_1ykih9k24bnix6eh4tjx {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.03em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 3%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center }
+    #tinytable_uq61tz2ps6x4smug3p97 td.tinytable_css_07abdodvueh0ue74f7c2, #tinytable_uq61tz2ps6x4smug3p97 th.tinytable_css_07abdodvueh0ue74f7c2 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.03em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 3%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center }
+    #tinytable_uq61tz2ps6x4smug3p97 td.tinytable_css_ttgfye4vj0j5nsup6y1a, #tinytable_uq61tz2ps6x4smug3p97 th.tinytable_css_ttgfye4vj0j5nsup6y1a {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_uq61tz2ps6x4smug3p97 td.tinytable_css_unsb5ijypdwrajtgtd0l, #tinytable_uq61tz2ps6x4smug3p97 th.tinytable_css_unsb5ijypdwrajtgtd0l {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_uq61tz2ps6x4smug3p97 td.tinytable_css_mnwbxyfm4guxf8a67qoz, #tinytable_uq61tz2ps6x4smug3p97 th.tinytable_css_mnwbxyfm4guxf8a67qoz {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.03em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center }
     </style>
     <div class="container">
-      <table class="tinytable" id="tinytable_7kieyr11klcgiucm6k3b" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="tinytable" id="tinytable_uq61tz2ps6x4smug3p97" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+<tr>
+<th scope="col" align="center" colspan="2" data-row="-1" data-col="1">Item location</th>
+<th scope="col" align="center" colspan="4" data-row="-1" data-col="3">Sensitive item</th>
+</tr>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Sensitive</th>
+                <th scope="col" data-row="0" data-col="2">Placebo</th>
+                <th scope="col" data-row="0" data-col="3">Threaten</th>
+                <th scope="col" data-row="0" data-col="4">Evict</th>
+                <th scope="col" data-row="0" data-col="5">Donation</th>
+                <th scope="col" data-row="0" data-col="6">Work</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">List A</td>
+                  <td data-row="1" data-col="2">List B</td>
+                  <td data-row="1" data-col="3">328</td>
+                  <td data-row="1" data-col="4">322</td>
+                  <td data-row="1" data-col="5">339</td>
+                  <td data-row="1" data-col="6">341</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">List B</td>
+                  <td data-row="2" data-col="2">List A</td>
+                  <td data-row="2" data-col="3">340</td>
+                  <td data-row="2" data-col="4">339</td>
+                  <td data-row="2" data-col="5">326</td>
+                  <td data-row="2" data-col="6">333</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</section>
+<section id="sample-characteristics" class="level2">
+<h2 class="anchored" data-anchor-id="sample-characteristics">Sample characteristics</h2>
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_rw9y8itlalprew7p5qxd = TinyTable.createTableFunctions("tinytable_rw9y8itlalprew7p5qxd");
+      // tinytable span after
+      window.addEventListener('load', function () { tableFns_rw9y8itlalprew7p5qxd.spanCell(20, 1, 1, 6) })
+      window.addEventListener('load', function () { tableFns_rw9y8itlalprew7p5qxd.spanCell(18, 1, 1, 6) })
+      window.addEventListener('load', function () { tableFns_rw9y8itlalprew7p5qxd.spanCell(13, 1, 1, 6) })
+      window.addEventListener('load', function () { tableFns_rw9y8itlalprew7p5qxd.spanCell(6, 1, 1, 6) })
+      window.addEventListener('load', function () { tableFns_rw9y8itlalprew7p5qxd.spanCell(2, 1, 1, 6) })
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '24', j: 1 }, { i: '24', j: 2 }, { i: '24', j: 3 }, { i: '24', j: 4 }, { i: '24', j: 5 }, { i: '24', j: 6 } ], css_id: 'tinytable_css_yb02vtz72pipr3mfa6df',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '7', j: 1 }, { i: '8', j: 1 }, { i: '9', j: 1 }, { i: '10', j: 1 }, { i: '11', j: 1 }, { i: '12', j: 1 }, { i: '14', j: 1 }, { i: '15', j: 1 }, { i: '16', j: 1 }, { i: '17', j: 1 }, { i: '19', j: 1 }, { i: '21', j: 1 }, { i: '22', j: 1 }, { i: '23', j: 1 }, { i: '1', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '7', j: 2 }, { i: '8', j: 2 }, { i: '9', j: 2 }, { i: '10', j: 2 }, { i: '11', j: 2 }, { i: '12', j: 2 }, { i: '14', j: 2 }, { i: '15', j: 2 }, { i: '16', j: 2 }, { i: '17', j: 2 }, { i: '19', j: 2 }, { i: '21', j: 2 }, { i: '22', j: 2 }, { i: '23', j: 2 }, { i: '1', j: 3 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 }, { i: '7', j: 3 }, { i: '8', j: 3 }, { i: '9', j: 3 }, { i: '10', j: 3 }, { i: '11', j: 3 }, { i: '12', j: 3 }, { i: '14', j: 3 }, { i: '15', j: 3 }, { i: '16', j: 3 }, { i: '17', j: 3 }, { i: '19', j: 3 }, { i: '21', j: 3 }, { i: '22', j: 3 }, { i: '23', j: 3 }, { i: '1', j: 4 }, { i: '3', j: 4 }, { i: '4', j: 4 }, { i: '5', j: 4 }, { i: '7', j: 4 }, { i: '8', j: 4 }, { i: '9', j: 4 }, { i: '10', j: 4 }, { i: '11', j: 4 }, { i: '12', j: 4 }, { i: '14', j: 4 }, { i: '15', j: 4 }, { i: '16', j: 4 }, { i: '17', j: 4 }, { i: '19', j: 4 }, { i: '21', j: 4 }, { i: '22', j: 4 }, { i: '23', j: 4 }, { i: '1', j: 5 }, { i: '3', j: 5 }, { i: '4', j: 5 }, { i: '5', j: 5 }, { i: '7', j: 5 }, { i: '8', j: 5 }, { i: '9', j: 5 }, { i: '10', j: 5 }, { i: '11', j: 5 }, { i: '12', j: 5 }, { i: '14', j: 5 }, { i: '15', j: 5 }, { i: '16', j: 5 }, { i: '17', j: 5 }, { i: '19', j: 5 }, { i: '21', j: 5 }, { i: '22', j: 5 }, { i: '23', j: 5 }, { i: '1', j: 6 }, { i: '3', j: 6 }, { i: '4', j: 6 }, { i: '5', j: 6 }, { i: '7', j: 6 }, { i: '8', j: 6 }, { i: '9', j: 6 }, { i: '10', j: 6 }, { i: '11', j: 6 }, { i: '12', j: 6 }, { i: '14', j: 6 }, { i: '15', j: 6 }, { i: '16', j: 6 }, { i: '17', j: 6 }, { i: '19', j: 6 }, { i: '21', j: 6 }, { i: '22', j: 6 }, { i: '23', j: 6 } ], css_id: 'tinytable_css_u66sehaocws0anupsrlq',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 }, { i: '0', j: 5 }, { i: '0', j: 6 } ], css_id: 'tinytable_css_60vtbgudgyo9wm1z3ay4',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_rw9y8itlalprew7p5qxd.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_rw9y8itlalprew7p5qxd td.tinytable_css_yb02vtz72pipr3mfa6df, #tinytable_rw9y8itlalprew7p5qxd th.tinytable_css_yb02vtz72pipr3mfa6df {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; padding-left: 1em }
+    #tinytable_rw9y8itlalprew7p5qxd td.tinytable_css_u66sehaocws0anupsrlq, #tinytable_rw9y8itlalprew7p5qxd th.tinytable_css_u66sehaocws0anupsrlq { padding-left: 1em }
+    #tinytable_rw9y8itlalprew7p5qxd td.tinytable_css_60vtbgudgyo9wm1z3ay4, #tinytable_rw9y8itlalprew7p5qxd th.tinytable_css_60vtbgudgyo9wm1z3ay4 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_rw9y8itlalprew7p5qxd" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         
         <thead>
               <tr>
-                <th scope="col" data-row="0" data-col="1"> </th>
+                <th scope="col" data-row="0" data-col="1">Variable</th>
                 <th scope="col" data-row="0" data-col="2">N</th>
-                <th scope="col" data-row="0" data-col="3">%</th>
+                <th scope="col" data-row="0" data-col="3">Mean</th>
+                <th scope="col" data-row="0" data-col="4">SD</th>
+                <th scope="col" data-row="0" data-col="5">Min</th>
+                <th scope="col" data-row="0" data-col="6">Max</th>
               </tr>
         </thead>
         
         <tbody>
                 <tr>
-                  <td data-row="1" data-col="1">Pre-post</td>
-                  <td data-row="1" data-col="2">10</td>
-                  <td data-row="1" data-col="3">5%</td>
+                  <td data-row="1" data-col="1">Age (years)</td>
+                  <td data-row="1" data-col="2">2668</td>
+                  <td data-row="1" data-col="3">41.372</td>
+                  <td data-row="1" data-col="4">15.192</td>
+                  <td data-row="1" data-col="5">18</td>
+                  <td data-row="1" data-col="6">100</td>
                 </tr>
                 <tr>
-                  <td data-row="2" data-col="1">Blocking</td>
-                  <td data-row="2" data-col="2">16</td>
-                  <td data-row="2" data-col="3">7%</td>
+                  <td data-row="2" data-col="1"><em>Sex</em></td>
+                  <td data-row="2" data-col="2"><em>Sex</em></td>
+                  <td data-row="2" data-col="3"><em>Sex</em></td>
+                  <td data-row="2" data-col="4"><em>Sex</em></td>
+                  <td data-row="2" data-col="5"><em>Sex</em></td>
+                  <td data-row="2" data-col="6"><em>Sex</em></td>
                 </tr>
                 <tr>
-                  <td data-row="3" data-col="1">Both</td>
-                  <td data-row="3" data-col="2">6</td>
-                  <td data-row="3" data-col="3">3%</td>
+                  <td data-row="3" data-col="1">Female</td>
+                  <td data-row="3" data-col="2">2668</td>
+                  <td data-row="3" data-col="3">0.642</td>
+                  <td data-row="3" data-col="4">0.479</td>
+                  <td data-row="3" data-col="5">0</td>
+                  <td data-row="3" data-col="6">1</td>
                 </tr>
                 <tr>
-                  <td data-row="4" data-col="1">Neither</td>
-                  <td data-row="4" data-col="2">Neither</td>
-                  <td data-row="4" data-col="3">Neither</td>
+                  <td data-row="4" data-col="1">Male</td>
+                  <td data-row="4" data-col="2">2668</td>
+                  <td data-row="4" data-col="3">0.353</td>
+                  <td data-row="4" data-col="4">0.478</td>
+                  <td data-row="4" data-col="5">0</td>
+                  <td data-row="4" data-col="6">1</td>
                 </tr>
                 <tr>
-                  <td data-row="5" data-col="1">Mention covariates</td>
-                  <td data-row="5" data-col="2">169</td>
-                  <td data-row="5" data-col="3">78%</td>
+                  <td data-row="5" data-col="1">Other sex</td>
+                  <td data-row="5" data-col="2">2668</td>
+                  <td data-row="5" data-col="3">0.005</td>
+                  <td data-row="5" data-col="4">0.070</td>
+                  <td data-row="5" data-col="5">0</td>
+                  <td data-row="5" data-col="6">1</td>
                 </tr>
                 <tr>
-                  <td data-row="6" data-col="1">Nothing</td>
-                  <td data-row="6" data-col="2">15</td>
-                  <td data-row="6" data-col="3">7%</td>
+                  <td data-row="6" data-col="1"><em>Education</em></td>
+                  <td data-row="6" data-col="2"><em>Education</em></td>
+                  <td data-row="6" data-col="3"><em>Education</em></td>
+                  <td data-row="6" data-col="4"><em>Education</em></td>
+                  <td data-row="6" data-col="5"><em>Education</em></td>
+                  <td data-row="6" data-col="6"><em>Education</em></td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="1">Primary incomplete</td>
+                  <td data-row="7" data-col="2">2555</td>
+                  <td data-row="7" data-col="3">0.023</td>
+                  <td data-row="7" data-col="4">0.149</td>
+                  <td data-row="7" data-col="5">0</td>
+                  <td data-row="7" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="8" data-col="1">Primary complete</td>
+                  <td data-row="8" data-col="2">2555</td>
+                  <td data-row="8" data-col="3">0.069</td>
+                  <td data-row="8" data-col="4">0.254</td>
+                  <td data-row="8" data-col="5">0</td>
+                  <td data-row="8" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="9" data-col="1">Secondary incomplete</td>
+                  <td data-row="9" data-col="2">2555</td>
+                  <td data-row="9" data-col="3">0.291</td>
+                  <td data-row="9" data-col="4">0.454</td>
+                  <td data-row="9" data-col="5">0</td>
+                  <td data-row="9" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="10" data-col="1">Secondary complete</td>
+                  <td data-row="10" data-col="2">2555</td>
+                  <td data-row="10" data-col="3">0.190</td>
+                  <td data-row="10" data-col="4">0.392</td>
+                  <td data-row="10" data-col="5">0</td>
+                  <td data-row="10" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="11" data-col="1">Tertiary incomplete</td>
+                  <td data-row="11" data-col="2">2555</td>
+                  <td data-row="11" data-col="3">0.264</td>
+                  <td data-row="11" data-col="4">0.441</td>
+                  <td data-row="11" data-col="5">0</td>
+                  <td data-row="11" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="12" data-col="1">Tertiary complete</td>
+                  <td data-row="12" data-col="2">2555</td>
+                  <td data-row="12" data-col="3">0.163</td>
+                  <td data-row="12" data-col="4">0.370</td>
+                  <td data-row="12" data-col="5">0</td>
+                  <td data-row="12" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="13" data-col="1"><em>Race</em></td>
+                  <td data-row="13" data-col="2"><em>Race</em></td>
+                  <td data-row="13" data-col="3"><em>Race</em></td>
+                  <td data-row="13" data-col="4"><em>Race</em></td>
+                  <td data-row="13" data-col="5"><em>Race</em></td>
+                  <td data-row="13" data-col="6"><em>Race</em></td>
+                </tr>
+                <tr>
+                  <td data-row="14" data-col="1">White</td>
+                  <td data-row="14" data-col="2">2525</td>
+                  <td data-row="14" data-col="3">0.741</td>
+                  <td data-row="14" data-col="4">0.438</td>
+                  <td data-row="14" data-col="5">0</td>
+                  <td data-row="14" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="15" data-col="1">Afro-descendant</td>
+                  <td data-row="15" data-col="2">2525</td>
+                  <td data-row="15" data-col="3">0.104</td>
+                  <td data-row="15" data-col="4">0.306</td>
+                  <td data-row="15" data-col="5">0</td>
+                  <td data-row="15" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="16" data-col="1">Indigenous</td>
+                  <td data-row="16" data-col="2">2525</td>
+                  <td data-row="16" data-col="3">0.069</td>
+                  <td data-row="16" data-col="4">0.253</td>
+                  <td data-row="16" data-col="5">0</td>
+                  <td data-row="16" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="17" data-col="1">Other race</td>
+                  <td data-row="17" data-col="2">2525</td>
+                  <td data-row="17" data-col="3">0.086</td>
+                  <td data-row="17" data-col="4">0.280</td>
+                  <td data-row="17" data-col="5">0</td>
+                  <td data-row="17" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="18" data-col="1"><em>Employment</em></td>
+                  <td data-row="18" data-col="2"><em>Employment</em></td>
+                  <td data-row="18" data-col="3"><em>Employment</em></td>
+                  <td data-row="18" data-col="4"><em>Employment</em></td>
+                  <td data-row="18" data-col="5"><em>Employment</em></td>
+                  <td data-row="18" data-col="6"><em>Employment</em></td>
+                </tr>
+                <tr>
+                  <td data-row="19" data-col="1">Worked last week</td>
+                  <td data-row="19" data-col="2">2545</td>
+                  <td data-row="19" data-col="3">0.560</td>
+                  <td data-row="19" data-col="4">0.496</td>
+                  <td data-row="19" data-col="5">0</td>
+                  <td data-row="19" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="20" data-col="1"><em>Income</em></td>
+                  <td data-row="20" data-col="2"><em>Income</em></td>
+                  <td data-row="20" data-col="3"><em>Income</em></td>
+                  <td data-row="20" data-col="4"><em>Income</em></td>
+                  <td data-row="20" data-col="5"><em>Income</em></td>
+                  <td data-row="20" data-col="6"><em>Income</em></td>
+                </tr>
+                <tr>
+                  <td data-row="21" data-col="1">Not enough, faces great difficulties</td>
+                  <td data-row="21" data-col="2">2519</td>
+                  <td data-row="21" data-col="3">0.112</td>
+                  <td data-row="21" data-col="4">0.316</td>
+                  <td data-row="21" data-col="5">0</td>
+                  <td data-row="21" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="22" data-col="1">Not enough, faces some difficulty</td>
+                  <td data-row="22" data-col="2">2519</td>
+                  <td data-row="22" data-col="3">0.353</td>
+                  <td data-row="22" data-col="4">0.478</td>
+                  <td data-row="22" data-col="5">0</td>
+                  <td data-row="22" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="23" data-col="1">Enough to make ends meet</td>
+                  <td data-row="23" data-col="2">2519</td>
+                  <td data-row="23" data-col="3">0.424</td>
+                  <td data-row="23" data-col="4">0.494</td>
+                  <td data-row="23" data-col="5">0</td>
+                  <td data-row="23" data-col="6">1</td>
+                </tr>
+                <tr>
+                  <td data-row="24" data-col="1">Enough to save</td>
+                  <td data-row="24" data-col="2">2519</td>
+                  <td data-row="24" data-col="3">0.110</td>
+                  <td data-row="24" data-col="4">0.313</td>
+                  <td data-row="24" data-col="5">0</td>
+                  <td data-row="24" data-col="6">1</td>
                 </tr>
         </tbody>
       </table>
@@ -308,409 +447,46 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="full-replication-results" class="level1">
-<h1>Full replication results</h1>
-<section id="studies" class="level2">
-<h2 class="anchored" data-anchor-id="studies">Studies</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<!-- preamble start -->
-
-    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
-
-    <script>
-      // Create table-specific functions using external factory
-      const tableFns_6o1xw47qkp8z4xqn3l7e = TinyTable.createTableFunctions("tinytable_6o1xw47qkp8z4xqn3l7e");
-      // tinytable span after
-      window.addEventListener('load', function () {
-          var cellsToStyle = [
-            // tinytable style arrays after
-          { positions: [ { i: '7', j: 1 }, { i: '7', j: 2 }, { i: '7', j: 3 }, { i: '7', j: 4 } ], css_id: 'tinytable_css_xjorff0qvfk7424d5hua',}, 
-          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '6', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '6', j: 2 }, { i: '1', j: 3 }, { i: '2', j: 3 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 }, { i: '6', j: 3 }, { i: '1', j: 4 }, { i: '2', j: 4 }, { i: '3', j: 4 }, { i: '4', j: 4 }, { i: '5', j: 4 }, { i: '6', j: 4 } ], css_id: 'tinytable_css_zadokkut67pdabozrapj',}, 
-          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_ojb6f7z600mat4v01ean',}, 
-          ];
-
-          // Loop over the arrays to style the cells
-          cellsToStyle.forEach(function (group) {
-              group.positions.forEach(function (cell) {
-                  tableFns_6o1xw47qkp8z4xqn3l7e.styleCell(cell.i, cell.j, group.css_id);
-              });
-          });
-      });
-    </script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
-    <style>
-    /* tinytable css entries after */
-    #tinytable_6o1xw47qkp8z4xqn3l7e td.tinytable_css_xjorff0qvfk7424d5hua, #tinytable_6o1xw47qkp8z4xqn3l7e th.tinytable_css_xjorff0qvfk7424d5hua {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.8em }
-    #tinytable_6o1xw47qkp8z4xqn3l7e td.tinytable_css_zadokkut67pdabozrapj, #tinytable_6o1xw47qkp8z4xqn3l7e th.tinytable_css_zadokkut67pdabozrapj { font-size: 0.8em }
-    #tinytable_6o1xw47qkp8z4xqn3l7e td.tinytable_css_ojb6f7z600mat4v01ean, #tinytable_6o1xw47qkp8z4xqn3l7e th.tinytable_css_ojb6f7z600mat4v01ean {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.8em }
-    </style>
-    <div class="container">
-      <table class="tinytable" id="tinytable_6o1xw47qkp8z4xqn3l7e" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
-        
-        <thead>
-              <tr>
-                <th scope="col" data-row="0" data-col="1"></th>
-                <th scope="col" data-row="0" data-col="2"><a href="https://doi.org/10.1086/723966">Dietrich and Hayes (2023 JOP)</a></th>
-                <th scope="col" data-row="0" data-col="3"><a href="https://doi.org/10.1086/719414">Bayram and Graham (2022 JOP)</a></th>
-                <th scope="col" data-row="0" data-col="4"><a href="https://doi.org/10.1017/XPS.2021.22">Tappin and Hewitt (2023 JEPS)</a></th>
-              </tr>
-        </thead>
-        
-        <tbody>
-                <tr>
-                  <td data-row="1" data-col="1">Study</td>
-                  <td data-row="1" data-col="2">1 (DH)</td>
-                  <td data-row="1" data-col="3">2 (BG)</td>
-                  <td data-row="1" data-col="4">3 (TH)</td>
-                </tr>
-                <tr>
-                  <td data-row="2" data-col="1">Subfield</td>
-                  <td data-row="2" data-col="2">AP</td>
-                  <td data-row="2" data-col="3">IR</td>
-                  <td data-row="2" data-col="4">AP</td>
-                </tr>
-                <tr>
-                  <td data-row="3" data-col="1">Topic</td>
-                  <td data-row="3" data-col="2">Race and issue-based symbolism</td>
-                  <td data-row="3" data-col="3">Support for IO foreign aid</td>
-                  <td data-row="3" data-col="4">Party cues and policy opinions</td>
-                </tr>
-                <tr>
-                  <td data-row="4" data-col="1">Arms</td>
-                  <td data-row="4" data-col="2">8</td>
-                  <td data-row="4" data-col="3">5</td>
-                  <td data-row="4" data-col="4">2</td>
-                </tr>
-                <tr>
-                  <td data-row="5" data-col="1">Obs.</td>
-                  <td data-row="5" data-col="2">515</td>
-                  <td data-row="5" data-col="3">1000</td>
-                  <td data-row="5" data-col="4">775</td>
-                </tr>
-                <tr>
-                  <td data-row="6" data-col="1">Waves</td>
-                  <td data-row="6" data-col="2">1</td>
-                  <td data-row="6" data-col="3">1</td>
-                  <td data-row="6" data-col="4">2</td>
-                </tr>
-                <tr>
-                  <td data-row="7" data-col="1">Concern</td>
-                  <td data-row="7" data-col="2">Hard to reach population</td>
-                  <td data-row="7" data-col="3">More precision</td>
-                  <td data-row="7" data-col="4">Effect persistence</td>
-                </tr>
-        </tbody>
-      </table>
-    </div>
-<!-- hack to avoid NA insertion in last line -->
-</div>
-</div>
+<section id="observed-responses" class="level2">
+<h2 class="anchored" data-anchor-id="observed-responses">Observed responses</h2>
+<p>[Convert chi_bar.pdf to png]</p>
 </section>
-<section id="more-implementation-details" class="level2">
-<h2 class="anchored" data-anchor-id="more-implementation-details">More implementation details</h2>
-<p><img src="precision_retention/rep_details.png" class="img-fluid"></p>
+<section id="results-with-all-items" class="level2">
+<h2 class="anchored" data-anchor-id="results-with-all-items">Results with all items</h2>
+<p>[Convert main.pdf to png]</p>
 </section>
-<section id="explicit-sample-loss" class="level2">
-<h2 class="anchored" data-anchor-id="explicit-sample-loss">Explicit sample loss</h2>
-<div class="cell" data-layout-align="center">
+<section id="bounds-with-all-items" class="level2">
+<h2 class="anchored" data-anchor-id="bounds-with-all-items">Bounds with all items</h2>
+<div class="cell">
 <div class="cell-output-display">
-<table class="table caption-top table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">Study</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Design</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Starting sample size</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">All loss</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Post-treatment loss</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">p-value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Dietrich &amp; Hayes</td>
-<td style="text-align: left;">1. Standard</td>
-<td style="text-align: left;">426</td>
-<td style="text-align: left;">0.005 (2)</td>
-<td style="text-align: left;">0.000 (0)</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2. Pre-post</td>
-<td style="text-align: left;">427</td>
-<td style="text-align: left;">0.007 (3)</td>
-<td style="text-align: left;">0.005 (2)</td>
-<td style="text-align: left;">0.499</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">3. Pre-post &amp; blocking</td>
-<td style="text-align: left;">429</td>
-<td style="text-align: left;">0.007 (3)</td>
-<td style="text-align: left;">0.002 (1)</td>
-<td style="text-align: left;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Bayram &amp; Graham</td>
-<td style="text-align: left;">1. Standard</td>
-<td style="text-align: left;">1008</td>
-<td style="text-align: left;">0.005 (5)</td>
-<td style="text-align: left;">0.001 (1)</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2. Pre-post</td>
-<td style="text-align: left;">1010</td>
-<td style="text-align: left;">0.005 (5)</td>
-<td style="text-align: left;">0.002 (2)</td>
-<td style="text-align: left;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">3. Pre-post &amp; blocking</td>
-<td style="text-align: left;">1006</td>
-<td style="text-align: left;">0.007 (7)</td>
-<td style="text-align: left;">0.005 (5)</td>
-<td style="text-align: left;">0.124</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Tappin &amp; Hewitt</td>
-<td style="text-align: left;">1. Standard</td>
-<td style="text-align: left;">752</td>
-<td style="text-align: left;">0.130 (98)</td>
-<td style="text-align: left;">0.125 (94)</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">2. Pre-post</td>
-<td style="text-align: left;">780</td>
-<td style="text-align: left;">0.142 (111)</td>
-<td style="text-align: left;">0.141 (110)</td>
-<td style="text-align: left;">0.368</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">3. Pre-post &amp; blocking</td>
-<td style="text-align: left;">767</td>
-<td style="text-align: left;">0.207 (159)</td>
-<td style="text-align: left;">0.132 (101)</td>
-<td style="text-align: left;">0.702</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-<section id="implicit-sample-loss" class="level2">
-<h2 class="anchored" data-anchor-id="implicit-sample-loss">Implicit sample loss</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure">
-<p><img src="puc_extra_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
+<p><img src="puc_extra_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" data-fig-pos="center" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="known-placebo-proportion-bounds" class="level2">
+<h2 class="anchored" data-anchor-id="known-placebo-proportion-bounds">Known placebo proportion bounds</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="puc_extra_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" data-fig-pos="center" width="768"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
 </section>
-<section id="simulation-evidence" class="level1">
-<h1>Simulation evidence</h1>
-<section id="sample" class="level2">
-<h2 class="anchored" data-anchor-id="sample">Sample</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<colgroup>
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-</colgroup>
-<thead>
-<tr class="header">
-<th colspan="2" data-quarto-table-cell-role="th" style="text-align: right; empty-cells: hide; border-bottom: hidden;"></th>
-<th colspan="4" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-Original experiment
-</div></th>
-<th colspan="3" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-Simulation
-</div></th>
-</tr>
-<tr class="even">
-<th style="text-align: right;" data-quarto-table-cell-role="th">Study</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Article</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Type</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">Arms</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">N</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Country</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">n</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">Blocking Covariates</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Predictiveness</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">Galasso et al (2023)</td>
-<td style="text-align: left;">Survey</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">2971</td>
-<td style="text-align: left;">Italy</td>
-<td style="text-align: right;">946</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: left;">Low</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">Manekin and Mitts (2022)</td>
-<td style="text-align: left;">Survey</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">3013</td>
-<td style="text-align: left;">United States</td>
-<td style="text-align: right;">2784</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: left;">High</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: left;">Lyon (2023)</td>
-<td style="text-align: left;">Survey</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1029</td>
-<td style="text-align: left;">Uganda</td>
-<td style="text-align: right;">561</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">Low</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">Goerger et al (2023)</td>
-<td style="text-align: left;">Field</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">2942</td>
-<td style="text-align: left;">United States</td>
-<td style="text-align: right;">2712</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: left;">Moderate</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">5</td>
-<td style="text-align: left;">Curiel et al (2023)</td>
-<td style="text-align: left;">Field</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">275</td>
-<td style="text-align: left;">Colombia</td>
-<td style="text-align: right;">275</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: left;">Low</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">6</td>
-<td style="text-align: left;">Simas (2022)</td>
-<td style="text-align: left;">Survey</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1176</td>
-<td style="text-align: left;">United States</td>
-<td style="text-align: right;">1175</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">Moderate</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<section id="statistical-tests" class="level1">
+<h1>Statistical tests</h1>
 </section>
-<section id="designs" class="level2">
-<h2 class="anchored" data-anchor-id="designs">Designs</h2>
-<ol type="1">
-<li><p>Complete + post-only (Standard design)</p></li>
-<li><p>Complete + pre-post</p></li>
-<li><p>Block on one covariate + post-only</p></li>
-<li><p>Block on one covariate + pre-post</p></li>
-<li><p>Block on all covariates + post-only</p></li>
-<li><p>Block on all covariates + pre-post</p></li>
-</ol>
-</section>
-<section id="study-2" class="level2">
-<h2 class="anchored" data-anchor-id="study-2">Study 2</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="puc_extra_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="study-6" class="level2">
-<h2 class="anchored" data-anchor-id="study-6">Study 6</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="puc_extra_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="all" class="level2">
-<h2 class="anchored" data-anchor-id="all">All</h2>
-<p><img src="precision_retention/f_test_sim.png" class="img-fluid"></p>
-</section>
-</section>
-<section id="correlated-attrition" class="level1">
-<h1>Correlated attrition</h1>
-<section id="dag" class="level2">
-<h2 class="anchored" data-anchor-id="dag">DAG</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="puc_extra_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="puc_extra_files/figure-html/unnamed-chunk-10-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="puc_extra_files/figure-html/unnamed-chunk-10-3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="research-design-guidelines" class="level1">
-<h1>Research design guidelines</h1>
-<section id="simulation" class="level2">
-<h2 class="anchored" data-anchor-id="simulation">Simulation</h2>
-<p><img src="precision_retention/power_discrete.png" class="img-fluid"></p>
-</section>
-<section id="flowchart" class="level2">
-<h2 class="anchored" data-anchor-id="flowchart">Flowchart</h2>
-<p><img src="precision_retention/flowchart.png" class="img-fluid"></p>
+<section id="validation-study" class="level1">
+<h1>Validation study</h1>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

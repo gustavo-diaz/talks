@@ -151,11 +151,11 @@ actual_vote = 0.65
 
 ggplot(validation) +
   aes(x = technique, y = estimate) +
-  geom_point(size = 4, alpha = 0) + 
+  geom_point(size = 4, color = puc_blue, alpha = 0) +
   geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
-                 linewidth = 1, alpha = 0) +
+                 color = puc_blue, linewidth = 1, alpha = 0) +
   ylim(0.2, 0.8) +
-  labs(x = "Tipo de pregunta", 
+  labs(x = "Tipo de pregunta",
        y = "Proporción ítem sensible")
 ```
 
@@ -165,12 +165,12 @@ ggplot(validation) +
 ```{r}
 ggplot(validation) +
   aes(x = technique, y = estimate) +
-  geom_hline(yintercept = actual_vote, 
+  geom_hline(yintercept = actual_vote,
              linetype = "dashed",
              linewidth = 1) +
-  geom_point(size = 4, alpha = 0) + 
+  geom_point(size = 4, color = puc_blue, alpha = 0) +
   geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
-                 linewidth = 1, alpha = 0) +
+                 color = puc_blue, linewidth = 1, alpha = 0) +
   annotate("text", x = 0.7, y = 0.7, size = 5, 
            label = "Valor real") +
   ylim(0.2, 0.8) +
@@ -187,11 +187,11 @@ ggplot(validation) +
   geom_hline(yintercept = actual_vote, 
              linetype = "dashed",
              linewidth = 1) +
-  geom_point(size = 4) + 
-  annotate("text", x = 0.7, y = 0.7, size = 5, 
+  geom_point(size = 4, color = puc_blue) +
+  annotate("text", x = 0.7, y = 0.7, size = 5,
            label = "Valor real") +
   ylim(0.2, 0.8) +
-  labs(x = "Tipo de pregunta", 
+  labs(x = "Tipo de pregunta",
        y = "Proporción ítem sensible")
 ```
 
@@ -200,12 +200,12 @@ ggplot(validation) +
 ```{r}
 ggplot(validation) +
   aes(x = technique, y = estimate) +
-  geom_hline(yintercept = actual_vote, 
+  geom_hline(yintercept = actual_vote,
              linetype = "dashed",
              linewidth = 1) +
-  geom_point(size = 4) + 
+  geom_point(size = 4, color = puc_blue) +
   geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
-                 linewidth = 1) +
+                 color = puc_blue, linewidth = 1) +
   annotate("text", x = 0.7, y = 0.7, size = 5, 
            label = "Valor real") +
   ylim(0.2, 0.8) +
@@ -308,9 +308,9 @@ ggplot(est_df %>% filter(experiment == "Y" &
                            outcome != "count")) +
   aes(x = term, y = estimate, shape = term) +
   geom_hline(yintercept = 0, linetype = "dashed") + 
-  geom_point(size = 4, position = position_dodge(width = 0.5), alpha = 0) +
-  geom_linerange(aes(x = term, ymin = conf.low, ymax = conf.high), 
-                 size = 1, position = position_dodge(width = 0.5), alpha = 0) +
+  geom_point(size = 4, color = puc_blue, position = position_dodge(width = 0.5), alpha = 0) +
+  geom_linerange(aes(x = term, ymin = conf.low, ymax = conf.high),
+                 color = puc_blue, size = 1, position = position_dodge(width = 0.5), alpha = 0) +
   theme(legend.position = "none") +
   labs(x = "Referencia", 
        y = "Proporción apoyo") +
@@ -328,9 +328,9 @@ ggplot(est_df %>% filter(experiment == "Y" &
                            outcome != "count")) +
   aes(x = term, y = estimate, shape = term) +
   geom_hline(yintercept = 0, linetype = "dashed") + 
-  geom_point(size = 4, position = position_dodge(width = 0.5)) +
-  geom_linerange(aes(x = term, ymin = conf.low, ymax = conf.high), 
-                 size = 1, position = position_dodge(width = 0.5)) +
+  geom_point(size = 4, color = puc_blue, position = position_dodge(width = 0.5)) +
+  geom_linerange(aes(x = term, ymin = conf.low, ymax = conf.high),
+                 color = puc_blue, size = 1, position = position_dodge(width = 0.5)) +
   theme(legend.position = "none") +
   labs(x = "Referencia", 
        y = "Proporción apoyo") +
