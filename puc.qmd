@@ -388,7 +388,8 @@ inflation = tribble(
 inflation %>% 
   tt() %>%
   style_tt(fontsize = 0.7) %>% 
-  format_tt(markdown = TRUE)
+  style_tt(i = 0, bold = TRUE) %>%  
+  format_tt(markdown = TRUE) 
 ```
 
 . . .
@@ -428,6 +429,7 @@ inflation = tribble(
 inflation %>% 
   tt() %>%
   style_tt(fontsize = 0.7) %>% 
+  style_tt(i = 0, bold = TRUE) %>%
   format_tt(markdown = TRUE)
 ```
 
@@ -454,6 +456,7 @@ inflation2 %>%
   tt() %>%
   style_tt(i = 4, j = 1, color = puc_blue) %>% 
   style_tt(fontsize = 0.7) %>% 
+  style_tt(i = 0, bold = TRUE) %>%
   format_tt(markdown = TRUE)
 ```
 
@@ -483,13 +486,9 @@ Mejoras en sesgo/varianza que no comprometen la otra dimensión imponen *costos 
 
 {{< fa arrow-right >}} Ítem placebo puede sustituir un tipo de sesgo por otro
 
-::: {style="text-align: center"}
-## ¡Nos pasó a nosotros!
-:::
+# ¡Nos pasó a nosotros!
 
-# Nuestro experimento
-
-## Double list experiment
+## Doble experimento de lista
 
 Ha experimentado (en su barrio) en los últimos seis meses:
 
@@ -600,7 +599,7 @@ list2 %>%
 . . .
 
 $$
-\hat{\tau}_A = \widehat E[Y_{iA }(1)] - \widehat E[Y_{iA }(0)]
+\hat{\tau}_A = \hat E[Y_{iA }(1)] - \hat E[Y_{iA }(0)]
 $$
 
 ```{r, echo=TRUE, eval=FALSE}
@@ -611,7 +610,7 @@ difference_in_means(count ~ z, subset = list == "A", data = df)
 . . .
 
 $$
-\hat{\tau}_B = \widehat E[Y_{iB }(1)] - \widehat E[Y_{iB }(0)]
+\hat{\tau}_B = \hat E[Y_{iB }(1)] - \hat E[Y_{iB }(0)]
 $$
 
 ```{r, echo=TRUE, eval=FALSE}
@@ -735,15 +734,15 @@ ggplot(threat_df) +
 
 . . .
 
-{{< fa xmark >}} Prevalencia > 0
+[{{< fa xmark >}}]{style="color: red;"} Prevalencia > 0
 
 . . .
 
-{{< fa xmark >}} Falta de atención
+[{{< fa xmark >}}]{style="color: red;"} Falta de atención
 
 . . .
 
-{{< fa check >}} LLama la atención
+[{{< fa check >}}]{style="color: #0176DE;"} LLama la atención
 
 ## ¿Qué hacer?
 

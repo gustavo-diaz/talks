@@ -1,214 +1,215 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>puc – Gustavo Diaz</title>
-<style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-</style>
-
-
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<html lang="en"><head>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f8d2b756ebd680c5e7baf86afdffbb79.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
-<script id="quarto-search-options" type="application/json">{
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
+  <title>Gustavo Diaz – puc</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
     }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-6a3ed8e6d0e36f1f929c296b5b671af4.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-pointer/pointer.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
 </head>
-
-<body class="nav-fixed quarto-light">
-
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Gustavo Diaz</span>
-    </a>
-  </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="https://gustavodiaz.org/"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://gustavodiaz.org/research.html"> 
-<span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://gustavodiaz.org/teaching.html"> 
-<span class="menu-text">Teaching</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://gustavodiaz.org/files/diaz_cv.pdf"> 
-<span class="menu-text">CV</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="mailto:diazg2@mcmaster.ca"> <i class="bi bi-envelope" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/gusvalo"> <i class="bi bi-twitter" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/gustavo-diaz"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://scholar.google.com/citations?user=TVXK8-8AAAAJ"> <i class="bi bi-google" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="puc.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></div>
-<!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
 
 
-
-
-<section id="recovering-informative-estimates-in-failed-placebo-controlled-list-experiments" class="level2 center smaller" style="text-align: center">
-<h2 class="center smaller anchored" data-anchor-id="recovering-informative-estimates-in-failed-placebo-controlled-list-experiments">Recovering Informative Estimates<br>in Failed Placebo-Controlled<br>List Experiments</h2>
+<section id="recovering-informative-estimates-in-failed-placebo-controlled-list-experiments" class="slide level2 center smaller" style="text-align: center">
+<h2>Recovering Informative Estimates<br>in Failed Placebo-Controlled<br>List Experiments</h2>
 <p>&nbsp;</p>
 <p><strong>Gustavo Diaz</strong><br>
 Northwestern University<br>
 <a href="mailto:gustavo.diaz@northwestern.edu" class="email">gustavo.diaz@northwestern.edu</a></p>
 <p>&nbsp;</p>
 <p>Paper y presentación: <a href="https://gustavodiaz.org/puc">gustavodiaz.org/puc</a></p>
-<p><img src="puc_qr.png" class="absolute" data-bottom="0" data-right="-50" width="180" height="180"></p>
+<p><img data-src="puc_qr.png" class="absolute" style="bottom: 0px; right: -50px; width: 180px; height: 180px; "></p>
 </section>
-<section id="erc-starting-grant" class="level2">
-<h2 class="anchored" data-anchor-id="erc-starting-grant">ERC Starting Grant</h2>
+<section id="erc-starting-grant" class="slide level2 center">
+<h2>ERC Starting Grant</h2>
 <p><strong>Criminal Governance in Unexpected Contexts: the Role of the Welfare State in Latin America</strong></p>
 <ul>
 <li><a href="https://veronicaperezbentancur.com/">Verónica Pérez Bentancur</a> (Universidad de la República)</li>
@@ -216,53 +217,61 @@ Northwestern University<br>
 <li><a href="https://luciatiscornia.com">Lucía Tiscornia</a> (University College Dublin)</li>
 </ul>
 </section>
-<section id="puntos-clave" class="level2">
-<h2 class="anchored" data-anchor-id="puntos-clave">Puntos clave</h2>
+<section id="puntos-clave" class="slide level2 center">
+<h2>Puntos clave</h2>
 <ul>
 <li><p><em>Experimento de lista</em> en Uruguay</p></li>
 <li><p><em>Control con placebo</em> arruinó resultados</p></li>
 <li><p>Ideas de <em>identificación parcial</em> ayudan a recuperar estimaciones informativas</p></li>
 </ul>
 </section>
-<section id="agenda" class="level2">
-<h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
+<section id="agenda" class="slide level2 center">
+<h2>Agenda</h2>
 <ul>
 <li><p>Diseño de experimentos de lista</p></li>
 <li><p>Experimento fallido</p></li>
 <li><p>Recuperando estimaciones informativas</p></li>
 </ul>
 </section>
-<section id="experimentos-de-lista" class="level1 page-columns page-full">
+<section>
+<section id="experimentos-de-lista" class="title-slide slide level1 center">
 <h1>Experimentos de lista</h1>
-<hr>
+
+</section>
+<section class="slide level2 center">
+
 <p><i class="fa-solid fa-phone" aria-hidden="true"></i> Le voy a leer cosas que a algunas personas les molestan</p>
-<hr>
+</section>
+<section class="slide level2 center">
+
 <p><i class="fa-solid fa-phone" aria-hidden="true"></i> Luego de que se las lea, dígame CUANTAS le molestan a usted</p>
-<hr>
+</section>
+<section class="slide level2 center">
+
 <p><i class="fa-solid fa-phone" aria-hidden="true"></i> No me diga CUALES, solo dígame CUANTAS</p>
-<p>. . .</p>
-<section id="control" class="level3">
-<h3 class="anchored" data-anchor-id="control">Control</h3>
+<div class="fragment">
+<h3 id="control">Control</h3>
 <ol type="1">
 <li>Que el gobierno aumente el impuesto a la bencina</li>
 <li>Que los futbolistas reciban salarios millonarios</li>
 <li>Que las grandes empresas contaminen el medio ambiente</li>
 </ol>
-<hr>
-<p><i class="fa-solid fa-phone" aria-hidden="true"></i> No me diga CUALES, solo dígame CUANTAS</p>
+</div>
 </section>
-<section id="tratamiento" class="level3">
-<h3 class="anchored" data-anchor-id="tratamiento">Tratamiento</h3>
+<section class="slide level2 center">
+
+<p><i class="fa-solid fa-phone" aria-hidden="true"></i> No me diga CUALES, solo dígame CUANTAS</p>
+<h3 id="tratamiento">Tratamiento</h3>
 <ol type="1">
 <li>Que el gobierno aumente el impuesto a la bencina</li>
 <li>Que los futbolistas reciban salarios millonarios</li>
 <li>Que las grandes empresas contaminen el medio ambiente</li>
 </ol>
-<hr>
-<p><i class="fa-solid fa-phone" aria-hidden="true"></i> No me diga CUALES, solo dígame CUANTAS</p>
 </section>
-<section id="tratamiento-1" class="level3">
-<h3 class="anchored" data-anchor-id="tratamiento-1">Tratamiento</h3>
+<section class="slide level2 center">
+
+<p><i class="fa-solid fa-phone" aria-hidden="true"></i> No me diga CUALES, solo dígame CUANTAS</p>
+<h3 id="tratamiento-1">Tratamiento</h3>
 <ol type="1">
 <li>Que el gobierno suba el impuesto a la bencina</li>
 <li>Que los futbolistas reciban salarios millonarios</li>
@@ -270,82 +279,46 @@ Northwestern University<br>
 <li><strong>Que una familia venezolana se mude a la casa de al lado</strong></li>
 </ol>
 </section>
-<section id="reduce-sesgo-por-sensibilidad" class="level2">
-<h2 class="anchored" data-anchor-id="reduce-sesgo-por-sensibilidad">Reduce sesgo por sensibilidad</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="puc_files/figure-revealjs/unnamed-chunk-2-1.png" class="img-fluid figure-img" data-fig-pos="center" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+<section id="reduce-sesgo-por-sensibilidad" class="slide level2 center">
+<h2>Reduce sesgo por sensibilidad</h2>
+
+<img data-src="puc_files/figure-revealjs/unnamed-chunk-2-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="reduce-sesgo-por-sensibilidad-1" class="slide level2 center">
+<h2>Reduce sesgo por sensibilidad</h2>
+
+<img data-src="puc_files/figure-revealjs/unnamed-chunk-3-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="reduce-sesgo-por-sensibilidad-2" class="slide level2 center">
+<h2>Reduce sesgo por sensibilidad</h2>
+
+<img data-src="puc_files/figure-revealjs/unnamed-chunk-4-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="reduce-sesgo-por-sensibilidad-3" class="slide level2 center">
+<h2>Reduce sesgo por sensibilidad</h2>
+
+<img data-src="puc_files/figure-revealjs/unnamed-chunk-5-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="y-a-mí-qué-me-importa" class="slide level2 center">
+<h2>¿Y a mí, qué me importa?</h2>
 </section>
-<section id="reduce-sesgo-por-sensibilidad-1" class="level2">
-<h2 class="anchored" data-anchor-id="reduce-sesgo-por-sensibilidad-1">Reduce sesgo por sensibilidad</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="puc_files/figure-revealjs/unnamed-chunk-3-1.png" class="img-fluid figure-img" data-fig-pos="center" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="reduce-sesgo-por-sensibilidad-2" class="level2">
-<h2 class="anchored" data-anchor-id="reduce-sesgo-por-sensibilidad-2">Reduce sesgo por sensibilidad</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="puc_files/figure-revealjs/unnamed-chunk-4-1.png" class="img-fluid figure-img" data-fig-pos="center" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="reduce-sesgo-por-sensibilidad-3" class="level2">
-<h2 class="anchored" data-anchor-id="reduce-sesgo-por-sensibilidad-3">Reduce sesgo por sensibilidad</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="puc_files/figure-revealjs/unnamed-chunk-5-1.png" class="img-fluid figure-img" data-fig-pos="center" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-<hr>
-</section>
-<section id="y-a-mí-qué-me-importa" class="level2">
-<h2 class="anchored" data-anchor-id="y-a-mí-qué-me-importa">¿Y a mí, qué me importa?</h2>
-<hr>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="list/bias_variance.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<hr>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="list/bias_var_ml.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-<section id="problema" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="problema">Problema</h2>
-<p>. . .</p>
+<section class="slide level2 center">
+
+
+<img data-src="list/bias_variance.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section class="slide level2 center">
+
+
+<img data-src="list/bias_var_ml.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="problema" class="slide level2 center">
+<h2>Problema</h2>
+<div class="fragment">
 <p>Resultados dependen de la lista base</p>
-<hr>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="list/diaz_dle.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
 </div>
-<hr>
-<table class="caption-top table">
+</section>
+<section class="slide level2 center">
+
+
+<img data-src="list/diaz_dle.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section class="slide level2 center">
+
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th><strong>Lista A</strong></th>
@@ -371,48 +344,55 @@ Northwestern University<br>
 </tr>
 </tbody>
 </table>
-<p>. . .</p>
+<div class="fragment">
 <p><strong>Ítem sensible:</strong> Citizen order patrol combating undocumented immigration</p>
-<hr>
+</div>
+</section>
+<section class="slide level2 center">
+
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure">
-<p><img src="puc_files/figure-revealjs/unnamed-chunk-7-1.png" class="img-fluid figure-img" data-fig-pos="center" width="960"></p>
+<figure>
+<p><img data-src="puc_files/figure-revealjs/unnamed-chunk-7-1.png" data-fig-pos="center" width="960"></p>
 </figure>
 </div>
 </div>
 </div>
 
-<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<aside><div>
 <p>Adaptado de <a href="https://doi.org/10.1017/XPS.2023.24">Diaz (2023)</a></p>
-</div></div><hr>
+</div></aside></section>
+<section class="slide level2 center">
+
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure">
-<p><img src="puc_files/figure-revealjs/unnamed-chunk-8-1.png" class="img-fluid figure-img" data-fig-pos="center" width="960"></p>
+<figure>
+<p><img data-src="puc_files/figure-revealjs/unnamed-chunk-8-1.png" data-fig-pos="center" width="960"></p>
 </figure>
 </div>
 </div>
 </div>
 
-<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<aside><div>
 <p>Adaptado de <a href="https://doi.org/10.1017/XPS.2023.24">Diaz (2023)</a></p>
-</div></div></section>
-<section id="problema-1" class="level2">
-<h2 class="anchored" data-anchor-id="problema-1">Problema</h2>
+</div></aside></section>
+<section id="problema-1" class="slide level2 center">
+<h2>Problema</h2>
 <p>Resultados dependen de la lista base</p>
-<p>. . .</p>
+<div class="fragment">
 <p><strong>Origen</strong></p>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <ol type="1">
 <li><p>Errores estratégicos</p></li>
 <li><p>Errores no estratégicos</p></li>
 </ol>
+</div>
 </section>
-<section id="problema-2" class="level2">
-<h2 class="anchored" data-anchor-id="problema-2">Problema</h2>
+<section id="problema-2" class="slide level2 center">
+<h2>Problema</h2>
 <p>Resultados dependen de la lista base</p>
 <p><strong>Origen</strong></p>
 <ol type="1">
@@ -420,8 +400,8 @@ Northwestern University<br>
 <li><p><strong>Errores no estratégicos</strong></p></li>
 </ol>
 </section>
-<section id="error-no-estratégico" class="level2">
-<h2 class="anchored" data-anchor-id="error-no-estratégico">Error no estratégico</h2>
+<section id="error-no-estratégico" class="slide level2 center">
+<h2>Error no estratégico</h2>
 <p><strong>Cosas que molestan</strong></p>
 <div class="cell">
 <div class="cell-output-display">
@@ -431,20 +411,20 @@ Northwestern University<br>
 
     <script>
       // Create table-specific functions using external factory
-      const tableFns_qog8vbynlpq1e8hwolzh = TinyTable.createTableFunctions("tinytable_qog8vbynlpq1e8hwolzh");
+      const tableFns_ie6ttvq4h5ju21kjmd6n = TinyTable.createTableFunctions("tinytable_ie6ttvq4h5ju21kjmd6n");
       // tinytable span after
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '4', j: 1 }, { i: '4', j: 2 } ], css_id: 'tinytable_css_5o5hmfjbjt5xkmv23ody',}, 
-          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 } ], css_id: 'tinytable_css_xauj1qckixjrjdr4hn8m',}, 
-          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_tezg8uw6wha91qkd9mg0',}, 
+          { positions: [ { i: '4', j: 1 }, { i: '4', j: 2 } ], css_id: 'tinytable_css_litzv7r2n1becy5tj70n',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 } ], css_id: 'tinytable_css_d5zkhpolepc6dhz4vmle',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_sgtw9rh8wt9hyz4042kv',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  tableFns_qog8vbynlpq1e8hwolzh.styleCell(cell.i, cell.j, group.css_id);
+                  tableFns_ie6ttvq4h5ju21kjmd6n.styleCell(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -453,12 +433,12 @@ Northwestern University<br>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
     <style>
     /* tinytable css entries after */
-    #tinytable_qog8vbynlpq1e8hwolzh td.tinytable_css_5o5hmfjbjt5xkmv23ody, #tinytable_qog8vbynlpq1e8hwolzh th.tinytable_css_5o5hmfjbjt5xkmv23ody {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
-    #tinytable_qog8vbynlpq1e8hwolzh td.tinytable_css_xauj1qckixjrjdr4hn8m, #tinytable_qog8vbynlpq1e8hwolzh th.tinytable_css_xauj1qckixjrjdr4hn8m { font-size: 0.7em }
-    #tinytable_qog8vbynlpq1e8hwolzh td.tinytable_css_tezg8uw6wha91qkd9mg0, #tinytable_qog8vbynlpq1e8hwolzh th.tinytable_css_tezg8uw6wha91qkd9mg0 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_ie6ttvq4h5ju21kjmd6n td.tinytable_css_litzv7r2n1becy5tj70n, #tinytable_ie6ttvq4h5ju21kjmd6n th.tinytable_css_litzv7r2n1becy5tj70n {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_ie6ttvq4h5ju21kjmd6n td.tinytable_css_d5zkhpolepc6dhz4vmle, #tinytable_ie6ttvq4h5ju21kjmd6n th.tinytable_css_d5zkhpolepc6dhz4vmle { font-size: 0.7em }
+    #tinytable_ie6ttvq4h5ju21kjmd6n td.tinytable_css_sgtw9rh8wt9hyz4042kv, #tinytable_ie6ttvq4h5ju21kjmd6n th.tinytable_css_sgtw9rh8wt9hyz4042kv {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; font-size: 0.7em }
     </style>
     <div class="container">
-      <table class="tinytable" id="tinytable_qog8vbynlpq1e8hwolzh" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="tinytable" id="tinytable_ie6ttvq4h5ju21kjmd6n" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         
         <thead>
               <tr>
@@ -490,21 +470,23 @@ Northwestern University<br>
 <!-- hack to avoid NA insertion in last line -->
 </div>
 </div>
-<p>. . .</p>
+<div class="fragment">
 <p>&nbsp;</p>
 <div class="r-stack">
 <p>Lista tratamiendo es más larga</p>
 </div>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <div class="r-stack">
 <p><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></p>
 </div>
 <div class="r-stack">
 <p>Estimación positiva de manera artificial</p>
 </div>
+</div>
 </section>
-<section id="error-no-estratégico-1" class="level2">
-<h2 class="anchored" data-anchor-id="error-no-estratégico-1">Error no estratégico</h2>
+<section id="error-no-estratégico-1" class="slide level2 center">
+<h2>Error no estratégico</h2>
 <p><strong>Cosas que molestan</strong></p>
 <div class="cell">
 <div class="cell-output-display">
@@ -514,20 +496,20 @@ Northwestern University<br>
 
     <script>
       // Create table-specific functions using external factory
-      const tableFns_55h2bbhhwhvhvhccipwe = TinyTable.createTableFunctions("tinytable_55h2bbhhwhvhvhccipwe");
+      const tableFns_dij3qzl6wac6j0l7zdz7 = TinyTable.createTableFunctions("tinytable_dij3qzl6wac6j0l7zdz7");
       // tinytable span after
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '4', j: 1 }, { i: '4', j: 2 } ], css_id: 'tinytable_css_vtt03n2wvyp6upuuhu4z',}, 
-          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 } ], css_id: 'tinytable_css_cqtvnd1g3b98fkr6qm1p',}, 
-          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_z1l4qvv5dgyx2cdo5fm5',}, 
+          { positions: [ { i: '4', j: 1 }, { i: '4', j: 2 } ], css_id: 'tinytable_css_wzx162izi1sb4is2nfn1',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 } ], css_id: 'tinytable_css_e3pygda8rqr9p80bxzg9',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_y7opk0khezhh0jwok3ue',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  tableFns_55h2bbhhwhvhvhccipwe.styleCell(cell.i, cell.j, group.css_id);
+                  tableFns_dij3qzl6wac6j0l7zdz7.styleCell(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -536,12 +518,12 @@ Northwestern University<br>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
     <style>
     /* tinytable css entries after */
-    #tinytable_55h2bbhhwhvhvhccipwe td.tinytable_css_vtt03n2wvyp6upuuhu4z, #tinytable_55h2bbhhwhvhvhccipwe th.tinytable_css_vtt03n2wvyp6upuuhu4z {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
-    #tinytable_55h2bbhhwhvhvhccipwe td.tinytable_css_cqtvnd1g3b98fkr6qm1p, #tinytable_55h2bbhhwhvhvhccipwe th.tinytable_css_cqtvnd1g3b98fkr6qm1p { font-size: 0.7em }
-    #tinytable_55h2bbhhwhvhvhccipwe td.tinytable_css_z1l4qvv5dgyx2cdo5fm5, #tinytable_55h2bbhhwhvhvhccipwe th.tinytable_css_z1l4qvv5dgyx2cdo5fm5 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_dij3qzl6wac6j0l7zdz7 td.tinytable_css_wzx162izi1sb4is2nfn1, #tinytable_dij3qzl6wac6j0l7zdz7 th.tinytable_css_wzx162izi1sb4is2nfn1 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_dij3qzl6wac6j0l7zdz7 td.tinytable_css_e3pygda8rqr9p80bxzg9, #tinytable_dij3qzl6wac6j0l7zdz7 th.tinytable_css_e3pygda8rqr9p80bxzg9 { font-size: 0.7em }
+    #tinytable_dij3qzl6wac6j0l7zdz7 td.tinytable_css_y7opk0khezhh0jwok3ue, #tinytable_dij3qzl6wac6j0l7zdz7 th.tinytable_css_y7opk0khezhh0jwok3ue {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; font-size: 0.7em }
     </style>
     <div class="container">
-      <table class="tinytable" id="tinytable_55h2bbhhwhvhvhccipwe" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="tinytable" id="tinytable_dij3qzl6wac6j0l7zdz7" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         
         <thead>
               <tr>
@@ -575,8 +557,8 @@ Northwestern University<br>
 </div>
 <p><strong>Solución:</strong> Añadir ítem placebo</p>
 </section>
-<section id="error-no-estratégico-2" class="level2">
-<h2 class="anchored" data-anchor-id="error-no-estratégico-2">Error no estratégico</h2>
+<section id="error-no-estratégico-2" class="slide level2 center">
+<h2>Error no estratégico</h2>
 <p><strong>Cosas que molestan</strong></p>
 <div class="cell">
 <div class="cell-output-display">
@@ -586,21 +568,21 @@ Northwestern University<br>
 
     <script>
       // Create table-specific functions using external factory
-      const tableFns_qphqhwwiuqz7xjv733yu = TinyTable.createTableFunctions("tinytable_qphqhwwiuqz7xjv733yu");
+      const tableFns_dssvlu3ofoy5xzuzc3k8 = TinyTable.createTableFunctions("tinytable_dssvlu3ofoy5xzuzc3k8");
       // tinytable span after
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '4', j: 2 } ], css_id: 'tinytable_css_lbw4t9zegm7q3ns68xqb',}, 
-          { positions: [ { i: '4', j: 1 } ], css_id: 'tinytable_css_9bmqpyuv2fd0vuuxsb51',}, 
-          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 } ], css_id: 'tinytable_css_tdef7c2y41kal91xz3pi',}, 
-          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_0minxb8vdcyw615dzihp',}, 
+          { positions: [ { i: '4', j: 2 } ], css_id: 'tinytable_css_w986drwf7kl6sib27tzn',}, 
+          { positions: [ { i: '4', j: 1 } ], css_id: 'tinytable_css_oldbco6943oydf09m4dp',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 } ], css_id: 'tinytable_css_7tvbilp2oopwhoyas7yq',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_iu2s74v3h03u5asnr39f',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  tableFns_qphqhwwiuqz7xjv733yu.styleCell(cell.i, cell.j, group.css_id);
+                  tableFns_dssvlu3ofoy5xzuzc3k8.styleCell(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -609,13 +591,13 @@ Northwestern University<br>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
     <style>
     /* tinytable css entries after */
-    #tinytable_qphqhwwiuqz7xjv733yu td.tinytable_css_lbw4t9zegm7q3ns68xqb, #tinytable_qphqhwwiuqz7xjv733yu th.tinytable_css_lbw4t9zegm7q3ns68xqb {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
-    #tinytable_qphqhwwiuqz7xjv733yu td.tinytable_css_9bmqpyuv2fd0vuuxsb51, #tinytable_qphqhwwiuqz7xjv733yu th.tinytable_css_9bmqpyuv2fd0vuuxsb51 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em; color: #0176DE }
-    #tinytable_qphqhwwiuqz7xjv733yu td.tinytable_css_tdef7c2y41kal91xz3pi, #tinytable_qphqhwwiuqz7xjv733yu th.tinytable_css_tdef7c2y41kal91xz3pi { font-size: 0.7em }
-    #tinytable_qphqhwwiuqz7xjv733yu td.tinytable_css_0minxb8vdcyw615dzihp, #tinytable_qphqhwwiuqz7xjv733yu th.tinytable_css_0minxb8vdcyw615dzihp {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_dssvlu3ofoy5xzuzc3k8 td.tinytable_css_w986drwf7kl6sib27tzn, #tinytable_dssvlu3ofoy5xzuzc3k8 th.tinytable_css_w986drwf7kl6sib27tzn {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_dssvlu3ofoy5xzuzc3k8 td.tinytable_css_oldbco6943oydf09m4dp, #tinytable_dssvlu3ofoy5xzuzc3k8 th.tinytable_css_oldbco6943oydf09m4dp {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em; color: #0176DE }
+    #tinytable_dssvlu3ofoy5xzuzc3k8 td.tinytable_css_7tvbilp2oopwhoyas7yq, #tinytable_dssvlu3ofoy5xzuzc3k8 th.tinytable_css_7tvbilp2oopwhoyas7yq { font-size: 0.7em }
+    #tinytable_dssvlu3ofoy5xzuzc3k8 td.tinytable_css_iu2s74v3h03u5asnr39f, #tinytable_dssvlu3ofoy5xzuzc3k8 th.tinytable_css_iu2s74v3h03u5asnr39f {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; font-size: 0.7em }
     </style>
     <div class="container">
-      <table class="tinytable" id="tinytable_qphqhwwiuqz7xjv733yu" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="tinytable" id="tinytable_dssvlu3ofoy5xzuzc3k8" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         
         <thead>
               <tr>
@@ -649,32 +631,35 @@ Northwestern University<br>
 </div>
 <p><strong>Solución:</strong> Añadir ítem placebo</p>
 </section>
-<section id="placebo-controlled-list-experiments" class="level2">
-<h2 class="anchored" data-anchor-id="placebo-controlled-list-experiments">Placebo-controlled list experiments</h2>
-<p>. . .</p>
+<section id="placebo-controlled-list-experiments" class="slide level2 center">
+<h2>Placebo-controlled list experiments</h2>
+<div class="fragment">
 <p><strong>Ventaja</strong></p>
 <p>Reduce sesgo por inflación artificial de manera eficiente</p>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <p>Sólo 5/81 estudios desde 2014 usan este diseño</p>
+</div>
 </section>
-<section id="por-qué" class="level2">
-<h2 class="anchored" data-anchor-id="por-qué">¿Por qué?</h2>
+<section id="por-qué" class="slide level2 center">
+<h2>¿Por qué?</h2>
 </section>
-<section id="mantra" class="level2">
-<h2 class="anchored" data-anchor-id="mantra">Mantra</h2>
-<p>. . .</p>
+<section id="mantra" class="slide level2 center">
+<h2>Mantra</h2>
+<div class="fragment">
 <p>Mejoras en sesgo/varianza que no comprometen la otra dimensión imponen <em>costos ocultos</em></p>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <p><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Ítem placebo puede sustituir un tipo de sesgo por otro</p>
+</div>
+</section></section>
+<section>
+<section id="nos-pasó-a-nosotros" class="title-slide slide level1 center">
+<h1>¡Nos pasó a nosotros!</h1>
+
 </section>
-<section id="nos-pasó-a-nosotros" class="level2" style="text-align: center">
-<h2 class="anchored" data-anchor-id="nos-pasó-a-nosotros">¡Nos pasó a nosotros!</h2>
-</section>
-</section>
-<section id="nuestro-experimento" class="level1 page-columns page-full">
-<h1>Nuestro experimento</h1>
-<section id="double-list-experiment" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="double-list-experiment">Double list experiment</h2>
+<section id="doble-experimento-de-lista" class="slide level2 center">
+<h2>Doble experimento de lista</h2>
 <p>Ha experimentado (en su barrio) en los últimos seis meses:</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -684,20 +669,20 @@ Northwestern University<br>
 
     <script>
       // Create table-specific functions using external factory
-      const tableFns_v5vfboej90wdbanm31ej = TinyTable.createTableFunctions("tinytable_v5vfboej90wdbanm31ej");
+      const tableFns_9pc7shwazkbx28to9qsx = TinyTable.createTableFunctions("tinytable_9pc7shwazkbx28to9qsx");
       // tinytable span after
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '4', j: 1 }, { i: '4', j: 2 } ], css_id: 'tinytable_css_q3p7vzpo54pahjljd0zt',}, 
-          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 } ], css_id: 'tinytable_css_djuxljeh5002tdyn6g5t',}, 
-          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_yt4fqpch1k9e11lvqgy0',}, 
+          { positions: [ { i: '4', j: 1 }, { i: '4', j: 2 } ], css_id: 'tinytable_css_uf3lay4ce5ltiricqxw6',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 } ], css_id: 'tinytable_css_zsybqqygiao5xk6lgdkj',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_2iana79cldqqtwjc5yaw',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  tableFns_v5vfboej90wdbanm31ej.styleCell(cell.i, cell.j, group.css_id);
+                  tableFns_9pc7shwazkbx28to9qsx.styleCell(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -706,12 +691,12 @@ Northwestern University<br>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
     <style>
     /* tinytable css entries after */
-    #tinytable_v5vfboej90wdbanm31ej td.tinytable_css_q3p7vzpo54pahjljd0zt, #tinytable_v5vfboej90wdbanm31ej th.tinytable_css_q3p7vzpo54pahjljd0zt {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
-    #tinytable_v5vfboej90wdbanm31ej td.tinytable_css_djuxljeh5002tdyn6g5t, #tinytable_v5vfboej90wdbanm31ej th.tinytable_css_djuxljeh5002tdyn6g5t { font-size: 0.7em }
-    #tinytable_v5vfboej90wdbanm31ej td.tinytable_css_yt4fqpch1k9e11lvqgy0, #tinytable_v5vfboej90wdbanm31ej th.tinytable_css_yt4fqpch1k9e11lvqgy0 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_9pc7shwazkbx28to9qsx td.tinytable_css_uf3lay4ce5ltiricqxw6, #tinytable_9pc7shwazkbx28to9qsx th.tinytable_css_uf3lay4ce5ltiricqxw6 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_9pc7shwazkbx28to9qsx td.tinytable_css_zsybqqygiao5xk6lgdkj, #tinytable_9pc7shwazkbx28to9qsx th.tinytable_css_zsybqqygiao5xk6lgdkj { font-size: 0.7em }
+    #tinytable_9pc7shwazkbx28to9qsx td.tinytable_css_2iana79cldqqtwjc5yaw, #tinytable_9pc7shwazkbx28to9qsx th.tinytable_css_2iana79cldqqtwjc5yaw {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
     </style>
     <div class="container">
-      <table class="tinytable" id="tinytable_v5vfboej90wdbanm31ej" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="tinytable" id="tinytable_9pc7shwazkbx28to9qsx" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         
         <thead>
               <tr>
@@ -744,12 +729,12 @@ Northwestern University<br>
 </div>
 </div>
 
-<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<aside><div>
 <p>Muestra online en Montevideo. <span class="math inline">\(N = 2688\)</span>.<br>Aleatorizado en bloque por zonas policiales de riesgo.</p>
-</div></div></section>
-<section id="manipulaciones" class="level2">
-<h2 class="anchored" data-anchor-id="manipulaciones">Manipulaciones</h2>
-<p>. . .</p>
+</div></aside></section>
+<section id="manipulaciones" class="slide level2 center">
+<h2>Manipulaciones</h2>
+<div class="fragment">
 <p><strong>Ítems sensibles:</strong></p>
 <ul>
 <li>Vi a miembros de bandas amenazar a vecinos</li>
@@ -757,9 +742,10 @@ Northwestern University<br>
 <li>Vi a miembros de bandas hacer donaciones</li>
 <li>Vi a miembros de bandas ofrecer trabajo</li>
 </ul>
+</div>
 </section>
-<section id="manipulaciones-1" class="level2">
-<h2 class="anchored" data-anchor-id="manipulaciones-1">Manipulaciones</h2>
+<section id="manipulaciones-1" class="slide level2 center">
+<h2>Manipulaciones</h2>
 <p><strong>Ítems sensibles:</strong></p>
 <ul>
 <li><strong>Vi a miembros de bandas amenazar a vecinos</strong></li>
@@ -768,15 +754,15 @@ Northwestern University<br>
 <li><span style="color: gray;">Vi a miembros de bandas ofrecer trabajo</span></li>
 </ul>
 </section>
-<section id="manipulaciones-2" class="level2">
-<h2 class="anchored" data-anchor-id="manipulaciones-2">Manipulaciones</h2>
+<section id="manipulaciones-2" class="slide level2 center">
+<h2>Manipulaciones</h2>
 <p><strong>Ítem placebo:</strong></p>
 <ul>
 <li>No tomé mate</li>
 </ul>
 </section>
-<section id="double-list-experiment-1" class="level2">
-<h2 class="anchored" data-anchor-id="double-list-experiment-1">Double list experiment</h2>
+<section id="double-list-experiment" class="slide level2 center">
+<h2>Double list experiment</h2>
 <p>Ha experimentado (en su barrio) en los últimos seis meses:</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -786,20 +772,20 @@ Northwestern University<br>
 
     <script>
       // Create table-specific functions using external factory
-      const tableFns_e1jedh8ca805oqkhinek = TinyTable.createTableFunctions("tinytable_e1jedh8ca805oqkhinek");
+      const tableFns_8kszy56kkg02lob6xmr6 = TinyTable.createTableFunctions("tinytable_8kszy56kkg02lob6xmr6");
       // tinytable span after
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '4', j: 1 }, { i: '4', j: 2 } ], css_id: 'tinytable_css_ml36wbmzlqp31oajf3v0',}, 
-          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 } ], css_id: 'tinytable_css_cef69chnrhtieloxt2m4',}, 
-          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_o6atqvwl27hbl605glcu',}, 
+          { positions: [ { i: '4', j: 1 }, { i: '4', j: 2 } ], css_id: 'tinytable_css_b3k54nn63ntkpne7btr6',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 } ], css_id: 'tinytable_css_d119gbap74xs6jlkv7sx',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_aga0g7f2ahr95uq3cl4e',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  tableFns_e1jedh8ca805oqkhinek.styleCell(cell.i, cell.j, group.css_id);
+                  tableFns_8kszy56kkg02lob6xmr6.styleCell(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -808,12 +794,12 @@ Northwestern University<br>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
     <style>
     /* tinytable css entries after */
-    #tinytable_e1jedh8ca805oqkhinek td.tinytable_css_ml36wbmzlqp31oajf3v0, #tinytable_e1jedh8ca805oqkhinek th.tinytable_css_ml36wbmzlqp31oajf3v0 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
-    #tinytable_e1jedh8ca805oqkhinek td.tinytable_css_cef69chnrhtieloxt2m4, #tinytable_e1jedh8ca805oqkhinek th.tinytable_css_cef69chnrhtieloxt2m4 { font-size: 0.7em }
-    #tinytable_e1jedh8ca805oqkhinek td.tinytable_css_o6atqvwl27hbl605glcu, #tinytable_e1jedh8ca805oqkhinek th.tinytable_css_o6atqvwl27hbl605glcu {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_8kszy56kkg02lob6xmr6 td.tinytable_css_b3k54nn63ntkpne7btr6, #tinytable_8kszy56kkg02lob6xmr6 th.tinytable_css_b3k54nn63ntkpne7btr6 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_8kszy56kkg02lob6xmr6 td.tinytable_css_d119gbap74xs6jlkv7sx, #tinytable_8kszy56kkg02lob6xmr6 th.tinytable_css_d119gbap74xs6jlkv7sx { font-size: 0.7em }
+    #tinytable_8kszy56kkg02lob6xmr6 td.tinytable_css_aga0g7f2ahr95uq3cl4e, #tinytable_8kszy56kkg02lob6xmr6 th.tinytable_css_aga0g7f2ahr95uq3cl4e {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
     </style>
     <div class="container">
-      <table class="tinytable" id="tinytable_e1jedh8ca805oqkhinek" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="tinytable" id="tinytable_8kszy56kkg02lob6xmr6" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         
         <thead>
               <tr>
@@ -846,8 +832,8 @@ Northwestern University<br>
 </div>
 </div>
 </section>
-<section id="double-list-experiment-2" class="level2">
-<h2 class="anchored" data-anchor-id="double-list-experiment-2">Double list experiment</h2>
+<section id="double-list-experiment-1" class="slide level2 center">
+<h2>Double list experiment</h2>
 <p>Ha experimentado (en su barrio) en los últimos seis meses:</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -857,21 +843,21 @@ Northwestern University<br>
 
     <script>
       // Create table-specific functions using external factory
-      const tableFns_nrh07vn1phmnzax1v8kx = TinyTable.createTableFunctions("tinytable_nrh07vn1phmnzax1v8kx");
+      const tableFns_xs6rsi8q44xbnyj1o9jj = TinyTable.createTableFunctions("tinytable_xs6rsi8q44xbnyj1o9jj");
       // tinytable span after
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '5', j: 2 } ], css_id: 'tinytable_css_r35mkv0urkzxo6g4fuye',}, 
-          { positions: [ { i: '5', j: 1 } ], css_id: 'tinytable_css_ex1i0pyqhc87z0f5bcpc',}, 
-          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 } ], css_id: 'tinytable_css_mz0xx18kixm42re6fego',}, 
-          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_i8974m049ar2i2vk2ag4',}, 
+          { positions: [ { i: '5', j: 2 } ], css_id: 'tinytable_css_z6q0zfxnvywupyjm7itn',}, 
+          { positions: [ { i: '5', j: 1 } ], css_id: 'tinytable_css_qg93y2f7j4d6etogljig',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 } ], css_id: 'tinytable_css_9rckdpijbtanf82wyjpj',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_n4db1nrp259vbx5eegtq',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  tableFns_nrh07vn1phmnzax1v8kx.styleCell(cell.i, cell.j, group.css_id);
+                  tableFns_xs6rsi8q44xbnyj1o9jj.styleCell(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -880,13 +866,13 @@ Northwestern University<br>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
     <style>
     /* tinytable css entries after */
-    #tinytable_nrh07vn1phmnzax1v8kx td.tinytable_css_r35mkv0urkzxo6g4fuye, #tinytable_nrh07vn1phmnzax1v8kx th.tinytable_css_r35mkv0urkzxo6g4fuye {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em; color: #0176DE }
-    #tinytable_nrh07vn1phmnzax1v8kx td.tinytable_css_ex1i0pyqhc87z0f5bcpc, #tinytable_nrh07vn1phmnzax1v8kx th.tinytable_css_ex1i0pyqhc87z0f5bcpc {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
-    #tinytable_nrh07vn1phmnzax1v8kx td.tinytable_css_mz0xx18kixm42re6fego, #tinytable_nrh07vn1phmnzax1v8kx th.tinytable_css_mz0xx18kixm42re6fego { font-size: 0.7em }
-    #tinytable_nrh07vn1phmnzax1v8kx td.tinytable_css_i8974m049ar2i2vk2ag4, #tinytable_nrh07vn1phmnzax1v8kx th.tinytable_css_i8974m049ar2i2vk2ag4 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_xs6rsi8q44xbnyj1o9jj td.tinytable_css_z6q0zfxnvywupyjm7itn, #tinytable_xs6rsi8q44xbnyj1o9jj th.tinytable_css_z6q0zfxnvywupyjm7itn {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em; color: #0176DE }
+    #tinytable_xs6rsi8q44xbnyj1o9jj td.tinytable_css_qg93y2f7j4d6etogljig, #tinytable_xs6rsi8q44xbnyj1o9jj th.tinytable_css_qg93y2f7j4d6etogljig {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_xs6rsi8q44xbnyj1o9jj td.tinytable_css_9rckdpijbtanf82wyjpj, #tinytable_xs6rsi8q44xbnyj1o9jj th.tinytable_css_9rckdpijbtanf82wyjpj { font-size: 0.7em }
+    #tinytable_xs6rsi8q44xbnyj1o9jj td.tinytable_css_n4db1nrp259vbx5eegtq, #tinytable_xs6rsi8q44xbnyj1o9jj th.tinytable_css_n4db1nrp259vbx5eegtq {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
     </style>
     <div class="container">
-      <table class="tinytable" id="tinytable_nrh07vn1phmnzax1v8kx" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="tinytable" id="tinytable_xs6rsi8q44xbnyj1o9jj" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         
         <thead>
               <tr>
@@ -923,8 +909,8 @@ Northwestern University<br>
 </div>
 </div>
 </section>
-<section id="double-list-experiment-3" class="level2">
-<h2 class="anchored" data-anchor-id="double-list-experiment-3">Double list experiment</h2>
+<section id="double-list-experiment-2" class="slide level2 center">
+<h2>Double list experiment</h2>
 <p>Ha experimentado (en su barrio) en los últimos seis meses:</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -934,21 +920,21 @@ Northwestern University<br>
 
     <script>
       // Create table-specific functions using external factory
-      const tableFns_jqx5gzthcwoyvuegi2d7 = TinyTable.createTableFunctions("tinytable_jqx5gzthcwoyvuegi2d7");
+      const tableFns_3n6ptj37rwqt05t1wk70 = TinyTable.createTableFunctions("tinytable_3n6ptj37rwqt05t1wk70");
       // tinytable span after
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '5', j: 2 } ], css_id: 'tinytable_css_t0a6fduougr2vv7wn941',}, 
-          { positions: [ { i: '5', j: 1 } ], css_id: 'tinytable_css_6t5vb3xrrdkdm5a1x37g',}, 
-          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 } ], css_id: 'tinytable_css_ints5n34lceez0i8hs0i',}, 
-          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_b9c2ynbomjhuaffau5fp',}, 
+          { positions: [ { i: '5', j: 2 } ], css_id: 'tinytable_css_2orqwsgxalsoa2yun5gh',}, 
+          { positions: [ { i: '5', j: 1 } ], css_id: 'tinytable_css_zvt0i62ugwyvpq97h6ob',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 } ], css_id: 'tinytable_css_y2ubt4w8vl3h0ernmxfz',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_mqp0clatp9la64nq510u',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  tableFns_jqx5gzthcwoyvuegi2d7.styleCell(cell.i, cell.j, group.css_id);
+                  tableFns_3n6ptj37rwqt05t1wk70.styleCell(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -957,13 +943,13 @@ Northwestern University<br>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
     <style>
     /* tinytable css entries after */
-    #tinytable_jqx5gzthcwoyvuegi2d7 td.tinytable_css_t0a6fduougr2vv7wn941, #tinytable_jqx5gzthcwoyvuegi2d7 th.tinytable_css_t0a6fduougr2vv7wn941 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
-    #tinytable_jqx5gzthcwoyvuegi2d7 td.tinytable_css_6t5vb3xrrdkdm5a1x37g, #tinytable_jqx5gzthcwoyvuegi2d7 th.tinytable_css_6t5vb3xrrdkdm5a1x37g {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em; color: #0176DE }
-    #tinytable_jqx5gzthcwoyvuegi2d7 td.tinytable_css_ints5n34lceez0i8hs0i, #tinytable_jqx5gzthcwoyvuegi2d7 th.tinytable_css_ints5n34lceez0i8hs0i { font-size: 0.7em }
-    #tinytable_jqx5gzthcwoyvuegi2d7 td.tinytable_css_b9c2ynbomjhuaffau5fp, #tinytable_jqx5gzthcwoyvuegi2d7 th.tinytable_css_b9c2ynbomjhuaffau5fp {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_3n6ptj37rwqt05t1wk70 td.tinytable_css_2orqwsgxalsoa2yun5gh, #tinytable_3n6ptj37rwqt05t1wk70 th.tinytable_css_2orqwsgxalsoa2yun5gh {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
+    #tinytable_3n6ptj37rwqt05t1wk70 td.tinytable_css_zvt0i62ugwyvpq97h6ob, #tinytable_3n6ptj37rwqt05t1wk70 th.tinytable_css_zvt0i62ugwyvpq97h6ob {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em; color: #0176DE }
+    #tinytable_3n6ptj37rwqt05t1wk70 td.tinytable_css_y2ubt4w8vl3h0ernmxfz, #tinytable_3n6ptj37rwqt05t1wk70 th.tinytable_css_y2ubt4w8vl3h0ernmxfz { font-size: 0.7em }
+    #tinytable_3n6ptj37rwqt05t1wk70 td.tinytable_css_mqp0clatp9la64nq510u, #tinytable_3n6ptj37rwqt05t1wk70 th.tinytable_css_mqp0clatp9la64nq510u {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-size: 0.7em }
     </style>
     <div class="container">
-      <table class="tinytable" id="tinytable_jqx5gzthcwoyvuegi2d7" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="tinytable" id="tinytable_3n6ptj37rwqt05t1wk70" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         
         <thead>
               <tr>
@@ -1000,183 +986,151 @@ Northwestern University<br>
 </div>
 </div>
 </section>
-<section id="estimadores" class="level2">
-<h2 class="anchored" data-anchor-id="estimadores">Estimadores</h2>
-<p>. . .</p>
+<section id="estimadores" class="slide level2 center">
+<h2>Estimadores</h2>
+<div class="fragment">
 <p><span class="math display">\[
-\hat{\tau}_A = \widehat E[Y_{iA }(1)] - \widehat E[Y_{iA }(0)]
+\hat{\tau}_A = \hat E[Y_{iA }(1)] - \hat E[Y_{iA }(0)]
 \]</span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">difference_in_means</span>(count <span class="sc">~</span> z, <span class="at">subset =</span> list <span class="sc">==</span> <span class="st">"A"</span>, <span class="at">data =</span> df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">difference_in_means</span>(count <span class="sc">~</span> z, <span class="at">subset =</span> list <span class="sc">==</span> <span class="st">"A"</span>, <span class="at">data =</span> df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
-\hat{\tau}_B = \widehat E[Y_{iB }(1)] - \widehat E[Y_{iB }(0)]
+\hat{\tau}_B = \hat E[Y_{iB }(1)] - \hat E[Y_{iB }(0)]
 \]</span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">difference_in_means</span>(count <span class="sc">~</span> z, <span class="at">subset =</span> list <span class="sc">==</span> <span class="st">"B"</span>, <span class="at">data =</span> df )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">difference_in_means</span>(count <span class="sc">~</span> z, <span class="at">subset =</span> list <span class="sc">==</span> <span class="st">"B"</span>, <span class="at">data =</span> df )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
 \hat{\tau}_{Doble} = \frac{(\hat{\tau}_A + \hat{\tau}_B)}{2}
 \]</span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm_robust</span>(count <span class="sc">~</span> z <span class="sc">+</span> list, <span class="at">clusters =</span> id, <span class="at">data =</span> df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</section>
-<section id="resultados" class="level2">
-<h2 class="anchored" data-anchor-id="resultados">Resultados</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="puc_files/figure-revealjs/unnamed-chunk-19-1.png" class="img-fluid figure-img" data-fig-pos="center" width="960"></p>
-</figure>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">lm_robust</span>(count <span class="sc">~</span> z <span class="sc">+</span> list, <span class="at">clusters =</span> id, <span class="at">data =</span> df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </section>
-<section id="resultados-1" class="level2">
-<h2 class="anchored" data-anchor-id="resultados-1">Resultados</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="puc_files/figure-revealjs/unnamed-chunk-20-1.png" class="img-fluid figure-img" data-fig-pos="center" width="960"></p>
-</figure>
+<section id="resultados" class="slide level2 center">
+<h2>Resultados</h2>
+
+<img data-src="puc_files/figure-revealjs/unnamed-chunk-19-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="resultados-1" class="slide level2 center">
+<h2>Resultados</h2>
+
+<img data-src="puc_files/figure-revealjs/unnamed-chunk-20-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="resultados-2" class="slide level2 center">
+<h2>Resultados</h2>
+
+<img data-src="puc_files/figure-revealjs/unnamed-chunk-21-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="qué-pasó" class="slide level2 center">
+<h2>¿Qué pasó?</h2>
+<div class="fragment">
+<p><span style="color: red;"><i class="fa-solid fa-xmark" aria-hidden="true"></i></span> Prevalencia &gt; 0</p>
 </div>
+<div class="fragment">
+<p><span style="color: red;"><i class="fa-solid fa-xmark" aria-hidden="true"></i></span> Falta de atención</p>
 </div>
+<div class="fragment">
+<p><span style="color: #0176DE;"><i class="fa-solid fa-check" aria-hidden="true"></i></span> LLama la atención</p>
 </div>
 </section>
-<section id="resultados-2" class="level2">
-<h2 class="anchored" data-anchor-id="resultados-2">Resultados</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="puc_files/figure-revealjs/unnamed-chunk-21-1.png" class="img-fluid figure-img" data-fig-pos="center" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="qué-pasó" class="level2">
-<h2 class="anchored" data-anchor-id="qué-pasó">¿Qué pasó?</h2>
-<p>. . .</p>
-<p><i class="fa-solid fa-xmark" aria-hidden="true"></i> Prevalencia &gt; 0</p>
-<p>. . .</p>
-<p><i class="fa-solid fa-xmark" aria-hidden="true"></i> Falta de atención</p>
-<p>. . .</p>
-<p><i class="fa-solid fa-check" aria-hidden="true"></i> LLama la atención</p>
-</section>
-<section id="qué-hacer" class="level2">
-<h2 class="anchored" data-anchor-id="qué-hacer">¿Qué hacer?</h2>
-<p>. . .</p>
+<section id="qué-hacer" class="slide level2 center">
+<h2>¿Qué hacer?</h2>
+<div class="fragment">
 <p><strong>Problema:</strong> Estimación inválida</p>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <p><strong>Idea:</strong> Imaginar cómo participantes habrían respondido sin el placebo</p>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <p>Equivalente a asumir que el estimando está <em>identificado parcialmente</em></p>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <p>Permite construir <strong>cotas no-paramétricas</strong></p>
+</div>
 </section>
-<section id="sharp-bounds" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="sharp-bounds">Sharp bounds</h2>
-<p>. . .</p>
+<section id="sharp-bounds" class="slide level2 center">
+<h2>Sharp bounds</h2>
+<div class="fragment">
 <p>Asumen solo datos + diseño experimental (SUTVA)</p>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <p><strong>Implica:</strong> Cambio solo en respuestas de control</p>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <p><strong>Sharp bounds:</strong> Imputar valor mínimo/máximo posible</p>
 
-<div class="no-row-height column-margin column-container"><div class="margin-aside">
+</div>
+<aside><div>
 <p><strong>En español:</strong> Cotas óptimas, estrechas, o ajustadas. <strong>Economía:</strong> <em>Manski bounds</em></p>
-</div></div></section>
-<section id="no-informa" class="level2">
-<h2 class="anchored" data-anchor-id="no-informa">No informa</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="puc_files/figure-revealjs/unnamed-chunk-22-1.png" class="img-fluid figure-img" data-fig-pos="center" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="no-informa-1" class="level2">
-<h2 class="anchored" data-anchor-id="no-informa-1">No informa</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="puc_files/figure-revealjs/unnamed-chunk-23-1.png" class="img-fluid figure-img" data-fig-pos="center" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="refinamiento-1" class="level2">
-<h2 class="anchored" data-anchor-id="refinamiento-1">Refinamiento 1</h2>
-<p>. . .</p>
+</div></aside></section>
+<section id="no-informa" class="slide level2 center">
+<h2>No informa</h2>
+
+<img data-src="puc_files/figure-revealjs/unnamed-chunk-22-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="no-informa-1" class="slide level2 center">
+<h2>No informa</h2>
+
+<img data-src="puc_files/figure-revealjs/unnamed-chunk-23-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="refinamiento-1" class="slide level2 center">
+<h2>Refinamiento 1</h2>
+<div class="fragment">
 <p><strong>Supuestos de experimentos de lista</strong></p>
-<div class="incremental">
-<ol class="incremental" type="1">
-<li><p><em>No liars:</em> Participante no cuenta el ítem sensible si no aplica</p></li>
-<li><p><em>No design effects:</em> Añadir/remover ítem sensible no cambia la cuenta de la lista base</p></li>
+<ol type="1">
+<li class="fragment"><p><em>No liars:</em> Participante no cuenta el ítem sensible si no aplica</p></li>
+<li class="fragment"><p><em>No design effects:</em> Añadir/remover ítem sensible no cambia la cuenta de la lista base</p></li>
 </ol>
 </div>
-<p>. . .</p>
+<div class="fragment">
 <p><strong>Implica:</strong></p>
-<div class="incremental">
-<ul class="incremental">
-<li>Cambio solo en respuestas de control</li>
-<li>… por una unidad</li>
+<ul>
+<li class="fragment">Cambio solo en respuestas de control</li>
+<li class="fragment">… por una unidad</li>
 </ul>
 </div>
 </section>
-<section id="cotas-con-supuestos-adicionales" class="level2">
-<h2 class="anchored" data-anchor-id="cotas-con-supuestos-adicionales">Cotas con supuestos adicionales</h2>
+<section id="cotas-con-supuestos-adicionales" class="slide level2 center">
+<h2>Cotas con supuestos adicionales</h2>
 <p><strong>Implica:</strong></p>
 <ul>
 <li>Cambio solo en respuestas de control</li>
 <li>… por una unidad</li>
 </ul>
-<p>. . .</p>
+<div class="fragment">
 <p><strong>Cota inferior:</strong> Respuestas de 5 se vuelven 4</p>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <p><strong>Cota superior:</strong> Respuestas de control -1 (truncado en 0)</p>
-</section>
-<section id="mejor" class="level2">
-<h2 class="anchored" data-anchor-id="mejor">¿Mejor?</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="puc_files/figure-revealjs/unnamed-chunk-24-1.png" class="img-fluid figure-img" data-fig-pos="center" width="960"></p>
-</figure>
-</div>
-</div>
 </div>
 </section>
-<section id="información-auxiliar" class="level2">
-<h2 class="anchored" data-anchor-id="información-auxiliar">Información auxiliar</h2>
+<section id="mejor" class="slide level2 center">
+<h2>¿Mejor?</h2>
+
+<img data-src="puc_files/figure-revealjs/unnamed-chunk-24-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="información-auxiliar" class="slide level2 center">
+<h2>Información auxiliar</h2>
 <p>Cota inferior es conservativa</p>
-<p>. . .</p>
+<div class="fragment">
 <p>Cota superior es <em>demasiado agresiva</em> porque asume todos habrían cambiado su respuesta</p>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <p>Podríamos mejorar si supieramos:</p>
 <ul>
 <li>A quién aplica el placebo en la cuesta</li>
 <li>Proporción a nivel agregado</li>
 </ul>
+</div>
 </section>
-<section id="refinamiento-2" class="level2">
-<h2 class="anchored" data-anchor-id="refinamiento-2">Refinamiento 2</h2>
+<section id="refinamiento-2" class="slide level2 center">
+<h2>Refinamiento 2</h2>
 <p><strong>Incorporar información auxiliar sobre placebo</strong></p>
-<p>. . .</p>
+<div class="fragment">
 <p><strong>Cota inferior:</strong> Respuestas de 5 se vuelven 4</p>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <p><strong>Cota superior:</strong></p>
 <p><span class="math display">\[
 \hat \tau_{H} = (1- \delta) \times \bar V_{obs} + \delta \times \bar V_{max}
@@ -1184,34 +1138,28 @@ Northwestern University<br>
 <p><span class="math inline">\(\delta\)</span>: Proporción placebo auxiliar</p>
 <p><span class="math inline">\(\bar V_{obs}\)</span>: Estimación con datos observados</p>
 <p><span class="math inline">\(\bar V_{max}\)</span>: Estimación asumiendo todas las respuestas disminuyen</p>
-<hr>
+</div>
+</section>
+<section class="slide level2 center">
+
 <p>No tenemos información sobre el placebo <i class="fa-solid fa-face-sad-tear" aria-hidden="true"></i></p>
-<p>. . .</p>
+<div class="fragment">
 <p>¡Pero podemos simular!</p>
-</section>
-<section id="simulando-proporción-placebo" class="level2">
-<h2 class="anchored" data-anchor-id="simulando-proporción-placebo">Simulando proporción placebo</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="puc_files/figure-revealjs/unnamed-chunk-25-1.png" class="img-fluid figure-img" data-fig-pos="center" width="960"></p>
-</figure>
-</div>
-</div>
 </div>
 </section>
-<section id="paper" class="level2">
-<h2 class="anchored" data-anchor-id="paper">Paper</h2>
-<div class="incremental">
-<ul class="incremental">
-<li><p><strong>Refinamiento 3:</strong> Incorporar preguntas directas sobre ítem sensible</p></li>
-<li><p><strong>Validación:</strong> Signos zodiacales en China</p></li>
+<section id="simulando-proporción-placebo" class="slide level2 center">
+<h2>Simulando proporción placebo</h2>
+
+<img data-src="puc_files/figure-revealjs/unnamed-chunk-25-1.png" data-fig-pos="center" width="960" class="r-stretch"></section>
+<section id="paper" class="slide level2 center">
+<h2>Paper</h2>
+<ul>
+<li class="fragment"><p><strong>Refinamiento 3:</strong> Incorporar preguntas directas sobre ítem sensible</p></li>
+<li class="fragment"><p><strong>Validación:</strong> Signos zodiacales en China</p></li>
 </ul>
-</div>
 </section>
-<section id="conclusión" class="level2">
-<h2 class="anchored" data-anchor-id="conclusión">Conclusión</h2>
+<section id="conclusión" class="slide level2 center">
+<h2>Conclusión</h2>
 <ul>
 <li><p>Método basado en diseño para recuperar estimaciones informatives en experimentos de lista cuando el control con placebo falla</p></li>
 <li><p>Basado en situación <em>extrema</em></p></li>
@@ -1220,471 +1168,437 @@ Northwestern University<br>
 <li><p>¡Hacer preguntas directas de todo!</p></li>
 </ul>
 </section>
-<section id="gracias" class="level2">
-<h2 class="anchored" data-anchor-id="gracias">¡Gracias!</h2>
+<section id="gracias" class="slide level2 center">
+<h2>¡Gracias!</h2>
 <p><strong>Contacto:</strong> <a href="mailto:gustavo.diaz@northwestern.edu" class="email">gustavo.diaz@northwestern.edu</a></p>
 <p><strong>Información adicional:</strong> <a href="https://gustavodiaz.org/puc">gustavodiaz.org/puc</a></p>
-<p><img src="puc_qr.png" class="absolute" data-bottom="0" data-right="-50" width="180" height="180"></p>
+<p><img data-src="puc_qr.png" class="absolute" style="bottom: 0px; right: -50px; width: 180px; height: 180px; "></p>
 
 
-</section>
-</section>
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
 
-</main> <!-- /main -->
+</div>
+</div></div>
 
-<script>
-  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-  // slide changes (different for each slide format).
-  (function () {
-    // dispatch for htmlwidgets
-    function fireSlideEnter() {
-      const event = window.document.createEvent("Event");
-      event.initEvent("slideenter", true, true);
-      window.document.dispatchEvent(event);
-    }
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-pointer/pointer.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
 
-    function fireSlideChanged(previousSlide, currentSlide) {
-      fireSlideEnter();
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
-      // dispatch for shiny
-      if (window.jQuery) {
-        if (previousSlide) {
-          window.jQuery(previousSlide).trigger("hidden");
-        }
-        if (currentSlide) {
-          window.jQuery(currentSlide).trigger("shown");
-        }
-      }
-    }
+  <script>
 
-    // hookup for slidy
-    if (window.w3c_slidy) {
-      window.w3c_slidy.add_observer(function (slide_num) {
-        // slide_num starts at position 1
-        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-      });
-    }
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'pointer': {"key":"q","color":"#FEC60D","pointerSize":32,"alwaysVisible":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
 
-  })();
-</script>
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
 
-<script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: false,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
         },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealPointer, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
       });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
         }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
             }
           }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
           }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
           }
-          return note.innerHTML;
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
         }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
         }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
         }
-      }
-    }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
         }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
             }
           } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
             });
           }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
         }
-      }, function(instance) {
       });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
-  });
-  </script>
-</div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>© 2026 Gustavo Diaz</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p>Powered by <a href="https://cran.r-project.org/"><i class="fa-brands fa-r-project" aria-hidden="true"></i></a> and <a href="https://quarto.org/">Quarto</a></p>
-</div>
-  </div>
-</footer>
-
-
-
+      </script>
+    
 
 </body></html>
