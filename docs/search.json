@@ -961,9 +961,9 @@
   {
     "objectID": "puc_extra.html",
     "href": "puc_extra.html",
-    "title": "Balancing Precision and Retention in Experimental Design",
+    "title": "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments",
     "section": "",
-    "text": "Item location\nSensitive item\n\n              \n                Sensitive\n                Placebo\n                Threaten\n                Evict\n                Donation\n                Work\n              \n        \n        \n        \n                \n                  List A\n                  List B\n                  328\n                  322\n                  339\n                  341\n                \n                \n                  List B\n                  List A\n                  340\n                  339\n                  326\n                  333\n                \n        \n      \n    \n\n\n\n\n\n\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Variable\n                N\n                Mean\n                SD\n                Min\n                Max\n              \n        \n        \n        \n                \n                  Age (years)\n                  2668\n                  41.372\n                  15.192\n                  18\n                  100\n                \n                \n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                \n                \n                  Female\n                  2668\n                  0.642\n                  0.479\n                  0\n                  1\n                \n                \n                  Male\n                  2668\n                  0.353\n                  0.478\n                  0\n                  1\n                \n                \n                  Other sex\n                  2668\n                  0.005\n                  0.070\n                  0\n                  1\n                \n                \n                  Education\n                  Education\n                  Education\n                  Education\n                  Education\n                  Education\n                \n                \n                  Primary incomplete\n                  2555\n                  0.023\n                  0.149\n                  0\n                  1\n                \n                \n                  Primary complete\n                  2555\n                  0.069\n                  0.254\n                  0\n                  1\n                \n                \n                  Secondary incomplete\n                  2555\n                  0.291\n                  0.454\n                  0\n                  1\n                \n                \n                  Secondary complete\n                  2555\n                  0.190\n                  0.392\n                  0\n                  1\n                \n                \n                  Tertiary incomplete\n                  2555\n                  0.264\n                  0.441\n                  0\n                  1\n                \n                \n                  Tertiary complete\n                  2555\n                  0.163\n                  0.370\n                  0\n                  1\n                \n                \n                  Race\n                  Race\n                  Race\n                  Race\n                  Race\n                  Race\n                \n                \n                  White\n                  2525\n                  0.741\n                  0.438\n                  0\n                  1\n                \n                \n                  Afro-descendant\n                  2525\n                  0.104\n                  0.306\n                  0\n                  1\n                \n                \n                  Indigenous\n                  2525\n                  0.069\n                  0.253\n                  0\n                  1\n                \n                \n                  Other race\n                  2525\n                  0.086\n                  0.280\n                  0\n                  1\n                \n                \n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                \n                \n                  Worked last week\n                  2545\n                  0.560\n                  0.496\n                  0\n                  1\n                \n                \n                  Income\n                  Income\n                  Income\n                  Income\n                  Income\n                  Income\n                \n                \n                  Not enough, faces great difficulties\n                  2519\n                  0.112\n                  0.316\n                  0\n                  1\n                \n                \n                  Not enough, faces some difficulty\n                  2519\n                  0.353\n                  0.478\n                  0\n                  1\n                \n                \n                  Enough to make ends meet\n                  2519\n                  0.424\n                  0.494\n                  0\n                  1\n                \n                \n                  Enough to save\n                  2519\n                  0.110\n                  0.313\n                  0\n                  1\n                \n        \n      \n    \n\n\n\n\n\n\n[Convert chi_bar.pdf to png]\n\n\n\n[Convert main.pdf to png]"
+    "text": "Item location\nSensitive item\n\n              \n                Sensitive\n                Placebo\n                Threaten\n                Evict\n                Donation\n                Work\n              \n        \n        \n        \n                \n                  List A\n                  List B\n                  328\n                  322\n                  339\n                  341\n                \n                \n                  List B\n                  List A\n                  340\n                  339\n                  326\n                  333\n                \n        \n      \n    \n\n\n\n\n\n\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Variable\n                N\n                Mean\n                SD\n                Min\n                Max\n              \n        \n        \n        \n                \n                  Age (years)\n                  2668\n                  41.372\n                  15.192\n                  18\n                  100\n                \n                \n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                \n                \n                  Female\n                  2668\n                  0.642\n                  0.479\n                  0\n                  1\n                \n                \n                  Male\n                  2668\n                  0.353\n                  0.478\n                  0\n                  1\n                \n                \n                  Other sex\n                  2668\n                  0.005\n                  0.070\n                  0\n                  1\n                \n                \n                  Education\n                  Education\n                  Education\n                  Education\n                  Education\n                  Education\n                \n                \n                  Primary incomplete\n                  2555\n                  0.023\n                  0.149\n                  0\n                  1\n                \n                \n                  Primary complete\n                  2555\n                  0.069\n                  0.254\n                  0\n                  1\n                \n                \n                  Secondary incomplete\n                  2555\n                  0.291\n                  0.454\n                  0\n                  1\n                \n                \n                  Secondary complete\n                  2555\n                  0.190\n                  0.392\n                  0\n                  1\n                \n                \n                  Tertiary incomplete\n                  2555\n                  0.264\n                  0.441\n                  0\n                  1\n                \n                \n                  Tertiary complete\n                  2555\n                  0.163\n                  0.370\n                  0\n                  1\n                \n                \n                  Race\n                  Race\n                  Race\n                  Race\n                  Race\n                  Race\n                \n                \n                  White\n                  2525\n                  0.741\n                  0.438\n                  0\n                  1\n                \n                \n                  Afro-descendant\n                  2525\n                  0.104\n                  0.306\n                  0\n                  1\n                \n                \n                  Indigenous\n                  2525\n                  0.069\n                  0.253\n                  0\n                  1\n                \n                \n                  Other race\n                  2525\n                  0.086\n                  0.280\n                  0\n                  1\n                \n                \n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                \n                \n                  Worked last week\n                  2545\n                  0.560\n                  0.496\n                  0\n                  1\n                \n                \n                  Income\n                  Income\n                  Income\n                  Income\n                  Income\n                  Income\n                \n                \n                  Not enough, faces great difficulties\n                  2519\n                  0.112\n                  0.316\n                  0\n                  1\n                \n                \n                  Not enough, faces some difficulty\n                  2519\n                  0.353\n                  0.478\n                  0\n                  1\n                \n                \n                  Enough to make ends meet\n                  2519\n                  0.424\n                  0.494\n                  0\n                  1\n                \n                \n                  Enough to save\n                  2519\n                  0.110\n                  0.313\n                  0\n                  1"
   },
   {
     "objectID": "puc_extra.html#estimator",
@@ -3873,308 +3873,308 @@
   {
     "objectID": "puc.html#recovering-informative-estimates-in-failed-placebo-controlled-list-experiments",
     "href": "puc.html#recovering-informative-estimates-in-failed-placebo-controlled-list-experiments",
-    "title": "Gustavo Diaz",
-    "section": "Recovering Informative Estimatesin Failed Placebo-ControlledList Experiments",
-    "text": "Recovering Informative Estimatesin Failed Placebo-ControlledList Experiments\n \nGustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\n \nPaper y presentación: gustavodiaz.org/puc"
+    "title": "Experimentos de lista",
+    "section": "",
+    "text": "Gustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\n \nPaper y presentación: gustavodiaz.org/puc"
   },
   {
     "objectID": "puc.html#erc-starting-grant",
     "href": "puc.html#erc-starting-grant",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "ERC Starting Grant",
     "text": "ERC Starting Grant\nCriminal Governance in Unexpected Contexts: the Role of the Welfare State in Latin America\n\nVerónica Pérez Bentancur (Universidad de la República)\nInes Fynn (Universidad Católica del Uruguay )\nLucía Tiscornia (University College Dublin)"
   },
   {
     "objectID": "puc.html#puntos-clave",
     "href": "puc.html#puntos-clave",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Puntos clave",
     "text": "Puntos clave\n\nExperimento de lista en Uruguay\nControl con placebo arruinó resultados\nIdeas de identificación parcial ayudan a recuperar estimaciones informativas"
   },
   {
     "objectID": "puc.html#agenda",
     "href": "puc.html#agenda",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Agenda",
     "text": "Agenda\n\nDiseño de experimentos de lista\nExperimento fallido\nRecuperando estimaciones informativas"
   },
   {
     "objectID": "puc.html#reduce-sesgo-por-sensibilidad",
     "href": "puc.html#reduce-sesgo-por-sensibilidad",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Reduce sesgo por sensibilidad",
     "text": "Reduce sesgo por sensibilidad"
   },
   {
     "objectID": "puc.html#reduce-sesgo-por-sensibilidad-1",
     "href": "puc.html#reduce-sesgo-por-sensibilidad-1",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Reduce sesgo por sensibilidad",
     "text": "Reduce sesgo por sensibilidad"
   },
   {
     "objectID": "puc.html#reduce-sesgo-por-sensibilidad-2",
     "href": "puc.html#reduce-sesgo-por-sensibilidad-2",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Reduce sesgo por sensibilidad",
     "text": "Reduce sesgo por sensibilidad"
   },
   {
     "objectID": "puc.html#reduce-sesgo-por-sensibilidad-3",
     "href": "puc.html#reduce-sesgo-por-sensibilidad-3",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Reduce sesgo por sensibilidad",
     "text": "Reduce sesgo por sensibilidad"
   },
   {
     "objectID": "puc.html#y-a-mí-qué-me-importa",
     "href": "puc.html#y-a-mí-qué-me-importa",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "¿Y a mí, qué me importa?",
     "text": "¿Y a mí, qué me importa?"
   },
   {
     "objectID": "puc.html#problema",
     "href": "puc.html#problema",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Problema",
-    "text": "Problema\n\nResultados dependen de la lista base"
+    "text": "Problema\n. . .\nResultados dependen de la lista base\n\n\n\n\n\n\n\n\n\n\nLista A\nLista B\n\n\n\n\nCalifornians for Disability\nAmerican Legion\n\n\nCalifornia NationalOrganization for Women\nEquality California\n\n\nAmerican Family Association\nTea Party Patriots\n\n\nAmerican Red Cross\nSalvation Army\n\n\n\n. . .\nÍtem sensible: Citizen order patrol combating undocumented immigration\n\n\n\n\n\n\n\n\n\n\n\n\nAdaptado de Diaz (2023)\n\n\n\n\n\n\n\n\n\n\n\n\nAdaptado de Diaz (2023)"
   },
   {
     "objectID": "puc.html#problema-1",
     "href": "puc.html#problema-1",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Problema",
-    "text": "Problema\nResultados dependen de la lista base\n\nOrigen\n\n\n\nErrores estratégicos\nErrores no estratégicos"
+    "text": "Problema\nResultados dependen de la lista base\n. . .\nOrigen\n. . .\n\nErrores estratégicos\nErrores no estratégicos"
   },
   {
     "objectID": "puc.html#problema-2",
     "href": "puc.html#problema-2",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Problema",
     "text": "Problema\nResultados dependen de la lista base\nOrigen\n\nErrores estratégicos\nErrores no estratégicos"
   },
   {
     "objectID": "puc.html#error-no-estratégico",
     "href": "puc.html#error-no-estratégico",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Error no estratégico",
-    "text": "Error no estratégico\nCosas que molestan\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Control\n                Tratamiento\n              \n        \n        \n        \n                \n                  Gobierno sube el impuesto a la bencina\n                  Gobierno sube el impuesto a la bencina\n                \n                \n                  Futbolistas reciben salarios millonarios\n                  Futbolistas reciben salarios millonarios\n                \n                \n                  Empresas contaminan el medio ambiente\n                  Empresas contaminan el medio ambiente\n                \n                \n                  \n                  Familia venezolana se muda al lado\n                \n        \n      \n    \n\n\n\n\n \n\nLista tratamiendo es más larga\n\n\n\n\n\n\n\nEstimación positiva de manera artificial"
+    "text": "Error no estratégico\nCosas que molestan\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Control\n                Tratamiento\n              \n        \n        \n        \n                \n                  Gobierno sube el impuesto a la bencina\n                  Gobierno sube el impuesto a la bencina\n                \n                \n                  Futbolistas reciben salarios millonarios\n                  Futbolistas reciben salarios millonarios\n                \n                \n                  Empresas contaminan el medio ambiente\n                  Empresas contaminan el medio ambiente\n                \n                \n                  \n                  Familia venezolana se muda al lado\n                \n        \n      \n    \n\n\n\n. . .\n \n\nLista tratamiendo es más larga\n\n. . .\n\n\n\n\nEstimación positiva de manera artificial"
   },
   {
     "objectID": "puc.html#error-no-estratégico-1",
     "href": "puc.html#error-no-estratégico-1",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Error no estratégico",
     "text": "Error no estratégico\nCosas que molestan\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Control\n                Tratamiento\n              \n        \n        \n        \n                \n                  Gobierno sube el impuesto a la bencina\n                  Gobierno sube el impuesto a la bencina\n                \n                \n                  Futbolistas reciben salarios millonarios\n                  Futbolistas reciben salarios millonarios\n                \n                \n                  Empresas contaminan el medio ambiente\n                  Empresas contaminan el medio ambiente\n                \n                \n                  \n                  Familia venezolana se muda al lado\n                \n        \n      \n    \n\n\n\nSolución: Añadir ítem placebo"
   },
   {
     "objectID": "puc.html#error-no-estratégico-2",
     "href": "puc.html#error-no-estratégico-2",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Error no estratégico",
     "text": "Error no estratégico\nCosas que molestan\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Control\n                Tratamiento\n              \n        \n        \n        \n                \n                  Gobierno sube el impuesto a la bencina\n                  Gobierno sube el impuesto a la bencina\n                \n                \n                  Futbolistas reciben salarios millonarios\n                  Futbolistas reciben salarios millonarios\n                \n                \n                  Empresas contaminan el medio ambiente\n                  Empresas contaminan el medio ambiente\n                \n                \n                  Vagón del metro viene vacío\n                  Familia venezolana se muda al lado\n                \n        \n      \n    \n\n\n\nSolución: Añadir ítem placebo"
   },
   {
     "objectID": "puc.html#placebo-controlled-list-experiments",
     "href": "puc.html#placebo-controlled-list-experiments",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Placebo-controlled list experiments",
-    "text": "Placebo-controlled list experiments\n\nVentaja\nReduce sesgo por inflación artificial de manera eficiente\n\n\nSólo 5/81 estudios desde 2014 usan este diseño"
+    "text": "Placebo-controlled list experiments\n. . .\nVentaja\nReduce sesgo por inflación artificial de manera eficiente\n. . .\nSólo 5/81 estudios desde 2014 usan este diseño"
   },
   {
     "objectID": "puc.html#por-qué",
     "href": "puc.html#por-qué",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "¿Por qué?",
     "text": "¿Por qué?"
   },
   {
     "objectID": "puc.html#mantra",
     "href": "puc.html#mantra",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Mantra",
-    "text": "Mantra\n\nMejoras en sesgo/varianza que no comprometen la otra dimensión imponen costos ocultos\n\n\n Ítem placebo puede sustituir un tipo de sesgo por otro"
+    "text": "Mantra\n. . .\nMejoras en sesgo/varianza que no comprometen la otra dimensión imponen costos ocultos\n. . .\n Ítem placebo puede sustituir un tipo de sesgo por otro"
   },
   {
     "objectID": "puc.html#nos-pasó-a-nosotros",
     "href": "puc.html#nos-pasó-a-nosotros",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "¡Nos pasó a nosotros!",
     "text": "¡Nos pasó a nosotros!"
   },
   {
     "objectID": "puc.html#double-list-experiment",
     "href": "puc.html#double-list-experiment",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Double list experiment",
     "text": "Double list experiment\nHa experimentado (en su barrio) en los últimos seis meses:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Lista A\n                Lista B\n              \n        \n        \n        \n                \n                  Vi personas haciendo deporte\n                  Vi personas jugando al fútbol\n                \n                \n                  Visité amigos el fin de semana\n                  Conversé con mis amigos\n                \n                \n                  Participé en actividades organizadas por grupos feministas\n                  Participé en actividades organizadas por grupos de la diversidad sexual\n                \n                \n                  Participé en ceremonias religiosas\n                  Participé en actividades solidarias en la iglesia\n                \n        \n      \n    \n\n\n\n\n\nMuestra online en Montevideo. \\(N = 2688\\).Aleatorizado en bloque por zonas policiales de riesgo."
   },
   {
     "objectID": "puc.html#manipulaciones",
     "href": "puc.html#manipulaciones",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Manipulaciones",
-    "text": "Manipulaciones\n\nÍtems sensibles:\n\nVi a miembros de bandas amenazar a vecinos\nVi a miembros de bandas sacar a vecinos de sus casas\nVi a miembros de bandas hacer donaciones\nVi a miembros de bandas ofrecer trabajo"
+    "text": "Manipulaciones\n. . .\nÍtems sensibles:\n\nVi a miembros de bandas amenazar a vecinos\nVi a miembros de bandas sacar a vecinos de sus casas\nVi a miembros de bandas hacer donaciones\nVi a miembros de bandas ofrecer trabajo"
   },
   {
     "objectID": "puc.html#manipulaciones-1",
     "href": "puc.html#manipulaciones-1",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Manipulaciones",
     "text": "Manipulaciones\nÍtems sensibles:\n\nVi a miembros de bandas amenazar a vecinos\nVi a miembros de bandas sacar a vecinos de sus casas\nVi a miembros de bandas hacer donaciones\nVi a miembros de bandas ofrecer trabajo"
   },
   {
     "objectID": "puc.html#manipulaciones-2",
     "href": "puc.html#manipulaciones-2",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Manipulaciones",
     "text": "Manipulaciones\nÍtem placebo:\n\nNo tomé mate"
   },
   {
     "objectID": "puc.html#double-list-experiment-1",
     "href": "puc.html#double-list-experiment-1",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Double list experiment",
     "text": "Double list experiment\nHa experimentado (en su barrio) en los últimos seis meses:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Lista A\n                Lista B\n              \n        \n        \n        \n                \n                  Vi personas haciendo deporte\n                  Vi personas jugando al fútbol\n                \n                \n                  Visité amigos el fin de semana\n                  Conversé con mis amigos\n                \n                \n                  Participé en actividades organizadas por grupos feministas\n                  Participé en actividades organizadas por grupos de la diversidad sexual\n                \n                \n                  Participé en ceremonias religiosas\n                  Participé en actividades solidarias en la iglesia"
   },
   {
     "objectID": "puc.html#double-list-experiment-2",
     "href": "puc.html#double-list-experiment-2",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Double list experiment",
     "text": "Double list experiment\nHa experimentado (en su barrio) en los últimos seis meses:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Lista A\n                Lista B\n              \n        \n        \n        \n                \n                  Vi personas haciendo deporte\n                  Vi personas jugando al fútbol\n                \n                \n                  Visité amigos el fin de semana\n                  Conversé con mis amigos\n                \n                \n                  Participé en actividades organizadas por grupos feministas\n                  Participé en actividades organizadas por grupos de la diversidad sexual\n                \n                \n                  Participé en ceremonias religiosas\n                  Participé en actividades solidarias en la iglesia\n                \n                \n                  Vi a miembros de bandas amenazar a vecinos\n                  No tomé mate"
   },
   {
     "objectID": "puc.html#double-list-experiment-3",
     "href": "puc.html#double-list-experiment-3",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Double list experiment",
     "text": "Double list experiment\nHa experimentado (en su barrio) en los últimos seis meses:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Lista A\n                Lista B\n              \n        \n        \n        \n                \n                  Vi personas haciendo deporte\n                  Vi personas jugando al fútbol\n                \n                \n                  Visité amigos el fin de semana\n                  Conversé con mis amigos\n                \n                \n                  Participé en actividades organizadas por grupos feministas\n                  Participé en actividades organizadas por grupos de la diversidad sexual\n                \n                \n                  Participé en ceremonias religiosas\n                  Participé en actividades solidarias en la iglesia\n                \n                \n                  No tomé mate\n                  Vi a miembros de bandas amenazar a vecinos"
   },
   {
     "objectID": "puc.html#estimadores",
     "href": "puc.html#estimadores",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Estimadores",
-    "text": "Estimadores\n\n\\[\n\\hat{\\tau}_A = \\widehat E[Y_{iA }(1)] - \\widehat E[Y_{iA }(0)]\n\\]\n\ndifference_in_means(count ~ z, subset = list == \"A\", data = df)\n\n\n\n\\[\n\\hat{\\tau}_B = \\widehat E[Y_{iB }(1)] - \\widehat E[Y_{iB }(0)]\n\\]\n\ndifference_in_means(count ~ z, subset = list == \"B\", data = df )\n\n\n\n\\[\n\\hat{\\tau}_{Doble} = \\frac{(\\hat{\\tau}_A + \\hat{\\tau}_B)}{2}\n\\]\n\nlm_robust(count ~ z + list, clusters = id, data = df)"
+    "text": "Estimadores\n. . .\n\\[\n\\hat{\\tau}_A = \\widehat E[Y_{iA }(1)] - \\widehat E[Y_{iA }(0)]\n\\]\n\ndifference_in_means(count ~ z, subset = list == \"A\", data = df)\n\n. . .\n\\[\n\\hat{\\tau}_B = \\widehat E[Y_{iB }(1)] - \\widehat E[Y_{iB }(0)]\n\\]\n\ndifference_in_means(count ~ z, subset = list == \"B\", data = df )\n\n. . .\n\\[\n\\hat{\\tau}_{Doble} = \\frac{(\\hat{\\tau}_A + \\hat{\\tau}_B)}{2}\n\\]\n\nlm_robust(count ~ z + list, clusters = id, data = df)"
   },
   {
     "objectID": "puc.html#resultados",
     "href": "puc.html#resultados",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Resultados",
     "text": "Resultados"
   },
   {
     "objectID": "puc.html#resultados-1",
     "href": "puc.html#resultados-1",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Resultados",
     "text": "Resultados"
   },
   {
     "objectID": "puc.html#resultados-2",
     "href": "puc.html#resultados-2",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Resultados",
     "text": "Resultados"
   },
   {
     "objectID": "puc.html#qué-pasó",
     "href": "puc.html#qué-pasó",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "¿Qué pasó?",
-    "text": "¿Qué pasó?\n\n Prevalencia &gt; 0\n\n\n Falta de atención\n\n\n LLama la atención"
+    "text": "¿Qué pasó?\n. . .\n Prevalencia &gt; 0\n. . .\n Falta de atención\n. . .\n LLama la atención"
   },
   {
     "objectID": "puc.html#qué-hacer",
     "href": "puc.html#qué-hacer",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "¿Qué hacer?",
-    "text": "¿Qué hacer?\n\nProblema: Estimación inválida\n\n\nIdea: Imaginar cómo participantes habrían respondido sin el placebo\n\n\nEquivalente a asumir que el estimando está identificado parcialmente\n\n\nPermite construir cotas no-paramétricas"
+    "text": "¿Qué hacer?\n. . .\nProblema: Estimación inválida\n. . .\nIdea: Imaginar cómo participantes habrían respondido sin el placebo\n. . .\nEquivalente a asumir que el estimando está identificado parcialmente\n. . .\nPermite construir cotas no-paramétricas"
   },
   {
     "objectID": "puc.html#sharp-bounds",
     "href": "puc.html#sharp-bounds",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Sharp bounds",
-    "text": "Sharp bounds\n\nAsumen solo datos + diseño experimental (SUTVA)\n\n\nImplica: Cambio solo en respuestas de control\n\n\nSharp bounds: Imputar valor mínimo/máximo posible\n\n\n\nEn español: Cotas óptimas, estrechas, o ajustadas. Economía: Manski bounds"
+    "text": "Sharp bounds\n. . .\nAsumen solo datos + diseño experimental (SUTVA)\n. . .\nImplica: Cambio solo en respuestas de control\n. . .\nSharp bounds: Imputar valor mínimo/máximo posible\n\n\nEn español: Cotas óptimas, estrechas, o ajustadas. Economía: Manski bounds"
   },
   {
     "objectID": "puc.html#no-informa",
     "href": "puc.html#no-informa",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "No informa",
     "text": "No informa"
   },
   {
     "objectID": "puc.html#no-informa-1",
     "href": "puc.html#no-informa-1",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "No informa",
     "text": "No informa"
   },
   {
     "objectID": "puc.html#refinamiento-1",
     "href": "puc.html#refinamiento-1",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Refinamiento 1",
-    "text": "Refinamiento 1\n\nSupuestos de experimentos de lista\n\nNo liars: Participante no cuenta el ítem sensible si no aplica\nNo design effects: Añadir/remover ítem sensible no cambia la cuenta de la lista base\n\n\n\nImplica:\n\nCambio solo en respuestas de control\n… por una unidad"
+    "text": "Refinamiento 1\n. . .\nSupuestos de experimentos de lista\n\n\nNo liars: Participante no cuenta el ítem sensible si no aplica\nNo design effects: Añadir/remover ítem sensible no cambia la cuenta de la lista base\n\n\n. . .\nImplica:\n\n\nCambio solo en respuestas de control\n… por una unidad"
   },
   {
     "objectID": "puc.html#cotas-con-supuestos-adicionales",
     "href": "puc.html#cotas-con-supuestos-adicionales",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Cotas con supuestos adicionales",
-    "text": "Cotas con supuestos adicionales\nImplica:\n\nCambio solo en respuestas de control\n… por una unidad\n\n\nCota inferior: Respuestas de 5 se vuelven 4\n\n\nCota superior: Respuestas de control -1 (truncado en 0)"
+    "text": "Cotas con supuestos adicionales\nImplica:\n\nCambio solo en respuestas de control\n… por una unidad\n\n. . .\nCota inferior: Respuestas de 5 se vuelven 4\n. . .\nCota superior: Respuestas de control -1 (truncado en 0)"
   },
   {
     "objectID": "puc.html#mejor",
     "href": "puc.html#mejor",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "¿Mejor?",
     "text": "¿Mejor?"
   },
   {
     "objectID": "puc.html#información-auxiliar",
     "href": "puc.html#información-auxiliar",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Información auxiliar",
-    "text": "Información auxiliar\nCota inferior es conservativa\n\nCota superior es demasiado agresiva porque asume todos habrían cambiado su respuesta\n\n\nPodríamos mejorar si supieramos:\n\nA quién aplica el placebo en la cuesta\nProporción a nivel agregado"
+    "text": "Información auxiliar\nCota inferior es conservativa\n. . .\nCota superior es demasiado agresiva porque asume todos habrían cambiado su respuesta\n. . .\nPodríamos mejorar si supieramos:\n\nA quién aplica el placebo en la cuesta\nProporción a nivel agregado"
   },
   {
     "objectID": "puc.html#refinamiento-2",
     "href": "puc.html#refinamiento-2",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Refinamiento 2",
-    "text": "Refinamiento 2\nIncorporar información auxiliar sobre placebo\n\nCota inferior: Respuestas de 5 se vuelven 4\n\n\nCota superior:\n\\[\n\\hat \\tau_{H} = (1- \\delta) \\times \\bar V_{obs} + \\delta \\times \\bar V_{max}\n\\]\n\\(\\delta\\): Proporción placebo auxiliar\n\\(\\bar V_{obs}\\): Estimación con datos observados\n\\(\\bar V_{max}\\): Estimación asumiendo todas las respuestas disminuyen"
+    "text": "Refinamiento 2\nIncorporar información auxiliar sobre placebo\n. . .\nCota inferior: Respuestas de 5 se vuelven 4\n. . .\nCota superior:\n\\[\n\\hat \\tau_{H} = (1- \\delta) \\times \\bar V_{obs} + \\delta \\times \\bar V_{max}\n\\]\n\\(\\delta\\): Proporción placebo auxiliar\n\\(\\bar V_{obs}\\): Estimación con datos observados\n\\(\\bar V_{max}\\): Estimación asumiendo todas las respuestas disminuyen\n\nNo tenemos información sobre el placebo \n. . .\n¡Pero podemos simular!"
   },
   {
     "objectID": "puc.html#simulando-proporción-placebo",
     "href": "puc.html#simulando-proporción-placebo",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Simulando proporción placebo",
     "text": "Simulando proporción placebo"
   },
   {
     "objectID": "puc.html#paper",
     "href": "puc.html#paper",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Paper",
-    "text": "Paper\n\nRefinamiento 3: Incorporar preguntas directas sobre ítem sensible\nValidación: Signos zodiacales en China"
+    "text": "Paper\n\n\nRefinamiento 3: Incorporar preguntas directas sobre ítem sensible\nValidación: Signos zodiacales en China"
   },
   {
     "objectID": "puc.html#conclusión",
     "href": "puc.html#conclusión",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "Conclusión",
     "text": "Conclusión\n\nMétodo basado en diseño para recuperar estimaciones informatives en experimentos de lista cuando el control con placebo falla\nBasado en situación extrema\nHerramienta para justificar diseño de lista\nReflejo de cómo usar propiedades estadísticas para informar diseño de investigación\n¡Hacer preguntas directas de todo!"
   },
   {
     "objectID": "puc.html#gracias",
     "href": "puc.html#gracias",
-    "title": "Gustavo Diaz",
+    "title": "Experimentos de lista",
     "section": "¡Gracias!",
     "text": "¡Gracias!\nContacto: gustavo.diaz@northwestern.edu\nInformación adicional: gustavodiaz.org/puc"
   },
@@ -5175,7 +5175,7 @@
   {
     "objectID": "puc_extra.html#sample-sizes-by-experimental-condition",
     "href": "puc_extra.html#sample-sizes-by-experimental-condition",
-    "title": "Balancing Precision and Retention in Experimental Design",
+    "title": "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments",
     "section": "",
     "text": "Item location\nSensitive item\n\n              \n                Sensitive\n                Placebo\n                Threaten\n                Evict\n                Donation\n                Work\n              \n        \n        \n        \n                \n                  List A\n                  List B\n                  328\n                  322\n                  339\n                  341\n                \n                \n                  List B\n                  List A\n                  340\n                  339\n                  326\n                  333"
   },
@@ -5196,22 +5196,85 @@
   {
     "objectID": "puc_extra.html#sample-characteristics",
     "href": "puc_extra.html#sample-characteristics",
-    "title": "Balancing Precision and Retention in Experimental Design",
+    "title": "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments",
     "section": "",
     "text": "Variable\n                N\n                Mean\n                SD\n                Min\n                Max\n              \n        \n        \n        \n                \n                  Age (years)\n                  2668\n                  41.372\n                  15.192\n                  18\n                  100\n                \n                \n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                  Sex\n                \n                \n                  Female\n                  2668\n                  0.642\n                  0.479\n                  0\n                  1\n                \n                \n                  Male\n                  2668\n                  0.353\n                  0.478\n                  0\n                  1\n                \n                \n                  Other sex\n                  2668\n                  0.005\n                  0.070\n                  0\n                  1\n                \n                \n                  Education\n                  Education\n                  Education\n                  Education\n                  Education\n                  Education\n                \n                \n                  Primary incomplete\n                  2555\n                  0.023\n                  0.149\n                  0\n                  1\n                \n                \n                  Primary complete\n                  2555\n                  0.069\n                  0.254\n                  0\n                  1\n                \n                \n                  Secondary incomplete\n                  2555\n                  0.291\n                  0.454\n                  0\n                  1\n                \n                \n                  Secondary complete\n                  2555\n                  0.190\n                  0.392\n                  0\n                  1\n                \n                \n                  Tertiary incomplete\n                  2555\n                  0.264\n                  0.441\n                  0\n                  1\n                \n                \n                  Tertiary complete\n                  2555\n                  0.163\n                  0.370\n                  0\n                  1\n                \n                \n                  Race\n                  Race\n                  Race\n                  Race\n                  Race\n                  Race\n                \n                \n                  White\n                  2525\n                  0.741\n                  0.438\n                  0\n                  1\n                \n                \n                  Afro-descendant\n                  2525\n                  0.104\n                  0.306\n                  0\n                  1\n                \n                \n                  Indigenous\n                  2525\n                  0.069\n                  0.253\n                  0\n                  1\n                \n                \n                  Other race\n                  2525\n                  0.086\n                  0.280\n                  0\n                  1\n                \n                \n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                  Employment\n                \n                \n                  Worked last week\n                  2545\n                  0.560\n                  0.496\n                  0\n                  1\n                \n                \n                  Income\n                  Income\n                  Income\n                  Income\n                  Income\n                  Income\n                \n                \n                  Not enough, faces great difficulties\n                  2519\n                  0.112\n                  0.316\n                  0\n                  1\n                \n                \n                  Not enough, faces some difficulty\n                  2519\n                  0.353\n                  0.478\n                  0\n                  1\n                \n                \n                  Enough to make ends meet\n                  2519\n                  0.424\n                  0.494\n                  0\n                  1\n                \n                \n                  Enough to save\n                  2519\n                  0.110\n                  0.313\n                  0\n                  1"
   },
   {
     "objectID": "puc_extra.html#observed-responses",
     "href": "puc_extra.html#observed-responses",
-    "title": "Balancing Precision and Retention in Experimental Design",
+    "title": "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments",
     "section": "",
     "text": "[Convert chi_bar.pdf to png]"
   },
   {
     "objectID": "puc_extra.html#results-with-all-items",
     "href": "puc_extra.html#results-with-all-items",
-    "title": "Balancing Precision and Retention in Experimental Design",
+    "title": "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments",
     "section": "",
     "text": "[Convert main.pdf to png]"
+  },
+  {
+    "objectID": "puc_extra.html#bounds-with-direct-questions",
+    "href": "puc_extra.html#bounds-with-direct-questions",
+    "title": "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments",
+    "section": "",
+    "text": "[CONTINUE HERE]"
+  },
+  {
+    "objectID": "puc.html",
+    "href": "puc.html",
+    "title": "Experimentos de lista",
+    "section": "",
+    "text": "Gustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\n \nPaper y presentación: gustavodiaz.org/puc"
+  },
+  {
+    "objectID": "puc_extra.html#positive-placebo-responses",
+    "href": "puc_extra.html#positive-placebo-responses",
+    "title": "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments",
+    "section": "Positive placebo responses",
+    "text": "Positive placebo responses\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Item\n                Statistic\n                p-value\n                n\n              \n        \n        Note: Statistic represents prevalence estimate among those who admit to sensitive item in direct question. p-values drawn from a model that includes block fixed-effects and clustered standard errors by respondent, testing the hypothesis of Statistic = 1.\n        \n                \n                  List A\n                  List A\n                  List A\n                  List A\n                \n                \n                  Threatening neighbors\n                  -0.851\n                  0.000\n                  102\n                \n                \n                  Evicting neighbors\n                  -0.585\n                  0.235\n                  32\n                \n                \n                  Making donations\n                  -0.539\n                  0.021\n                  133\n                \n                \n                  Offering work\n                  -0.820\n                  0.011\n                  64\n                \n                \n                  List B\n                  List B\n                  List B\n                  List B\n                \n                \n                  Threatening neighbors\n                  -0.612\n                  0.010\n                  102\n                \n                \n                  Evicting neighbors\n                  -1.106\n                  0.003\n                  32\n                \n                \n                  Making donations\n                  -1.259\n                  0.000\n                  133\n                \n                \n                  Offering work\n                  -1.131\n                  0.004\n                  64\n                \n                \n                  Double\n                  Double\n                  Double\n                  Double\n                \n                \n                  Threatening neighbors\n                  -0.755\n                  0.000\n                  102\n                \n                \n                  Evicting neighbors\n                  -0.860\n                  0.000\n                  32\n                \n                \n                  Making donations\n                  -0.916\n                  0.000\n                  133\n                \n                \n                  Offering work\n                  -0.971\n                  0.000\n                  64"
+  },
+  {
+    "objectID": "puc_extra.html#attention-check-failed-response",
+    "href": "puc_extra.html#attention-check-failed-response",
+    "title": "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments",
+    "section": "Attention check failed response",
+    "text": "Attention check failed response\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Item\n                Estimate\n                SE\n                p-value\n              \n        \n        Note: Estimates represent the regression coefficient for the interaction between a binary indicator denoting whether the respondent failed the attention check and the sensitive item placement indicator. Drawn from OLS regression models with block fixed effects and HC2 robust standard errors (for List A and) and clustered standard errors by respondent (for the Double list experiment).\n        \n                \n                  List A\n                  List A\n                  List A\n                  List A\n                \n                \n                  Threatening neighbors\n                  0.015\n                  0.346\n                  0.96495\n                \n                \n                  Evicting neighbors\n                  0.132\n                  0.268\n                  0.6239\n                \n                \n                  Making donations\n                  -0.253\n                  0.233\n                  0.28112\n                \n                \n                  Offering work\n                  0.335\n                  0.196\n                  0.091\n                \n                \n                  List B\n                  List B\n                  List B\n                  List B\n                \n                \n                  Threatening neighbors\n                  -0.015\n                  0.475\n                  0.97478\n                \n                \n                  Evicting neighbors\n                  0.402\n                  0.411\n                  0.32851\n                \n                \n                  Making donations\n                  -0.615\n                  0.402\n                  0.12648\n                \n                \n                  Offering work\n                  -0.244\n                  0.325\n                  0.45411\n                \n                \n                  Double\n                  Double\n                  Double\n                  Double\n                \n                \n                  Threatening neighbors\n                  0.128\n                  0.456\n                  0.77951\n                \n                \n                  Evicting neighbors\n                  -0.192\n                  0.434\n                  0.65909\n                \n                \n                  Making donations\n                  0.140\n                  0.454\n                  0.75733\n                \n                \n                  Offering work\n                  0.935\n                  0.335\n                  0.00539"
+  },
+  {
+    "objectID": "puc_extra.html#attention-check-raw-response",
+    "href": "puc_extra.html#attention-check-raw-response",
+    "title": "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments",
+    "section": "Attention check raw response",
+    "text": "Attention check raw response\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Item\n                Estimate\n                SE\n                p-value\n              \n        \n        Note: Estimates represent the regression coefficient for the interaction between the raw mock vignette response and the sensitive item placement indicator. Drawn from OLS regression models with block fixed effects and HC2 robust standard errors (for List A and List B) and clustered standard errors by respondent (for the Double list experiment).\n        \n                \n                  List A\n                  List A\n                  List A\n                  List A\n                \n                \n                  Threatening neighbors\n                  -0.005\n                  0.046\n                  0.9137\n                \n                \n                  Evicting neighbors\n                  -0.002\n                  0.039\n                  0.9515\n                \n                \n                  Making donations\n                  0.005\n                  0.037\n                  0.8991\n                \n                \n                  Offering work\n                  -0.033\n                  0.034\n                  0.3424\n                \n                \n                  List B\n                  List B\n                  List B\n                  List B\n                \n                \n                  Threatening neighbors\n                  -0.043\n                  0.067\n                  0.517\n                \n                \n                  Evicting neighbors\n                  0.069\n                  0.065\n                  0.2858\n                \n                \n                  Making donations\n                  -0.108\n                  0.068\n                  0.1162\n                \n                \n                  Offering work\n                  -0.097\n                  0.057\n                  0.0879\n                \n                \n                  Double\n                  Double\n                  Double\n                  Double\n                \n                \n                  Threatening neighbors\n                  0.036\n                  0.066\n                  0.5869\n                \n                \n                  Evicting neighbors\n                  -0.073\n                  0.064\n                  0.2507\n                \n                \n                  Making donations\n                  0.122\n                  0.071\n                  0.0844\n                \n                \n                  Offering work\n                  0.035\n                  0.059\n                  0.558"
+  },
+  {
+    "objectID": "puc_extra.html#attention-check-distance-from-correct-recall",
+    "href": "puc_extra.html#attention-check-distance-from-correct-recall",
+    "title": "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments",
+    "section": "Attention check distance from correct recall",
+    "text": "Attention check distance from correct recall\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Item\n                Estimate\n                SE\n                p-value\n              \n        \n        Note: Estimates represent the regression coefficient for the interaction between the distance from the correct answer on recalling the number of items on the mock vignette and the sensitive item placement indicator. Drawn from OLS regression models with block fixed effects and HC2 robust standard errors (for List A and List B) and clustered standard errors by respondent (for the Double list experiment).\n        \n                \n                  List A\n                  List A\n                  List A\n                  List A\n                \n                \n                  Threatening neighbors\n                  0.014\n                  0.044\n                  0.746\n                \n                \n                  Evicting neighbors\n                  0.004\n                  0.039\n                  0.924\n                \n                \n                  Making donations\n                  -0.020\n                  0.037\n                  0.595\n                \n                \n                  Offering work\n                  -0.030\n                  0.041\n                  0.465\n                \n                \n                  List B\n                  List B\n                  List B\n                  List B\n                \n                \n                  Threatening neighbors\n                  0.096\n                  0.075\n                  0.199\n                \n                \n                  Evicting neighbors\n                  -0.058\n                  0.076\n                  0.445\n                \n                \n                  Making donations\n                  0.049\n                  0.079\n                  0.533\n                \n                \n                  Offering work\n                  -0.059\n                  0.073\n                  0.424\n                \n                \n                  Double\n                  Double\n                  Double\n                  Double\n                \n                \n                  Threatening neighbors\n                  -0.068\n                  0.075\n                  0.366\n                \n                \n                  Evicting neighbors\n                  0.056\n                  0.068\n                  0.414\n                \n                \n                  Making donations\n                  -0.087\n                  0.080\n                  0.278\n                \n                \n                  Offering work\n                  -0.007\n                  0.076\n                  0.932"
+  },
+  {
+    "objectID": "puc_extra.html#mock-vignette-responses-and-time-spent-on-list-experiment-questions",
+    "href": "puc_extra.html#mock-vignette-responses-and-time-spent-on-list-experiment-questions",
+    "title": "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments",
+    "section": "Mock vignette responses and time spent on list experiment questions",
+    "text": "Mock vignette responses and time spent on list experiment questions"
+  },
+  {
+    "objectID": "puc_extra.html#design",
+    "href": "puc_extra.html#design",
+    "title": "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments",
+    "section": "Design",
+    "text": "Design\nSurvey: Online list experiment on a sample of \\(4,973\\) participants in China via Lucid.\nPrompt: How many items apply\nBaseline:\n\nThe government is the employee of the people and should do as the people wish.\nThe government is like a parent and should tell the people what to do.\nI live in the same city where I was born.\nGenerally speaking, most people cannot be trusted.\n\nTreatment:\n\nI was born in the year of [BLANK] or the year of [BLANK] (filled so that prevalence is known to be 1/6).\n\nPlacebo:\n\nI was born in the 2000s or 1970s (Made impossible by previously declared age)"
+  },
+  {
+    "objectID": "puc_extra.html#results",
+    "href": "puc_extra.html#results",
+    "title": "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments",
+    "section": "Results",
+    "text": "Results"
   }
 ]

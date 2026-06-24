@@ -1,5 +1,5 @@
 ---
-title: "Balancing Precision and Retention in Experimental Design"
+title: "Recovering Informative Estimates in Failed Placebo-Controlled List Experiments"
 subtitle: "Additional Materials"
 format: 
   html:
@@ -21,6 +21,7 @@ library(tidyverse)
 library(DeclareDesign)
 library(kableExtra)
 library(tinytable)
+library(modelsummary)
 
 
 # ggplot global options
@@ -142,11 +143,11 @@ desc %>%
 
 ## Observed responses
 
-[Convert chi_bar.pdf to png]
+![](list_placebo/chi_bar.png)
 
 ## Results with all items
 
-[Convert main.pdf to png]
+![](list_placebo/main.png)
 
 ## Bounds with all items
 
@@ -317,8 +318,357 @@ ggplot(bkp) +
 
 ## Bounds with direct questions
 
-[CONTINUE HERE]
+```{r}
+bnds_direct = read.csv("list_placebo/bounds_direct.csv")
+
+# We only want the List assumptions
+bdd = bnds_direct %>% 
+  mutate(Assumptions = "+ Combined\nestimator") %>% 
+  mutate(Estimator = case_when(
+    Estimator == "Single list" &
+      list == "count_a" ~ "List A",
+    Estimator == "Single list" &
+      list == "count_b" ~ "List B",
+    Estimator == "DLE" ~ "Pooled",
+    .default = Estimator
+  )) %>% 
+  mutate(boot_ci_which = case_when(
+    outcome == "count_hi" & 
+      Assumptions == "List" ~ boot_ci_hi,
+    outcome == "count_lo" &
+      Assumptions == "List" ~ boot_ci_lo,
+    .default = boot_ci_which
+  )) %>% 
+  select(
+    Assumptions,
+    Estimator, 
+    list_treatment,
+    outcome,
+    estimate,
+    boot_ci_which
+  ) %>% 
+  pivot_wider(
+    names_from = outcome,
+    values_from = c(estimate, boot_ci_which)
+  )
+
+bdd_df = bind_rows(
+  bd %>% filter(Assumptions == "List"),
+  bdd
+)
+```
+
+```{r}
+#| fig-width: 8
+#| fig-height: 10
+
+bdd_df$Assumptions = fct_rev(bdd_df$Assumptions)
+
+ggplot(bdd_df) +
+  aes(x = Estimator,
+      y = estimate_count_hi, 
+      color = Assumptions) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed") +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = estimate_count_lo,
+    ymax = estimate_count_hi
+  ), linewidth = 3,
+  position = position_dodge(width = 0.5)) +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = boot_ci_which_count_lo,
+    ymax = boot_ci_which_count_hi
+  ), linewidth = 1,
+  position = position_dodge(width = 0.5)) +
+  facet_wrap(~list_treatment, ncol = 1) +
+  scale_color_grey(start = 0.8, end = 0) +
+  labs(y = "Prevalence",
+       color = "Bounds")
+```
 
 # Statistical tests
 
-# Validation study
+## Positive placebo responses
+
+```{r}
+p = read.csv("list_placebo/placebo_tests.csv")
+
+aronow = p %>% 
+  filter(test == "beta") %>% 
+  mutate(
+    list = case_when(
+      list == "count_a" ~ "A",
+      list == "count_b" ~ "B",
+      list == "double" ~ "Double",
+      .default = list
+    )
+  ) %>% 
+  rename(
+    List = list,
+    Item = list_treatment,
+    Statistic = estimate,
+    `p-value` = p.value
+  ) %>% 
+  mutate(
+    Item = case_when(
+      Item == "Threaten" ~ "Threatening neighbors",
+      Item == "Evict" ~ "Evicting neighbors",
+      Item == "Donation" ~ "Making donations",
+      Item == "Offer Work" ~ "Offering work"
+    )
+    )%>%
+      mutate(
+        Item = factor(
+          Item,
+          levels = c(
+            "Threatening neighbors",
+            "Evicting neighbors",
+            "Making donations",
+            "Offering work"
+          ))) %>%
+  arrange(List, Item) %>%
+  select(Item, Statistic, `p-value`, n)
+
+aronow %>%
+  tt(
+    digits = 3,
+    notes = "**Note:** Statistic represents prevalence estimate among those who admit to sensitive item in direct question. p-values drawn from a model that includes block fixed-effects and clustered standard errors by respondent, testing the hypothesis of Statistic = 1.") %>%
+  format_tt(j = 2:3, digits = 3, num_fmt = "decimal", num_zero = TRUE) %>%
+  format_tt(markdown = TRUE) %>% 
+  group_tt(
+    i = list(
+      "_List A_" = 1,
+      "_List B_" = 5,
+      "_Double_" = 9
+    )
+  ) %>% 
+  style_tt(i = "~groupi", indent = 1) 
+```
+
+## Attention check failed response
+
+```{r}
+att = read.csv("list_placebo/attention_test.csv")
+
+att_tab = att %>% 
+  filter(term == "Z:attention") %>% 
+  mutate(
+    list = case_when(
+      list == "count_a" ~ "List A",
+      list == "count_b" ~ "List B",
+      .default = "Double"
+    )
+  ) %>% 
+  rename(
+    List = list,
+    Item = list_treatment,
+    Estimate = estimate,
+    SE = std.error,
+    `p-value` = p.value
+  ) %>% 
+  mutate(
+    Item = case_when(
+      Item == "Threaten" ~ "Threatening neighbors",
+      Item == "Evict" ~ "Evicting neighbors",
+      Item == "Donation" ~ "Making donations",
+      Item == "Offer Work" ~ "Offering work"
+    )
+    )%>%
+      mutate(
+        Item = factor(
+          Item,
+          levels = c(
+            "Threatening neighbors",
+            "Evicting neighbors",
+            "Making donations",
+            "Offering work"
+          ))) %>%
+  arrange(List, Item) %>% 
+  select(Item, Estimate, SE, `p-value`)
+
+att_tab %>% 
+  tt(
+    digits = 3,
+    notes = "**Note:** Estimates represent the regression coefficient for the interaction between a binary indicator denoting whether the respondent failed the attention check and the sensitive item placement indicator. Drawn from OLS regression models with block fixed effects and HC2 robust standard errors (for List A and) and clustered standard errors by respondent (for the Double list experiment).") %>%
+  format_tt(j = 2:3, digits = 3, num_fmt = "decimal", num_zero = TRUE) %>%
+  format_tt(markdown = TRUE) %>% 
+  group_tt(
+    i = list(
+      "_List A_" = 1,
+      "_List B_" = 5,
+      "_Double_" = 9
+    )
+  ) %>% 
+  style_tt(i = "~groupi", indent = 1) 
+```
+
+
+## Attention check raw response
+
+```{r}
+att_check = read.csv("list_placebo/attention_check.csv")
+
+att_check_tab = att_check %>%
+  filter(term == "Z:attention_check") %>%
+  mutate(
+    list = case_when(
+      list == "count_a" ~ "List A",
+      list == "count_b" ~ "List B",
+      .default = "Double"
+    )
+  ) %>%
+  rename(
+    List = list,
+    Item = list_treatment,
+    Estimate = estimate,
+    SE = std.error,
+    `p-value` = p.value
+  ) %>%
+  mutate(
+    Item = case_when(
+      Item == "Threaten" ~ "Threatening neighbors",
+      Item == "Evict" ~ "Evicting neighbors",
+      Item == "Donation" ~ "Making donations",
+      Item == "Offer Work" ~ "Offering work"
+    )
+  ) %>%
+  mutate(
+    Item = factor(
+      Item,
+      levels = c(
+        "Threatening neighbors",
+        "Evicting neighbors",
+        "Making donations",
+        "Offering work"
+      ))) %>%
+  arrange(List, Item) %>%
+  select(Item, Estimate, SE, `p-value`)
+
+att_check_tab %>%
+  tt(
+    digits = 3,
+    notes = "**Note:** Estimates represent the regression coefficient for the interaction between the raw mock vignette response and the sensitive item placement indicator. Drawn from OLS regression models with block fixed effects and HC2 robust standard errors (for List A and List B) and clustered standard errors by respondent (for the Double list experiment).") %>%
+  format_tt(j = 2:3, digits = 3, num_fmt = "decimal", num_zero = TRUE) %>%
+  format_tt(markdown = TRUE) %>%
+  group_tt(
+    i = list(
+      "_List A_" = 1,
+      "_List B_" = 5,
+      "_Double_" = 9
+    )
+  ) %>%
+  style_tt(i = "~groupi", indent = 1)
+```
+
+## Attention check distance from correct recall
+
+```{r}
+recall = read.csv("list_placebo/recall.csv")
+
+recall_tab = recall %>%
+  filter(term == "Z:recall") %>%
+  mutate(
+    list = case_when(
+      list == "count_a" ~ "List A",
+      list == "count_b" ~ "List B",
+      .default = "Double"
+    )
+  ) %>%
+  rename(
+    List = list,
+    Item = list_treatment,
+    Estimate = estimate,
+    SE = std.error,
+    `p-value` = p.value
+  ) %>%
+  mutate(
+    Item = case_when(
+      Item == "Threaten" ~ "Threatening neighbors",
+      Item == "Evict" ~ "Evicting neighbors",
+      Item == "Donation" ~ "Making donations",
+      Item == "Offer Work" ~ "Offering work"
+    )
+  ) %>%
+  mutate(
+    Item = factor(
+      Item,
+      levels = c(
+        "Threatening neighbors",
+        "Evicting neighbors",
+        "Making donations",
+        "Offering work"
+      ))) %>%
+  arrange(List, Item) %>%
+  select(Item, Estimate, SE, `p-value`)
+
+recall_tab %>%
+  tt(
+    digits = 3,
+    notes = "**Note:** Estimates represent the regression coefficient for the interaction between the distance from the correct answer on recalling the number of items on the mock vignette and the sensitive item placement indicator. Drawn from OLS regression models with block fixed effects and HC2 robust standard errors (for List A and List B) and clustered standard errors by respondent (for the Double list experiment).") %>%
+  format_tt(j = 2:3, digits = 3, num_fmt = "decimal", num_zero = TRUE) %>%
+  format_tt(markdown = TRUE) %>%
+  group_tt(
+    i = list(
+      "_List A_" = 1,
+      "_List B_" = 5,
+      "_Double_" = 9
+    )
+  ) %>%
+  style_tt(i = "~groupi", indent = 1)
+```
+
+## Mock vignette responses and time spent on list experiment questions
+
+```{r}
+load("list_placebo/timer.rda")
+
+modelsummary(
+  list(
+    "Attention check" = timer_mod,
+    "Raw response" = timer_mod_2
+  ),
+  coef_rename = c(
+    "(Intercept)"     = "Intercept",
+    "attention"       = "Failed attention check",
+    "attention_check" = "Raw response"
+  ),
+  gof_map = c("nobs", "r.squared"),
+  notes = "\\textbf{Note:} OLS regression models with HC2 robust standard errors. Outcome is total time spent on both list experiment questions (in seconds).",
+  stars = c("*" = .05),
+  output = "latex",
+  escape = FALSE
+  )
+  
+```
+
+# Validation study [(Agerberg 2021)](https://doi.org/10.1177/20531680211013154)
+
+## Design
+
+**Survey:** Online list experiment on a sample of $4,973$ participants in China via Lucid.
+
+**Prompt:** How many items apply
+
+**Baseline:** 
+
+- The government is the employee of the people and should do as the people wish.
+- The government is like a parent and should tell the people what to do.
+- I live in the same city where I was born.
+- Generally speaking, most people cannot be trusted.
+
+**Treatment:**
+
+- I was born in the year of [BLANK] or the year of [BLANK] (filled so that prevalence is known to be 1/6).
+
+**Placebo:**
+
+- I was born in the 2000s or 1970s (Made impossible by previously declared age)
+
+
+
+## Results
+
+![](list_placebo/at_bounds.png)
+

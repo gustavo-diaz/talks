@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Balancing Precision and Retention in Experimental Design – Gustavo Diaz</title>
+<title>Recovering Informative Estimates in Failed Placebo-Controlled List Experiments – Gustavo Diaz</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -34,7 +34,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-f8d2b756ebd680c5e7baf86afdffbb79.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -56,6 +56,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -79,9 +108,21 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#results-with-all-items" id="toc-results-with-all-items" class="nav-link" data-scroll-target="#results-with-all-items">Results with all items</a></li>
   <li><a href="#bounds-with-all-items" id="toc-bounds-with-all-items" class="nav-link" data-scroll-target="#bounds-with-all-items">Bounds with all items</a></li>
   <li><a href="#known-placebo-proportion-bounds" id="toc-known-placebo-proportion-bounds" class="nav-link" data-scroll-target="#known-placebo-proportion-bounds">Known placebo proportion bounds</a></li>
+  <li><a href="#bounds-with-direct-questions" id="toc-bounds-with-direct-questions" class="nav-link" data-scroll-target="#bounds-with-direct-questions">Bounds with direct questions</a></li>
   </ul></li>
-  <li><a href="#statistical-tests" id="toc-statistical-tests" class="nav-link" data-scroll-target="#statistical-tests">Statistical tests</a></li>
-  <li><a href="#validation-study" id="toc-validation-study" class="nav-link" data-scroll-target="#validation-study">Validation study</a></li>
+  <li><a href="#statistical-tests" id="toc-statistical-tests" class="nav-link" data-scroll-target="#statistical-tests">Statistical tests</a>
+  <ul class="collapse">
+  <li><a href="#positive-placebo-responses" id="toc-positive-placebo-responses" class="nav-link" data-scroll-target="#positive-placebo-responses">Positive placebo responses</a></li>
+  <li><a href="#attention-check-failed-response" id="toc-attention-check-failed-response" class="nav-link" data-scroll-target="#attention-check-failed-response">Attention check failed response</a></li>
+  <li><a href="#attention-check-raw-response" id="toc-attention-check-raw-response" class="nav-link" data-scroll-target="#attention-check-raw-response">Attention check raw response</a></li>
+  <li><a href="#attention-check-distance-from-correct-recall" id="toc-attention-check-distance-from-correct-recall" class="nav-link" data-scroll-target="#attention-check-distance-from-correct-recall">Attention check distance from correct recall</a></li>
+  <li><a href="#mock-vignette-responses-and-time-spent-on-list-experiment-questions" id="toc-mock-vignette-responses-and-time-spent-on-list-experiment-questions" class="nav-link" data-scroll-target="#mock-vignette-responses-and-time-spent-on-list-experiment-questions">Mock vignette responses and time spent on list experiment questions</a></li>
+  </ul></li>
+  <li><a href="#validation-study-agerberg-2021" id="toc-validation-study-agerberg-2021" class="nav-link" data-scroll-target="#validation-study-agerberg-2021">Validation study (Agerberg 2021)</a>
+  <ul class="collapse">
+  <li><a href="#design" id="toc-design" class="nav-link" data-scroll-target="#design">Design</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -90,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Balancing Precision and Retention in Experimental Design</h1>
+<h1 class="title">Recovering Informative Estimates in Failed Placebo-Controlled List Experiments</h1>
 <p class="subtitle lead">Additional Materials</p>
 </div>
 
@@ -120,22 +161,22 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
       // Create table-specific functions using external factory
-      const tableFns_uq61tz2ps6x4smug3p97 = TinyTable.createTableFunctions("tinytable_uq61tz2ps6x4smug3p97");
+      const tableFns_ld2ullkvl5pqjq7hcvue = TinyTable.createTableFunctions("tinytable_ld2ullkvl5pqjq7hcvue");
       // tinytable span after
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '-1', j: 3 } ], css_id: 'tinytable_css_1ykih9k24bnix6eh4tjx',}, 
-          { positions: [ { i: '-1', j: 2 } ], css_id: 'tinytable_css_07abdodvueh0ue74f7c2',}, 
-          { positions: [ { i: '2', j: 1 }, { i: '2', j: 2 }, { i: '2', j: 3 }, { i: '2', j: 4 }, { i: '2', j: 5 }, { i: '2', j: 6 } ], css_id: 'tinytable_css_ttgfye4vj0j5nsup6y1a',}, 
-          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 }, { i: '0', j: 5 }, { i: '0', j: 6 } ], css_id: 'tinytable_css_unsb5ijypdwrajtgtd0l',}, 
-          { positions: [ { i: '-1', j: 1 }, { i: '-1', j: 4 }, { i: '-1', j: 5 }, { i: '-1', j: 6 } ], css_id: 'tinytable_css_mnwbxyfm4guxf8a67qoz',}, 
+          { positions: [ { i: '-1', j: 3 } ], css_id: 'tinytable_css_00j06px2qvw7idbpkibr',}, 
+          { positions: [ { i: '-1', j: 2 } ], css_id: 'tinytable_css_4zrth8xqwcx2bbcgjm1t',}, 
+          { positions: [ { i: '2', j: 1 }, { i: '2', j: 2 }, { i: '2', j: 3 }, { i: '2', j: 4 }, { i: '2', j: 5 }, { i: '2', j: 6 } ], css_id: 'tinytable_css_mxtvdy4yc28omf2hkm77',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 }, { i: '0', j: 5 }, { i: '0', j: 6 } ], css_id: 'tinytable_css_pdyfirmff775p15vmx4s',}, 
+          { positions: [ { i: '-1', j: 1 }, { i: '-1', j: 4 }, { i: '-1', j: 5 }, { i: '-1', j: 6 } ], css_id: 'tinytable_css_9sq7km7ohx1wc4mikxln',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  tableFns_uq61tz2ps6x4smug3p97.styleCell(cell.i, cell.j, group.css_id);
+                  tableFns_ld2ullkvl5pqjq7hcvue.styleCell(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -144,14 +185,14 @@ ul.task-list li input[type="checkbox"] {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
     <style>
     /* tinytable css entries after */
-    #tinytable_uq61tz2ps6x4smug3p97 td.tinytable_css_1ykih9k24bnix6eh4tjx, #tinytable_uq61tz2ps6x4smug3p97 th.tinytable_css_1ykih9k24bnix6eh4tjx {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.03em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 3%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center }
-    #tinytable_uq61tz2ps6x4smug3p97 td.tinytable_css_07abdodvueh0ue74f7c2, #tinytable_uq61tz2ps6x4smug3p97 th.tinytable_css_07abdodvueh0ue74f7c2 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.03em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 3%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center }
-    #tinytable_uq61tz2ps6x4smug3p97 td.tinytable_css_ttgfye4vj0j5nsup6y1a, #tinytable_uq61tz2ps6x4smug3p97 th.tinytable_css_ttgfye4vj0j5nsup6y1a {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
-    #tinytable_uq61tz2ps6x4smug3p97 td.tinytable_css_unsb5ijypdwrajtgtd0l, #tinytable_uq61tz2ps6x4smug3p97 th.tinytable_css_unsb5ijypdwrajtgtd0l {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
-    #tinytable_uq61tz2ps6x4smug3p97 td.tinytable_css_mnwbxyfm4guxf8a67qoz, #tinytable_uq61tz2ps6x4smug3p97 th.tinytable_css_mnwbxyfm4guxf8a67qoz {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.03em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center }
+    #tinytable_ld2ullkvl5pqjq7hcvue td.tinytable_css_00j06px2qvw7idbpkibr, #tinytable_ld2ullkvl5pqjq7hcvue th.tinytable_css_00j06px2qvw7idbpkibr {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.03em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 3%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center }
+    #tinytable_ld2ullkvl5pqjq7hcvue td.tinytable_css_4zrth8xqwcx2bbcgjm1t, #tinytable_ld2ullkvl5pqjq7hcvue th.tinytable_css_4zrth8xqwcx2bbcgjm1t {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.03em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 3%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center }
+    #tinytable_ld2ullkvl5pqjq7hcvue td.tinytable_css_mxtvdy4yc28omf2hkm77, #tinytable_ld2ullkvl5pqjq7hcvue th.tinytable_css_mxtvdy4yc28omf2hkm77 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_ld2ullkvl5pqjq7hcvue td.tinytable_css_pdyfirmff775p15vmx4s, #tinytable_ld2ullkvl5pqjq7hcvue th.tinytable_css_pdyfirmff775p15vmx4s {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_ld2ullkvl5pqjq7hcvue td.tinytable_css_9sq7km7ohx1wc4mikxln, #tinytable_ld2ullkvl5pqjq7hcvue th.tinytable_css_9sq7km7ohx1wc4mikxln {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.03em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center }
     </style>
     <div class="container">
-      <table class="tinytable" id="tinytable_uq61tz2ps6x4smug3p97" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="tinytable" id="tinytable_ld2ullkvl5pqjq7hcvue" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         
         <thead>
 <tr>
@@ -202,25 +243,25 @@ ul.task-list li input[type="checkbox"] {
 
     <script>
       // Create table-specific functions using external factory
-      const tableFns_rw9y8itlalprew7p5qxd = TinyTable.createTableFunctions("tinytable_rw9y8itlalprew7p5qxd");
+      const tableFns_7lccyce1gznvgo1pqj18 = TinyTable.createTableFunctions("tinytable_7lccyce1gznvgo1pqj18");
       // tinytable span after
-      window.addEventListener('load', function () { tableFns_rw9y8itlalprew7p5qxd.spanCell(20, 1, 1, 6) })
-      window.addEventListener('load', function () { tableFns_rw9y8itlalprew7p5qxd.spanCell(18, 1, 1, 6) })
-      window.addEventListener('load', function () { tableFns_rw9y8itlalprew7p5qxd.spanCell(13, 1, 1, 6) })
-      window.addEventListener('load', function () { tableFns_rw9y8itlalprew7p5qxd.spanCell(6, 1, 1, 6) })
-      window.addEventListener('load', function () { tableFns_rw9y8itlalprew7p5qxd.spanCell(2, 1, 1, 6) })
+      window.addEventListener('load', function () { tableFns_7lccyce1gznvgo1pqj18.spanCell(20, 1, 1, 6) })
+      window.addEventListener('load', function () { tableFns_7lccyce1gznvgo1pqj18.spanCell(18, 1, 1, 6) })
+      window.addEventListener('load', function () { tableFns_7lccyce1gznvgo1pqj18.spanCell(13, 1, 1, 6) })
+      window.addEventListener('load', function () { tableFns_7lccyce1gznvgo1pqj18.spanCell(6, 1, 1, 6) })
+      window.addEventListener('load', function () { tableFns_7lccyce1gznvgo1pqj18.spanCell(2, 1, 1, 6) })
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: '24', j: 1 }, { i: '24', j: 2 }, { i: '24', j: 3 }, { i: '24', j: 4 }, { i: '24', j: 5 }, { i: '24', j: 6 } ], css_id: 'tinytable_css_yb02vtz72pipr3mfa6df',}, 
-          { positions: [ { i: '1', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '7', j: 1 }, { i: '8', j: 1 }, { i: '9', j: 1 }, { i: '10', j: 1 }, { i: '11', j: 1 }, { i: '12', j: 1 }, { i: '14', j: 1 }, { i: '15', j: 1 }, { i: '16', j: 1 }, { i: '17', j: 1 }, { i: '19', j: 1 }, { i: '21', j: 1 }, { i: '22', j: 1 }, { i: '23', j: 1 }, { i: '1', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '7', j: 2 }, { i: '8', j: 2 }, { i: '9', j: 2 }, { i: '10', j: 2 }, { i: '11', j: 2 }, { i: '12', j: 2 }, { i: '14', j: 2 }, { i: '15', j: 2 }, { i: '16', j: 2 }, { i: '17', j: 2 }, { i: '19', j: 2 }, { i: '21', j: 2 }, { i: '22', j: 2 }, { i: '23', j: 2 }, { i: '1', j: 3 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 }, { i: '7', j: 3 }, { i: '8', j: 3 }, { i: '9', j: 3 }, { i: '10', j: 3 }, { i: '11', j: 3 }, { i: '12', j: 3 }, { i: '14', j: 3 }, { i: '15', j: 3 }, { i: '16', j: 3 }, { i: '17', j: 3 }, { i: '19', j: 3 }, { i: '21', j: 3 }, { i: '22', j: 3 }, { i: '23', j: 3 }, { i: '1', j: 4 }, { i: '3', j: 4 }, { i: '4', j: 4 }, { i: '5', j: 4 }, { i: '7', j: 4 }, { i: '8', j: 4 }, { i: '9', j: 4 }, { i: '10', j: 4 }, { i: '11', j: 4 }, { i: '12', j: 4 }, { i: '14', j: 4 }, { i: '15', j: 4 }, { i: '16', j: 4 }, { i: '17', j: 4 }, { i: '19', j: 4 }, { i: '21', j: 4 }, { i: '22', j: 4 }, { i: '23', j: 4 }, { i: '1', j: 5 }, { i: '3', j: 5 }, { i: '4', j: 5 }, { i: '5', j: 5 }, { i: '7', j: 5 }, { i: '8', j: 5 }, { i: '9', j: 5 }, { i: '10', j: 5 }, { i: '11', j: 5 }, { i: '12', j: 5 }, { i: '14', j: 5 }, { i: '15', j: 5 }, { i: '16', j: 5 }, { i: '17', j: 5 }, { i: '19', j: 5 }, { i: '21', j: 5 }, { i: '22', j: 5 }, { i: '23', j: 5 }, { i: '1', j: 6 }, { i: '3', j: 6 }, { i: '4', j: 6 }, { i: '5', j: 6 }, { i: '7', j: 6 }, { i: '8', j: 6 }, { i: '9', j: 6 }, { i: '10', j: 6 }, { i: '11', j: 6 }, { i: '12', j: 6 }, { i: '14', j: 6 }, { i: '15', j: 6 }, { i: '16', j: 6 }, { i: '17', j: 6 }, { i: '19', j: 6 }, { i: '21', j: 6 }, { i: '22', j: 6 }, { i: '23', j: 6 } ], css_id: 'tinytable_css_u66sehaocws0anupsrlq',}, 
-          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 }, { i: '0', j: 5 }, { i: '0', j: 6 } ], css_id: 'tinytable_css_60vtbgudgyo9wm1z3ay4',}, 
+          { positions: [ { i: '24', j: 1 }, { i: '24', j: 2 }, { i: '24', j: 3 }, { i: '24', j: 4 }, { i: '24', j: 5 }, { i: '24', j: 6 } ], css_id: 'tinytable_css_hq28yk2p0lvo596d44wb',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '7', j: 1 }, { i: '8', j: 1 }, { i: '9', j: 1 }, { i: '10', j: 1 }, { i: '11', j: 1 }, { i: '12', j: 1 }, { i: '14', j: 1 }, { i: '15', j: 1 }, { i: '16', j: 1 }, { i: '17', j: 1 }, { i: '19', j: 1 }, { i: '21', j: 1 }, { i: '22', j: 1 }, { i: '23', j: 1 }, { i: '1', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '7', j: 2 }, { i: '8', j: 2 }, { i: '9', j: 2 }, { i: '10', j: 2 }, { i: '11', j: 2 }, { i: '12', j: 2 }, { i: '14', j: 2 }, { i: '15', j: 2 }, { i: '16', j: 2 }, { i: '17', j: 2 }, { i: '19', j: 2 }, { i: '21', j: 2 }, { i: '22', j: 2 }, { i: '23', j: 2 }, { i: '1', j: 3 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 }, { i: '7', j: 3 }, { i: '8', j: 3 }, { i: '9', j: 3 }, { i: '10', j: 3 }, { i: '11', j: 3 }, { i: '12', j: 3 }, { i: '14', j: 3 }, { i: '15', j: 3 }, { i: '16', j: 3 }, { i: '17', j: 3 }, { i: '19', j: 3 }, { i: '21', j: 3 }, { i: '22', j: 3 }, { i: '23', j: 3 }, { i: '1', j: 4 }, { i: '3', j: 4 }, { i: '4', j: 4 }, { i: '5', j: 4 }, { i: '7', j: 4 }, { i: '8', j: 4 }, { i: '9', j: 4 }, { i: '10', j: 4 }, { i: '11', j: 4 }, { i: '12', j: 4 }, { i: '14', j: 4 }, { i: '15', j: 4 }, { i: '16', j: 4 }, { i: '17', j: 4 }, { i: '19', j: 4 }, { i: '21', j: 4 }, { i: '22', j: 4 }, { i: '23', j: 4 }, { i: '1', j: 5 }, { i: '3', j: 5 }, { i: '4', j: 5 }, { i: '5', j: 5 }, { i: '7', j: 5 }, { i: '8', j: 5 }, { i: '9', j: 5 }, { i: '10', j: 5 }, { i: '11', j: 5 }, { i: '12', j: 5 }, { i: '14', j: 5 }, { i: '15', j: 5 }, { i: '16', j: 5 }, { i: '17', j: 5 }, { i: '19', j: 5 }, { i: '21', j: 5 }, { i: '22', j: 5 }, { i: '23', j: 5 }, { i: '1', j: 6 }, { i: '3', j: 6 }, { i: '4', j: 6 }, { i: '5', j: 6 }, { i: '7', j: 6 }, { i: '8', j: 6 }, { i: '9', j: 6 }, { i: '10', j: 6 }, { i: '11', j: 6 }, { i: '12', j: 6 }, { i: '14', j: 6 }, { i: '15', j: 6 }, { i: '16', j: 6 }, { i: '17', j: 6 }, { i: '19', j: 6 }, { i: '21', j: 6 }, { i: '22', j: 6 }, { i: '23', j: 6 } ], css_id: 'tinytable_css_xrbd1c91wrqhtmc062i7',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 }, { i: '0', j: 5 }, { i: '0', j: 6 } ], css_id: 'tinytable_css_adu1pz22h3spsr7i6074',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  tableFns_rw9y8itlalprew7p5qxd.styleCell(cell.i, cell.j, group.css_id);
+                  tableFns_7lccyce1gznvgo1pqj18.styleCell(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -229,12 +270,12 @@ ul.task-list li input[type="checkbox"] {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
     <style>
     /* tinytable css entries after */
-    #tinytable_rw9y8itlalprew7p5qxd td.tinytable_css_yb02vtz72pipr3mfa6df, #tinytable_rw9y8itlalprew7p5qxd th.tinytable_css_yb02vtz72pipr3mfa6df {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; padding-left: 1em }
-    #tinytable_rw9y8itlalprew7p5qxd td.tinytable_css_u66sehaocws0anupsrlq, #tinytable_rw9y8itlalprew7p5qxd th.tinytable_css_u66sehaocws0anupsrlq { padding-left: 1em }
-    #tinytable_rw9y8itlalprew7p5qxd td.tinytable_css_60vtbgudgyo9wm1z3ay4, #tinytable_rw9y8itlalprew7p5qxd th.tinytable_css_60vtbgudgyo9wm1z3ay4 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    #tinytable_7lccyce1gznvgo1pqj18 td.tinytable_css_hq28yk2p0lvo596d44wb, #tinytable_7lccyce1gznvgo1pqj18 th.tinytable_css_hq28yk2p0lvo596d44wb {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; padding-left: 1em }
+    #tinytable_7lccyce1gznvgo1pqj18 td.tinytable_css_xrbd1c91wrqhtmc062i7, #tinytable_7lccyce1gznvgo1pqj18 th.tinytable_css_xrbd1c91wrqhtmc062i7 { padding-left: 1em }
+    #tinytable_7lccyce1gznvgo1pqj18 td.tinytable_css_adu1pz22h3spsr7i6074, #tinytable_7lccyce1gznvgo1pqj18 th.tinytable_css_adu1pz22h3spsr7i6074 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
     </style>
     <div class="container">
-      <table class="tinytable" id="tinytable_rw9y8itlalprew7p5qxd" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="tinytable" id="tinytable_7lccyce1gznvgo1pqj18" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         
         <thead>
               <tr>
@@ -449,11 +490,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="observed-responses" class="level2">
 <h2 class="anchored" data-anchor-id="observed-responses">Observed responses</h2>
-<p>[Convert chi_bar.pdf to png]</p>
+<p><img src="list_placebo/chi_bar.png" class="img-fluid"></p>
 </section>
 <section id="results-with-all-items" class="level2">
 <h2 class="anchored" data-anchor-id="results-with-all-items">Results with all items</h2>
-<p>[Convert main.pdf to png]</p>
+<p><img src="list_placebo/main.png" class="img-fluid"></p>
 </section>
 <section id="bounds-with-all-items" class="level2">
 <h2 class="anchored" data-anchor-id="bounds-with-all-items">Bounds with all items</h2>
@@ -479,14 +520,654 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
+<section id="bounds-with-direct-questions" class="level2">
+<h2 class="anchored" data-anchor-id="bounds-with-direct-questions">Bounds with direct questions</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="puc_extra_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" data-fig-pos="center" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
 </section>
 <section id="statistical-tests" class="level1">
 <h1>Statistical tests</h1>
+<section id="positive-placebo-responses" class="level2">
+<h2 class="anchored" data-anchor-id="positive-placebo-responses">Positive placebo responses</h2>
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_tgazwgcuji9nso2np67b = TinyTable.createTableFunctions("tinytable_tgazwgcuji9nso2np67b");
+      // tinytable span after
+      window.addEventListener('load', function () { tableFns_tgazwgcuji9nso2np67b.spanCell(11, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_tgazwgcuji9nso2np67b.spanCell(6, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_tgazwgcuji9nso2np67b.spanCell(1, 1, 1, 4) })
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '15', j: 1 }, { i: '15', j: 2 }, { i: '15', j: 3 }, { i: '15', j: 4 } ], css_id: 'tinytable_css_xcrwzv5zvvxnh7tn7rzp',}, 
+          { positions: [ { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '7', j: 1 }, { i: '8', j: 1 }, { i: '9', j: 1 }, { i: '10', j: 1 }, { i: '12', j: 1 }, { i: '13', j: 1 }, { i: '14', j: 1 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '7', j: 2 }, { i: '8', j: 2 }, { i: '9', j: 2 }, { i: '10', j: 2 }, { i: '12', j: 2 }, { i: '13', j: 2 }, { i: '14', j: 2 }, { i: '2', j: 3 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 }, { i: '7', j: 3 }, { i: '8', j: 3 }, { i: '9', j: 3 }, { i: '10', j: 3 }, { i: '12', j: 3 }, { i: '13', j: 3 }, { i: '14', j: 3 }, { i: '2', j: 4 }, { i: '3', j: 4 }, { i: '4', j: 4 }, { i: '5', j: 4 }, { i: '7', j: 4 }, { i: '8', j: 4 }, { i: '9', j: 4 }, { i: '10', j: 4 }, { i: '12', j: 4 }, { i: '13', j: 4 }, { i: '14', j: 4 } ], css_id: 'tinytable_css_df2rncwgbav0ee3enxbu',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_xkkpbptv20npvhkv6ac2',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_tgazwgcuji9nso2np67b.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_tgazwgcuji9nso2np67b td.tinytable_css_xcrwzv5zvvxnh7tn7rzp, #tinytable_tgazwgcuji9nso2np67b th.tinytable_css_xcrwzv5zvvxnh7tn7rzp {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; padding-left: 1em }
+    #tinytable_tgazwgcuji9nso2np67b td.tinytable_css_df2rncwgbav0ee3enxbu, #tinytable_tgazwgcuji9nso2np67b th.tinytable_css_df2rncwgbav0ee3enxbu { padding-left: 1em }
+    #tinytable_tgazwgcuji9nso2np67b td.tinytable_css_xkkpbptv20npvhkv6ac2, #tinytable_tgazwgcuji9nso2np67b th.tinytable_css_xkkpbptv20npvhkv6ac2 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_tgazwgcuji9nso2np67b" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Item</th>
+                <th scope="col" data-row="0" data-col="2">Statistic</th>
+                <th scope="col" data-row="0" data-col="3">p-value</th>
+                <th scope="col" data-row="0" data-col="4">n</th>
+              </tr>
+        </thead>
+        <tfoot><tr><td colspan="4"><strong>Note:</strong> Statistic represents prevalence estimate among those who admit to sensitive item in direct question. p-values drawn from a model that includes block fixed-effects and clustered standard errors by respondent, testing the hypothesis of Statistic = 1.</td></tr></tfoot>
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1"><em>List A</em></td>
+                  <td data-row="1" data-col="2"><em>List A</em></td>
+                  <td data-row="1" data-col="3"><em>List A</em></td>
+                  <td data-row="1" data-col="4"><em>List A</em></td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">Threatening neighbors</td>
+                  <td data-row="2" data-col="2">-0.851</td>
+                  <td data-row="2" data-col="3">0.000</td>
+                  <td data-row="2" data-col="4">102</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">Evicting neighbors</td>
+                  <td data-row="3" data-col="2">-0.585</td>
+                  <td data-row="3" data-col="3">0.235</td>
+                  <td data-row="3" data-col="4">32</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1">Making donations</td>
+                  <td data-row="4" data-col="2">-0.539</td>
+                  <td data-row="4" data-col="3">0.021</td>
+                  <td data-row="4" data-col="4">133</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="1">Offering work</td>
+                  <td data-row="5" data-col="2">-0.820</td>
+                  <td data-row="5" data-col="3">0.011</td>
+                  <td data-row="5" data-col="4">64</td>
+                </tr>
+                <tr>
+                  <td data-row="6" data-col="1"><em>List B</em></td>
+                  <td data-row="6" data-col="2"><em>List B</em></td>
+                  <td data-row="6" data-col="3"><em>List B</em></td>
+                  <td data-row="6" data-col="4"><em>List B</em></td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="1">Threatening neighbors</td>
+                  <td data-row="7" data-col="2">-0.612</td>
+                  <td data-row="7" data-col="3">0.010</td>
+                  <td data-row="7" data-col="4">102</td>
+                </tr>
+                <tr>
+                  <td data-row="8" data-col="1">Evicting neighbors</td>
+                  <td data-row="8" data-col="2">-1.106</td>
+                  <td data-row="8" data-col="3">0.003</td>
+                  <td data-row="8" data-col="4">32</td>
+                </tr>
+                <tr>
+                  <td data-row="9" data-col="1">Making donations</td>
+                  <td data-row="9" data-col="2">-1.259</td>
+                  <td data-row="9" data-col="3">0.000</td>
+                  <td data-row="9" data-col="4">133</td>
+                </tr>
+                <tr>
+                  <td data-row="10" data-col="1">Offering work</td>
+                  <td data-row="10" data-col="2">-1.131</td>
+                  <td data-row="10" data-col="3">0.004</td>
+                  <td data-row="10" data-col="4">64</td>
+                </tr>
+                <tr>
+                  <td data-row="11" data-col="1"><em>Double</em></td>
+                  <td data-row="11" data-col="2"><em>Double</em></td>
+                  <td data-row="11" data-col="3"><em>Double</em></td>
+                  <td data-row="11" data-col="4"><em>Double</em></td>
+                </tr>
+                <tr>
+                  <td data-row="12" data-col="1">Threatening neighbors</td>
+                  <td data-row="12" data-col="2">-0.755</td>
+                  <td data-row="12" data-col="3">0.000</td>
+                  <td data-row="12" data-col="4">102</td>
+                </tr>
+                <tr>
+                  <td data-row="13" data-col="1">Evicting neighbors</td>
+                  <td data-row="13" data-col="2">-0.860</td>
+                  <td data-row="13" data-col="3">0.000</td>
+                  <td data-row="13" data-col="4">32</td>
+                </tr>
+                <tr>
+                  <td data-row="14" data-col="1">Making donations</td>
+                  <td data-row="14" data-col="2">-0.916</td>
+                  <td data-row="14" data-col="3">0.000</td>
+                  <td data-row="14" data-col="4">133</td>
+                </tr>
+                <tr>
+                  <td data-row="15" data-col="1">Offering work</td>
+                  <td data-row="15" data-col="2">-0.971</td>
+                  <td data-row="15" data-col="3">0.000</td>
+                  <td data-row="15" data-col="4">64</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
 </section>
-<section id="validation-study" class="level1">
-<h1>Validation study</h1>
+<section id="attention-check-failed-response" class="level2">
+<h2 class="anchored" data-anchor-id="attention-check-failed-response">Attention check failed response</h2>
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_vbtflc0yogjjy57od7p5 = TinyTable.createTableFunctions("tinytable_vbtflc0yogjjy57od7p5");
+      // tinytable span after
+      window.addEventListener('load', function () { tableFns_vbtflc0yogjjy57od7p5.spanCell(11, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_vbtflc0yogjjy57od7p5.spanCell(6, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_vbtflc0yogjjy57od7p5.spanCell(1, 1, 1, 4) })
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '15', j: 1 }, { i: '15', j: 2 }, { i: '15', j: 3 }, { i: '15', j: 4 } ], css_id: 'tinytable_css_qwoj2ocdp72lui9fqo9y',}, 
+          { positions: [ { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '7', j: 1 }, { i: '8', j: 1 }, { i: '9', j: 1 }, { i: '10', j: 1 }, { i: '12', j: 1 }, { i: '13', j: 1 }, { i: '14', j: 1 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '7', j: 2 }, { i: '8', j: 2 }, { i: '9', j: 2 }, { i: '10', j: 2 }, { i: '12', j: 2 }, { i: '13', j: 2 }, { i: '14', j: 2 }, { i: '2', j: 3 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 }, { i: '7', j: 3 }, { i: '8', j: 3 }, { i: '9', j: 3 }, { i: '10', j: 3 }, { i: '12', j: 3 }, { i: '13', j: 3 }, { i: '14', j: 3 }, { i: '2', j: 4 }, { i: '3', j: 4 }, { i: '4', j: 4 }, { i: '5', j: 4 }, { i: '7', j: 4 }, { i: '8', j: 4 }, { i: '9', j: 4 }, { i: '10', j: 4 }, { i: '12', j: 4 }, { i: '13', j: 4 }, { i: '14', j: 4 } ], css_id: 'tinytable_css_689aoyk2dqgcjwe7lb1p',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_i6glci9ipwxp25540h4q',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_vbtflc0yogjjy57od7p5.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_vbtflc0yogjjy57od7p5 td.tinytable_css_qwoj2ocdp72lui9fqo9y, #tinytable_vbtflc0yogjjy57od7p5 th.tinytable_css_qwoj2ocdp72lui9fqo9y {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; padding-left: 1em }
+    #tinytable_vbtflc0yogjjy57od7p5 td.tinytable_css_689aoyk2dqgcjwe7lb1p, #tinytable_vbtflc0yogjjy57od7p5 th.tinytable_css_689aoyk2dqgcjwe7lb1p { padding-left: 1em }
+    #tinytable_vbtflc0yogjjy57od7p5 td.tinytable_css_i6glci9ipwxp25540h4q, #tinytable_vbtflc0yogjjy57od7p5 th.tinytable_css_i6glci9ipwxp25540h4q {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_vbtflc0yogjjy57od7p5" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Item</th>
+                <th scope="col" data-row="0" data-col="2">Estimate</th>
+                <th scope="col" data-row="0" data-col="3">SE</th>
+                <th scope="col" data-row="0" data-col="4">p-value</th>
+              </tr>
+        </thead>
+        <tfoot><tr><td colspan="4"><strong>Note:</strong> Estimates represent the regression coefficient for the interaction between a binary indicator denoting whether the respondent failed the attention check and the sensitive item placement indicator. Drawn from OLS regression models with block fixed effects and HC2 robust standard errors (for List A and) and clustered standard errors by respondent (for the Double list experiment).</td></tr></tfoot>
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1"><em>List A</em></td>
+                  <td data-row="1" data-col="2"><em>List A</em></td>
+                  <td data-row="1" data-col="3"><em>List A</em></td>
+                  <td data-row="1" data-col="4"><em>List A</em></td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">Threatening neighbors</td>
+                  <td data-row="2" data-col="2">0.015</td>
+                  <td data-row="2" data-col="3">0.346</td>
+                  <td data-row="2" data-col="4">0.96495</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">Evicting neighbors</td>
+                  <td data-row="3" data-col="2">0.132</td>
+                  <td data-row="3" data-col="3">0.268</td>
+                  <td data-row="3" data-col="4">0.6239</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1">Making donations</td>
+                  <td data-row="4" data-col="2">-0.253</td>
+                  <td data-row="4" data-col="3">0.233</td>
+                  <td data-row="4" data-col="4">0.28112</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="1">Offering work</td>
+                  <td data-row="5" data-col="2">0.335</td>
+                  <td data-row="5" data-col="3">0.196</td>
+                  <td data-row="5" data-col="4">0.091</td>
+                </tr>
+                <tr>
+                  <td data-row="6" data-col="1"><em>List B</em></td>
+                  <td data-row="6" data-col="2"><em>List B</em></td>
+                  <td data-row="6" data-col="3"><em>List B</em></td>
+                  <td data-row="6" data-col="4"><em>List B</em></td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="1">Threatening neighbors</td>
+                  <td data-row="7" data-col="2">-0.015</td>
+                  <td data-row="7" data-col="3">0.475</td>
+                  <td data-row="7" data-col="4">0.97478</td>
+                </tr>
+                <tr>
+                  <td data-row="8" data-col="1">Evicting neighbors</td>
+                  <td data-row="8" data-col="2">0.402</td>
+                  <td data-row="8" data-col="3">0.411</td>
+                  <td data-row="8" data-col="4">0.32851</td>
+                </tr>
+                <tr>
+                  <td data-row="9" data-col="1">Making donations</td>
+                  <td data-row="9" data-col="2">-0.615</td>
+                  <td data-row="9" data-col="3">0.402</td>
+                  <td data-row="9" data-col="4">0.12648</td>
+                </tr>
+                <tr>
+                  <td data-row="10" data-col="1">Offering work</td>
+                  <td data-row="10" data-col="2">-0.244</td>
+                  <td data-row="10" data-col="3">0.325</td>
+                  <td data-row="10" data-col="4">0.45411</td>
+                </tr>
+                <tr>
+                  <td data-row="11" data-col="1"><em>Double</em></td>
+                  <td data-row="11" data-col="2"><em>Double</em></td>
+                  <td data-row="11" data-col="3"><em>Double</em></td>
+                  <td data-row="11" data-col="4"><em>Double</em></td>
+                </tr>
+                <tr>
+                  <td data-row="12" data-col="1">Threatening neighbors</td>
+                  <td data-row="12" data-col="2">0.128</td>
+                  <td data-row="12" data-col="3">0.456</td>
+                  <td data-row="12" data-col="4">0.77951</td>
+                </tr>
+                <tr>
+                  <td data-row="13" data-col="1">Evicting neighbors</td>
+                  <td data-row="13" data-col="2">-0.192</td>
+                  <td data-row="13" data-col="3">0.434</td>
+                  <td data-row="13" data-col="4">0.65909</td>
+                </tr>
+                <tr>
+                  <td data-row="14" data-col="1">Making donations</td>
+                  <td data-row="14" data-col="2">0.140</td>
+                  <td data-row="14" data-col="3">0.454</td>
+                  <td data-row="14" data-col="4">0.75733</td>
+                </tr>
+                <tr>
+                  <td data-row="15" data-col="1">Offering work</td>
+                  <td data-row="15" data-col="2">0.935</td>
+                  <td data-row="15" data-col="3">0.335</td>
+                  <td data-row="15" data-col="4">0.00539</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</section>
+<section id="attention-check-raw-response" class="level2">
+<h2 class="anchored" data-anchor-id="attention-check-raw-response">Attention check raw response</h2>
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_ghs4oyanncmqvmzutbzf = TinyTable.createTableFunctions("tinytable_ghs4oyanncmqvmzutbzf");
+      // tinytable span after
+      window.addEventListener('load', function () { tableFns_ghs4oyanncmqvmzutbzf.spanCell(11, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_ghs4oyanncmqvmzutbzf.spanCell(6, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_ghs4oyanncmqvmzutbzf.spanCell(1, 1, 1, 4) })
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '15', j: 1 }, { i: '15', j: 2 }, { i: '15', j: 3 }, { i: '15', j: 4 } ], css_id: 'tinytable_css_gsbkajq4crz72desfc6g',}, 
+          { positions: [ { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '7', j: 1 }, { i: '8', j: 1 }, { i: '9', j: 1 }, { i: '10', j: 1 }, { i: '12', j: 1 }, { i: '13', j: 1 }, { i: '14', j: 1 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '7', j: 2 }, { i: '8', j: 2 }, { i: '9', j: 2 }, { i: '10', j: 2 }, { i: '12', j: 2 }, { i: '13', j: 2 }, { i: '14', j: 2 }, { i: '2', j: 3 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 }, { i: '7', j: 3 }, { i: '8', j: 3 }, { i: '9', j: 3 }, { i: '10', j: 3 }, { i: '12', j: 3 }, { i: '13', j: 3 }, { i: '14', j: 3 }, { i: '2', j: 4 }, { i: '3', j: 4 }, { i: '4', j: 4 }, { i: '5', j: 4 }, { i: '7', j: 4 }, { i: '8', j: 4 }, { i: '9', j: 4 }, { i: '10', j: 4 }, { i: '12', j: 4 }, { i: '13', j: 4 }, { i: '14', j: 4 } ], css_id: 'tinytable_css_q9dklx2p7ks9u0b7lski',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_9e466pn133h1ryip2ymj',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_ghs4oyanncmqvmzutbzf.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_ghs4oyanncmqvmzutbzf td.tinytable_css_gsbkajq4crz72desfc6g, #tinytable_ghs4oyanncmqvmzutbzf th.tinytable_css_gsbkajq4crz72desfc6g {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; padding-left: 1em }
+    #tinytable_ghs4oyanncmqvmzutbzf td.tinytable_css_q9dklx2p7ks9u0b7lski, #tinytable_ghs4oyanncmqvmzutbzf th.tinytable_css_q9dklx2p7ks9u0b7lski { padding-left: 1em }
+    #tinytable_ghs4oyanncmqvmzutbzf td.tinytable_css_9e466pn133h1ryip2ymj, #tinytable_ghs4oyanncmqvmzutbzf th.tinytable_css_9e466pn133h1ryip2ymj {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_ghs4oyanncmqvmzutbzf" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Item</th>
+                <th scope="col" data-row="0" data-col="2">Estimate</th>
+                <th scope="col" data-row="0" data-col="3">SE</th>
+                <th scope="col" data-row="0" data-col="4">p-value</th>
+              </tr>
+        </thead>
+        <tfoot><tr><td colspan="4"><strong>Note:</strong> Estimates represent the regression coefficient for the interaction between the raw mock vignette response and the sensitive item placement indicator. Drawn from OLS regression models with block fixed effects and HC2 robust standard errors (for List A and List B) and clustered standard errors by respondent (for the Double list experiment).</td></tr></tfoot>
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1"><em>List A</em></td>
+                  <td data-row="1" data-col="2"><em>List A</em></td>
+                  <td data-row="1" data-col="3"><em>List A</em></td>
+                  <td data-row="1" data-col="4"><em>List A</em></td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">Threatening neighbors</td>
+                  <td data-row="2" data-col="2">-0.005</td>
+                  <td data-row="2" data-col="3">0.046</td>
+                  <td data-row="2" data-col="4">0.9137</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">Evicting neighbors</td>
+                  <td data-row="3" data-col="2">-0.002</td>
+                  <td data-row="3" data-col="3">0.039</td>
+                  <td data-row="3" data-col="4">0.9515</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1">Making donations</td>
+                  <td data-row="4" data-col="2">0.005</td>
+                  <td data-row="4" data-col="3">0.037</td>
+                  <td data-row="4" data-col="4">0.8991</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="1">Offering work</td>
+                  <td data-row="5" data-col="2">-0.033</td>
+                  <td data-row="5" data-col="3">0.034</td>
+                  <td data-row="5" data-col="4">0.3424</td>
+                </tr>
+                <tr>
+                  <td data-row="6" data-col="1"><em>List B</em></td>
+                  <td data-row="6" data-col="2"><em>List B</em></td>
+                  <td data-row="6" data-col="3"><em>List B</em></td>
+                  <td data-row="6" data-col="4"><em>List B</em></td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="1">Threatening neighbors</td>
+                  <td data-row="7" data-col="2">-0.043</td>
+                  <td data-row="7" data-col="3">0.067</td>
+                  <td data-row="7" data-col="4">0.517</td>
+                </tr>
+                <tr>
+                  <td data-row="8" data-col="1">Evicting neighbors</td>
+                  <td data-row="8" data-col="2">0.069</td>
+                  <td data-row="8" data-col="3">0.065</td>
+                  <td data-row="8" data-col="4">0.2858</td>
+                </tr>
+                <tr>
+                  <td data-row="9" data-col="1">Making donations</td>
+                  <td data-row="9" data-col="2">-0.108</td>
+                  <td data-row="9" data-col="3">0.068</td>
+                  <td data-row="9" data-col="4">0.1162</td>
+                </tr>
+                <tr>
+                  <td data-row="10" data-col="1">Offering work</td>
+                  <td data-row="10" data-col="2">-0.097</td>
+                  <td data-row="10" data-col="3">0.057</td>
+                  <td data-row="10" data-col="4">0.0879</td>
+                </tr>
+                <tr>
+                  <td data-row="11" data-col="1"><em>Double</em></td>
+                  <td data-row="11" data-col="2"><em>Double</em></td>
+                  <td data-row="11" data-col="3"><em>Double</em></td>
+                  <td data-row="11" data-col="4"><em>Double</em></td>
+                </tr>
+                <tr>
+                  <td data-row="12" data-col="1">Threatening neighbors</td>
+                  <td data-row="12" data-col="2">0.036</td>
+                  <td data-row="12" data-col="3">0.066</td>
+                  <td data-row="12" data-col="4">0.5869</td>
+                </tr>
+                <tr>
+                  <td data-row="13" data-col="1">Evicting neighbors</td>
+                  <td data-row="13" data-col="2">-0.073</td>
+                  <td data-row="13" data-col="3">0.064</td>
+                  <td data-row="13" data-col="4">0.2507</td>
+                </tr>
+                <tr>
+                  <td data-row="14" data-col="1">Making donations</td>
+                  <td data-row="14" data-col="2">0.122</td>
+                  <td data-row="14" data-col="3">0.071</td>
+                  <td data-row="14" data-col="4">0.0844</td>
+                </tr>
+                <tr>
+                  <td data-row="15" data-col="1">Offering work</td>
+                  <td data-row="15" data-col="2">0.035</td>
+                  <td data-row="15" data-col="3">0.059</td>
+                  <td data-row="15" data-col="4">0.558</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</section>
+<section id="attention-check-distance-from-correct-recall" class="level2">
+<h2 class="anchored" data-anchor-id="attention-check-distance-from-correct-recall">Attention check distance from correct recall</h2>
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_zmz33u33viix3r1qzaao = TinyTable.createTableFunctions("tinytable_zmz33u33viix3r1qzaao");
+      // tinytable span after
+      window.addEventListener('load', function () { tableFns_zmz33u33viix3r1qzaao.spanCell(11, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_zmz33u33viix3r1qzaao.spanCell(6, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_zmz33u33viix3r1qzaao.spanCell(1, 1, 1, 4) })
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '15', j: 1 }, { i: '15', j: 2 }, { i: '15', j: 3 }, { i: '15', j: 4 } ], css_id: 'tinytable_css_ejx0ymfggn2e2y85yp7y',}, 
+          { positions: [ { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '7', j: 1 }, { i: '8', j: 1 }, { i: '9', j: 1 }, { i: '10', j: 1 }, { i: '12', j: 1 }, { i: '13', j: 1 }, { i: '14', j: 1 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '7', j: 2 }, { i: '8', j: 2 }, { i: '9', j: 2 }, { i: '10', j: 2 }, { i: '12', j: 2 }, { i: '13', j: 2 }, { i: '14', j: 2 }, { i: '2', j: 3 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 }, { i: '7', j: 3 }, { i: '8', j: 3 }, { i: '9', j: 3 }, { i: '10', j: 3 }, { i: '12', j: 3 }, { i: '13', j: 3 }, { i: '14', j: 3 }, { i: '2', j: 4 }, { i: '3', j: 4 }, { i: '4', j: 4 }, { i: '5', j: 4 }, { i: '7', j: 4 }, { i: '8', j: 4 }, { i: '9', j: 4 }, { i: '10', j: 4 }, { i: '12', j: 4 }, { i: '13', j: 4 }, { i: '14', j: 4 } ], css_id: 'tinytable_css_y7tqlgdy1b6eqyd8iuub',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_i2d9za9e8matqdlp0d7d',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_zmz33u33viix3r1qzaao.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_zmz33u33viix3r1qzaao td.tinytable_css_ejx0ymfggn2e2y85yp7y, #tinytable_zmz33u33viix3r1qzaao th.tinytable_css_ejx0ymfggn2e2y85yp7y {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; padding-left: 1em }
+    #tinytable_zmz33u33viix3r1qzaao td.tinytable_css_y7tqlgdy1b6eqyd8iuub, #tinytable_zmz33u33viix3r1qzaao th.tinytable_css_y7tqlgdy1b6eqyd8iuub { padding-left: 1em }
+    #tinytable_zmz33u33viix3r1qzaao td.tinytable_css_i2d9za9e8matqdlp0d7d, #tinytable_zmz33u33viix3r1qzaao th.tinytable_css_i2d9za9e8matqdlp0d7d {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%;  }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_zmz33u33viix3r1qzaao" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Item</th>
+                <th scope="col" data-row="0" data-col="2">Estimate</th>
+                <th scope="col" data-row="0" data-col="3">SE</th>
+                <th scope="col" data-row="0" data-col="4">p-value</th>
+              </tr>
+        </thead>
+        <tfoot><tr><td colspan="4"><strong>Note:</strong> Estimates represent the regression coefficient for the interaction between the distance from the correct answer on recalling the number of items on the mock vignette and the sensitive item placement indicator. Drawn from OLS regression models with block fixed effects and HC2 robust standard errors (for List A and List B) and clustered standard errors by respondent (for the Double list experiment).</td></tr></tfoot>
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1"><em>List A</em></td>
+                  <td data-row="1" data-col="2"><em>List A</em></td>
+                  <td data-row="1" data-col="3"><em>List A</em></td>
+                  <td data-row="1" data-col="4"><em>List A</em></td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">Threatening neighbors</td>
+                  <td data-row="2" data-col="2">0.014</td>
+                  <td data-row="2" data-col="3">0.044</td>
+                  <td data-row="2" data-col="4">0.746</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">Evicting neighbors</td>
+                  <td data-row="3" data-col="2">0.004</td>
+                  <td data-row="3" data-col="3">0.039</td>
+                  <td data-row="3" data-col="4">0.924</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1">Making donations</td>
+                  <td data-row="4" data-col="2">-0.020</td>
+                  <td data-row="4" data-col="3">0.037</td>
+                  <td data-row="4" data-col="4">0.595</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="1">Offering work</td>
+                  <td data-row="5" data-col="2">-0.030</td>
+                  <td data-row="5" data-col="3">0.041</td>
+                  <td data-row="5" data-col="4">0.465</td>
+                </tr>
+                <tr>
+                  <td data-row="6" data-col="1"><em>List B</em></td>
+                  <td data-row="6" data-col="2"><em>List B</em></td>
+                  <td data-row="6" data-col="3"><em>List B</em></td>
+                  <td data-row="6" data-col="4"><em>List B</em></td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="1">Threatening neighbors</td>
+                  <td data-row="7" data-col="2">0.096</td>
+                  <td data-row="7" data-col="3">0.075</td>
+                  <td data-row="7" data-col="4">0.199</td>
+                </tr>
+                <tr>
+                  <td data-row="8" data-col="1">Evicting neighbors</td>
+                  <td data-row="8" data-col="2">-0.058</td>
+                  <td data-row="8" data-col="3">0.076</td>
+                  <td data-row="8" data-col="4">0.445</td>
+                </tr>
+                <tr>
+                  <td data-row="9" data-col="1">Making donations</td>
+                  <td data-row="9" data-col="2">0.049</td>
+                  <td data-row="9" data-col="3">0.079</td>
+                  <td data-row="9" data-col="4">0.533</td>
+                </tr>
+                <tr>
+                  <td data-row="10" data-col="1">Offering work</td>
+                  <td data-row="10" data-col="2">-0.059</td>
+                  <td data-row="10" data-col="3">0.073</td>
+                  <td data-row="10" data-col="4">0.424</td>
+                </tr>
+                <tr>
+                  <td data-row="11" data-col="1"><em>Double</em></td>
+                  <td data-row="11" data-col="2"><em>Double</em></td>
+                  <td data-row="11" data-col="3"><em>Double</em></td>
+                  <td data-row="11" data-col="4"><em>Double</em></td>
+                </tr>
+                <tr>
+                  <td data-row="12" data-col="1">Threatening neighbors</td>
+                  <td data-row="12" data-col="2">-0.068</td>
+                  <td data-row="12" data-col="3">0.075</td>
+                  <td data-row="12" data-col="4">0.366</td>
+                </tr>
+                <tr>
+                  <td data-row="13" data-col="1">Evicting neighbors</td>
+                  <td data-row="13" data-col="2">0.056</td>
+                  <td data-row="13" data-col="3">0.068</td>
+                  <td data-row="13" data-col="4">0.414</td>
+                </tr>
+                <tr>
+                  <td data-row="14" data-col="1">Making donations</td>
+                  <td data-row="14" data-col="2">-0.087</td>
+                  <td data-row="14" data-col="3">0.080</td>
+                  <td data-row="14" data-col="4">0.278</td>
+                </tr>
+                <tr>
+                  <td data-row="15" data-col="1">Offering work</td>
+                  <td data-row="15" data-col="2">-0.007</td>
+                  <td data-row="15" data-col="3">0.076</td>
+                  <td data-row="15" data-col="4">0.932</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</section>
+<section id="mock-vignette-responses-and-time-spent-on-list-experiment-questions" class="level2">
+<h2 class="anchored" data-anchor-id="mock-vignette-responses-and-time-spent-on-list-experiment-questions">Mock vignette responses and time spent on list experiment questions</h2>
+<div class="cell">
+<div class="cell-output-display">
+
+</div>
+</div>
+</section>
+</section>
+<section id="validation-study-agerberg-2021" class="level1">
+<h1>Validation study <a href="https://doi.org/10.1177/20531680211013154">(Agerberg 2021)</a></h1>
+<section id="design" class="level2">
+<h2 class="anchored" data-anchor-id="design">Design</h2>
+<p><strong>Survey:</strong> Online list experiment on a sample of <span class="math inline">\(4,973\)</span> participants in China via Lucid.</p>
+<p><strong>Prompt:</strong> How many items apply</p>
+<p><strong>Baseline:</strong></p>
+<ul>
+<li>The government is the employee of the people and should do as the people wish.</li>
+<li>The government is like a parent and should tell the people what to do.</li>
+<li>I live in the same city where I was born.</li>
+<li>Generally speaking, most people cannot be trusted.</li>
+</ul>
+<p><strong>Treatment:</strong></p>
+<ul>
+<li>I was born in the year of [BLANK] or the year of [BLANK] (filled so that prevalence is known to be 1/6).</li>
+</ul>
+<p><strong>Placebo:</strong></p>
+<ul>
+<li>I was born in the 2000s or 1970s (Made impossible by previously declared age)</li>
+</ul>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p><img src="list_placebo/at_bounds.png" class="img-fluid"></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
