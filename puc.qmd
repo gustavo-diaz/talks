@@ -834,7 +834,8 @@ ggplot(std) +
   ), color = puc_blue,
   linewidth = 1,
   alpha = 0) +
-  labs(y = "Proporción vio bandas\namenazando a vecinos")
+  labs(y = "Proporción vio bandas\namenazando a vecinos",
+       x = "Estimador")
 
 ```
 
