@@ -62,7 +62,7 @@ puc_blue = "#0176DE"
 
 ## Puntos clave
 
-- *Experimento de lista* en Uruguay
+- *Experimento de lista* en Montevideo
 
 - *Control con placebo* arruinó resultados
 
@@ -213,18 +213,10 @@ ggplot(validation) +
        y = "Proporción ítem sensible")
 ```
 
----
-
-## ¿Y a mí, qué me importa?
-
 
 ---
 
 ![](list/bias_variance.jpg){fig-align="center"}
-
----
-
-![](list/bias_var_ml.png){fig-align="center"}
 
 
 ## Problema
