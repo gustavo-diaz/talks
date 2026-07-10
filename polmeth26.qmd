@@ -1,0 +1,60 @@
+---
+format:
+  revealjs:
+    center: true
+    slide-number: false
+    progress: false
+    code-overflow: wrap
+    theme: [default, custom.scss]
+---
+
+## Discussion: Surveys and Eye-Tracking {.smaller}
+
+- Sirotkina. "Reading Between the Eyes: Recovering (Political) Identity from Eye-Tracking Weak Signal"
+
+- Yang. "Read It or Ignore It? A Personality-Conditioned Computational Model of Gaze Behavior in Political Advertising"
+
+&nbsp;
+
+::: {style="text-align: center"}
+**Gustavo Diaz**  
+Northwestern University  
+<gustavo.diaz@northwestern.edu>  
+:::
+
+::: aside
+Slides: [talks.gustavodiaz.org/polmeth26](https://talks.gustavodiaz.org/polmeth)
+:::
+
+
+## How the papers connect
+
+TBD until I get both. May do the thing about things that can only be measured with surveys
+
+## Sirotkina: Recovering identity from eye-tracking
+
+**Why you should care**
+
+::: incremental
+- **Big picture:** Weak signals abound
+
+- Validation of novel methodology
+
+- Eliminates bias from "self-report" gap
+:::
+
+## Sirotkina: Recovering identity from eye-tracking
+
+**Things I like**
+
+## Sirotkina: Recovering identity from eye-tracking
+
+**Questions**
+
+::: incremental
+
+- Maybe good that current pipeline is only good at capturing intensity?
+
+- Can we build a "dictionary" of gaze patterns?
+
+:::
