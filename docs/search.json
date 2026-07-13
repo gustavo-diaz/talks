@@ -5289,20 +5289,118 @@
     "href": "polmeth26.html#discussion-surveys-and-eye-tracking",
     "title": "Gustavo Diaz",
     "section": "Discussion: Surveys and Eye-Tracking",
-    "text": "Discussion: Surveys and Eye-Tracking\n\nSirotkina. “Reading Between the Eyes: Recovering (Political) Identity from Eye-Tracking Weak Signal”\nYang. “Read It or Ignore It? A Personality-Conditioned Computational Model of Gaze Behavior in Political Advertising”\n\n \n\nGustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\n\n\n\nSlides: talks.gustavodiaz.org/polmeth26"
+    "text": "Discussion: Surveys and Eye-Tracking\n\n\nSirotkina. “Reading Between the Eyes: Recovering (Political) Identity from Eye-Tracking Weak Signal”\nYang. “Read It or Ignore It? A Personality-Conditioned Computational Model of Gaze Behavior in Political Advertising”\n\n \n\nGustavo Diaz\nNorthwestern University\ngustavo.diaz@northwestern.edu\n\n\n\nSlides: talks.gustavodiaz.org/polmeth26"
   },
   {
     "objectID": "polmeth26.html#how-the-papers-connect",
     "href": "polmeth26.html#how-the-papers-connect",
     "title": "Gustavo Diaz",
     "section": "How the papers connect",
-    "text": "How the papers connect\nTBD until I get both"
+    "text": "How the papers connect\nTBD until I get both. May do the thing about things that can only be measured with surveys"
   },
   {
     "objectID": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking",
     "href": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking",
     "title": "Gustavo Diaz",
     "section": "Sirotkina: Recovering identity from eye-tracking",
-    "text": "Sirotkina: Recovering identity from eye-tracking"
+    "text": "Sirotkina: Recovering identity from eye-tracking\nImportance\n\nBig picture: Weak signals abound\nValidation of novel methodology\nEliminates bias from “self-report” gap"
+  },
+  {
+    "objectID": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-1",
+    "href": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-1",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nPipeline\n\nRecord gaze patterns and measure features\nAggregate across images to recover signal\nClassify via supervised learning with emphasis on regularization\n\n Apply to surveys with images about immigration, Jan 6, LGBT, guns"
+  },
+  {
+    "objectID": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-2",
+    "href": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-2",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nPipeline\n\nRecord gaze patterns and measure features\nAggregate across images to recover signal\nClassify via supervised learning with emphasis on regularization\n\n Apply to surveys with images about immigration, Jan 6, LGBT, guns"
+  },
+  {
+    "objectID": "polmeth26.html#how-these-papers-connect",
+    "href": "polmeth26.html#how-these-papers-connect",
+    "title": "Gustavo Diaz",
+    "section": "How these papers connect",
+    "text": "How these papers connect"
+  },
+  {
+    "objectID": "polmeth26.html#problem",
+    "href": "polmeth26.html#problem",
+    "title": "Gustavo Diaz",
+    "section": "Problem",
+    "text": "Problem\n Gap between self-reports and actual attitudes/behaviors\n\nEye-tracking solution: Remove bias by looking at proxies of actual attitudes/behaviors"
+  },
+  {
+    "objectID": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-3",
+    "href": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-3",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nPipeline\n\nRecord gaze patterns and measure features\nAggregate across images to recover signal\nClassify via supervised learning with emphasis on regularization\n\n Apply to surveys with images about immigration, Jan 6, LGBT, guns"
+  },
+  {
+    "objectID": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-4",
+    "href": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-4",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nPipeline\n\nRecord gaze patterns and measure features\nAggregate across images to recover signal\nClassify via supervised learning with emphasis on regularization\n\n Apply to surveys with images about immigration, Jan 6, LGBT, guns"
+  },
+  {
+    "objectID": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-5",
+    "href": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-5",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nPipeline\n\nRecord gaze patterns and measure features\nAggregate across images to recover signal\nClassify via supervised learning with emphasis on regularization\n\n Apply to surveys with images about immigration, Jan 6, LGBT, guns"
+  },
+  {
+    "objectID": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-6",
+    "href": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-6",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nPraise\n\nTheory of how political identity maps into gaze\nAmazing showcase of methodological expertise!\nProposing a pipeline instead of a tool"
+  },
+  {
+    "objectID": "polmeth26.html#yang-gaze-behavior-in-political-advertising",
+    "href": "polmeth26.html#yang-gaze-behavior-in-political-advertising",
+    "title": "Gustavo Diaz",
+    "section": "Yang: Gaze behavior in political advertising",
+    "text": "Yang: Gaze behavior in political advertising\nImportance"
+  },
+  {
+    "objectID": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-7",
+    "href": "polmeth26.html#sirotkina-recovering-identity-from-eye-tracking-7",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nQuestions\n\nMaybe good that current pipeline is only good at capturing intensity?\nCan we build a “dictionary” of gaze patterns?\nDo we want features to be predictive of self-reported identity?\nHow does this change downstream inference?"
+  },
+  {
+    "objectID": "polmeth26.html#yang-gaze-behavior-in-political-advertising-1",
+    "href": "polmeth26.html#yang-gaze-behavior-in-political-advertising-1",
+    "title": "Gustavo Diaz",
+    "section": "Yang: Gaze behavior in political advertising",
+    "text": "Yang: Gaze behavior in political advertising\nSummary"
+  },
+  {
+    "objectID": "polmeth26.html#yang-gaze-behavior-in-political-advertising-2",
+    "href": "polmeth26.html#yang-gaze-behavior-in-political-advertising-2",
+    "title": "Gustavo Diaz",
+    "section": "Yang: Gaze behavior in political advertising",
+    "text": "Yang: Gaze behavior in political advertising\nPraise"
+  },
+  {
+    "objectID": "polmeth26.html#yang-gaze-behavior-in-political-advertising-3",
+    "href": "polmeth26.html#yang-gaze-behavior-in-political-advertising-3",
+    "title": "Gustavo Diaz",
+    "section": "Yang: Gaze behavior in political advertising",
+    "text": "Yang: Gaze behavior in political advertising\nQuestions"
+  },
+  {
+    "objectID": "polmeth26.html#questions",
+    "href": "polmeth26.html#questions",
+    "title": "Gustavo Diaz",
+    "section": "Questions",
+    "text": "Questions\n[Make a quarto list table with questions to prime discussion]"
   }
 ]

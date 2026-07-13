@@ -6,7 +6,9 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
   <title>Gustavo Diaz – polmeth26</title>
@@ -131,6 +133,7 @@
 
 <section id="discussion-surveys-and-eye-tracking" class="slide level2 smaller center">
 <h2>Discussion: Surveys and Eye-Tracking</h2>
+<!-- 15-20 minutes -->
 <ul>
 <li><p>Sirotkina. “Reading Between the Eyes: Recovering (Political) Identity from Eye-Tracking Weak Signal”</p></li>
 <li><p>Yang. “Read It or Ignore It? A Personality-Conditioned Computational Model of Gaze Behavior in Political Advertising”</p></li>
@@ -145,12 +148,128 @@ Northwestern University<br>
 <aside><div>
 <p>Slides: <a href="https://talks.gustavodiaz.org/polmeth">talks.gustavodiaz.org/polmeth26</a></p>
 </div></aside></section>
-<section id="how-the-papers-connect" class="slide level2 center">
-<h2>How the papers connect</h2>
-<p>TBD until I get both</p>
+<section id="how-these-papers-connect" class="slide level2 center">
+<h2>How these papers connect</h2>
+</section>
+<section class="slide level2 center">
+
+
+<img data-src="discussant/schuman_presser.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section class="slide level2 center">
+
+<p>Q: <em>What is the most important thing to teach children to prepare them for life?</em></p>
+<div class="fragment">
+<p>A: <strong>To think for themselves</strong></p>
+<ul>
+<li class="fragment">61.5% multiple choice</li>
+<li class="fragment">4.6% open-ended</li>
+</ul>
+</div>
+</section>
+<section id="problem" class="slide level2 center">
+<h2>Problem</h2>
+<p><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Gap between <strong>self-reports</strong> and <strong>actual</strong> attitudes/behaviors</p>
+<div class="fragment">
+<p><strong>Eye-tracking solution:</strong> Remove bias by looking at <strong>proxies</strong> of <strong>actual</strong> attitudes/behaviors</p>
+</div>
 </section>
 <section id="sirotkina-recovering-identity-from-eye-tracking" class="slide level2 center">
 <h2>Sirotkina: Recovering identity from eye-tracking</h2>
+<p><strong>Importance</strong></p>
+<ul>
+<li class="fragment"><p><strong>Big picture:</strong> Weak signals abound</p></li>
+<li class="fragment"><p>Validation of novel methodology</p></li>
+<li class="fragment"><p>Eliminates bias from “self-report” gap</p></li>
+</ul>
+</section>
+<section id="sirotkina-recovering-identity-from-eye-tracking-1" class="slide level2 center">
+<h2>Sirotkina: Recovering identity from eye-tracking</h2>
+<p><strong>Pipeline</strong></p>
+<ol type="1">
+<li><p><em><strong>Record</strong></em> <span style="color: #FFFFFF00;">gaze patterns and measure features</span></p></li>
+<li><p><em><strong>Aggregate</strong></em> <span style="color: #FFFFFF00;">across images to recover signal</span></p></li>
+<li><p><em><strong>Classify</strong></em> <span style="color: #FFFFFF00;">via supervised learning with emphasis on regularization</span></p></li>
+</ol>
+<p><span style="color: #FFFFFF00;"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Apply to surveys with images about immigration, Jan 6, LGBT, guns</span></p>
+</section>
+<section id="sirotkina-recovering-identity-from-eye-tracking-2" class="slide level2 center">
+<h2>Sirotkina: Recovering identity from eye-tracking</h2>
+<p><strong>Pipeline</strong></p>
+<ol type="1">
+<li><p><em><strong>Record</strong></em> gaze patterns and measure features</p></li>
+<li><p><em><strong>Aggregate</strong></em> <span style="color: #FFFFFF00;">across images to recover signal</span></p></li>
+<li><p><em><strong>Classify</strong></em> <span style="color: #FFFFFF00;">via supervised learning with emphasis on regularization</span></p></li>
+</ol>
+<p><span style="color: #FFFFFF00;"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Apply to surveys with images about immigration, Jan 6, LGBT, guns</span></p>
+</section>
+<section id="sirotkina-recovering-identity-from-eye-tracking-3" class="slide level2 center">
+<h2>Sirotkina: Recovering identity from eye-tracking</h2>
+<p><strong>Pipeline</strong></p>
+<ol type="1">
+<li><p><em><strong>Record</strong></em> gaze patterns and measure features</p></li>
+<li><p><em><strong>Aggregate</strong></em> across images to recover signal</p></li>
+<li><p><em><strong>Classify</strong></em> <span style="color: #FFFFFF00;">via supervised learning with emphasis on regularization</span></p></li>
+</ol>
+<p><span style="color: #FFFFFF00;"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Apply to surveys with images about immigration, Jan 6, LGBT, guns</span></p>
+</section>
+<section id="sirotkina-recovering-identity-from-eye-tracking-4" class="slide level2 center">
+<h2>Sirotkina: Recovering identity from eye-tracking</h2>
+<p><strong>Pipeline</strong></p>
+<ol type="1">
+<li><p><em><strong>Record</strong></em> gaze patterns and measure features</p></li>
+<li><p><em><strong>Aggregate</strong></em> across images to recover signal</p></li>
+<li><p><em><strong>Classify</strong></em> via supervised learning with emphasis on regularization</p></li>
+</ol>
+<p><span style="color: #FFFFFF00;"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Apply to surveys with images about immigration, Jan 6, LGBT, guns</span></p>
+</section>
+<section id="sirotkina-recovering-identity-from-eye-tracking-5" class="slide level2 center">
+<h2>Sirotkina: Recovering identity from eye-tracking</h2>
+<p><strong>Pipeline</strong></p>
+<ol type="1">
+<li><p><em><strong>Record</strong></em> gaze patterns and measure features</p></li>
+<li><p><em><strong>Aggregate</strong></em> across images to recover signal</p></li>
+<li><p><em><strong>Classify</strong></em> via supervised learning with emphasis on regularization</p></li>
+</ol>
+<p><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Apply to surveys with images about immigration, Jan 6, LGBT, guns</p>
+</section>
+<section id="sirotkina-recovering-identity-from-eye-tracking-6" class="slide level2 center">
+<h2>Sirotkina: Recovering identity from eye-tracking</h2>
+<p><strong>Praise</strong></p>
+<ul>
+<li class="fragment"><p>Theory of how political identity maps into gaze</p></li>
+<li class="fragment"><p>Amazing showcase of methodological expertise!</p></li>
+<li class="fragment"><p>Proposing a <em>pipeline</em> instead of a <em>tool</em></p></li>
+</ul>
+</section>
+<section id="sirotkina-recovering-identity-from-eye-tracking-7" class="slide level2 center">
+<h2>Sirotkina: Recovering identity from eye-tracking</h2>
+<p><strong>Questions</strong></p>
+<ul>
+<li class="fragment"><p>Maybe good that current pipeline is only good at capturing intensity?</p></li>
+<li class="fragment"><p>Can we build a “dictionary” of gaze patterns?</p></li>
+<li class="fragment"><p>Do we want features to be predictive of <em>self-reported</em> identity?</p></li>
+<li class="fragment"><p>How does this change downstream inference?</p></li>
+</ul>
+</section>
+<section id="yang-gaze-behavior-in-political-advertising" class="slide level2 center">
+<h2>Yang: Gaze behavior in political advertising</h2>
+<p><strong>Importance</strong></p>
+</section>
+<section id="yang-gaze-behavior-in-political-advertising-1" class="slide level2 center">
+<h2>Yang: Gaze behavior in political advertising</h2>
+<p><strong>Summary</strong></p>
+</section>
+<section id="yang-gaze-behavior-in-political-advertising-2" class="slide level2 center">
+<h2>Yang: Gaze behavior in political advertising</h2>
+<p><strong>Praise</strong></p>
+</section>
+<section id="yang-gaze-behavior-in-political-advertising-3" class="slide level2 center">
+<h2>Yang: Gaze behavior in political advertising</h2>
+<p><strong>Questions</strong></p>
+</section>
+<section id="questions" class="slide level2 center">
+<h2>Questions</h2>
+<p>[Make a quarto list table with questions to prime discussion]</p>
 
 
 </section>

@@ -10,6 +10,8 @@ format:
 
 ## Discussion: Surveys and Eye-Tracking {.smaller}
 
+<!-- 15-20 minutes -->
+
 - Sirotkina. "Reading Between the Eyes: Recovering (Political) Identity from Eye-Tracking Weak Signal"
 
 - Yang. "Read It or Ignore It? A Personality-Conditioned Computational Model of Gaze Behavior in Political Advertising"
@@ -27,13 +29,38 @@ Slides: [talks.gustavodiaz.org/polmeth26](https://talks.gustavodiaz.org/polmeth)
 :::
 
 
-## How the papers connect
+## How these papers connect
 
-TBD until I get both. May do the thing about things that can only be measured with surveys
+
+---
+
+![](discussant/schuman_presser.jpg){fig-align="center"}
+
+
+---
+
+Q: *What is the most important thing to teach children to prepare them for life?*
+
+. . . 
+
+A: **To think for themselves**
+
+::: incremental
+- 61.5% multiple choice
+- 4.6% open-ended
+:::
+
+## Problem
+
+{{< fa arrow-right >}} Gap between **self-reports** and **actual** attitudes/behaviors
+
+. . .
+
+**Eye-tracking solution:** Remove bias by looking at **proxies** of **actual** attitudes/behaviors
 
 ## Sirotkina: Recovering identity from eye-tracking
 
-**Why you should care**
+**Importance**
 
 ::: incremental
 - **Big picture:** Weak signals abound
@@ -45,7 +72,76 @@ TBD until I get both. May do the thing about things that can only be measured wi
 
 ## Sirotkina: Recovering identity from eye-tracking
 
-**Things I like**
+**Pipeline**
+
+1. _**Record**_  [gaze patterns and measure features]{style="color: #FFFFFF00;"}
+
+2. _**Aggregate**_ [across images to recover signal]{style="color: #FFFFFF00;"}
+
+3. _**Classify**_ [via supervised learning with emphasis on regularization]{style="color: #FFFFFF00;"}
+
+[{{< fa arrow-right >}} Apply to surveys with images about immigration, Jan 6, LGBT, guns]{style="color: #FFFFFF00;"}
+
+## Sirotkina: Recovering identity from eye-tracking
+
+**Pipeline**
+
+1. _**Record**_  gaze patterns and measure features
+2. _**Aggregate**_ [across images to recover signal]{style="color: #FFFFFF00;"}
+
+3. _**Classify**_ [via supervised learning with emphasis on regularization]{style="color: #FFFFFF00;"}
+
+[{{< fa arrow-right >}} Apply to surveys with images about immigration, Jan 6, LGBT, guns]{style="color: #FFFFFF00;"}
+
+## Sirotkina: Recovering identity from eye-tracking
+
+**Pipeline**
+
+1. _**Record**_  gaze patterns and measure features
+
+2. _**Aggregate**_ across images to recover signal
+
+3. _**Classify**_ [via supervised learning with emphasis on regularization]{style="color: #FFFFFF00;"}
+
+[{{< fa arrow-right >}} Apply to surveys with images about immigration, Jan 6, LGBT, guns]{style="color: #FFFFFF00;"}
+
+## Sirotkina: Recovering identity from eye-tracking
+
+**Pipeline**
+
+1. _**Record**_  gaze patterns and measure features
+
+2. _**Aggregate**_ across images to recover signal
+
+
+3. _**Classify**_ via supervised learning with emphasis on regularization
+
+[{{< fa arrow-right >}} Apply to surveys with images about immigration, Jan 6, LGBT, guns]{style="color: #FFFFFF00;"}
+
+## Sirotkina: Recovering identity from eye-tracking
+
+**Pipeline**
+
+1. _**Record**_  gaze patterns and measure features
+
+2. _**Aggregate**_ across images to recover signal
+
+
+3. _**Classify**_ via supervised learning with emphasis on regularization
+
+{{< fa arrow-right >}} Apply to surveys with images about immigration, Jan 6, LGBT, guns
+
+## Sirotkina: Recovering identity from eye-tracking
+
+**Praise**
+
+::: incremental
+- Theory of how political identity maps into gaze
+
+- Amazing showcase of methodological expertise!
+
+- Proposing a *pipeline* instead of a *tool*
+:::
 
 ## Sirotkina: Recovering identity from eye-tracking
 
@@ -57,4 +153,28 @@ TBD until I get both. May do the thing about things that can only be measured wi
 
 - Can we build a "dictionary" of gaze patterns?
 
+- Do we want features to be predictive of *self-reported* identity?
+
+- How does this change downstream inference?
+
 :::
+
+## Yang: Gaze behavior in political advertising
+
+**Importance**
+
+## Yang: Gaze behavior in political advertising
+
+**Summary**
+
+## Yang: Gaze behavior in political advertising
+
+**Praise**
+
+## Yang: Gaze behavior in political advertising
+
+**Questions**
+
+## Questions
+
+[Make a quarto list table with questions to prime discussion]
