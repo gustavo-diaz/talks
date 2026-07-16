@@ -148,29 +148,48 @@ Northwestern University<br>
 <aside><div>
 <p>Slides: <a href="https://talks.gustavodiaz.org/polmeth">talks.gustavodiaz.org/polmeth26</a></p>
 </div></aside></section>
-<section id="how-these-papers-connect" class="slide level2 center">
-<h2>How these papers connect</h2>
+<section id="why-should-we-care-about-eye-tracking" class="slide level2 center">
+<h2>Why should we care about eye-tracking?</h2>
 </section>
-<section class="slide level2 center">
-
-
-<img data-src="discussant/schuman_presser.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section class="slide level2 center">
-
-<p>Q: <em>What is the most important thing to teach children to prepare them for life?</em></p>
+<section id="we-do-surveys" class="slide level2 center">
+<h2>We do surveys</h2>
+</section>
+<section id="we-use-survey-outcomes" class="slide level2 center">
+<h2>We use survey <em>outcomes</em></h2>
+</section>
+<section id="we-are-encouraged-to-supplement-with-behavioral-outcomes" class="slide level2 center">
+<h2>We are encouraged to supplement with <em>behavioral</em> outcomes</h2>
 <div class="fragment">
-<p>A: <strong>To think for themselves</strong></p>
-<ul>
-<li class="fragment">61.5% multiple choice</li>
-<li class="fragment">4.6% open-ended</li>
-</ul>
+<p>Why?</p>
 </div>
 </section>
-<section id="problem" class="slide level2 center">
-<h2>Problem</h2>
-<p><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Gap between <strong>self-reports</strong> and <strong>actual</strong> attitudes/behaviors</p>
+<section id="the-argument-goes" class="slide level2 center">
+<h2>The argument goes</h2>
+<p><span class="math inline">\(\text{Attitudes} \rightarrow \text{Behavior}\)</span></p>
+<p>We only care about <em>self-reported</em> attitudes because they predict <em>actual</em> behavior</p>
+</section>
+<section id="the-argument-goes-1" class="slide level2 center">
+<h2>The argument goes</h2>
+<p><span class="math inline">\(\textbf{Attitudes} \rightarrow \text{Behavior}\)</span></p>
+<p>If we only measure <strong>attitudes</strong> we risk bias</p>
+</section>
+<section id="the-argument-goes-2" class="slide level2 center">
+<h2>The argument goes</h2>
+<p><span class="math inline">\(\textbf{Attitudes} \rightarrow \textbf{Behavior}\)</span></p>
+<p>Measuring <strong>behavioral</strong> indicators can reduce/control the bias</p>
+</section>
+<section id="the-argument-goes-3" class="slide level2 center">
+<h2>The argument goes</h2>
+<p><span class="math inline">\(\textbf{Attitudes} \rightarrow \textbf{Behavior}\)</span></p>
+<p>But not easy to incorporate!</p>
+</section>
+<section id="eye-tracking-solution" class="slide level2 center">
+<h2>Eye-tracking solution</h2>
 <div class="fragment">
-<p><strong>Eye-tracking solution:</strong> Remove bias by looking at <strong>proxies</strong> of <strong>actual</strong> attitudes/behaviors</p>
+<p><span class="math inline">\(\textbf{Disposition} \rightarrow \text{Attitudes} \rightarrow \text{Behavior}\)</span></p>
+</div>
+<div class="fragment">
+<p>Attention/gaze removes bias from self-reports by avoiding them altogether</p>
 </div>
 </section>
 <section id="sirotkina-recovering-identity-from-eye-tracking" class="slide level2 center">
@@ -254,22 +273,68 @@ Northwestern University<br>
 <section id="yang-gaze-behavior-in-political-advertising" class="slide level2 center">
 <h2>Yang: Gaze behavior in political advertising</h2>
 <p><strong>Importance</strong></p>
+<ol type="1">
+<li class="fragment">Adjusting gaze models to political content</li>
+<li class="fragment">Attention depends on who you are and what you believe</li>
+</ol>
 </section>
 <section id="yang-gaze-behavior-in-political-advertising-1" class="slide level2 center">
 <h2>Yang: Gaze behavior in political advertising</h2>
 <p><strong>Summary</strong></p>
+<ul>
+<li><p><em><strong>Goal:</strong> </em> Personality-conditioned model of gaze behavior</p></li>
+<li><p><em><strong>Tune:</strong></em> RNNs to learn Big 5 personality weights (Linear Beta Module)</p></li>
+<li><p><em><strong>Predict:</strong></em> On held out data (LOGO-CV)</p></li>
+</ul>
+<p><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Apply to student sample (<span class="math inline">\(108 \times 18\)</span>)</p>
 </section>
 <section id="yang-gaze-behavior-in-political-advertising-2" class="slide level2 center">
 <h2>Yang: Gaze behavior in political advertising</h2>
 <p><strong>Praise</strong></p>
+<ul>
+<li class="fragment"><p>Bringing social science focus into eye-tracking</p></li>
+<li class="fragment"><p>Differentiable fovea module</p></li>
+<li class="fragment"><p>Creative choice of evaluation metrics</p></li>
+</ul>
 </section>
 <section id="yang-gaze-behavior-in-political-advertising-3" class="slide level2 center">
 <h2>Yang: Gaze behavior in political advertising</h2>
 <p><strong>Questions</strong></p>
+<ul>
+<li class="fragment"><p>How does workflow scale up?</p></li>
+<li class="fragment"><p>Connection with adaptive experimentation?</p></li>
+<li class="fragment"><p>What happens if you measure personality differently?</p></li>
+<li class="fragment"><p>Beyond <strong>political</strong> <strong>persuasion</strong>?</p></li>
+</ul>
 </section>
 <section id="questions" class="slide level2 center">
 <h2>Questions</h2>
-<p>[Make a quarto list table with questions to prime discussion]</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Sirotkina</th>
+<th>Yang</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Capturing intensity only?</td>
+<td>How does workflow scale up?</td>
+</tr>
+<tr class="even">
+<td>Can we build a dictionary of gaze patterns?</td>
+<td>Connection with adaptive experimentation?</td>
+</tr>
+<tr class="odd">
+<td>Features to be predict <em>self-reported</em> identity?</td>
+<td>Different measures of personality differently?</td>
+</tr>
+<tr class="even">
+<td>Downstream inference?</td>
+<td>Beyond political persuasion?</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>

@@ -29,34 +29,58 @@ Slides: [talks.gustavodiaz.org/polmeth26](https://talks.gustavodiaz.org/polmeth)
 :::
 
 
-## How these papers connect
+## Why should we care about eye-tracking?
 
+## We do surveys
 
----
+## We use survey *outcomes*
 
-![](discussant/schuman_presser.jpg){fig-align="center"}
-
-
----
-
-Q: *What is the most important thing to teach children to prepare them for life?*
-
-. . . 
-
-A: **To think for themselves**
-
-::: incremental
-- 61.5% multiple choice
-- 4.6% open-ended
-:::
-
-## Problem
-
-{{< fa arrow-right >}} Gap between **self-reports** and **actual** attitudes/behaviors
+## We are encouraged to supplement with *behavioral* outcomes
 
 . . .
 
-**Eye-tracking solution:** Remove bias by looking at **proxies** of **actual** attitudes/behaviors
+Why?
+
+## The argument goes
+
+
+$\text{Attitudes} \rightarrow \text{Behavior}$
+
+We only care about *self-reported* attitudes because they predict *actual* behavior
+
+
+## The argument goes
+
+
+$\textbf{Attitudes} \rightarrow \text{Behavior}$
+
+If we only measure **attitudes** we risk bias
+
+## The argument goes
+
+
+$\textbf{Attitudes} \rightarrow \textbf{Behavior}$
+
+Measuring **behavioral** indicators can reduce/control the bias
+
+## The argument goes
+
+
+$\textbf{Attitudes} \rightarrow \textbf{Behavior}$
+
+But not easy to incorporate!
+
+## Eye-tracking solution
+
+. . .
+
+$\textbf{Disposition} \rightarrow \text{Attitudes} \rightarrow \text{Behavior}$
+
+
+. . .
+
+Attention/gaze removes bias from self-reports by avoiding them altogether
+
 
 ## Sirotkina: Recovering identity from eye-tracking
 
@@ -163,18 +187,71 @@ A: **To think for themselves**
 
 **Importance**
 
+::: incremental
+1. Adjusting gaze models to political content
+2. Attention depends on who you are and what you believe
+:::
+
 ## Yang: Gaze behavior in political advertising
 
 **Summary**
+
+- _**Goal:** _ Personality-conditioned model of gaze behavior
+
+- _**Tune:**_ RNNs to learn Big 5 personality weights (Linear Beta Module)
+
+- _**Predict:**_ On held out data (LOGO-CV)
+
+
+{{< fa arrow-right >}} Apply to student sample ($108 \times 18$)
 
 ## Yang: Gaze behavior in political advertising
 
 **Praise**
 
+::: incremental
+
+- Bringing social science focus into eye-tracking
+
+- Differentiable fovea module
+
+- Creative choice of evaluation metrics
+
+:::
+
 ## Yang: Gaze behavior in political advertising
 
 **Questions**
 
+::: incremental
+- How does workflow scale up?
+
+- Connection with adaptive experimentation?
+
+- What happens if you measure personality differently?
+
+- Beyond **political** **persuasion**?
+:::
+
 ## Questions
 
-[Make a quarto list table with questions to prime discussion]
+::: {.list-table}
+
+- - Sirotkina
+  - Yang
+  
+- - Capturing intensity only?
+  - How does workflow scale up?
+  
+- - Can we build a dictionary of gaze patterns?
+  - Connection with adaptive experimentation?
+  
+- - Features to be predict *self-reported* identity?
+  - Different measures of personality differently?
+
+- - Downstream inference?
+  - Beyond political persuasion?
+
+:::
+
+
