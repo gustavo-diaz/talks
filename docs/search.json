@@ -5472,5 +5472,236 @@
     "title": "Gustavo Diaz",
     "section": "Eye-tracking solution",
     "text": "Eye-tracking solution\n\n\\(\\textbf{Disposition} \\rightarrow \\text{Attitudes} \\rightarrow \\text{Behavior}\\)\n\n\nAttention/gaze removes bias from self-reports by avoiding them altogether"
+  },
+  {
+    "objectID": "etla.html#recovering-informative-estimates-in-failed-placebo-controlled-list-experiments",
+    "href": "etla.html#recovering-informative-estimates-in-failed-placebo-controlled-list-experiments",
+    "title": "Gustavo Diaz",
+    "section": "Recovering Informative Estimatesin Failed Placebo-ControlledList Experiments",
+    "text": "Recovering Informative Estimatesin Failed Placebo-ControlledList Experiments\n \nGustavo Diaz\nDepartment of Political Science\ngustavo.diaz@northwestern.edu"
+  },
+  {
+    "objectID": "etla.html#why-should-we-care-about-eye-tracking",
+    "href": "etla.html#why-should-we-care-about-eye-tracking",
+    "title": "Gustavo Diaz",
+    "section": "Why should we care about eye-tracking?",
+    "text": "Why should we care about eye-tracking?"
+  },
+  {
+    "objectID": "etla.html#we-do-surveys",
+    "href": "etla.html#we-do-surveys",
+    "title": "Gustavo Diaz",
+    "section": "We do surveys",
+    "text": "We do surveys"
+  },
+  {
+    "objectID": "etla.html#we-use-survey-outcomes",
+    "href": "etla.html#we-use-survey-outcomes",
+    "title": "Gustavo Diaz",
+    "section": "We use survey outcomes",
+    "text": "We use survey outcomes"
+  },
+  {
+    "objectID": "etla.html#we-are-encouraged-to-supplement-with-behavioral-outcomes",
+    "href": "etla.html#we-are-encouraged-to-supplement-with-behavioral-outcomes",
+    "title": "Gustavo Diaz",
+    "section": "We are encouraged to supplement with behavioral outcomes",
+    "text": "We are encouraged to supplement with behavioral outcomes\n\nWhy?"
+  },
+  {
+    "objectID": "etla.html#the-argument-goes",
+    "href": "etla.html#the-argument-goes",
+    "title": "Gustavo Diaz",
+    "section": "The argument goes",
+    "text": "The argument goes\n\\(\\text{Attitudes} \\rightarrow \\text{Behavior}\\)\nWe only care about self-reported attitudes because they predict actual behavior"
+  },
+  {
+    "objectID": "etla.html#the-argument-goes-1",
+    "href": "etla.html#the-argument-goes-1",
+    "title": "Gustavo Diaz",
+    "section": "The argument goes",
+    "text": "The argument goes\n\\(\\textbf{Attitudes} \\rightarrow \\text{Behavior}\\)\nIf we only measure attitudes we risk bias"
+  },
+  {
+    "objectID": "etla.html#the-argument-goes-2",
+    "href": "etla.html#the-argument-goes-2",
+    "title": "Gustavo Diaz",
+    "section": "The argument goes",
+    "text": "The argument goes\n\\(\\textbf{Attitudes} \\rightarrow \\textbf{Behavior}\\)\nMeasuring behavioral indicators can reduce/control the bias"
+  },
+  {
+    "objectID": "etla.html#the-argument-goes-3",
+    "href": "etla.html#the-argument-goes-3",
+    "title": "Gustavo Diaz",
+    "section": "The argument goes",
+    "text": "The argument goes\n\\(\\textbf{Attitudes} \\rightarrow \\textbf{Behavior}\\)\nBut not easy to incorporate!"
+  },
+  {
+    "objectID": "etla.html#eye-tracking-solution",
+    "href": "etla.html#eye-tracking-solution",
+    "title": "Gustavo Diaz",
+    "section": "Eye-tracking solution",
+    "text": "Eye-tracking solution\n\n\\(\\textbf{Disposition} \\rightarrow \\text{Attitudes} \\rightarrow \\text{Behavior}\\)\n\n\nAttention/gaze removes bias from self-reports by avoiding them altogether"
+  },
+  {
+    "objectID": "etla.html#sirotkina-recovering-identity-from-eye-tracking",
+    "href": "etla.html#sirotkina-recovering-identity-from-eye-tracking",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nImportance\n\nBig picture: Weak signals abound\nValidation of novel methodology\nEliminates bias from “self-report” gap"
+  },
+  {
+    "objectID": "etla.html#sirotkina-recovering-identity-from-eye-tracking-1",
+    "href": "etla.html#sirotkina-recovering-identity-from-eye-tracking-1",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nPipeline\n\nRecord gaze patterns and measure features\nAggregate across images to recover signal\nClassify via supervised learning with emphasis on regularization\n\n Apply to surveys with images about immigration, Jan 6, LGBT, guns"
+  },
+  {
+    "objectID": "etla.html#sirotkina-recovering-identity-from-eye-tracking-2",
+    "href": "etla.html#sirotkina-recovering-identity-from-eye-tracking-2",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nPipeline\n\nRecord gaze patterns and measure features\nAggregate across images to recover signal\nClassify via supervised learning with emphasis on regularization\n\n Apply to surveys with images about immigration, Jan 6, LGBT, guns"
+  },
+  {
+    "objectID": "etla.html#sirotkina-recovering-identity-from-eye-tracking-3",
+    "href": "etla.html#sirotkina-recovering-identity-from-eye-tracking-3",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nPipeline\n\nRecord gaze patterns and measure features\nAggregate across images to recover signal\nClassify via supervised learning with emphasis on regularization\n\n Apply to surveys with images about immigration, Jan 6, LGBT, guns"
+  },
+  {
+    "objectID": "etla.html#sirotkina-recovering-identity-from-eye-tracking-4",
+    "href": "etla.html#sirotkina-recovering-identity-from-eye-tracking-4",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nPipeline\n\nRecord gaze patterns and measure features\nAggregate across images to recover signal\nClassify via supervised learning with emphasis on regularization\n\n Apply to surveys with images about immigration, Jan 6, LGBT, guns"
+  },
+  {
+    "objectID": "etla.html#sirotkina-recovering-identity-from-eye-tracking-5",
+    "href": "etla.html#sirotkina-recovering-identity-from-eye-tracking-5",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nPipeline\n\nRecord gaze patterns and measure features\nAggregate across images to recover signal\nClassify via supervised learning with emphasis on regularization\n\n Apply to surveys with images about immigration, Jan 6, LGBT, guns"
+  },
+  {
+    "objectID": "etla.html#sirotkina-recovering-identity-from-eye-tracking-6",
+    "href": "etla.html#sirotkina-recovering-identity-from-eye-tracking-6",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nPraise\n\nTheory of how political identity maps into gaze\nAmazing showcase of methodological expertise!\nProposing a pipeline instead of a tool"
+  },
+  {
+    "objectID": "etla.html#sirotkina-recovering-identity-from-eye-tracking-7",
+    "href": "etla.html#sirotkina-recovering-identity-from-eye-tracking-7",
+    "title": "Gustavo Diaz",
+    "section": "Sirotkina: Recovering identity from eye-tracking",
+    "text": "Sirotkina: Recovering identity from eye-tracking\nQuestions\n\nMaybe good that current pipeline is only good at capturing intensity?\nCan we build a “dictionary” of gaze patterns?\nDo we want features to be predictive of self-reported identity?\nHow does this change downstream inference?"
+  },
+  {
+    "objectID": "etla.html#yang-gaze-behavior-in-political-advertising",
+    "href": "etla.html#yang-gaze-behavior-in-political-advertising",
+    "title": "Gustavo Diaz",
+    "section": "Yang: Gaze behavior in political advertising",
+    "text": "Yang: Gaze behavior in political advertising\nImportance\n\nAdjusting gaze models to political content\nAttention depends on who you are and what you believe"
+  },
+  {
+    "objectID": "etla.html#yang-gaze-behavior-in-political-advertising-1",
+    "href": "etla.html#yang-gaze-behavior-in-political-advertising-1",
+    "title": "Gustavo Diaz",
+    "section": "Yang: Gaze behavior in political advertising",
+    "text": "Yang: Gaze behavior in political advertising\nSummary\n\nGoal:  Personality-conditioned model of gaze behavior\nTune: RNNs to learn Big 5 personality weights (Linear Beta Module)\nPredict: On held out data (LOGO-CV)\n\n Apply to student sample (\\(108 \\times 18\\))"
+  },
+  {
+    "objectID": "etla.html#yang-gaze-behavior-in-political-advertising-2",
+    "href": "etla.html#yang-gaze-behavior-in-political-advertising-2",
+    "title": "Gustavo Diaz",
+    "section": "Yang: Gaze behavior in political advertising",
+    "text": "Yang: Gaze behavior in political advertising\nPraise\n\nBringing social science focus into eye-tracking\nDifferentiable fovea module\nCreative choice of evaluation metrics"
+  },
+  {
+    "objectID": "etla.html#yang-gaze-behavior-in-political-advertising-3",
+    "href": "etla.html#yang-gaze-behavior-in-political-advertising-3",
+    "title": "Gustavo Diaz",
+    "section": "Yang: Gaze behavior in political advertising",
+    "text": "Yang: Gaze behavior in political advertising\nQuestions\n\nHow does workflow scale up?\nConnection with adaptive experimentation?\nWhat happens if you measure personality differently?\nBeyond political persuasion?"
+  },
+  {
+    "objectID": "etla.html#questions",
+    "href": "etla.html#questions",
+    "title": "Gustavo Diaz",
+    "section": "Questions",
+    "text": "Questions\n\n\n\nSirotkina\nYang\n\n\n\n\nCapturing intensity only?\nHow does workflow scale up?\n\n\nCan we build a dictionary of gaze patterns?\nConnection with adaptive experimentation?\n\n\nFeatures to be predict self-reported identity?\nDifferent measures of personality differently?\n\n\nDownstream inference?\nBeyond political persuasion?"
+  },
+  {
+    "objectID": "etla.html#about-me",
+    "href": "etla.html#about-me",
+    "title": "Gustavo Diaz",
+    "section": "About me",
+    "text": "About me"
+  },
+  {
+    "objectID": "etla.html#about-you",
+    "href": "etla.html#about-you",
+    "title": "Gustavo Diaz",
+    "section": "About you",
+    "text": "About you\n\nYou will be a Weinberg College major\nYou will major in political science\nYou will major in a social science discipline\nYou plan to conduct research during undergrad\nYou took AP Math/Calc/Statistics"
+  },
+  {
+    "objectID": "etla.html#asking-sensitive-questions-in-the-social-sciences",
+    "href": "etla.html#asking-sensitive-questions-in-the-social-sciences",
+    "title": "Gustavo Diaz",
+    "section": "Asking Sensitive Questionsin the Social Sciences",
+    "text": "Asking Sensitive Questionsin the Social Sciences\n \nGustavo Diaz\nDepartment of Political Science\ngustavo.diaz@northwestern.edu\ngustavodiaz.org"
+  },
+  {
+    "objectID": "etla.html#why-am-i-even-a-political-scientist",
+    "href": "etla.html#why-am-i-even-a-political-scientist",
+    "title": "Gustavo Diaz",
+    "section": "Why am I (even) a political scientist?",
+    "text": "Why am I (even) a political scientist?"
+  },
+  {
+    "objectID": "etla.html#why-am-i-a-political-scientist",
+    "href": "etla.html#why-am-i-a-political-scientist",
+    "title": "Gustavo Diaz",
+    "section": "Why am I a political scientist?",
+    "text": "Why am I a political scientist?"
+  },
+  {
+    "objectID": "etla.html#some-questions",
+    "href": "etla.html#some-questions",
+    "title": "Gustavo Diaz",
+    "section": "Some questions",
+    "text": "Some questions\n\nHave you lied about being to skip class or get an extension?\nWould you bribe a police officer to avoid a traffic ticket?\nHave you used a fake ID to purchase alcohol or cigarettes?\nDo you know anyone with ties to a terrorist organization?\nWould you oppose a black family moving next door?\nWould you allow illegal immigrants to become citizens?"
+  },
+  {
+    "objectID": "etla.html#what-do-these-have-in-common",
+    "href": "etla.html#what-do-these-have-in-common",
+    "title": "Gustavo Diaz",
+    "section": "What do these have in common?",
+    "text": "What do these have in common?\n\nThey are sensitive questions\nWe can only learn about by asking directly\nBut asking about them directly leads to misreporting\nThis kind of measurement error is called social desirability bias or sensitivity bias"
+  },
+  {
+    "objectID": "etla.html#example",
+    "href": "etla.html#example",
+    "title": "Gustavo Diaz",
+    "section": "Example",
+    "text": "Example\n\n\n\n\n\n\n\n\n\n\n\n\nSource: NPR"
+  },
+  {
+    "objectID": "etla.html#what-can-we-do",
+    "href": "etla.html#what-can-we-do",
+    "title": "Gustavo Diaz",
+    "section": "What can we do?",
+    "text": "What can we do?\n\nHonestly appeals\nConfidentiality protocols\nIndirect questioning techniques"
+  },
+  {
+    "objectID": "etla.html#what-can-we-do-1",
+    "href": "etla.html#what-can-we-do-1",
+    "title": "Gustavo Diaz",
+    "section": "What can we do?",
+    "text": "What can we do?\n\nHonestly appeals\nConfidentiality protocols\nIndirect questioning techniques"
   }
 ]
