@@ -17,11 +17,23 @@ format:
 **Gustavo Diaz**  
 Department of Political Science  
 <gustavo.diaz@northwestern.edu>  
-[gustavodiaz.org](https://gustavodiaz.org)
+[gustavodiaz.org](https://gustavodiaz.org)  
+[polisci.northwestern.edu](https://polisci.northwestern.edu)
 :::
 
 
 ## About me
+
+```{r}
+library(tidyverse)
+library(estimatr)
+
+# ggplot global options
+theme_set(theme_gray(base_size = 20))
+# Northwestern purple
+nu_purple = "#4E2A84"
+```
+
 
 ![](misc/diaz_nu_profile.png)
 
@@ -44,15 +56,13 @@ Department of Political Science
 ## Some questions
 
 ::: incremental
-- Have you lied about being to skip class or get an extension?
+- Have you lied about being sick to skip class or get an extension?
 
 - Would you bribe a police officer to avoid a traffic ticket?
 
 - Have you used a fake ID to purchase alcohol or cigarettes?
 
 - Do you know anyone with ties to a  terrorist organization?
-
-- Would you oppose a black family moving next door?
 
 - Would you allow illegal immigrants to become citizens?
 
@@ -63,7 +73,7 @@ Department of Political Science
 ::: incremental
 - They are **sensitive questions**
 
-- We can only learn about by asking directly
+- We can only learn about them by asking directly
 
 - But asking about them directly leads to **misreporting**
 
@@ -103,3 +113,569 @@ Department of Political Science
 ::: aside
 Source: [NPR](https://www.npr.org/sections/itsallpolitics/2011/11/08/142159280/mississippi-voters-reject-personhood-amendment)
 :::
+
+## Post-election survey {{< fa phone >}}
+
+**Direct question**
+
+. . .
+
+Did you vote YES or NO on the Personhood Initiative, which appeared on the November 2011 Mississippi General Election Ballot?
+
+. . .
+
+
+$$
+\text{Proportion(Voted yes)} =\\ \text{Mean(Answer yes)}
+$$
+
+::: aside
+Source: [Rosenfeld et al (2016)](https://doi.org/10.1111/ajps.12205)
+:::
+
+## Post-election survey {{< fa phone >}}
+
+**List experiment** 
+
+Here is a list of things that some people have done.
+
+::: aside
+Source: [Rosenfeld et al (2016)](https://doi.org/10.1111/ajps.12205)
+:::
+
+## Post-election survey {{< fa phone >}}
+
+**List experiment** 
+
+Please listen to them and then tell me HOW MANY of them you have done in the past two years. 
+
+::: aside
+Source: [Rosenfeld et al (2016)](https://doi.org/10.1111/ajps.12205)
+:::
+
+## Post-election survey {{< fa phone >}}
+
+**List experiment** 
+
+Do not tell me which ones. Just tell me HOW MANY:
+
+
+. . .
+
+
+### Control group
+
+1. Discussed politics with family or friends
+2. Cast a ballot for governor Phil Bryant
+3. Paid dues to a union
+4. Given money to a Tea Party candidate
+
+## Post-election survey {{< fa phone >}}
+
+**List experiment** 
+
+Do not tell me which ones. Just tell me HOW MANY:
+
+### Treatment group
+
+1. Discussed politics with family or friends
+2. Cast a ballot for governor Phil Bryant
+3. Paid dues to a union
+4. Given money to a Tea Party candidate
+
+## Post-election survey {{< fa phone >}}
+
+**List experiment** 
+
+Do not tell me which ones. Just tell me HOW MANY:
+
+### Treatment group
+
+1. Discussed politics with family or friends
+2. Cast a ballot for governor Phil Bryant
+3. Paid dues to a union
+4. Given money to a Tea Party candidate
+5. **Voted "YES" on the Personhood Initiative**
+
+## Post-election survey {{< fa phone >}}
+
+**List Experiment Estimation**
+
+$$
+\text{Proportion(Voted yes)} =\\ \text{Mean(treatment)} - \text{Mean(tontrol)}
+$$
+
+## Results
+
+```{r}
+# got this through
+# https://automeris.io/WebPlotDigitizer/
+# And by reverse engineering table 1
+# Because replication data was not available
+# So this has some human error
+validation = data.frame(
+  technique = c("Direct question", "List experiment"),
+  estimate = c(0.396, 0.487),
+  upper = c(0.419, 0.562),
+  lower = c(0.376, 0.417)
+)
+
+actual_vote = 0.65
+
+ggplot(validation) +
+  aes(x = technique, y = estimate) +
+  geom_point(size = 4, alpha = 0, color = nu_purple) + 
+  geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
+                 linewidth = 1, alpha = 0, color = nu_purple) +
+  ylim(0.2, 0.8) +
+  labs(x = "Technique", 
+       y = "Estimated proportion of 'No' votes")
+```
+
+::: aside
+Adapted from [Rosenfeld et al (2016)](https://doi.org/10.1111/ajps.12205)
+:::
+
+## Results {visibility="uncounted"}
+
+```{r}
+ggplot(validation) +
+  aes(x = technique, y = estimate) +
+  geom_hline(yintercept = actual_vote, 
+             linetype = "dashed",
+             linewidth = 1) +
+  geom_point(size = 4, alpha = 0, color = nu_purple) + 
+  geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
+                 linewidth = 1, alpha = 0, color = nu_purple) +
+  annotate("text", x = 0.7, y = 0.7, size = 5, 
+           label = "Actual vote share") +
+  ylim(0.2, 0.8) +
+  labs(x = "Technique", 
+       y = "Estimated proportion of 'No' votes")
+```
+
+::: aside
+Adapted from [Rosenfeld et al (2016)](https://doi.org/10.1111/ajps.12205)
+:::
+
+
+## Results {visibility="uncounted"}
+
+```{r}
+ggplot(validation) +
+  aes(x = technique, y = estimate) +
+  geom_hline(yintercept = actual_vote, 
+             linetype = "dashed",
+             linewidth = 1) +
+  geom_point(size = 4, color = nu_purple) + 
+  geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
+                 linewidth = 1, alpha = 0, color = nu_purple) +
+  annotate("text", x = 0.7, y = 0.7, size = 5, 
+           label = "Actual vote share") +
+  ylim(0.2, 0.8) +
+  labs(x = "Technique", 
+       y = "Estimated proportion of 'No' votes")
+```
+
+::: aside
+Adapted from [Rosenfeld et al (2016)](https://doi.org/10.1111/ajps.12205)
+:::
+
+
+## Results {visibility="uncounted"}
+
+```{r}
+# For reference
+# validation = data.frame(
+#   technique = c("Direct question", "List experiment"),
+#   estimate = c(0.396, 0.487),
+#   upper = c(0.419, 0.562),
+#   lower = c(0.376, 0.417)
+# )
+
+ggplot(validation) +
+  aes(x = technique, y = estimate) +
+  geom_hline(yintercept = actual_vote, 
+             linetype = "dashed",
+             linewidth = 1) +
+  geom_point(size = 4, color = nu_purple) + 
+  geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
+                 linewidth = 1, color = nu_purple) +
+  annotate("text", x = 0.7, y = 0.7, size = 5, 
+           label = "Actual vote share") +
+  ylim(0.2, 0.8) +
+  annotate("text", size = 5,
+           x = c(1, 2, 1, 2), 
+           y = c(0.42, 0.56, 0.38, 0.42) + 
+             c(.03, .03, -.03, -.03), 
+           label = c("0.42", "0.56", "0.38", "0.42"),
+           , color = nu_purple) +
+  labs(x = "Technique", 
+       y = "Estimated proportion of 'No' votes")
+```
+
+::: aside
+Adapted from [Rosenfeld et al (2016)](https://doi.org/10.1111/ajps.12205)
+:::
+
+## How does it work?
+
+::: incremental
+
+- Respondents are randomly assigned to conditions
+
+- Differences in responses can only be attributed to the presence/absence of the sensitive item
+
+- So $\text{Mean(treatment)} - \text{Mean(control)}$ gives a  *population prevalence rate*
+
+- But we **do not know** who they are in our survey!
+
+- AND participants **do not know** what we care about!
+
+:::
+
+## Limitations
+
+::: incremental
+1. Deception
+
+2. Results depend on baseline list
+:::
+
+## Limitations
+
+1. Deception
+
+2. **Results depend on baseline list**
+
+---
+
+![](list/diaz_dle.png){fig-align="center"}
+
+
+---
+
+::: {.list-table}
+
+- - **List A**
+  - **List B**
+
+- - Californians for Disability
+  - American Legion
+
+- - California National<br>Organization for Women
+  - Equality California
+  
+- - American Family Association
+  - Tea Party Patriots
+  
+- - American Red Cross
+  - Salvation Army
+  
+:::
+
+. . .
+
+**Sensitive item:** Citizen order patrol combating undocumented immigration
+
+---
+
+```{r}
+# Data prep
+load("list/attn_rep.RData")
+
+cali = dle
+
+remove(dle)
+
+# Analysis
+a = cali %>% 
+  split(.$experiment) %>% 
+  map(~difference_in_means(listA ~ trt_A, data = .)) %>% 
+  map(tidy) %>% 
+  bind_rows(.id = "experiment")
+
+b = cali %>% 
+  split(.$experiment) %>% 
+  map(~difference_in_means(listB ~ trt_B, data = .)) %>% 
+  map(tidy) %>% 
+  bind_rows(.id = "experiment")
+
+pool = cali %>% 
+  mutate(id = row_number()) %>% 
+  pivot_longer(cols = c(listA, listB)) %>% 
+  rename(list = name, count = value) %>% 
+  mutate(Z = ifelse(trt_A == 1 & list == "listA" | trt_B == 1 & list == "listB",
+                    1, 0)) %>% 
+  split(.$experiment) %>% 
+  map(~ lm_robust(count ~ Z + list, clusters = id, se_type = "stata", data = .)) %>% 
+  map(tidy) %>% 
+  bind_rows(.id = "experiment") %>% 
+  filter(term == "Z")
+  
+est_df = rbind(a, b, pool)
+
+est_df$term = fct_relevel(est_df$term, "trt_A", "trt_B", "Z")
+```
+
+```{r}
+ggplot(est_df %>% filter(experiment == "Y" &
+                           outcome != "count")) +
+  aes(x = term, y = estimate, shape = term) +
+  geom_hline(yintercept = 0, linetype = "dashed") + 
+  geom_point(size = 4, color = nu_purple, position = position_dodge(width = 0.5), alpha = 0) +
+  geom_linerange(aes(x = term, ymin = conf.low, ymax = conf.high),
+                 color = nu_purple, size = 1, position = position_dodge(width = 0.5), alpha = 0) +
+  theme(legend.position = "none") +
+  labs(x = "Baseline", 
+       y = "Proportion support\ncitizen border patrol") +
+  scale_x_discrete(labels = c("List A", "List B"))
+```
+
+::: aside
+Adapted from [Diaz (2024)](https://doi.org/10.1017/XPS.2023.24)
+:::
+
+---
+
+```{r}
+ggplot(est_df %>% filter(experiment == "Y" &
+                           outcome != "count")) +
+  aes(x = term, y = estimate, shape = term) +
+  geom_hline(yintercept = 0, linetype = "dashed") + 
+  geom_point(size = 4, color = nu_purple, position = position_dodge(width = 0.5)) +
+  geom_linerange(aes(x = term, ymin = conf.low, ymax = conf.high),
+                 color = nu_purple, size = 1, position = position_dodge(width = 0.5)) +
+  theme(legend.position = "none") +
+  labs(x = "Baseline", 
+       y = "Proportion support\ncitizen border patrol") +
+  scale_x_discrete(labels = c("List A", "List B"))
+```
+
+::: aside
+Adapted from [Diaz (2024)](https://doi.org/10.1017/XPS.2023.24)
+:::
+
+## What went wrong?
+
+You need to convince yourself two **assumptions** are true
+
+. . .
+
+::: {.callout-warning}
+### 1. No liars
+
+Those who **do not** hold the sensitive item **never** falsely claim to bear it.
+
+:::
+
+. . .
+
+::: {.callout-warning}
+### 2. No design effects
+
+Including the sensitive item **does not change** how participants respond to the baseline items
+
+:::
+
+# Other techniques
+
+## Randomized response
+
+For this question, I want you to answer *yes* or *no*.
+
+## Randomized response {visibility="uncounted"}
+
+For this question, I want you to answer *yes* or *no*. But I want you to consider the number of your dice throw.
+
+## Randomized response {visibility="uncounted"}
+
+For this question, I want you to answer *yes* or *no*. But I want you to consider the number of your dice throw. If {{< fa dice-one >}} shows on the dice, tell me *no*.
+
+## Randomized response {visibility="uncounted"}
+
+For this question, I want you to answer *yes* or *no*. But I want you to consider the number of your dice throw. If {{< fa dice-one >}} shows on the dice, tell me *no*. If {{< fa dice-six >}} shows, tell me *yes*.
+
+## Randomized response {visibility="uncounted"}
+
+For this question, I want you to answer *yes* or *no*. But I want you to consider the number of your dice throw. If {{< fa dice-one >}} shows on the dice, tell me *no*. If {{< fa dice-six >}} shows, tell me *yes*. But if another number shows, tell me your own opinion about the question.
+
+. . .
+
+&nbsp;
+
+[TURN AWAY FROM PARTICIPANT]
+
+. . .
+
+&nbsp;
+
+Now you throw the dice so that I cannot see what comes out.
+
+## Randomized response {visibility="uncounted"}
+
+For this question, I want you to answer *yes* or *no*. But I want you to consider the number of your dice throw. If {{< fa dice-one >}} shows on the dice, tell me *no*. If {{< fa dice-six >}} shows, tell me *yes*. But if another number shows, tell me your own opinion about the question.
+
+&nbsp;
+
+[TURN AWAY FROM PARTICIPANT]
+
+&nbsp;
+
+Have you thrown the dice?
+
+## Randomized response {visibility="uncounted"}
+
+For this question, I want you to answer *yes* or *no*. But I want you to consider the number of your dice throw. If {{< fa dice-one >}} shows on the dice, tell me *no*. If {{< fa dice-six >}} shows, tell me *yes*. But if another number shows, tell me your own opinion about the question.
+
+&nbsp;
+
+[TURN AWAY FROM PARTICIPANT]
+
+&nbsp;
+
+Have you picked it up?
+
+## Randomized response {visibility="uncounted"}
+
+For this question, I want you to answer *yes* or *no*. But I want you to consider the number of your dice throw. If {{< fa dice-one >}} shows on the dice, tell me *no*. If {{< fa dice-six >}} shows, tell me *yes*. But if another number shows, tell me your own opinion about the question.
+
+&nbsp;
+
+Now, during the height of the conflict in 2007 and 2008 *(in Afghanistan)*, did you know any militants, like a family member, a friend, or someone you talked to on a regular basis? 
+
+. . .
+
+Please, before you answer, take note of the number you rolled on the dice.
+
+## How does it work?
+
+::: incremental
+
+- We know that about $1/6 \approx 0.17$ respondents said *yes* because they rolled a {{< fa dice-six >}}
+
+- So if $30\%$ in total said *yes*
+
+- We have $\widehat{\text{Prevalence}} = 0.3 - 0.17 = 0.13$ as our *population estimate*
+
+- But we **do not know** who they are in our survey!
+
+:::
+
+## Assumptions
+
+. . .
+
+::: {.callout-warning}
+### 1. Honesty given protection
+
+People respond honestly when guaranteed anonymity.
+
+:::
+
+. . .
+
+::: {.callout-warning}
+### 2. One-sided lying
+
+Those who **do not** hold the sensitive trait **never** falsely claim to bear it.
+
+:::
+
+## What is different?
+
+::: incremental
+- **List experiment:** Bury the lead
+
+- **Randomized response:** Emphasize anonymity
+
+:::
+
+. . .
+
+**Both:** Add *noise* to the question
+
+## Endorsement experiment
+
+. . .
+
+**Control group**
+
+. . .
+
+The World Health Organization recently announced a plan to introduce
+universal polio vaccination across Pakistan. How much do you support
+such a plan?
+
+. . .
+
+::: {style="font-size: 0.8em;"}
+(1\) A great deal; (2) A lot; (3) A moderate amount; (4) A little; (5) Not at all.
+:::
+
+
+::: aside
+Adapted from [Bullock et al (2011)](https://doi.org/10.1093/pan/mpr031)
+:::
+
+## Endorsement experiment
+
+**Treatment group**
+
+The World Health Organization recently announced a plan to introduce
+universal polio vaccination across Pakistan. How much do you support
+such a plan?
+
+::: {style="font-size: 0.8em;"}
+(1\) A great deal; (2) A lot; (3) A moderate amount; (4) A little; (5) Not at all.
+:::
+
+
+::: aside
+Adapted from [Bullock et al (2011)](https://doi.org/10.1093/pan/mpr031)
+:::
+
+## Endorsement experiment
+
+**Treatment group**
+
+The World Health Organization recently announced a plan to introduce
+universal polio vaccination across Pakistan. [_**Pakistani militant groups
+fighting in Kashmir have voiced support for this program.**_]{style="color: #4E2A84;"} How much do you support
+such a plan?
+
+::: {style="font-size: 0.8em;"}
+(1\) A great deal; (2) A lot; (3) A moderate amount; (4) A little; (5) Not at all.
+:::
+
+
+::: aside
+Adapted from [Bullock et al (2011)](https://doi.org/10.1093/pan/mpr031)
+:::
+
+## Wisdom of the crowds
+
+
+![](misc/wisdom.png){fig-align="center" width=50%}
+
+
+
+
+::: aside
+**URL:** <https://forms.cloud.microsoft/r/v2pULS8Suv>. See [Lehrer et al (2019)](https://doi.org/10.1016/j.electstud.2018.09.012) for details
+:::
+
+## Takeaways
+
+- Sometimes asking weird questions brings you closer to the truth
+
+- Crafting survey questions involves extensive trial and error
+
+- Extends to any original data collection exercise!
+
+::: {style="text-align: center"}
+
+**Thank you!**  
+<gustavo.diaz@northwestern.edu>   
+[gustavodiaz.org](https://gustavodiaz.org)  
+[polisci.northwestern.edu](https://polisci.northwestern.edu)

@@ -5653,7 +5653,7 @@
     "href": "etla.html#asking-sensitive-questions-in-the-social-sciences",
     "title": "Gustavo Diaz",
     "section": "Asking Sensitive Questionsin the Social Sciences",
-    "text": "Asking Sensitive Questionsin the Social Sciences\n \nGustavo Diaz\nDepartment of Political Science\ngustavo.diaz@northwestern.edu\ngustavodiaz.org"
+    "text": "Asking Sensitive Questionsin the Social Sciences\n \nGustavo Diaz\nDepartment of Political Science\ngustavo.diaz@northwestern.edu\ngustavodiaz.org\npolisci.northwestern.edu"
   },
   {
     "objectID": "etla.html#why-am-i-even-a-political-scientist",
@@ -5674,21 +5674,21 @@
     "href": "etla.html#some-questions",
     "title": "Gustavo Diaz",
     "section": "Some questions",
-    "text": "Some questions\n\nHave you lied about being to skip class or get an extension?\nWould you bribe a police officer to avoid a traffic ticket?\nHave you used a fake ID to purchase alcohol or cigarettes?\nDo you know anyone with ties to a terrorist organization?\nWould you oppose a black family moving next door?\nWould you allow illegal immigrants to become citizens?"
+    "text": "Some questions\n\nHave you lied about being sick to skip class or get an extension?\nWould you bribe a police officer to avoid a traffic ticket?\nHave you used a fake ID to purchase alcohol or cigarettes?\nDo you know anyone with ties to a terrorist organization?\nWould you allow illegal immigrants to become citizens?"
   },
   {
     "objectID": "etla.html#what-do-these-have-in-common",
     "href": "etla.html#what-do-these-have-in-common",
     "title": "Gustavo Diaz",
     "section": "What do these have in common?",
-    "text": "What do these have in common?\n\nThey are sensitive questions\nWe can only learn about by asking directly\nBut asking about them directly leads to misreporting\nThis kind of measurement error is called social desirability bias or sensitivity bias"
+    "text": "What do these have in common?\n\nThey are sensitive questions\nWe can only learn about them by asking directly\nBut asking about them directly leads to misreporting\nThis kind of measurement error is called social desirability bias or sensitivity bias"
   },
   {
     "objectID": "etla.html#example",
     "href": "etla.html#example",
     "title": "Gustavo Diaz",
     "section": "Example",
-    "text": "Example\n\n\n\n\n\n\n\n\n\n\n\n\nSource: NPR"
+    "text": "Example\n\n\n\n\n\n\n\n\n\n\nSource: NPR"
   },
   {
     "objectID": "etla.html#what-can-we-do",
@@ -5703,5 +5703,257 @@
     "title": "Gustavo Diaz",
     "section": "What can we do?",
     "text": "What can we do?\n\nHonestly appeals\nConfidentiality protocols\nIndirect questioning techniques"
+  },
+  {
+    "objectID": "etla.html#post-election-survey",
+    "href": "etla.html#post-election-survey",
+    "title": "Gustavo Diaz",
+    "section": "Post-election survey",
+    "text": "Post-election survey\nDirect question\n\nDid you vote YES or NO on the Personhood Initiative, which appeared on the November 2011 Mississippi General Election Ballot?\n\n\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(Answer yes)}\n\\]\n\n\n\n\n\nSource: Rosenfeld et al (2016)"
+  },
+  {
+    "objectID": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d",
+    "href": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d",
+    "title": "Gustavo Diaz",
+    "section": "Post-election survey ",
+    "text": "Post-election survey \nDirect question\n\nDid you vote YES or NO on the Personhood Initiative, which appeared on the November 2011 Mississippi General Election Ballot?\n\n\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(Answer yes)}\n\\]\n\n\n\nSource: Rosenfeld et al (2016)"
+  },
+  {
+    "objectID": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d-1",
+    "href": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d-1",
+    "title": "Gustavo Diaz",
+    "section": "Post-election survey ",
+    "text": "Post-election survey \nList experiment\nHere is a list of things that some people have done.\n\n\nSource: Rosenfeld et al (2016)"
+  },
+  {
+    "objectID": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d-2",
+    "href": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d-2",
+    "title": "Gustavo Diaz",
+    "section": "Post-election survey ",
+    "text": "Post-election survey \nList experiment\nPlease listen to them and then tell me HOW MANY of them you have done in the past two years.\n\n\nSource: Rosenfeld et al (2016)"
+  },
+  {
+    "objectID": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d-3",
+    "href": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d-3",
+    "title": "Gustavo Diaz",
+    "section": "Post-election survey ",
+    "text": "Post-election survey \nList experiment\nDo not tell me which ones. Just tell me HOW MANY:\n\nControl group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate"
+  },
+  {
+    "objectID": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d-4",
+    "href": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d-4",
+    "title": "Gustavo Diaz",
+    "section": "Post-election survey ",
+    "text": "Post-election survey \nList experiment\nDo not tell me which ones. Just tell me HOW MANY:\nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate"
+  },
+  {
+    "objectID": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d-5",
+    "href": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d-5",
+    "title": "Gustavo Diaz",
+    "section": "Post-election survey ",
+    "text": "Post-election survey \nList experiment\nDo not tell me which ones. Just tell me HOW MANY:\nTreatment group\n\nDiscussed politics with family or friends\nCast a ballot for governor Phil Bryant\nPaid dues to a union\nGiven money to a Tea Party candidate\nVoted “YES” on the Personhood Initiative"
+  },
+  {
+    "objectID": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d-6",
+    "href": "etla.html#post-election-survey-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070686f6e65203e7d7d-6",
+    "title": "Gustavo Diaz",
+    "section": "Post-election survey ",
+    "text": "Post-election survey \nList Experiment Estimation\n\\[\n\\text{Proportion(Voted yes)} =\\\\ \\text{Mean(treatment)} - \\text{Mean(tontrol)}\n\\]"
+  },
+  {
+    "objectID": "etla.html#validation",
+    "href": "etla.html#validation",
+    "title": "Gustavo Diaz",
+    "section": "Validation",
+    "text": "Validation\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
+  },
+  {
+    "objectID": "etla.html#validation-1",
+    "href": "etla.html#validation-1",
+    "title": "Gustavo Diaz",
+    "section": "Validation",
+    "text": "Validation\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
+  },
+  {
+    "objectID": "etla.html#validation-2",
+    "href": "etla.html#validation-2",
+    "title": "Gustavo Diaz",
+    "section": "Validation",
+    "text": "Validation\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
+  },
+  {
+    "objectID": "etla.html#validation-3",
+    "href": "etla.html#validation-3",
+    "title": "Gustavo Diaz",
+    "section": "Validation",
+    "text": "Validation\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
+  },
+  {
+    "objectID": "etla.html#results",
+    "href": "etla.html#results",
+    "title": "Gustavo Diaz",
+    "section": "Results",
+    "text": "Results\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
+  },
+  {
+    "objectID": "etla.html#results-1",
+    "href": "etla.html#results-1",
+    "title": "Gustavo Diaz",
+    "section": "Results",
+    "text": "Results\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
+  },
+  {
+    "objectID": "etla.html#results-2",
+    "href": "etla.html#results-2",
+    "title": "Gustavo Diaz",
+    "section": "Results",
+    "text": "Results\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
+  },
+  {
+    "objectID": "etla.html#results-3",
+    "href": "etla.html#results-3",
+    "title": "Gustavo Diaz",
+    "section": "Results",
+    "text": "Results\n\n\n\n\n\n\n\n\n\n\n\nAdapted from Rosenfeld et al (2016)"
+  },
+  {
+    "objectID": "etla.html#how-does-it-work",
+    "href": "etla.html#how-does-it-work",
+    "title": "Gustavo Diaz",
+    "section": "How does it work?",
+    "text": "How does it work?\n\nRespondents are randomly assigned to conditions\nDifferences in responses can only be attributed to the presence/absence of the sensitive item\nSo \\(\\text{Mean(treatment)} - \\text{Mean(control)}\\) gives a population prevalence rate\nBut we do not know who they are in our survey!\nAND participants do not know what we care about!"
+  },
+  {
+    "objectID": "etla.html#limitations",
+    "href": "etla.html#limitations",
+    "title": "Gustavo Diaz",
+    "section": "Limitations",
+    "text": "Limitations\n\nDeception\nResults depend on baseline list"
+  },
+  {
+    "objectID": "etla.html#limitations-1",
+    "href": "etla.html#limitations-1",
+    "title": "Gustavo Diaz",
+    "section": "Limitations",
+    "text": "Limitations\n\nDeception\nResults depend on baseline list"
+  },
+  {
+    "objectID": "etla.html#what-went-wrong",
+    "href": "etla.html#what-went-wrong",
+    "title": "Gustavo Diaz",
+    "section": "What went wrong?",
+    "text": "What went wrong?\nYou need to convince yourself two assumptions are true\n\n\n\n\n\n\n\n1. No liars\n\n\nThose who do not hold the sensitive item never falsely claim to bear it.\n\n\n\n\n\n\n\n\n\n\n\n2. No design effects\n\n\nIncluding the sensitive item does not change how participants respond to the baseline items"
+  },
+  {
+    "objectID": "etla.html#randomized-response",
+    "href": "etla.html#randomized-response",
+    "title": "Gustavo Diaz",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no."
+  },
+  {
+    "objectID": "etla.html#randomized-response-1",
+    "href": "etla.html#randomized-response-1",
+    "title": "Gustavo Diaz",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw."
+  },
+  {
+    "objectID": "etla.html#randomized-response-2",
+    "href": "etla.html#randomized-response-2",
+    "title": "Gustavo Diaz",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no."
+  },
+  {
+    "objectID": "etla.html#randomized-response-3",
+    "href": "etla.html#randomized-response-3",
+    "title": "Gustavo Diaz",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes."
+  },
+  {
+    "objectID": "etla.html#randomized-response-4",
+    "href": "etla.html#randomized-response-4",
+    "title": "Gustavo Diaz",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n\n \n[TURN AWAY FROM PARTICIPANT]\n\n\n \nNow you throw the dice so that I cannot see what comes out."
+  },
+  {
+    "objectID": "etla.html#randomized-response-5",
+    "href": "etla.html#randomized-response-5",
+    "title": "Gustavo Diaz",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \n[TURN AWAY FROM PARTICIPANT]\n \nHave you thrown the dice?"
+  },
+  {
+    "objectID": "etla.html#randomized-response-6",
+    "href": "etla.html#randomized-response-6",
+    "title": "Gustavo Diaz",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \n[TURN AWAY FROM PARTICIPANT]\n \nHave you picked it up?"
+  },
+  {
+    "objectID": "etla.html#randomized-response-7",
+    "href": "etla.html#randomized-response-7",
+    "title": "Gustavo Diaz",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \nNow, during the height of the conflict in 2007 and 2008 (in Afghanistan), did you know any militants, like a family member, a friend, or someone you talked to on a regular basis?\n\nPlease, before you answer, take note of the number you rolled on the dice."
+  },
+  {
+    "objectID": "etla.html#how-does-it-work-1",
+    "href": "etla.html#how-does-it-work-1",
+    "title": "Gustavo Diaz",
+    "section": "How does it work?",
+    "text": "How does it work?\n\nWe know that about \\(1/6 \\approx 0.17\\) respondents said yes because they rolled a \nSo if \\(30\\%\\) in total said yes\nWe have \\(\\widehat{\\text{Prevalence}} = 0.3 - 0.17 = 0.13\\) as our population estimate\nBut we do not know who they are in our survey!"
+  },
+  {
+    "objectID": "etla.html#assumptions",
+    "href": "etla.html#assumptions",
+    "title": "Gustavo Diaz",
+    "section": "Assumptions",
+    "text": "Assumptions\n\n\n\n\n\n\n\n1. Honesty given protection\n\n\nPeople respond honestly when guaranteed anonymity.\n\n\n\n\n\n\n\n\n\n\n\n2. One-sided lying\n\n\nThose who do not hold the sensitive trait never falsely claim to bear it."
+  },
+  {
+    "objectID": "etla.html#what-is-different",
+    "href": "etla.html#what-is-different",
+    "title": "Gustavo Diaz",
+    "section": "What is different?",
+    "text": "What is different?\n\nList experiment: Bury the lead\nRandomized response: Emphasize anonymity\n\n\nBoth: Add noise to the question"
+  },
+  {
+    "objectID": "etla.html#endorsement-experiment",
+    "href": "etla.html#endorsement-experiment",
+    "title": "Gustavo Diaz",
+    "section": "Endorsement experiment",
+    "text": "Endorsement experiment\n\nControl group\n\n\nThe World Health Organization recently announced a plan to introduce universal polio vaccination across Pakistan. How much do you support such a plan?\n\n\n\n(1) A great deal; (2) A lot; (3) A moderate amount; (4) A little; (5) Not at all.\n\n\n\n\nAdapted from Bullock et al (2011)"
+  },
+  {
+    "objectID": "etla.html#endorsement-experiment-1",
+    "href": "etla.html#endorsement-experiment-1",
+    "title": "Gustavo Diaz",
+    "section": "Endorsement experiment",
+    "text": "Endorsement experiment\nTreatment group\nThe World Health Organization recently announced a plan to introduce universal polio vaccination across Pakistan. How much do you support such a plan?\n\n(1) A great deal; (2) A lot; (3) A moderate amount; (4) A little; (5) Not at all.\n\n\n\nAdapted from Bullock et al (2011)"
+  },
+  {
+    "objectID": "etla.html#endorsement-experiment-2",
+    "href": "etla.html#endorsement-experiment-2",
+    "title": "Gustavo Diaz",
+    "section": "Endorsement experiment",
+    "text": "Endorsement experiment\nTreatment group\nThe World Health Organization recently announced a plan to introduce universal polio vaccination across Pakistan. Pakistani militant groups fighting in Kashmir have voiced support for this program. How much do you support such a plan?\n\n(1) A great deal; (2) A lot; (3) A moderate amount; (4) A little; (5) Not at all.\n\n\n\nAdapted from Bullock et al (2011)"
+  },
+  {
+    "objectID": "etla.html#wisdom-of-the-crowds",
+    "href": "etla.html#wisdom-of-the-crowds",
+    "title": "Gustavo Diaz",
+    "section": "Wisdom of the crowds",
+    "text": "Wisdom of the crowds\n\n\n\n\n\n\n\nURL: https://forms.cloud.microsoft/r/v2pULS8Suv. See Lehrer et al (2019) for details"
+  },
+  {
+    "objectID": "etla.html#takeaways",
+    "href": "etla.html#takeaways",
+    "title": "Gustavo Diaz",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nSometimes asking weird questions brings you closer to the truth\nCrafting survey questions involves extensive trial and error\nExtends to any original data collection exercise!\n\n\nThank you!\ngustavo.diaz@northwestern.edu\ngustavodiaz.org\npolisci.northwestern.edu"
   }
 ]
