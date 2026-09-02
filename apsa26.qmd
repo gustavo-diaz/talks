@@ -1,0 +1,717 @@
+---
+format:
+  revealjs:
+    center: true
+    slide-number: false
+    progress: false
+    code-line-numbers: false
+    theme: [default, custom.scss]
+---
+
+::: {style="text-align: center"}
+##  Recovering Informative Estimates<br>in Failed Placebo-Controlled<br>List Experiments {.center .smaller}
+
+&nbsp;
+
+**Gustavo Diaz**  
+Northwestern University  
+<gustavo.diaz@northwestern.edu>  
+
+&nbsp;
+
+
+Paper and slides: [gustavodiaz.org/talk](https://gustavodiaz.org/talk)
+
+![](talk_qr.png){.absolute bottom=0 right=-50 width="180" height="180"}
+
+:::
+
+```{r include=FALSE}
+library(knitr)
+
+opts_chunk$set(fig.pos = "center", echo = FALSE, 
+               message = FALSE, warning = FALSE)
+```
+
+```{r setup}
+# Packages
+library(tidyverse)
+library(DeclareDesign)
+library(kableExtra)
+library(tinytable)
+
+
+# ggplot global options
+theme_set(theme_gray(base_size = 20))
+
+# Northwestern purple
+nu_purple = "#4E2A84"
+```
+
+## ERC Starting Grant
+**Criminal Governance in Unexpected Contexts: the Role of the Welfare State in Latin America**
+
+with 
+
+- [Verónica Pérez Bentancur](https://veronicaperezbentancur.com/homepage-ingles/) (Universidad de la República)
+- [Ines Fynn](https://www.inesfynn.com) (Universidad Católica del Uruguay )
+- [Lucía Tiscornia](https://luciatiscornia.com) (University College Dublin)
+
+
+## List experiment
+
+Now I am going to read you things that make people angry or upset
+
+<!-- ::: aside -->
+<!-- Adapted from [Kuklinski, Cobb, and Gilens (1997)](https://doi.org/10.1017/S0022381600053470) -->
+<!-- ::: -->
+
+## List experiment
+
+After I read them all, tell me HOW MANY of them upset you
+
+<!-- ::: aside -->
+<!-- Adapted from [Kuklinski, Cobb, and Gilens (1997)](https://doi.org/10.1017/S0022381600053470) -->
+<!-- ::: -->
+
+## List experiment
+
+I don't want to know which ones, just tell me HOW MANY
+
+. . .
+
+### Control group
+
+1. The federal government increasing tax on gasoline
+2. Professional athletes getting million dollar contracts
+3. Large corporations polluting the environment
+
+<!-- ::: aside -->
+<!-- Adapted from [Kuklinski, Cobb, and Gilens (1997)](https://doi.org/10.1017/S0022381600053470) -->
+<!-- ::: -->
+
+## List experiment
+
+I don't want to know which ones, just tell me HOW MANY
+
+### Treatment group
+
+1. The federal government increasing tax on gasoline
+2. Professional athletes getting million dollar contracts
+3. Large corporations polluting the environment
+
+<!-- ::: aside -->
+<!-- Adapted from [Kuklinski, Cobb, and Gilens (1997)](https://doi.org/10.1017/S0022381600053470) -->
+<!-- ::: -->
+
+## List experiment
+
+I don't want to know which ones, just tell me HOW MANY
+
+### Treatment group
+
+1. The federal government increasing tax on gasoline
+2. Professional athletes getting million dollar contracts
+3. Large corporations polluting the environment
+4. **A black family moving next door**
+
+<!-- ::: aside -->
+<!-- Adapted from [Kuklinski, Cobb, and Gilens (1997)](https://doi.org/10.1017/S0022381600053470) -->
+<!-- ::: -->
+
+
+## Reduces sensitivity bias
+
+```{r}
+# got this through
+# https://automeris.io/WebPlotDigitizer/
+# And by reverse engineering fig 1
+# Because replication data was not available
+# So this has some human error
+validation = data.frame(
+  technique = c("Direct question", "List experiment"),
+  estimate = c(0.396, 0.487),
+  upper = c(0.419, 0.562),
+  lower = c(0.376, 0.417)
+)
+
+actual_vote = 0.65
+
+ggplot(validation) +
+  aes(x = technique, y = estimate) +
+  geom_point(size = 4, alpha = 0) + 
+  geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
+                 linewidth = 1, alpha = 0) +
+  ylim(0.2, 0.8) +
+  labs(x = "Technique", 
+       y = "Proportion sensitive item")
+```
+
+<!-- ::: aside -->
+<!-- Adapted from [Rosenfeld, Imai, and Shapiro (2016)](https://doi.org/10.1111/ajps.12205) -->
+<!-- ::: -->
+
+## Reduces sensitivity bias
+
+```{r}
+ggplot(validation) +
+  aes(x = technique, y = estimate) +
+  geom_hline(yintercept = actual_vote, 
+             linetype = "dashed",
+             linewidth = 1) +
+  geom_point(size = 4, alpha = 0) + 
+  geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
+                 linewidth = 1, alpha = 0) +
+  annotate("text", x = 0.7, y = 0.7, size = 5, 
+           label = "True proportion") +
+  ylim(0.2, 0.8) +
+  labs(x = "Technique", 
+       y = "Proportion sensitive item")
+```
+
+<!-- ::: aside -->
+<!-- Adapted from [Rosenfeld, Imai, and Shapiro (2016)](https://doi.org/10.1111/ajps.12205) -->
+<!-- ::: -->
+
+
+## Reduces sensitivity bias
+
+```{r}
+ggplot(validation) +
+  aes(x = technique, y = estimate) +
+  geom_hline(yintercept = actual_vote, 
+             linetype = "dashed",
+             linewidth = 1) +
+  geom_point(size = 4) + 
+  geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
+                 linewidth = 1) +
+  annotate("text", x = 0.7, y = 0.7, size = 5, 
+           label = "True proportion") +
+  ylim(0.2, 0.8) +
+  labs(x = "Technique", 
+       y = "Proportion sensitive item")
+```
+
+<!-- ::: aside -->
+<!-- Adapted from [Rosenfeld, Imai, and Shapiro (2016)](https://doi.org/10.1111/ajps.12205) -->
+<!-- ::: -->
+
+
+## Problem: Artificial inflation
+
+```{r}
+inflation = tribble(
+  ~Control, ~Treatment,
+  "The federal government increasing tax on gasoline",
+  "The federal government increasing tax on gasoline",
+  "Professional athletes getting million dollar contracts",
+  "Professional athletes getting million dollar contracts",
+  "Large corporations polluting the environment",
+  "Large corporations polluting the environment",
+  " ",
+  "**A black family moving next door**"
+)
+
+inflation %>% 
+  tt() %>%
+  style_tt(fontsize = 0.85) %>% 
+  format_tt(markdown = TRUE)
+```
+
+
+::: aside
+Things that make people angry or upset
+:::
+
+## Solution: Add a placebo statement
+
+```{r}
+inflation %>% tt() %>%
+  style_tt(fontsize = 0.85) %>% 
+  format_tt(markdown = TRUE)
+```
+
+::: aside
+Things that make people angry or upset
+:::
+
+## Solution: Add a placebo statement
+
+```{r}
+inflation2 = tribble(
+  ~Control, ~Treatment,
+  "The federal government increasing tax on gasoline",
+  "The federal government increasing tax on gasoline",
+  "Professional athletes getting million dollar contracts",
+  "Professional athletes getting million dollar contracts",
+  "Large corporations polluting the environment",
+  "Large corporations polluting the environment",
+  "**Finding money in a jacket pocket**",
+  "**A black family moving next door**"
+)
+
+inflation2 %>% tt() %>% 
+  format_tt(markdown = TRUE) %>% 
+  style_tt(i = 4, j = 1, color = nu_purple) %>% 
+  style_tt(fontsize = 0.85)
+```
+
+::: aside
+Things that make people angry or upset
+:::
+
+## Placebo-controlled list experiments {.center}
+
+. . .
+
+Reduce bias from *non-strategic* response errors
+
+. . . 
+
+But they can backfire if you pick a  **bad placebo item**
+
+::: {style="text-align: center"}
+## It happened to us! {.center}
+:::
+
+## Our experiment
+
+Things people have experienced in the last six months:
+
+```{r}
+list0 = tribble(
+  ~`List A`, ~`List B`,
+  "Saw people doing sports", "Saw people playing soccer",
+  "Visited friends", "Chatted with friends",
+  "Activities by feminist groups", "Activities by LGBTQ groups",
+  "Went to church", "Went to charity events"
+)
+
+list0 %>% tt()
+```
+
+::: aside
+Online sample in Montevideo, Uruguay. $N = 2688$
+:::
+
+## Manipulations
+
+. . .
+
+**Sensitive items:** 
+
+- Saw criminal groups threatening neighbors
+- Saw criminal groups evicting neighbors from their homes
+- Saw criminal groups making donations to neighbors
+- Saw criminal groups offering work to neighbors
+
+## Manipulations
+
+**Sensitive items:** 
+
+- **Saw criminal groups threatening neighbors**
+- [Saw criminal groups evicting neighbors from their homes]{style="color: gray;"}
+- [Saw criminal groups making donations to neighbors]{style="color: gray;"}
+- [Saw criminal groups offering work to neighbors]{style="color: gray;"}
+
+. . .
+
+**Placebo item:**
+
+- I did not drink *mate*
+
+## Our experiment
+
+Things people have experienced in the last six months:
+
+```{r}
+list0 %>% tt()
+```
+
+
+## Our experiment
+
+Things people have experienced in the last six months:
+
+```{r}
+list1 = tribble(
+  ~`List A`, ~`List B`,
+  "Saw people doing sports", "Saw people playing soccer",
+  "Visited friends", "Chatted with friends",
+  "Activities by feminist groups", "Activities by LGBTQ groups",
+  "Went to church", "Went to charity events",
+  "**Saw criminal groups<br>threatening neighbors**",
+  "**I did not drink mate**"
+)
+
+list1 %>% 
+  tt() %>% 
+  format_tt(markdown = TRUE) %>% 
+  style_tt(j = 2, i = 5, color = nu_purple)
+```
+
+## Our experiment
+
+Things people have experienced in the last six months:
+
+```{r}
+list2 = tribble(
+  ~`List A`, ~`List B`,
+  "Saw people doing sports", "Saw people playing soccer",
+  "Visited friends", "Chatted with friends",
+  "Activities by feminist groups", "Activities by LGBTQ groups",
+  "Went to church", "Went to charity events",
+  "**I did not drink mate**",
+  "**Saw criminal groups<br>threatening neighbors**"
+)
+
+list2 %>% 
+  tt() %>% 
+  format_tt(markdown = TRUE) %>% 
+  style_tt(j = 1, i = 5, color = nu_purple)
+```
+
+## Results
+
+```{r}
+main_df = read.csv("crim_gov/main.csv")
+
+threat_df = main_df %>% 
+  filter(list_treatment == "Threatening neighbors") %>% 
+  mutate(estimator = ifelse(
+    estimator == "DLE",
+    "Pooled",
+    estimator
+  ))
+
+
+
+ggplot(threat_df) +
+  aes(x = estimator, 
+      y = estimate) +
+  ylim(-0.3, 0.3) +
+  geom_hline(
+    yintercept = 0,
+    linetype = "dashed"
+  ) +
+  geom_point(size = 3, 
+             color = nu_purple,
+             alpha = 0) +
+  geom_linerange(aes(
+    ymin = conf.low,
+    ymax = conf.high,
+    x = estimator
+  ),
+  color = nu_purple,
+  linewidth = 1,
+  alpha = 0) +
+  labs(
+    x = "Estimator",
+    y = "Proportion saw gangs\nthreatening neighbors"
+  )
+```
+
+
+## Results
+
+```{r}
+ggplot(threat_df) +
+  aes(x = estimator, 
+      y = estimate) +
+  ylim(-0.3, 0.3) +
+  geom_hline(
+    yintercept = 0,
+    linetype = "dashed"
+  ) +
+  geom_point(size = 3, color = nu_purple) +
+  geom_linerange(aes(
+    ymin = conf.low,
+    ymax = conf.high,
+    x = estimator
+  ),
+  color = nu_purple,
+  linewidth = 1) +
+  labs(
+    x = "Estimator",
+    y = "Proportion saw gangs\nthreatening neighbors"
+  )
+```
+
+## What do we do? {.center}
+
+. . .
+
+Imagine how responses would have looked like without including the placebo
+
+. . .
+
+Equivalent to assuming estimated proportion is *partially identified*
+
+. . .
+
+Produce **non-parametric bounds**
+
+
+## Sharp bounds {.center}
+
+**Main idea:** Assume nothing beyond observed data and research design assumptions
+
+. . .
+
+**Experimental design:** Only control responses change
+
+. . .
+
+**Sharp bounds:** Impute minimun/maximum possible value
+
+## Not very informative
+
+
+```{r}
+bounds_df = read.csv("crim_gov/bounds.csv")
+
+std = bounds_df %>% 
+  filter(list_treatment == "Threaten" &
+           Assumptions == "Standard") %>% 
+  mutate(Estimator = case_when(
+    Estimator == "Single list" &
+      list == "count_a" ~ "List A",
+    Estimator == "Single list" &
+      list == "count_b" ~ "List B",
+    Estimator == "DLE" ~ "Pooled",
+    .default = Estimator
+  ))  %>% 
+  select(
+    Estimator, 
+    outcome,
+    estimate,
+    boot_ci_which
+  ) %>% 
+  pivot_wider(
+    names_from = outcome,
+    values_from = c(estimate, boot_ci_which)
+  )
+
+ggplot(std) +
+  aes(x = Estimator,
+      y = estimate_count_hi) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed") +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = estimate_count_lo,
+    ymax = estimate_count_hi
+  ), color = nu_purple,
+  linewidth = 3) +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = boot_ci_which_count_lo,
+    ymax = boot_ci_which_count_hi
+  ), color = nu_purple,
+  linewidth = 1) +
+  labs(y = "Proportion saw gangs\nthreatening neighbors")
+
+```
+
+## What else can we assume?
+
+. . .
+
+**List experiment assumptions**
+
+::: incremental
+1. *No liars:* Rs do not endorse sensitive item when they it does not apply to them
+2. *No design effects:* Adding/removing an item does not affect how R responds to other items
+:::
+
+. . .
+
+**Implications:**
+
+::: incremental
+1. Responses can only *decrease*
+2. ...by a magnitude of *one*
+:::
+
+## List experiment bounds
+
+**Implications:**
+
+1. Responses can only *decrease*
+2. ...by a magnitude of *one*
+
+. . .
+
+**Lower bound:** All 5s become 4s
+
+. . .
+
+**Upper bound:** Everything decreases by one unless already 0
+
+## Still not informative
+
+```{r}
+le = bounds_df %>% 
+  filter(list_treatment == "Threaten" &
+           Assumptions == "List") %>% 
+  mutate(Estimator = case_when(
+    Estimator == "Single list" &
+      list == "count_a" ~ "List A",
+    Estimator == "Single list" &
+      list == "count_b" ~ "List B",
+    Estimator == "DLE" ~ "Pooled",
+    .default = Estimator
+  )) %>% 
+# the boot CIs are backwards
+  mutate(boot_ci_which = ifelse(
+    outcome == "count_hi",
+    boot_ci_hi,
+    boot_ci_lo
+  )) %>% 
+    select(
+    Estimator, 
+    outcome,
+    estimate,
+    boot_ci_which
+  ) %>% 
+  pivot_wider(
+    names_from = outcome,
+    values_from = c(estimate, boot_ci_which)
+  )
+
+ggplot(le) +
+  aes(x = Estimator,
+      y = estimate_count_hi) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed") +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = estimate_count_lo,
+    ymax = estimate_count_hi
+  ), color = nu_purple,
+  linewidth = 3) +
+  geom_linerange(aes(
+    x = Estimator,
+    ymin = boot_ci_which_count_lo,
+    ymax = boot_ci_which_count_hi
+  ), color = nu_purple,
+  linewidth = 1) +
+  labs(y = "Proportion saw gangs\nthreatening neighbors") +
+  ylim(-0.2, 1.2)
+```
+::: {style="text-align: center"}
+## Can we do better? {.center}
+:::
+
+
+## Refinement 1
+
+**Known placebo proportion**
+
+. . .
+
+If you *know* the proportion of placebo holders in the population of interest
+
+. . .
+
+**Lower bound:** All 5s become 4s (unchanged)
+
+. . .
+
+**Upper bound:** 
+$$
+(1- \delta) \times \text{Observed proportion} + \delta \times \text{List upper bound}
+$$
+
+where $\delta$ is the known placebo proportion
+
+
+## Refinement 2
+
+**Combine with direct questions**
+
+. . .
+
+Combined estimator
+
+$$
+\hat \tau = \bar Y + (1- \bar Y) \times \bar V^*_{Y_i=0}
+$$
+
+- $\bar Y$: Proportion "yes" to direct question
+
+- $\bar V^*_{Y_i=0}$: LE estimate (upper/lower bound)
+
+::: aside
+See [Aronow et al (2015)](https://doi.org/10.1093/jssam/smu023) for details
+:::
+
+## Combining both refinements
+
+```{r bounds-figure}
+bnds = read.csv("list_placebo/bounds_kpp_direct.csv")
+
+b = bnds %>% 
+  filter(estimator == "DLE") %>% 
+  mutate(
+    list_treatment = recode(
+      list_treatment,
+      "Threaten" = "Threaten",
+      "Evict" = "Evict",
+      "Donate" = "Donation",
+      "Work" = "Offer\nwork"
+    ),
+    list_treatment = fct_relevel(list_treatment,
+                                 "Threaten", "Evict",
+                                 "Donation", "Offer\nwork")
+  ) %>% 
+  mutate(p = case_when(
+    discrete == 1 ~ 0.05,
+    discrete == 2 ~ 0.1,
+    discrete == 3 ~ 0.2,
+    discrete == 4 ~ 0.3
+  )) %>%
+  filter(list_treatment == "Threaten")
+  
+
+ggplot(b) +
+  aes(
+    x = factor(p),
+    y = estimate_comb_hi) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_linerange(
+    aes(
+      x = factor(p),
+      ymin = estimate_comb_lo,
+      ymax = estimate_comb_hi
+    ),
+    linewidth = 3, color = nu_purple
+  ) +
+  geom_linerange(
+    aes(
+      x = factor(p),
+      ymin = boot_ci_comb_lo_lo,
+      ymax = boot_ci_comb_hi_hi
+    ),
+    linewidth = 1, color = nu_purple
+  ) + 
+  labs(y = "Prevalence",
+       x = "Proportion holding placebo") +
+  ylim(0,1)
+```
+
+## Takeaways
+
+- A **design-based** method to recover informative bounds in failed-placebo controlled experiment
+
+- Helpful to justify choice of placebo
+
+- **Caveat:** This is a VERY EXTREME example
+
+- **Paper:** Validation study with known proportion
+
+::: aside
+**Slides:** [gustavodiaz.org/talk](https://gustavodiaz.org/talk)
+:::
+
+![](talk_qr.png){.absolute bottom=0 right=-50 width="180" height="180"}
