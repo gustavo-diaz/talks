@@ -416,6 +416,36 @@ ggplot(threat_df) +
 
 ```{r}
 ggplot(threat_df) +
+  aes(x = estimator,
+      y = estimate) +
+  ylim(-0.3, 0.3) +
+  geom_hline(
+    yintercept = 0,
+    linetype = "dashed"
+  ) +
+  geom_point(aes(alpha = ifelse(estimator == "Direct", 1, 0)),
+             size = 3,
+             color = nu_purple) +
+  geom_linerange(aes(
+    ymin = conf.low,
+    ymax = conf.high,
+    x = estimator,
+    alpha = ifelse(estimator == "Direct", 1, 0)
+  ),
+  color = nu_purple,
+  linewidth = 1) +
+  scale_alpha_identity() +
+  labs(
+    x = "Estimator",
+    y = "Proportion saw gangs\nthreatening neighbors"
+  )
+```
+
+
+## Results
+
+```{r}
+ggplot(threat_df) +
   aes(x = estimator, 
       y = estimate) +
   ylim(-0.3, 0.3) +
