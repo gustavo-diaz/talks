@@ -182,9 +182,10 @@ ggplot(validation) +
   geom_hline(yintercept = actual_vote, 
              linetype = "dashed",
              linewidth = 1) +
-  geom_point(size = 4) + 
+  geom_point(size = 4, color = nu_purple) + 
   geom_linerange(aes(x = technique, ymin = lower, ymax = upper),
-                 linewidth = 1) +
+                 linewidth = 1,
+                 color = nu_purple) +
   annotate("text", x = 0.7, y = 0.7, size = 5, 
            label = "True proportion") +
   ylim(0.2, 0.8) +
